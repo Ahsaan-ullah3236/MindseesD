@@ -1,0 +1,33 @@
+// import Navbar from "./components/Navbar";
+import Herosection from "./Herosection/page";
+import Ourservices from "./Ourservices/page";
+import ClientsLine from "./clientsline/page";
+import Topchoice from "./Topchoice/page";
+import Ourprocess from "./Ourprocess/page";
+import Innovation from "./Innovation/page";
+import Success from "./Success/page";
+import Question from "./Question/page"
+import Stories from "./Stories/page"
+import Award from "./Award/page";
+import Lastbusinesses from "./Lastbusinesses/page"
+import Footer from "./Footer/page"
+
+export default function Home() {
+  return (
+   <>
+    {/* <Navbar/> */}
+    <Herosection/>
+    <Ourservices/>
+    <ClientsLine/>
+    <Topchoice/>
+    <Ourprocess/>
+    <Innovation/>
+    <Success/>
+    <Question/>
+    <Stories/>
+    <Award/>
+    <Lastbusinesses/>
+    {/* <Footer/> */}
+   </>
+  );
+}
