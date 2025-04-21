@@ -1,9 +1,7 @@
 // components/TestimonialSlider.tsx
 "use client"
 import React,{ useState } from 'react';
-// import avatar from "@/app/images/avatar.jpg"
 import Image from 'next/image';
-// import imagebg from "@/app/images/techbg.jpg"
 import { StaticImageData } from 'next/image';
 
 type Testimonial = {
@@ -66,9 +64,7 @@ export default function SuccessStoriesPage() {
     }
   ];
 
-  const goToSlide = (index: number) => {
-    setCurrentSlide(index);
-  };
+ 
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
@@ -164,86 +160,3 @@ export default function SuccessStoriesPage() {
     </div>
   );
 }
-
-// 'use client';
-// import React from 'react';
-// import Image from 'next/image';
-
-// const SuccessStoriesPage = () => {
-//   return (
-//     <section className="min-h-screen bg-white flex justify-center items-center px-4 py-10">
-//       <div className="space-y-14 transform scale-105 transition-transform duration-500 w-full max-w-7xl">
-//         {/* Header */}
-//         <header className="text-center space-y-5">
-//           <h1 className="text-4xl md:text-6xl font-bold text-gray-900">Our Success Stories</h1>
-//           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-//             Explore testimonials from satisfied clients who have experienced our exceptional services firsthand. Discover how we ve helped businesses like yours achieve success and elevate their online presence.
-//           </p>
-//         </header>
-
-//         {/* Success Story Section */}
-//         <article className="flex flex-col lg:flex-row bg-[#002f46] text-white rounded-3xl shadow-xl p-8 md:p-10">
-//           {/* Left Content */}
-//           <div className="flex-1 space-y-8">
-//             <div>
-//               <h2 className="text-4xl md:text-5xl font-semibold">Business</h2>
-//               <p className="text-gray-200 mt-4">
-//                 Option A helps businesses to start, grow, and scale by focusing on revenue growth and business operations.
-//               </p>
-//             </div>
-
-//             {/* Services */}
-//             <div className="flex flex-wrap gap-3">
-//               {['Website Design', 'UI/UX Design', 'Website Development'].map((service) => (
-//                 <button
-//                   key={service}
-//                   className="bg-[#00D280] text-white px-5 py-2.5 rounded-lg hover:bg-[#00b96a] transition"
-//                 >
-//                   {service}
-//                 </button>
-//               ))}
-//             </div>
-
-//             {/* Testimonial */}
-//             <blockquote className="italic text-gray-300 border-l-4 border-[#00D280] pl-4 mt-4 text-lg">
-//               “We are thrilled with Kavelogics results. Their expertise in website development has enhanced our operational efficiency and user experience. Highly recommend.”
-//             </blockquote>
-
-//             {/* Client Info */}
-//             <figure className="flex items-center gap-3 mt-6">
-//               <Image
-//                 src="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/dfff5a3f-e899-438f-a825-4ae7f519c000/w=48,q=75"
-//                 alt="Client avatar"
-//                 width={58}
-//                 height={58}
-//                 className="rounded-full"
-//               />
-//               <figcaption className="text-2xl font-bold text-gray-300">Kavelogics Client</figcaption>
-//             </figure>
-
-//             {/* Button */}
-//             <div className="mt-6">
-//               <button className="bg-[#00D280] text-white px-6 py-3 text-lg rounded-lg hover:bg-[#00b96a] transition">
-//                 See Case Study
-//               </button>
-//             </div>
-//           </div>
-
-//           {/* Right Image */}
-//           <div className="flex-1 flex items-center justify-center mt-6 lg:mt-0">
-//             <Image
-//               src="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/111cfda1-e2c0-4fb1-aafc-a017b4953200/w=384,q=75"
-//               alt="Success Case Study"
-//               width={484}
-//               height={484}
-//               className="rounded-xl object-cover"
-//               priority
-//             />
-//           </div>
-//         </article>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default SuccessStoriesPage;

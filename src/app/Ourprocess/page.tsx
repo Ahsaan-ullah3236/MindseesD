@@ -2,63 +2,21 @@
 import Image from "next/image";
 import { useState } from "react";
 
-interface Stage {
-  id: number;
-  title: string;
-  description: string;
-  points: string[];
-}
+
 
 interface AccordionItem {
   title: string;
   content: string;
 }
 
-const stages: Stage[] = [
-  {
-    id: 1,
-    title: "1. Discovery Stage",
-    description:
-      "We prioritize our client success by understanding their unique needs and delivering customized solutions that drive business growth. Our typical workflow includes",
-    points: [
-      "Project Understanding",
-      "Stakeholder Interviews",
-      "User Research",
-      "Competitive Analysis",
-    ],
-  },
-  {
-    id: 2,
-    title: "2. Development Stage",
-    description:
-      "In this stage we deepen our understanding of the project requirements and create a roadmap for successful delivery. Our approach involves:",
-    points: [
-      "Business Analysis",
-      "System Architecture Design",
-      "Technical Planning",
-      "Roadmapping",
-    ],
-  },
-  {
-    id: 3,
-    title: "3. Support and Development",
-    description:
-      "The final phase of the Discovery stage focuses on validation and refining the initial solutions to align with client objectives. Key activities include",
-    points: [
-      "Prototype Development",
-      "User Testing",
-      "Feedback Integration",
-      "Documentation",
-    ],
-  },
-];
+
 
 export default function Ourprocess() {
-  const [openStage, setOpenStage] = useState<number | null>(null);
+  // const [openStage, setOpenStage] = useState<number | null>(null);
 
-  const toggleStage = (id: number) => {
-    setOpenStage(openStage === id ? null : id);
-  };
+  // const toggleStage = (id: number) => {
+  //   setOpenStage(openStage === id ? null : id);
+  // };
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [isZoomed, setIsZoomed] = useState<boolean>(false);
 
