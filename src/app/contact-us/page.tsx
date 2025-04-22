@@ -7,8 +7,41 @@ import { Checkbox } from "@/components/ui/checkbox";
 import Stepper from "./stepper";
 import Image from "next/image";
 import { Linkedin,Facebook,Instagram,X ,Youtube  } from 'lucide-react';
+import DropdownMultiSelect from "./multipleSelect";
+import SingleSelectDropdown from "./SingleSelectDropdown";
 
 export default function ContactPage() {
+
+  type ServiceItem = {
+    id: string;
+    label: string;
+    checked: boolean;
+  };
+  const [selectedServices, setSelectedServices] = useState<ServiceItem[]>([]);
+
+  const services: ServiceItem[] = [
+    { id: 'ui-ux', label: 'UI/UX Design', checked: false },
+    { id: 'mobile-app', label: 'Mobile App Development', checked: false },
+    { id: 'website', label: 'Website Development', checked: false },
+    { id: 'graphic', label: 'Graphic Design', checked: false },
+    { id: 'marketing', label: 'Online Marketing', checked: false },
+    { id: 'saas', label: 'SaaS based E-Commerce Website Development', checked: false },
+    { id: 'other', label: 'Other', checked: false },
+  ];
+
+  const [selectedIndustry, setSelectedIndustry] = useState<{id: string, label: string} | null>(null);
+
+  const industry = [
+    { id: 'health', label: 'Health' },
+    { id: 'fintech', label: 'Fintech' },
+    { id: 'edtech', label: 'EdTech' },
+    { id: 'communication', label: 'Communication' },
+    { id: 'entertainment', label: 'Entertainment' },
+    { id: 'e-Commerce', label: 'E-Commerce' },
+    { id: 'business', label: 'Business' },
+    { id: 'Retail', label: 'Retail' },
+    { id: 'other', label: 'Other' },
+  ];
 
     const steps = [
         {
@@ -117,31 +150,46 @@ export default function ContactPage() {
             <Input name="email" placeholder="Email" className="mt-4 sm:mt-0"  value={formData.email} onChange={handleChange} />
           </div>
 
-          <select name="service" value={formData.service} onChange={handleChange} className="border rounded-md px-4 py-2 w-full">
-            <option value="">Select services you want</option>
-            <option value="web">Web Development</option>
-            <option value="mobile">Mobile App Development</option>
-          </select>
+          <DropdownMultiSelect
+        options={services}
+        onChange={(selected) => setSelectedServices(selected)}
+        placeholder="Select services you want"
+      />
+      {selectedServices&& ""}
+      
 
-          <select name="industry" value={formData.industry} onChange={handleChange} className="border rounded-md px-4 py-2 w-full">
-            <option value="">Select your industry</option>
-            <option value="ecommerce">E-commerce</option>
-            <option value="health">Healthcare</option>
-          </select>
+      <SingleSelectDropdown
+        options={industry}
+        selectedOption={selectedIndustry}
+        onChange={(option) => setSelectedIndustry(option)}
+        placeholder="Select your industry"
+      />
+      
+    
 
           <Textarea name="description" placeholder="Write your project description here..." className="h-40" value={formData.description} onChange={handleChange} />
 
-          <div className="block sm:flex items-center gap-2">
-            <input type="file"  accept=".pdf,.txt,.docx" onChange={handleFileChange} />
-            <span className="text-xs">Attach File (pdf, txt or docx)</span>
-          </div>
+          <div className="flex items-center justify-end text-gray-500  gap-2">
+          <label className="cursor-pointer flex items-center justify-end gap-2 text-xs">
+    <input
+      type="file"
+      accept=".pdf,.txt,.docx"
+      onChange={handleFileChange}
+      className="hidden"
+    />
+    <span>Attach File (pdf, txt or docx)</span>
+  </label>
+  
+            {/* <input type="file"  accept=".pdf,.txt,.docx" onChange={handleFileChange} className="cursor-pointer" />
+            <span className="text-xs">Attach File (pdf, txt or docx)</span> */}
+          </div> 
 
           <div className="flex flex-col gap-2">
-            <label className="flex items-center gap-2 text-sm">
+            <label className="flex items-center gap-2 text-sm text-gray-500 ">
               <Checkbox checked={formData.agreeTerms} onCheckedChange={() => handleCheckbox("agreeTerms")} />
               I agree to the terms and conditions
             </label>
-            <label className="flex items-center gap-2 text-sm">
+            <label className="flex items-center gap-2 text-sm text-gray-500 ">
               <Checkbox checked={formData.sendNDA} onCheckedChange={() => handleCheckbox("sendNDA")} />
               Send me an NDA
             </label>
