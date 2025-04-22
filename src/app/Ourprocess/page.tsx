@@ -2,8 +2,6 @@
 import Image from "next/image";
 import { useState } from "react";
 
-
-
 interface AccordionItem {
   title: string;
   content: string;
@@ -18,7 +16,7 @@ export default function Ourprocess() {
   //   setOpenStage(openStage === id ? null : id);
   // };
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  const [isZoomed, setIsZoomed] = useState<boolean>(false);
+  // const [isZoomed, setIsZoomed] = useState<boolean>(false);
 
   const accordionItems: AccordionItem[] = [
     {
@@ -38,10 +36,10 @@ export default function Ourprocess() {
   const toggleAccordion = (index: number) => {
     if (activeIndex === index) {
       setActiveIndex(null);
-      setIsZoomed(false);
+      // setIsZoomed(false);
     } else {
       setActiveIndex(index);
-      setIsZoomed(true);
+      // setIsZoomed(true);
     }
   };
 

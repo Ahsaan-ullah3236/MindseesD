@@ -82,7 +82,7 @@ export default function SuccessStoriesPage() {
           <div className="relative h-full">
             {/* Slides */}
             <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
-              {testimonials.map((testimonial, index) => (
+              {testimonials.map((testimonial) => (
                 <div key={testimonial.id} className="w-full flex-shrink-0 p-10">
                   <div className="grid md:grid-cols-2 gap-10">
                     {/* Left column */}

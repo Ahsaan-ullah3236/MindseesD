@@ -1,12 +1,8 @@
 'use client';
 
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
 
-// type FAQItem = {
-//   question: string;
-//   answer: string;
-// };
 
 const faqs= [
   {
@@ -50,21 +46,30 @@ const faqs= [
 const Page=()=> {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
+  // Create refs for all items
+  const contentRefs = useRef<Array<HTMLDivElement | null>>([]);
+
   const toggleFAQ = (index: number) => {
     setOpenIndex(prev => (prev === index ? null : index));
   };
+  // const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  // const toggleFAQ = (index: number) => {
+  //   setOpenIndex(prev => (prev === index ? null : index));
+  // };
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-10">
-       <div  className='text-center text-3xl md:text-5xl font-bold mt-12 md:mt-24 mb-15'>Frequently Asked Questions</div>
+      <div className='text-center text-3xl md:text-5xl font-bold mt-12 md:mt-24 mb-15'>
+        Frequently Asked Questions
+      </div>
       {faqs.map((faq, index) => {
         const isOpen = openIndex === index;
-        const contentRef = useRef<HTMLDivElement>(null);
 
         return (
           <div
             key={index}
-            className="bg-white border border-gray-100  rounded-lg shadow-sm mb-4 transition-all duration-300"
+            className="bg-white border border-gray-100 rounded-lg shadow-sm mb-4 transition-all duration-300"
           >
             <button
               className="flex justify-between cursor-pointer items-center w-full p-4 py-8 focus:outline-none"
@@ -74,24 +79,21 @@ const Page=()=> {
                 {faq.question}
               </span>
               <ChevronDown
-                className={`w-6 h-6 text-white bg-[#00d280] rounded-xl transition-transform duration-300 ${
-                  isOpen ? "rotate-180" : ""
-                }`}
+                className={`w-6 h-6 text-white bg-[#00d280] rounded-xl transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
               />
             </button>
 
-            {/* Answer with smooth sliding */}
             <div
-              ref={contentRef}
-              className="overflow-hidden transition-all duration-500 ease-in-out"
-              style={{
-                maxHeight: isOpen
-                  ? `${contentRef.current?.scrollHeight}px`
-                  : "0px",
-              }}
-            >
-              <div className="px-4 pb-4 text-black">{faq.answer}</div>
-            </div>
+  ref={(el) => void (contentRefs.current[index] = el)}
+  className="overflow-hidden transition-all duration-500 ease-in-out"
+  style={{
+    maxHeight: isOpen
+      ? `${contentRefs.current[index]?.scrollHeight}px`
+      : "0px",
+  }}
+>
+  <div className="px-4 pb-4 text-black">{faq.answer}</div>
+</div>
           </div>
         );
       })}
@@ -102,6 +104,53 @@ const Page=()=> {
         </button>
       </div>
     </div>
+    // <div className="max-w-3xl mx-auto px-4 py-10">
+    //    <div  className='text-center text-3xl md:text-5xl font-bold mt-12 md:mt-24 mb-15'>Frequently Asked Questions</div>
+    //   {faqs.map((faq, index) => {
+    //     const isOpen = openIndex === index;
+    //     const contentRef = useRef<HTMLDivElement>(null);
+
+    //     return (
+    //       <div
+    //         key={index}
+    //         className="bg-white border border-gray-100  rounded-lg shadow-sm mb-4 transition-all duration-300"
+    //       >
+    //         <button
+    //           className="flex justify-between cursor-pointer items-center w-full p-4 py-8 focus:outline-none"
+    //           onClick={() => toggleFAQ(index)}
+    //         >
+    //           <span className="text-lg font-bold text-black text-left">
+    //             {faq.question}
+    //           </span>
+    //           <ChevronDown
+    //             className={`w-6 h-6 text-white bg-[#00d280] rounded-xl transition-transform duration-300 ${
+    //               isOpen ? "rotate-180" : ""
+    //             }`}
+    //           />
+    //         </button>
+
+    //         {/* Answer with smooth sliding */}
+    //         <div
+    //           ref={contentRef}
+    //           className="overflow-hidden transition-all duration-500 ease-in-out"
+    //           style={{
+    //             maxHeight: isOpen
+    //               ? `${contentRef.current?.scrollHeight}px`
+    //               : "0px",
+    //           }}
+    //         >
+    //           <div className="px-4 pb-4 text-black">{faq.answer}</div>
+    //         </div>
+    //       </div>
+    //     );
+    //   })}
+
+    //   <div className="flex justify-center mt-4 md:mt-8">
+    //     <button className="bg-[#00d280] text-white px-5 py-5 mt-8 mb-5 md:mb-20 rounded-lg font-semibold hover:bg-green-600 transition duration-200">
+    //       Book Consultation
+    //     </button>
+    //   </div>
+    // </div>
   );
 }
 export default Page;
