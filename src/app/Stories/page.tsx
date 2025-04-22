@@ -27,7 +27,7 @@ export default function SuccessStoriesPage() {
       name:"Ali",
       title: 'Wellness is a website which is empowering individuals to lead healthier lives through comprehensive, compassionate and innovative healthcare services.',
       services: ['Website Design', 'Website Development', 'QA'],
-      testimonial: 'Kavelogics transformed our wellness platform with expert design and innovative healthcare services, earning excellent feedback. Highly recommended for high quality design and development services.',
+      testimonial: 'MindSees transformed our wellness platform with expert design and innovative healthcare services, earning excellent feedback. Highly recommended for high quality design and development services.',
       author: 'Wade Warren',
       role: 'Co-Founder',
       cta: 'See Case Study',

@@ -60,7 +60,7 @@ function Page() {
                     <div className="text-white md:w-1/2 text-center md:text-left">
                         <h1 className="text-4xl md:text-5xl font-bold mb-6">Lets Drive tech forward</h1>
                         <p className="text-lg md:text-xl leading-relaxed">
-                            Explore exciting career opportunities at Kavelogics, where innovation meets passion. Join us to collaborate with experts, tackle challenging projects, and make a meaningful impact in technology.
+                            Explore exciting career opportunities at MindSees, where innovation meets passion. Join us to collaborate with experts, tackle challenging projects, and make a meaningful impact in technology.
                         </p>
                         <div className="mt-10 flex justify-center md:justify-start">
                             <button className="bg-[#00D280] text-white px-6 py-4 text-lg rounded-lg hover:bg-[#00b96a] transition-colors">
@@ -89,7 +89,7 @@ function Page() {
                     <div className="md:w-2/2 text-center md:text-left">
                         <h1 className="text-4xl md:text-5xl font-bold mb-6">Seeking Visionary Individuals</h1>
                         <p className="text-lg md:text-xl leading-relaxed mt-12">
-                            At Kavelogics, we are dedicated to transform users lives through our innovative solutions. We seek individuals who share and contribute to our vision. Our company fosters an environment of open communication, collaboration, and equal opportunities. We are passionate about growth and always eager to discover dynamic talent.
+                            At MindSees, we are dedicated to transform users lives through our innovative solutions. We seek individuals who share and contribute to our vision. Our company fosters an environment of open communication, collaboration, and equal opportunities. We are passionate about growth and always eager to discover dynamic talent.
                         </p>
                         <p className='text-lg md:text-xl leading-relaxed pt-6'>Join us to elevate not only our companys standards but also your own personal and professional benchmarks.</p>
                     </div>
@@ -125,7 +125,7 @@ function Page() {
                                         Our Recruitment Process
                                     </h1>
                                     <p className="text-white text-xl sm:text-1xl font-semibold mt-4 sm:mt-12">
-                                        At Kavelogics, our recruitment process is transparent and inclusive. We assess qualifications and cultural fit through initial screenings and interviews with key team members. We value open communication and provide timely feedback to ensure a positive experience. Join us in our commitment to innovation and excellence.
+                                        At MindSees, our recruitment process is transparent and inclusive. We assess qualifications and cultural fit through initial screenings and interviews with key team members. We value open communication and provide timely feedback to ensure a positive experience. Join us in our commitment to innovation and excellence.
                                     </p>
                                 </div>
                                 <button className="text-[#00D280] text-xl text-left sm:text-xl font-semibold mt-4 sm:mt-12 hover:text-[#00b96a] transition-colors">
@@ -159,7 +159,7 @@ function Page() {
                                             {
                                                 title: "04 Global Reach & Flexibility:",
                                                 description:
-                                                    "With global industry expertise, Kavelogics offers flexible engagement models—choose from dedicated teams or project-based solutions tailored to your project scope and budget needs.",
+                                                    "With global industry expertise, MindSees offers flexible engagement models—choose from dedicated teams or project-based solutions tailored to your project scope and budget needs.",
                                             },
                                         ].map((card, index) => (
                                             <div
@@ -191,7 +191,7 @@ function Page() {
                 <div className="inner-container w-full max-w-7xl  rounded-lg shadow-md p-8 bg-white border-2 border-blue-800">
                     <h1 className="text-5xl font-semibold m-12">Employee Benefits & Perks
                     </h1>
-                    <p className='text-lg mb-12'>Elevate your experience at Kavelogics with our comprehensive suite of employee benefits and perks. From competitive salaries to flexible work arrangements, we prioritize your well-being and professional growth, creating an environment where you can thrive</p>
+                    <p className='text-lg mb-12'>Elevate your experience at MindSees with our comprehensive suite of employee benefits and perks. From competitive salaries to flexible work arrangements, we prioritize your well-being and professional growth, creating an environment where you can thrive</p>
                     <div className="three-divs grid grid-cols-1 md:grid-cols-3 gap-6 border-2 border-amber-400 m-12">
 
                         <div className="value-card p-6 bg-[#daecfa] rounded-lg shadow-sm">
@@ -209,7 +209,7 @@ function Page() {
                         <div className="value-card p-6 bg-[#daecfa] rounded-lg shadow-sm">
                             <h2 className="text-xl font-bold mt-4 text-green-500">Employee Assistance Program (EAP)</h2>
                             <p className="text-gray-700 mt-2">
-                                At Kavelogics, we prioritize trust and transparency in all interactions—with clients, partners, and within our team.
+                                At MindSees, we prioritize trust and transparency in all interactions—with clients, partners, and within our team.
                             </p>
                         </div>
 
@@ -228,7 +228,7 @@ function Page() {
                         <div className="value-card p-6 bg-[#daecfa] rounded-lg shadow-sm">
                             <h2 className="text-xl font-bold mt-4 text-green-500">Employee Assistance Program (EAP)</h2>
                             <p className="text-gray-700 mt-2">
-                                At Kavelogics, we prioritize trust and transparency in all interactions—with clients, partners, and within our team.
+                                At MindSees, we prioritize trust and transparency in all interactions—with clients, partners, and within our team.
                             </p>
                         </div>
                     </div>

@@ -14,7 +14,7 @@ const faqs= [
     answer: "Yes, digital marketing can significantly increase your reach, drive traffic, and grow your business online.",
   },
   {
-    question: "Does Kavelogics provide custom web-development?",
+    question: "Does MindSees provide custom web-development?",
     answer: "Yes, we offer tailor-made web development services to meet your unique business needs.",
   },
   {
@@ -23,11 +23,11 @@ const faqs= [
   },
   {
     question: 'What kind of services are provided by Keylogics?',
-    answer: 'At Kavelogics, we provide a comprehensive range of services such as: AI Development, Mobile App Development, Website Development, UI/UX Design, Digital Marketing, SEO, and SaaS-based solutions.'
+    answer: 'At MindSees, we provide a comprehensive range of services such as: AI Development, Mobile App Development, Website Development, UI/UX Design, Digital Marketing, SEO, and SaaS-based solutions.'
   },
   {
     question: 'How can I contact Keylogics support?',
-    answer: 'Kavelogics offers full post-development support for all services. Whether it’s software development, digital marketing, or app development, we ensure continuous, effective support.'
+    answer: 'MindSees offers full post-development support for all services. Whether it’s software development, digital marketing, or app development, we ensure continuous, effective support.'
   },
   {
     question: 'Does Keylogics offer custom software solutions?',

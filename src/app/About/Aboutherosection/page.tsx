@@ -81,7 +81,7 @@ const AboutPage = () => {
                             Driving business growth with tailored software solutions and technical expertise.
                         </h3>
                         <p className="text-gray-900 text-lg leading-relaxed">
-                            At Kavelogics, we re your dedicated partners in digital success. With expertise in mobile app and website development, UI/UX and graphic design, SaaS-based solutions, and SEO services, we offer comprehensive digital solutions. Our creative team blends technical proficiency to exceed expectations, harnessing technology to elevate your brand and drive growth.
+                            At MindSees, we re your dedicated partners in digital success. With expertise in mobile app and website development, UI/UX and graphic design, SaaS-based solutions, and SEO services, we offer comprehensive digital solutions. Our creative team blends technical proficiency to exceed expectations, harnessing technology to elevate your brand and drive growth.
                         </p>
                     </div>
                 </div>
@@ -224,7 +224,7 @@ const AboutPage = () => {
                             >
                                 We Are Just An Email Away!
                             </h2>
-                            <p className="text-blue-600 font-medium mb-6 cursor-pointer">info@kavelogics.com</p>
+                            <p className="text-blue-600 font-medium mb-6 cursor-pointer">info@mindsees.com</p>
 
                             <div className="logo mt-12">
                                 <p className="text-gray-800 font-bold">Stay Connected!</p>
@@ -272,7 +272,7 @@ const AboutPage = () => {
                                 >
                                     Lahore Office
                                 </h2>
-                                <p className="text-black font-bold mb-1">Kavelogics Technologies PVT LTD</p>
+                                <p className="text-black font-bold mb-1">MindSees Technologies PVT LTD</p>
                                 <p className="flex items-start text-sm text-gray-900">
                                     <Image
                                         src="https://kavelogics.com/icons/location.svg"

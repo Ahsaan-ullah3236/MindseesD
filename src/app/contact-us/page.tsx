@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import Stepper from "./stepper";
 import Image from "next/image";
+import { Linkedin,Facebook,Instagram,X ,Youtube  } from 'lucide-react';
 
 export default function ContactPage() {
 
@@ -65,18 +66,7 @@ export default function ContactPage() {
         agreeTerms: false,
         sendNDA: false,
       });
-  // const [formData, setFormData] = useState({
-  //   firstName: "",
-  //   lastName: "",
-  //   phone: "",
-  //   email: "",
-  //   service: "",
-  //   industry: "",
-  //   description: "",
-  //   attachFile: null,
-  //   agreeTerms: false,
-  //   sendNDA: false,
-  // });
+
   
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -84,10 +74,7 @@ export default function ContactPage() {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-  // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-  //   const { name, value } = e.target;
-  //   setFormData({ ...formData, [name]: value });
-  // };
+  
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files?.[0]) {
@@ -191,46 +178,57 @@ export default function ContactPage() {
          
 
           <div className="pt-6">
-            <h2 className="text-xs font-semibold text-black-700 mb-2">We Are Just An Email Away!</h2>
-            <a href="mailto:info@kavelogies.com" className="text-xs text-blue-400 hover:text-blue-500">
-              info@kavelogies.com
+            <h2 className="font-semibold text-black-700 mb-2" style={{fontSize:"13px"}}>We Are Just An Email Away!</h2>
+            <a href="mailto:info@kavelogies.com" className=" text-blue-400 hover:text-blue-500" style={{fontSize:"11px"}}>
+              info@mindsees.com
             </a>
-            <h2 className="text-xs font-semibold text-black-700 mb-4 mt-6">Stay Connected!</h2>
-            <div className="flex space-x-4 -mt-4">
-              <span className="text-gray-500">in ✗</span>
-              <span className="text-gray-500">in ✓</span>
+            <h2 className="font-semibold text-black-700 mb-4 mt-5" style={{fontSize:"13px"}}>Stay Connected!</h2>
+            <div className="flex space-x-5 -mt-1">
+              <span className="text-black-500 cursor-pointer h-4 w-4"><Linkedin/></span>
+              <span className="text-black-500 cursor-pointer h-4 w-4"><Youtube /></span>
+              <span className="text-black-500 cursor-pointer h-4 w-4"><Facebook/></span>
+              <span className="text-black-500 cursor-pointer h-4 w-4"><Instagram /></span>
+              <span className="text-black-500 cursor-pointer "><X className="w-6 " /></span>
             </div>
           </div>
 
           
         </div>
 
-        {/* Second column - Lahore Office */}
+       
         <div className="lg:pl-8 pt-6 lg:pt-0">
             <Image src="https://kavelogics.com/about/offices/lahore.svg" alt="lahore-office" height={80} width={150} />
-          <h2 className="text-sm font-semibold text-black-700 mt-2">Lahore Office</h2>
-          <address className="text-black-600 text-xs font-semibold not-italic mb-1 mt-1">
-            Kavelogies Technologies PVT LTD
+          <h2 className="font-semibold text-black-700 mt-2"  style={{fontSize:"12px"}}>Lahore Office</h2>
+          <address className="text-black-600  font-semibold not-italic"  style={{fontSize:"12px"}}>
+            MindSees PVT LTD
           </address>
-            <div className="text-black-600 text-xs font-semibold ">
+            <a href="https://www.google.com/maps/place/MindSees/@31.4642669,74.2988289,17z/data=!3m1!4b1!4m6!3m5!1s0x8562bef8b6b348af:0x2228a06e52354095!8m2!3d31.4642624!4d74.3014038!16s%2Fg%2F11mcwzy2ny?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D" target="_blank"
+        rel="noopener noreferrer">
+          <div  className="text-black-600" style={{fontSize:"10px"}}>
 
-            SE12, Street 7, Block 1, FG05, Lahore, Portile, Palatina 55020
+          📍 30-B, Malik Tufail Rd, Block B1 Block A 1 Phase 1 Johar Town, Lahore, 54770, Pakistan
+          </div>
 
-            </div>
+
+            </a>
+          
         </div>
 
-        {/* Third column - USA Office */}
         <div className="lg:pl-8 pt-6 lg:pt-0">
             <Image src="https://kavelogics.com/about/offices/usa.svg" alt="USA-office" height={80} width={150} />
-          <h2 className="text-sm font-semibold text-black-700 mt-2">USA Office</h2>
-          <address className="text-black-600 text-xs font-semibold not-italic mb-1 mt-1">
-            Kavelogies Technologies PVT LTD
+          <h2 className="font-semibold text-black-700 mt-2" style={{fontSize:"12px"}}>USA Office</h2>
+          <address className="text-black-600 font-semibold not-italic" style={{fontSize:"12px"}}>
+            MindSees LLC
           </address>
-            <div className="text-black-600 text-xs font-semibold ">
+          <a href="https://www.google.com/maps/place/MindSees/@31.4642669,74.2988289,17z/data=!3m1!4b1!4m6!3m5!1s0x8562bef8b6b348af:0x2228a06e52354095!8m2!3d31.4642624!4d74.3014038!16s%2Fg%2F11mcwzy2ny?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D" target="_blank"
+        rel="noopener noreferrer">
+          <div  className="text-black-600" style={{fontSize:"10px"}}>
 
-            SE12, Street 7, Block 1, FG05, Lahore, Portile, Palatina 55020
+          📍 30-B, Malik Tufail Rd, Block B1 Block A 1 Phase 1 Johar Town, Lahore, 54770, Pakistan
+          </div>
 
-            </div>
+
+            </a>
         </div>
       </div>
     </div>
