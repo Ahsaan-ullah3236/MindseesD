@@ -1,8 +1,8 @@
 'use client';
 
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import { ChevronDown } from "lucide-react";
-
+import Link from "next/link";
 
 const faqs= [
   {
@@ -99,9 +99,12 @@ const Page=()=> {
       })}
 
       <div className="flex justify-center mt-4 md:mt-8">
-        <button className="bg-[#00d280] text-white px-5 py-5 mt-8 mb-5 md:mb-20 rounded-lg font-semibold hover:bg-green-600 transition duration-200">
+        <Link href={"/contact-us"}>
+        <button className="bg-[#00d280] cursor-pointer text-white px-5 py-5 mt-8 mb-5 md:mb-20 rounded-lg font-semibold transition duration-200">
           Book Consultation
         </button>
+        </Link>
+
       </div>
     </div>
     // <div className="max-w-3xl mx-auto px-4 py-10">

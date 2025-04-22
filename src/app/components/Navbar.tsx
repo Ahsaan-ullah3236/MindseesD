@@ -27,9 +27,11 @@ const Navbar = () => {
 
   return (
     <header className="w-full shadow-sm border-b-red-300 sticky top-0 bg-white z-50">
-      <div className="flex items-center justify-between max-w-7xl mx-auto spacing-secton py-5">
+      <div className="flex items-center justify-between max-w-7xl mx-auto spacing-secton py-4">
         <div className="text-xl lg:text-2xl font-bold text-black">
-          <span className="font-mono">MindSees</span>
+          <Link href={"/"}>
+          <span className="font-mono" >MindSees</span>
+          </Link>
         </div>
 
         <nav className=" hidden md:flex gap-8 items-center text-black font-semibold relative">
@@ -101,8 +103,8 @@ const Navbar = () => {
         </nav>
 
         <Link
-          href="#"
-          className="hidden md:inline-block bg-[#00d280] text-white px-3 py-2 lg:px-6 lg:py-4 rounded-md text-md font-bold "
+          href="/contact us"
+          className="hidden md:inline-block bg-[#00d280] text-white px-3 py-2 lg:px-4 lg:py-3 rounded-md text-md font-bold "
         >
           Get Quote
         </Link>

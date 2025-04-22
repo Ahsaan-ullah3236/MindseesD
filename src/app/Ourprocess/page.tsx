@@ -1,7 +1,7 @@
 'use client';
 import Image from "next/image";
 import { useState } from "react";
-
+import Link from "next/link";
 interface AccordionItem {
   title: string;
   content: string;
@@ -107,10 +107,12 @@ export default function Ourprocess() {
         ))}
       </div>
           </div>
+          <Link href={"/contact-us"}>
+          <button className="mt-8 px-4 py-5 cursor-pointer w-30 bg-[#00d280] mt-20 mb-16 text-white rounded-lg font-bold transition-colors duration-300 shadow-md">
+          Lets Chat
+          </button>
+          </Link>
 
-          <button className="mt-8 px-4 py-5 w-30 bg-[#00d280] mt-20 mb-16 text-white rounded-lg font-bold transition-colors duration-300 shadow-md">
-          Let's Chat
-        </button>
           
         </div>
       </div>

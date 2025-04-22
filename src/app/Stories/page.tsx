@@ -76,7 +76,7 @@ export default function SuccessStoriesPage() {
 
   return (
     <div className="relative  min-h-screen flex items-center justify-center spacing-secton px-2 md:px-4">
-      <div className=" w-full mx-auto mb-20">
+      <div className="w-full mx-auto mb-20">
         <div className="bg-[#023047] rounded-2xl overflow-hidden">
           {/* Slider content */}
           <div className="relative h-full">
@@ -100,9 +100,9 @@ export default function SuccessStoriesPage() {
                         </div>
                       </div>
                       
-                      <div className=" p-6 rounded-lg mb-8 ">
-                        <p className="text-white italic mb-4">"{testimonial.testimonial}"</p>
-                        <div className='flex mt-6'>
+                      <div className="p-6 rounded-lg mb-8 ">
+                        <p className="text-white italic mb-4">{testimonial.testimonial}</p>
+                        <div className="flex mt-6">
                             <Image src="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/dfff5a3f-e899-438f-a825-4ae7f519c000/w=48,q=75" alt='avatar' width={15} height={15} className='h-13 w-13 rounded-full mr-3'/>
                                 <div>
                           <p className="font-medium text-white text-xl">{testimonial.author}</p>

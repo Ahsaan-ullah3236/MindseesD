@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import Stepper from "./stepper";
 import Image from "next/image";
+
 export default function ContactPage() {
 
     const steps = [
@@ -39,24 +40,54 @@ export default function ContactPage() {
         },
       ];
     
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    phone: "",
-    email: "",
-    service: "",
-    industry: "",
-    description: "",
-    attachFile: null,
-    agreeTerms: false,
-    sendNDA: false,
-  });
-  
+      type FormDataType = {
+        firstName: string;
+        lastName: string;
+        phone: string;
+        email: string;
+        service: string;
+        industry: string;
+        description: string;
+        attachFile: File | null;
+        agreeTerms: boolean;
+        sendNDA: boolean;
+      };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      const [formData, setFormData] = useState<FormDataType>({
+        firstName: "",
+        lastName: "",
+        phone: "",
+        email: "",
+        service: "",
+        industry: "",
+        description: "",
+        attachFile: null,
+        agreeTerms: false,
+        sendNDA: false,
+      });
+  // const [formData, setFormData] = useState({
+  //   firstName: "",
+  //   lastName: "",
+  //   phone: "",
+  //   email: "",
+  //   service: "",
+  //   industry: "",
+  //   description: "",
+  //   attachFile: null,
+  //   agreeTerms: false,
+  //   sendNDA: false,
+  // });
+  
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  //   const { name, value } = e.target;
+  //   setFormData({ ...formData, [name]: value });
+  // };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files?.[0]) {
@@ -87,7 +118,7 @@ export default function ContactPage() {
     <div className="bg-white rounded-2xl shadow-lg p-3 sm:p-8 py-12 w-full block  sm:grid md:grid-cols-2 gap-8">
         <form onSubmit={handleSubmit} className="space-y-4">
           <h2 className="text-3xl font-bold">Contact Us</h2>
-          <p className="text-xs text-black mb-4">Feel free to reach out, and we'll be happy to promptly discuss your project with you.</p>
+          <p className="text-xs text-black mb-4">Feel free to reach out, and we will be happy to promptly discuss your project with you.</p>
 
           <div className="block sm:grid grid-cols-2 gap-4">
             <Input name="firstName" placeholder="First Name" value={formData.firstName} onChange={handleChange} />
@@ -136,7 +167,7 @@ export default function ContactPage() {
 
           <div className="flex items-center justify-center">
         <div className="bg-gradient-to-b from-[#036087] min-h-[450px] to-[#002D46] text-white rounded-xl p-2 sm:p-6 space-y-6 ">
-          <h3 className="text-xl font-bold text-center mt-6">What's Next?</h3>
+          <h3 className="text-xl font-bold text-center mt-6">Whats Next?</h3>
           <div className=" text-sm">
           <Stepper steps={steps}/>
           </div>
@@ -176,7 +207,7 @@ export default function ContactPage() {
 
         {/* Second column - Lahore Office */}
         <div className="lg:pl-8 pt-6 lg:pt-0">
-            <Image src="https://kavelogics.com/about/offices/lahore.svg" height={80} width={150} />
+            <Image src="https://kavelogics.com/about/offices/lahore.svg" alt="lahore-office" height={80} width={150} />
           <h2 className="text-sm font-semibold text-black-700 mt-2">Lahore Office</h2>
           <address className="text-black-600 text-xs font-semibold not-italic mb-1 mt-1">
             Kavelogies Technologies PVT LTD
@@ -190,7 +221,7 @@ export default function ContactPage() {
 
         {/* Third column - USA Office */}
         <div className="lg:pl-8 pt-6 lg:pt-0">
-            <Image src="https://kavelogics.com/about/offices/usa.svg" height={80} width={150} />
+            <Image src="https://kavelogics.com/about/offices/usa.svg" alt="USA-office" height={80} width={150} />
           <h2 className="text-sm font-semibold text-black-700 mt-2">USA Office</h2>
           <address className="text-black-600 text-xs font-semibold not-italic mb-1 mt-1">
             Kavelogies Technologies PVT LTD

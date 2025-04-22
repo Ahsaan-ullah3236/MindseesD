@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 
 import { ChevronRight } from 'lucide-react';
 // ✅ Outside the component
@@ -56,9 +57,12 @@ function Herosection() {
        
         
         <div className="flex  gap-1 pt-23">
-          <button className="bg-[#00d280] cursor-pointer hover:bg-[#433874] text-white  font-medium text-sm md:text-lg py-4 px-4 rounded-md transition-colors duration-300">
+          <Link href={"/contact-us"}>
+          <button className="bg-[#00d280] cursor-pointer  text-white  font-medium text-sm md:text-lg py-4 px-4 rounded-md transition-colors duration-300">
             Book Consultation
           </button>
+          </Link>
+
           <button className="text-[#00d280] cursor-pointer font-bold py-3 px-8 text-sm md:text-xl transition-colors duration-300 inline-flex items-center justify-center gap-1">
             See Our Work <span className="text-md"><ChevronRight className='h-6 text-[#00d280]'/></span>
           </button>

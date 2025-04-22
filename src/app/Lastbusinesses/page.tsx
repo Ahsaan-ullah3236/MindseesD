@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-
+import Link from 'next/link';
 const LastBusinessesSection = () => {
   return (
     <section className="bg-no-repeat bg-center spacing-secton mt-14 md:mt-36">
@@ -16,9 +16,12 @@ const LastBusinessesSection = () => {
           <p className="text-lg text-white">
             Elevate your business with advanced technologies, expert insights, and unmatched support for a brighter future.
           </p>
+          <Link href={"/contact-us"}>
           <button className="bg-[#00D280] text-white px-6 py-4 mt-4 text-lg rounded-lg hover:bg-[#00b96a] transition duration-300">
             Schedule free consultant
           </button>
+          </Link>
+
         </div>
 
         {/* Left Image */}
