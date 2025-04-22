@@ -6,6 +6,7 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 import clsx from 'clsx';
 
 const Navbar = () => {
+  const [mobileExpandedMenu, setMobileExpandedMenu] = useState<string | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
   const menuItem=[
@@ -24,6 +25,14 @@ const Navbar = () => {
                 "Retail",
                 "Communication"
   ]
+
+  const toggleMobileMenu = (menu: string) => {
+    if (mobileExpandedMenu === menu) {
+      setMobileExpandedMenu(null);
+    } else {
+      setMobileExpandedMenu(menu);
+    }
+  };
 
   return (
     <header className="w-full shadow-sm border-b-red-300 sticky top-0 bg-white z-50">
@@ -66,8 +75,8 @@ const Navbar = () => {
             )}
           </div>
 
-          <Link href="#" className="hover:text-[#00d280] text-sm lg:text-lg">Portfolio</Link>
-          <Link href="#" className="hover:text-[#00d280] text-sm lg:text-lg">About Us</Link>
+          <Link href="/portfolio"  className="hover:text-[#00d280] text-sm lg:text-lg">Portfolio</Link>
+          <Link href="/about" className="hover:text-[#00d280] text-sm lg:text-lg">About Us</Link>
 
           <div
             className="relative group"
@@ -98,12 +107,12 @@ const Navbar = () => {
             )}
           </div>
 
-          <Link href="#" className="hover:text-[#00d280] text-sm lg:text-lg">Careers</Link>
+          <Link  href="/careers"  className="hover:text-[#00d280] text-sm lg:text-lg" >Careers</Link>
           <Link href="#" className="hover:text-[#00d280] text-sm lg:text-lg">Blogs</Link>
         </nav>
 
         <Link
-          href="/contact us"
+          href="/contact-us"
           className="hidden md:inline-block bg-[#00d280] text-white px-3 py-2 lg:px-4 lg:py-3 rounded-md text-md font-bold "
         >
           Get Quote
@@ -119,21 +128,96 @@ const Navbar = () => {
 
      
       {mobileMenuOpen && (
-        <div className="h-[100vh] md:hidden px-4 pb-4 bg-white shadow-md">
-          <Link href="#" className="block py-2 font-semibold hover:text-[#00d280]">Services</Link>
-          <Link href="#" className="block py-2 font-semibold hover:text-[#00d280]">Portfolio</Link>
-          <Link href="#" className="block py-2 font-semibold hover:text-[#00d280]">About Us</Link>
-          <Link href="#" className="block py-2 font-semibold hover:text-[#00d280]">Industries</Link>
-          <Link href="#" className="block py-2 font-semibold hover:text-[#00d280]">Careers</Link>
-          <Link href="#" className="block py-2 font-semibold hover:text-[#00d280]">Blogs</Link>
+        <div className="h-[100vh] md:hidden px-4 pb-4 bg-white shadow-md overflow-y-auto">
+          {/* Services dropdown */}
+          <div className="py-2">
+            <button 
+              className="flex items-center justify-between w-full font-semibold hover:text-[#00d280]"
+              onClick={() => toggleMobileMenu('services')}
+            >
+              <span>Services</span>
+              <ChevronDown
+                size={16}
+                className={clsx('transition-transform', {
+                  'rotate-180': mobileExpandedMenu === 'services',
+                })}
+              />
+            </button>
+            {mobileExpandedMenu === 'services' && (
+              <div className="pl-4 mt-2 space-y-2">
+                {menuItem.map((item, i) => (
+                  <Link 
+                    key={i} 
+                    href="#" 
+                    className="block py-1 hover:text-[#00d280]"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    <div className="text-sm">
+                    {item}
+                      </div>
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <Link href="#" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
+            Portfolio
+          </Link>
+          
+          <Link href="#" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
+            About Us
+          </Link>
+
+          {/* Industries dropdown */}
+          <div className="py-2">
+            <button 
+              className="flex items-center justify-between w-full font-semibold hover:text-[#00d280]"
+              onClick={() => toggleMobileMenu('industries')}
+            >
+              <span>Industries</span>
+              <ChevronDown
+                size={16}
+                className={clsx('transition-transform', {
+                  'rotate-180': mobileExpandedMenu === 'industries',
+                })}
+              />
+            </button>
+            {mobileExpandedMenu === 'industries' && (
+              <div className="pl-4 mt-2 space-y-2">
+                {industriesItems.map((item, i) => (
+                  <Link 
+                    key={i} 
+                    href="#" 
+                    className="block py-1 hover:text-[#00d280]"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    <div className="text-sm"> {item}</div>
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <Link href="#" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
+            Careers
+          </Link>
+          
+          <Link href="#" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
+            Blogs
+          </Link>
+          
           <Link
-            href="#"
+            href="/contact us"
             className="mt-4 inline-block bg-[#00d280] text-white w-full text-center py-2 rounded-md font-bold hover:bg-green-600"
+            onClick={() => setMobileMenuOpen(false)}
           >
             Get Quote
           </Link>
         </div>
       )}
+
+      
     </header>
   );
 };
