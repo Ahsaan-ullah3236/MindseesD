@@ -17,13 +17,39 @@ const Navbar = () => {
                 "SaaS-based Website Development",
                 "SEO & Marketing"
   ]
-  const industriesItems=[
-    "Health",
-                "Business",
-                "Edtech",
-                "Fintech",
-                "Retail",
-                "Communication"
+  const industriesItems=[{
+    item:"Health",
+    link:"/industries/health"
+  },
+  {
+    item:"Edtech",
+    link:"/industries/edtech"
+  },
+  {
+    item:"Fintech",
+    link:"/industries/fintech"
+  },
+  {
+    item:"Business",
+    link:"/industries/business"
+  },
+  {
+    item:"Communication",
+    link:"/industries/communication"
+  },
+  {
+    item:"Entertainment",
+    link:"/industries/entertainment"
+  },
+  {
+    item:"E-Commerce",
+    link:"/industries/ecommerce"
+  },
+  {
+    item:"Retail",
+    link:"/industries/retail"
+  },
+                
   ]
 
   const toggleMobileMenu = (menu: string) => {
@@ -99,7 +125,7 @@ const Navbar = () => {
                               <div className="absolute top-5 left-0 bg-[#ffffff] shadow-custom p-2 rounded-lg mt-2 pt-3 w-50 z-10">
                                 {industriesItems.map((item,i)=>(
                 
-                                <Link key={i} href="#" className="block hover:bg-[#d6f1ff] pl-3 pr-3 pt-2 pb-2 rounded-lg ">{item}</Link>
+                                <Link key={i} href={item?.link} className="block hover:bg-[#d6f1ff] pl-3 pr-3 pt-2 pb-2 rounded-lg ">{item?.item}</Link>
                                 ))}
                               </div>
                 </>
@@ -188,11 +214,11 @@ const Navbar = () => {
                 {industriesItems.map((item, i) => (
                   <Link 
                     key={i} 
-                    href="#" 
+                    href={item?.link} 
                     className="block py-1 hover:text-[#00d280]"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    <div className="text-sm"> {item}</div>
+                    <div className="text-sm"> {item?.item}</div>
                   </Link>
                 ))}
               </div>

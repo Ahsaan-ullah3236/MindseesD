@@ -4,16 +4,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 const LastBusinessesSection = () => {
   return (
-    <section className="bg-no-repeat bg-center max-w-5xl mx-auto mt-14 md:mt-25">
+    <section className="bg-no-repeat bg-center spacing-secton mt-14 md:mt-25">
       {/* Centered Container */}
       <div className="w-full bg-[#002f46] rounded-tl-3xl rounded-tr-3xl p-8 md:pl-12 md:pr-12 flex flex-col md:flex-row items-center gap-8 md:gap-12 mt-16">
         
         {/* Right Content */}
         <div className="flex-1 space-y-6 text-center md:text-left">
-          <h2 className="text-xl md:text-2xl font-bold text-white">
+          <h2 className="text-xl md:text-4xl font-bold text-white">
             Ready to boost your business?
           </h2>
-          <p className="text-sm text-white">
+          <p className="text-lg text-white">
             Elevate your business with advanced technologies, expert insights, and unmatched support for a brighter future.
           </p>
           <Link href={"/contact-us"}>

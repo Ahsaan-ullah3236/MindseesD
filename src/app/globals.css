@@ -172,3 +172,23 @@
   
 }
 
+.left-scrollbarGray {
+  direction: rtl; /* Reverse the direction to move scrollbar to left */
+}
+.left-scrollbarGray > * {
+  direction: ltr; /* Reset direction for content */
+}
+.left-scrollbarGray::-webkit-scrollbar {
+  width: 10px;
+}
+.left-scrollbarGray::-webkit-scrollbar-track {
+  background: #abd9f3;
+  border-radius: 10px;
+}
+.left-scrollbarGray::-webkit-scrollbar-thumb {
+  background: #0575ad;
+  border-radius: 10px;
+}
+.left-scrollbarGray::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
