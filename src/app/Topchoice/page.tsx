@@ -1,5 +1,6 @@
 "use client";
 import React, { useRef, useEffect } from "react";
+import Link from "next/link";
 
 function Page() {
  
@@ -74,8 +75,8 @@ function Page() {
   }, []);
 
   return (
-    <div ref={sectionRef} className="spacing-secton">
-    <div className="max-w-7xl mx-auto">
+    <div ref={sectionRef} className="spacing-secton max-w-7xl mx-auto">
+    <div className="">
       <div className="lg:grid lg:grid-cols-2 lg:gap-12 mb-15">
         {/* Left Content */}
         <div className="mb-10 lg:mb-10">
@@ -84,14 +85,17 @@ function Page() {
           </h1>
           
           <p className="text-lg text-gray-600 mb-8">
-            At MindSees, our focus lies in crafting tailored software solutions that precisely match your specific requirements, supported by deep industry knowledge and a dedication to achieve the highest standards of quality.
+          At MindSees, we blend innovation, expertise, and a customer-first approach to deliver tailored software solutions that drive success. Focused on quality and results, our team is dedicated to helping your business grow through cutting-edge technology, strategic SEO, and impactful digital marketing. At MindSees, your vision becomes our mission, and we’re committed to turning your ideas into powerful digital experiences.
           </p>
           
           <div className="mt-20 text-black">
             <h2 className="text-lg font-bold mb-4 italic">Ready to Transform Your Business? Contact Us Today for a Free Consultation</h2>
-            <button className="text-[#00d280] py-2 font-bold text-lg transition duration-200">
+            <Link href="/contact-us">
+            <button className="cursor-pointer text-[#00d280] py-2 font-bold text-lg transition duration-200">
               Schedule a Meeting
             </button>
+            </Link>
+
           </div>
         </div>
 

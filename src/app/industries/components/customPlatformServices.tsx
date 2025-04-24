@@ -41,7 +41,7 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
   const rightItems = scrollItems.slice(halfLength);
 
   return (
-    <div className="min-h-screen spacing-secton">
+    <div className="min-h-screen max-w-7xl mx-auto spacing-secton">
       <div className="text-5xl font-bold text-gray-900 text-center mt-30">{title}</div>
       <div className="text-lg text-center mt-5">{subtitle}</div>
       

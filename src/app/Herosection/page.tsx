@@ -40,10 +40,11 @@ function Herosection() {
 
   return (
     <>
+    <div className="max-w-7xl mx-auto">
     <div className='spacing-secton pt-10 md:pt-18 pb-6'>
          <div className="grid grid-cols-1 md:grid-cols-3  gap-8 text-sm  ">
           <div className='col-span-2'>
-            <div className="text-4xl font-semibold mb-4 ">
+            <div className="text-4xl font-bold mb-4 ">
                 <span className="w-[100px] h-0 border-b-[45px] absolute border-b-[#d6f1ff] border-l-transparent border-r-[13px] border-r-transparent">Build</span>  
                 <span className='relative ml-24'>Your Business through </span> 
             </div>
@@ -51,7 +52,7 @@ function Herosection() {
               {displayText}
             </div>
             <p className="text-lg md:text-xl mt-2 md:mt-8 text-black">
-          Unlock your digital potential with our tailored solutions. Discover <br/>how we can elevate your online presence and drive lasting success.
+            Empower your digital journey with our custom-built software solutions. <br/>See how we can transform your online presence and fuel long-term growth for your business.
         </p>
         
        
@@ -62,10 +63,12 @@ function Herosection() {
             Book Consultation
           </button>
           </Link>
-
+           <Link href="/portfolio">
           <button className="text-[#00d280] cursor-pointer font-bold py-3 px-8 text-sm md:text-xl transition-colors duration-300 inline-flex items-center justify-center gap-1">
             See Our Work <span className="text-md"><ChevronRight className='h-6 text-[#00d280]'/></span>
           </button>
+          </Link>
+
         </div>
           
             
@@ -88,9 +91,10 @@ function Herosection() {
          </div>
 
     </div>
+    </div>
  
 
-      {/* Marquee Section */}
+
       <div className="w-full mt-12 py-8 bg-[#002f46] overflow-hidden spacing-secton">
         <div className="marquee flex items-center whitespace-nowrap animate-marquee">
           {["payme", "smplcards", "appreciate", "opstion"].map((logo, index) => (
@@ -116,6 +120,7 @@ function Herosection() {
         </div>
       </div>
     </>
+
   );
 }
 

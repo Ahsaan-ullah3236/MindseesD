@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 const LastBusinessesSection = () => {
   return (
-    <section className="bg-no-repeat bg-center spacing-secton mt-14 md:mt-25">
+    <section className="bg-no-repeat bg-center spacing-secton max-w-7xl mx-auto mt-14 md:mt-25">
       {/* Centered Container */}
       <div className="w-full bg-[#002f46] rounded-tl-3xl rounded-tr-3xl p-8 md:pl-12 md:pr-12 flex flex-col md:flex-row items-center gap-8 md:gap-12 mt-16">
         
@@ -17,7 +17,7 @@ const LastBusinessesSection = () => {
             Elevate your business with advanced technologies, expert insights, and unmatched support for a brighter future.
           </p>
           <Link href={"/contact-us"}>
-          <button className="bg-[#00D280] text-white px-6 py-4 mt-4 text-lg rounded-lg hover:bg-[#00b96a] transition duration-300">
+          <button className="bg-[#00D280] cursor-pointer text-white px-6 py-4 mt-4 text-lg rounded-lg hover:bg-[#00b96a] transition duration-300">
             Schedule free consultant
           </button>
           </Link>

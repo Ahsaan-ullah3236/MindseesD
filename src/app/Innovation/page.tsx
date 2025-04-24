@@ -77,7 +77,7 @@ export default function Innovation() {
             Technologies We Use for Innovation
             </div>
             <p className='text-center mt-7 mb-22 text-xl '>
-            The following are the most recent tools we evaluate while creating the best IT solutions for you!
+            Here are the latest tools we assess to craft the most effective IT solutions for you!
 
             </p>
 
@@ -90,7 +90,7 @@ export default function Innovation() {
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className={`px-4 lg:px-21 py-2 rounded-full text-sm md:text-lg font-medium transition-all duration-300 ${
+                  className={`px-4 lg:px-21 py-2 cursor-pointer rounded-full text-sm md:text-lg font-medium transition-all duration-300 ${
                     activeTab === tab
                       ? "bg-[#00d280] text-white"
                       : "text-black"

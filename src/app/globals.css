@@ -192,3 +192,43 @@
 .left-scrollbarGray::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+.circleOne{
+  position: absolute;
+  left: 30vw;
+}
+.circleTwo{
+  position: absolute;
+  left: 44vw;
+}
+.circleThree{
+  position: absolute;
+  left: 58vw;
+}
+.circleFour{
+  position: absolute;
+  left: 37.3vw;
+  top: 49.5%;
+}
+.circleFive{
+  position: absolute;
+  left: 51.7vw;
+  top: 50%;
+}
+.lineOne{
+  left: 38.2vw;
+}
+.lineTwo{
+  left: 44.5vw;
+
+}
+.lineThree{
+  left: 52.3vw;
+
+}
+.lineFour{
+  left:59vw;
+
+}
+/* ////////////////// */
+
+

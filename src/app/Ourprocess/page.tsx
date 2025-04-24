@@ -5,31 +5,41 @@ import Link from "next/link";
 interface AccordionItem {
   title: string;
   content: string;
+  description1:string,
+      description2:string,
+      description3:string,
+      description4:string,
 }
 
 
 
 export default function Ourprocess() {
-  // const [openStage, setOpenStage] = useState<number | null>(null);
-
-  // const toggleStage = (id: number) => {
-  //   setOpenStage(openStage === id ? null : id);
-  // };
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  // const [isZoomed, setIsZoomed] = useState<boolean>(false);
-
+console.log("activeIndex",activeIndex)
   const accordionItems: AccordionItem[] = [
     {
       title: '1. Discovery Stage',
-      content: 'We begin with comprehensive research and analysis to understand your business needs and objectives, laying the foundation for a tailored solution.'
+      content: 'We start with in-depth research and analysis to gain a clear understanding of your business goals, ensuring we create a customized solution that meets your unique needs.',
+      description1:"Project Understanding",
+      description2:"PRDs and Wireframes Creation",
+      description3:"Development Planning & Estimation",
+      description4:"Research & Development",
     },
     {
       title: '2. Development Stage',
-      content: 'Our expert team transforms ideas into reality through agile development practices, ensuring high-quality, scalable, and maintainable code.'
+      content: 'Our expert team brings ideas to life through agile development practices, delivering high-quality, scalable, and maintainable code.',
+      description1:"Mobile Development",
+      description2:"Web Development",
+      description3:"Backend Development",
+      description4:"QA",
     },
     {
       title: '3. Continuous Support & Development',
-      content: 'We provide ongoing maintenance, updates, and enhancements to keep your solution performing optimally as your business evolves.'
+      content: 'We offer continuous maintenance, updates, and enhancements to ensure your solution remains optimized as your business grows and evolves.',
+      description1:"Launch",
+      description2:"Support",
+      description3:"Ongoing Development",
+      description4:"",
     }
   ];
 
@@ -44,7 +54,7 @@ export default function Ourprocess() {
   };
 
   return (
-    <section className="OurProcess-main-container  ">
+    <div className="OurProcess-main-container max-w-7xl mx-auto spacing-secton ">
       <div className="OurProcess-second-container grid grid-cols-1 md:grid-cols-3">
         
        
@@ -93,14 +103,48 @@ export default function Ourprocess() {
             <div
               id={`accordion-content-${index}`}
               className={`transition-all duration-500  ease-in-out overflow-hidden ${
-                activeIndex === index ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+                activeIndex === index ? 'max-h-150 md:max-h-100 opacity-100' : 'max-h-0 opacity-0'
+                
               }`}
               style={{
                 transitionProperty: 'max-height, opacity',
               }}
             >
               <div className="px-6 bg-white pb-4 pt-2">
-                <p className="text-black">{item.content}</p>
+               
+                {activeIndex===0 && <div>
+                  <p className="text-black">{item.content}</p>
+                  <div className="bg-[#d6f1ff] py-3 px-2 mt-5 rounded-lg w-[90%] text-black">{item?.description1}</div>
+              <div className="bg-[#d6f1ff] py-3 px-2 mt-2 rounded-lg w-[90%] text-black">{item?.description2}</div>
+              <div className="bg-[#d6f1ff] py-3 px-2 mt-2 rounded-lg w-[90%] text-black">{item?.description3}</div>
+              <div className="bg-[#d6f1ff] py-3 px-2 mt-2 rounded-lg w-[90%] text-black">{item?.description4}</div>
+               </div>}
+                {activeIndex===1 && <div>
+                  <p className="text-black">{item.content}</p>
+                  <div className="md:flex"> 
+                    <div className="md:h-54 mt-5 w-full md:w-28 bg-[#d6f1ff] rounded-lg py-3 px-2 md:flex items-center justify-center text-black mr-4">Design</div>
+                    <div>
+                    <div className="bg-[#d6f1ff] py-3 px-2 mt-2 md:mt-5 rounded-lg w-full text-black">{item?.description1}</div>
+              <div className="bg-[#d6f1ff] py-3 px-2 mt-2 rounded-lg w-full text-black">{item?.description2}</div>
+              <div className="bg-[#d6f1ff] py-3 px-2 mt-2 rounded-lg w-full text-black">{item?.description3}</div>
+              <div className="bg-[#d6f1ff] py-3 px-2 mt-2 rounded-lg w-full text-black">{item?.description4}</div>
+               
+                    </div>
+                    </div>
+                  </div>}
+                {activeIndex===2 && <div>
+                  <p className="text-black">{item.content}</p>
+                  <div className="md:flex"> 
+                    <div className="md:h-54 mt-5 w-full md:w-28 bg-[#d6f1ff] rounded-lg py-3 px-2 md:flex items-center justify-center text-black text-center mr-4">{item?.description1}</div>
+                    <div className="md:h-54 mt-5 w-full md:w-28 bg-[#d6f1ff] rounded-lg py-3 px-2 md:flex items-center justify-center text-black text-center mr-4">{item?.description2}</div>
+                    <div className="md:h-54 mt-5 w-full md:w-28 bg-[#d6f1ff] rounded-lg py-3 px-2 md:flex items-center justify-center text-black text-center mr-4">{item?.description3}</div>
+                    <div>
+                   
+               
+                    </div>
+                    </div>
+                  </div>}
+
               </div>
             </div>
           </div>
@@ -116,6 +160,6 @@ export default function Ourprocess() {
           
         </div>
       </div>
-    </section>
+    </div>
   );
 }

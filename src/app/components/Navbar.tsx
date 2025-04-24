@@ -9,14 +9,36 @@ const Navbar = () => {
   const [mobileExpandedMenu, setMobileExpandedMenu] = useState<string | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
-  const menuItem=[
-    "AI Development",
-                "UI/UX Development",
-                "Mobile Development",
-                "App Development",
-                "SaaS-based Website Development",
-                "SEO & Marketing"
+  const menuItem=[{
+    item:"AI Development",
+    link:"/services/ai"
+  },
+  {
+    item:"UI/UX Development",
+    link:"/services/uiux"
+  },
+  {
+    item:"Mobile App Development",
+    link:"/services/mobile"
+  },
+  {
+    item:"Website Development",
+    link:"/services/website"
+  },
+  {
+    item:"SaaS-based Website Development",
+    link:"/services/saas"
+  },
+  {
+    item:"SEO & Marketing",
+    link:"/services/seo"
+  },
+  {
+    item:"Graphic Designing",
+    link:"/services/graphic"
+  },             
   ]
+  
   const industriesItems=[{
     item:"Health",
     link:"/industries/health"
@@ -62,7 +84,7 @@ const Navbar = () => {
 
   return (
     <header className="w-full shadow-sm border-b-red-300 sticky top-0 bg-white z-50">
-      <div className="flex items-center justify-between max-w-7xl mx-auto spacing-secton py-4">
+      <div className="flex items-center justify-between max-w-7xl mx-auto spacing-secton py-5">
         <div className="text-xl lg:text-2xl font-bold text-black">
           <Link href={"/"}>
           <span className="font-mono" >MindSees</span>
@@ -89,10 +111,10 @@ const Navbar = () => {
               <>
               
               {/* <div className="w-0 h-0 border-l-[30px] border-r-[30px] border-b-[25px] border-transparent border-b-gray-500 absolute top-full left-0 shadow-2xl"></div> */}
-                            <div className="absolute top-5 left-0 bg-[#ffffff] shadow-custom p-2 rounded-lg mt-2 pt-3 w-75 z-10">
+                            <div className="absolute top-5 left-0 bg-[#ffffff] shadow-custom p-2 rounded-lg mt-2 pt-3 w-67 z-10">
                               {menuItem.map((item,i)=>(
               
-                              <Link key={i} href="#" className="block hover:bg-[#d6f1ff] pl-3 pr-3 pt-2 pb-2 rounded-lg ">{item}</Link>
+                              <Link key={i} href={item?.link} className="block hover:bg-[#d6f1ff] pl-3 pr-3 pt-2 pb-2 rounded-lg text-sm ">{item?.item}</Link>
                               ))}
                             </div>
               </>
@@ -121,11 +143,10 @@ const Navbar = () => {
             {hoveredMenu === 'industries' && (
                 <>
               
-                {/* <div className="w-0 h-0 border-l-[30px] border-r-[30px] border-b-[25px] border-transparent border-b-gray-500 absolute top-full left-0 shadow-2xl"></div> */}
                               <div className="absolute top-5 left-0 bg-[#ffffff] shadow-custom p-2 rounded-lg mt-2 pt-3 w-50 z-10">
                                 {industriesItems.map((item,i)=>(
                 
-                                <Link key={i} href={item?.link} className="block hover:bg-[#d6f1ff] pl-3 pr-3 pt-2 pb-2 rounded-lg ">{item?.item}</Link>
+                                <Link key={i} href={item?.link} className="block hover:bg-[#d6f1ff] pl-3 pr-3 pt-2 pb-2 rounded-lg text-sm ">{item?.item}</Link>
                                 ))}
                               </div>
                 </>
@@ -139,7 +160,7 @@ const Navbar = () => {
 
         <Link
           href="/contact-us"
-          className="hidden md:inline-block bg-[#00d280] text-white px-3 py-2 lg:px-4 lg:py-3 rounded-md text-md font-bold "
+          className="hidden md:inline-block bg-[#00d280] text-white px-3 py-2 lg:px-5 lg:py-4 rounded-md text-md font-bold "
         >
           Get Quote
         </Link>
@@ -174,12 +195,12 @@ const Navbar = () => {
                 {menuItem.map((item, i) => (
                   <Link 
                     key={i} 
-                    href="#" 
+                    href={item?.link}
                     className="block py-1 hover:text-[#00d280]"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     <div className="text-sm">
-                    {item}
+                    {item?.item}
                       </div>
                   </Link>
                 ))}

@@ -19,12 +19,12 @@ const AboutPage = () => {
   
 
     return (
-        <>
-            {/* About Hero Section */}
+        <div >
             <div className="bg-[#002f46] py-16">
-                <div className="spacing-secton flex flex-col md:flex-row items-center justify-between gap-12 px-4">
+                <div className='max-w-7xl mx-auto'>
+                <div className="spacing-secton  flex flex-col md:flex-row items-center justify-between gap-12 px-4">
                     {/* Left Text */}
-                    <div className='grid grid-cols-1 md:grid-cols-3  '>
+                    <div className='grid grid-cols-1 md:grid-cols-3   '>
                         <div className='col-span-2'>
                         <div className="text-white text-center md:text-left">
                         <h1 className="text-4xl  font-bold mb-6">About Us</h1>
@@ -56,13 +56,13 @@ const AboutPage = () => {
                     
 
                 </div>
+                </div>
             </div>
 
 
 
-            {/* second  */}
-            {/* Awards & Who We Are Section */}
-            <div className="py-30 ">
+            
+            <div className="py-30 max-w-7xl mx-auto ">
                 <div className="spacing-secton flex flex-col md:flex-row items-center justify-between gap-12 px-4">
                     {/* Right Logos */}
                     <div className="lg:w-1/2 w-full bg-[#d6f1ff] rounded-lg px-6 py-12 min-h-[290px] flex items-center">
@@ -98,9 +98,6 @@ const AboutPage = () => {
                 </div>
             </div>
 
-
-
-            {/* third */}
             <div className="bg-[#023047] max-w-3xl mx-auto flex w-full rounded-2xl shadow-xl">
                 <div className=" flex flex-col md:flex-row items-center gap-12 ">
                     {/* Left Text Content */}
@@ -123,7 +120,6 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            {/* fourth page div / */}
             <div className="main-container max-w-4xl mx-auto flex justify-center items-center text-center py-12 px-4">
                 <div className="inner-container">
                     <h1 className="text-4xl text-[#023047] font-semibold m-12">Our Values</h1>
@@ -175,7 +171,9 @@ const AboutPage = () => {
 
 
             {/* fifth page div / */}
-            <div className="bg-[#002f46] py-28 mt-16 spacing-secton">
+            <div className=''>
+
+            <div className="bg-[#002f46]  py-28 mt-16 spacing-secton">
                 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm ">
                     <div className='col-span-2 flex items-center justify-center'>
@@ -208,6 +206,7 @@ const AboutPage = () => {
                    
                 
             </div>
+            </div>
 
 
 
@@ -216,7 +215,7 @@ const AboutPage = () => {
             <GlobalPressance/>
             <Lastbusinesses/>
             
-        </>
+        </div>
     );
 };
 

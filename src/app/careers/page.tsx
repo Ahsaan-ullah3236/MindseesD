@@ -80,8 +80,8 @@ const perkData=[
 ]
 
     return (
-        <>
-            <div className="bg-[#002f46] py-16 spacing-secton">
+        <div className=''>
+            <div className="bg-[#002f46] max-w-6xl mx-auto py-16 spacing-secton">
             <div className='grid grid-cols-1 md:grid-cols-3  '>
             <div className='col-span-2'>
             <div className="text-white  text-center md:text-left">
@@ -110,7 +110,7 @@ const perkData=[
               
             </div>
 
-            <div className=" mt-12 spacing-secton">
+            <div className="max-w-7xl mx-auto mt-12 spacing-secton">
             <div className='grid grid-cols-1 md:grid-cols-3  mt-40 mb-10'>
             <div className='col-span-2'>
             <div className=" text-center md:text-left">
@@ -136,7 +136,7 @@ const perkData=[
 
             <div
                
-                className="relative bg-linear-to-r/srgb from-[#033f5d] to-[#056ea3] mt-22 py-24 "
+                className="relative max-w-6xl mx-auto bg-linear-to-r/srgb from-[#033f5d] to-[#056ea3] mt-22 py-24 "
             >
                 <Recruitment/>
                 
@@ -168,7 +168,7 @@ const perkData=[
                     </button>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

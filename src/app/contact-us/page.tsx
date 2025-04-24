@@ -124,15 +124,15 @@ export default function ContactPage() {
   };
 
   return (
-    <>
-    <div className="h-[400px] bg-[#023047]  px-4 py-12 spacing-secton">
-        <div className="text-4xl font-bold text-center mt-8 mb-20">
+    <div >
+    <div className="h-[400px] bg-[#023047] px-4 py-12 spacing-secton">
+        <div className="text-4xl font-bold text-center mt-8 mb-20 ">
             <span className="text-white">Schedule A </span>
             <span className="text-[#00d280]">Free Consultation</span>
         </div>
       
     </div>
-    <div className="spacing-secton -mt-50">
+    <div className="spacing-secton max-w-7xl mx-auto -mt-50">
 
     <div className="bg-white rounded-2xl shadow-lg p-3 sm:p-8 py-12 w-full block  sm:grid md:grid-cols-2 gap-8">
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -210,10 +210,11 @@ export default function ContactPage() {
         </div>
       </div>
     </div>
+
 <GlobalPressance/>
 
    
-    </>
+    </div>
 
   );
 }

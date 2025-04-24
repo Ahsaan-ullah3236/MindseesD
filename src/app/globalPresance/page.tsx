@@ -5,7 +5,7 @@ import { Linkedin,Facebook,Instagram,X ,Youtube  } from 'lucide-react';
 
 const GlobalPressance=()=>{
     return(
-        <div className="spacing-secton p-6 mt-16 pb-20">
+        <div className="spacing-secton max-w-7xl mx-auto p-6 mt-16 pb-20">
         <div className="pt-8 pb-16">
                 <h1 className="text-4xl font-bold text-gray-800 text-center mb-3">Our Global Presence</h1>
                 <p className="text-black-200 text-center">
@@ -23,11 +23,11 @@ const GlobalPressance=()=>{
                 </a>
                 <h2 className="font-semibold text-black-700 mb-4 mt-5" style={{fontSize:"13px"}}>Stay Connected!</h2>
                 <div className="flex space-x-5 -mt-1">
-                  <span className="text-black-500 cursor-pointer h-4 w-4"><Linkedin/></span>
-                  <span className="text-black-500 cursor-pointer h-4 w-4"><Youtube /></span>
-                  <span className="text-black-500 cursor-pointer h-4 w-4"><Facebook/></span>
-                  <span className="text-black-500 cursor-pointer h-4 w-4"><Instagram /></span>
-                  <span className="text-black-500 cursor-pointer "><X className="w-6 " /></span>
+                  <span className="text-black-500 h-4 w-4"><Linkedin/></span>
+                  <span className="text-black-500 h-4 w-4"><Youtube /></span>
+                  <span className="text-black-500 h-4 w-4"><Facebook/></span>
+                  <span className="text-black-500 h-4 w-4"><Instagram /></span>
+                  <span className="text-black-500 "><X className="w-6 " /></span>
                 </div>
               </div>
     

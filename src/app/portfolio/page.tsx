@@ -39,7 +39,7 @@ function page() {
        
          <>
             <div className="pherosection-main-container spacing-secton">
-                <div className="pherosection-second-container cursor-pointer">
+                <div className="pherosection-second-container ">
                     <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mb-6 mt-10">Case Studies</h1>
                     <p className="text-sm text-gray-900 mb-10 max-w-3xl">
                         Explore the comprehensive and insightful case studies of our remarkably successful projects.
