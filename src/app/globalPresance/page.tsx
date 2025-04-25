@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import Image from "next/image";
-import { Linkedin,Facebook,Instagram,X ,Youtube  } from 'lucide-react';
+import { Linkedin,Facebook,Instagram,X ,Youtube ,MapPin } from 'lucide-react';
 import LahoreOffice from "@/app/globalPresance/image/LahoreOffice.svg"
 import USAOffice from "@/app/globalPresance/image/USAOffice.svg"
 
@@ -45,9 +45,9 @@ const GlobalPressance=()=>{
               </address>
                 <a href="https://www.google.com/maps/place/MindSees/@31.4642669,74.2988289,17z/data=!3m1!4b1!4m6!3m5!1s0x8562bef8b6b348af:0x2228a06e52354095!8m2!3d31.4642624!4d74.3014038!16s%2Fg%2F11mcwzy2ny?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D" target="_blank"
             rel="noopener noreferrer">
-              <div  className="text-black-600 mt-1" style={{fontSize:"11px"}}>
+              <div  className="text-black-600 mt-1 flex" style={{fontSize:"11px"}}>
     
-              📍 30-B, Malik Tufail Rd, Block B1 Block A 1 Phase 1 Johar Town, Lahore, 54770, Pakistan
+              <span className="mr-1"><MapPin className="h-6 mt-1 w-6 "/></span> 30-B, Malik Tufail Rd, Block B1 Block A 1 Phase 1 Johar Town, Lahore, 54770, Pakistan
               </div>
     
     
@@ -63,9 +63,9 @@ const GlobalPressance=()=>{
               </address>
               <a href="https://www.google.com/maps/place/MindSees/@31.4642669,74.2988289,17z/data=!3m1!4b1!4m6!3m5!1s0x8562bef8b6b348af:0x2228a06e52354095!8m2!3d31.4642624!4d74.3014038!16s%2Fg%2F11mcwzy2ny?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D" target="_blank"
             rel="noopener noreferrer">
-              <div  className="text-black-600 mt-1" style={{fontSize:"11px"}}>
+              <div  className="text-black-600 mt-1 flex" style={{fontSize:"11px"}}>
     
-              📍 30-B, Malik Tufail Rd, Block B1 Block A 1 Phase 1 Johar Town, Lahore, 54770, Pakistan
+              <span className="mr-1"><MapPin className="h-6 mt-1 w-6"/></span>  30-B, Malik Tufail Rd, Block B1 Block A 1 Phase 1 Johar Town, Lahore, 54770, Pakistan
               </div>
     
     

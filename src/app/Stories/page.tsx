@@ -4,6 +4,7 @@ import React,{ useState } from 'react';
 import Image from 'next/image';
 import { StaticImageData } from 'next/image';
 import projectimage from "@/app/Stories/image/image.svg"
+import personImage from "@/app/Stories/image/person.jpeg"
 
 type Testimonial = {
   id: number;
@@ -25,7 +26,7 @@ export default function SuccessStoriesPage() {
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      name:"Ali",
+      name:"Edtech",
       title: 'Wellness is a website which is empowering individuals to lead healthier lives through comprehensive, compassionate and innovative healthcare services.',
       services: ['Website Design', 'Website Development', 'QA'],
       testimonial: 'MindSees transformed our wellness platform with expert design and innovative healthcare services, earning excellent feedback. Highly recommended for high quality design and development services.',
@@ -39,7 +40,7 @@ export default function SuccessStoriesPage() {
     },
     {
       id: 2,
-      name:"Ali",
+      name:"Entertainment",
       title: 'Second testimonial content would go here with different text.',
       services: ['UI/UX Design', 'Mobile Development', 'Testing'],
       testimonial: 'Another great testimonial about the services provided with different feedback from a client.',
@@ -52,7 +53,7 @@ export default function SuccessStoriesPage() {
     },
     {
         id: 3,
-        name:"Ali",
+        name:"Business",
         title: 'Third testimonial example with unique content for the slider.',
         services: ['Consulting', 'Strategy', 'Implementation'],
         testimonial: 'Final example testimonial showing how versatile this slider component can be with different content.',
@@ -109,7 +110,7 @@ export default function SuccessStoriesPage() {
                       <div className="p-6 rounded-lg mb-8 ">
                         <p className="text-white italic mb-4">{testimonial.testimonial}</p>
                         <div className="flex mt-6">
-                            <Image src="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/dfff5a3f-e899-438f-a825-4ae7f519c000/w=48,q=75" alt='avatar' width={15} height={15} className='h-13 w-13 rounded-full mr-3'/>
+                            <Image src={personImage} alt='avatar' width={15} height={15} className='h-13 w-13 object-cover rounded-full mr-3'/>
                                 <div>
                           <p className="font-medium text-white text-xl">{testimonial.author}</p>
                           <p className="text-white font-small">{testimonial.role}</p>
