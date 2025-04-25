@@ -73,20 +73,20 @@ function Recruitment() {
   return (
     <div ref={sectionRef} className="spacing-secton">
     <div className="max-w-5xl mx-auto">
-      <div className="md:grid grid-cols-2 lg:gap-12 ">
+      <div className="md:grid grid-cols-2 lg:gap-14 ">
         <div className="flex justify-center items-center">
 
         <div className="">
-          <h1 className="text-xl md:text-2xl font-bold text-white mb-6">
+          <h1 className="text-xl md:text-3xl font-bold text-white mb-6">
           Our Recruitment Process
           </h1>
           
-          <p className="text-md text-white mb-8">
+          <p className="text-lg text-white mb-8">
           At MindSees, our recruitment process is transparent and inclusive. We assess qualifications and cultural fit through initial screenings and interviews with key team members. We value open communication and provide timely feedback to ensure a positive experience. Join us in our commitment to innovation and excellence.
           </p>
           
           <div className="mt-9 text-black">
-            <button className="text-[#00d280] py-2 mb-4 font-semibold text-md transition duration-200">
+            <button className="text-[#00d280] py-2 mb-4 font-semibold text-lg transition duration-200">
               See Job Opportunities
             </button>
           </div>
@@ -102,10 +102,10 @@ function Recruitment() {
             {scrollItems.map((item, index) => (
               <div 
                 key={index}
-                className="bg-[#ffffff] p-5 rounded-xl "
+                className="bg-[#ffffff] p-8 rounded-xl ml-7 "
               >
-                <h3 className="text-xl font-semibold text-[#00d280] mb-3">{item.title}</h3>
-                <p className="text-black text-sm text-[#023047]">{item.content}</p>
+                <h3 className="text-[22px] font-semibold text-[#00d280] mb-3">{item.title}</h3>
+                <p className="text-black text-md text-[#023047]">{item.content}</p>
               </div>
             ))}
           </div>
@@ -121,7 +121,7 @@ function Recruitment() {
         direction: ltr; /* Reset direction for content */
       }
       .left-scrollbar::-webkit-scrollbar {
-        width: 6px;
+        width: 10px;
       }
       .left-scrollbar::-webkit-scrollbar-track {
         background:rgb(117, 115, 115);

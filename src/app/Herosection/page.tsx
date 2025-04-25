@@ -121,28 +121,7 @@ function Herosection() {
         />
       ))}
     </div>
-        {/* <div className="marquee flex items-center whitespace-nowrap animate-marquee">
-          {marqueeLogo?.map((logo, index) => (
-            <Image
-              key={index}
-              src={logo?.icon}
-              alt={`Logo ${index + 1}`}
-              width={100}
-              height={100}
-              className="w-24 sm:w-28 mx-8 sm:mx-16"
-            />
-          ))}
-          {marqueeLogo?.map((logo, index) => (
-            <Image
-              key={`repeat-${index}`}
-              src={logo?.icon}
-              alt={`Logo ${index + 1}`}
-              width={100}
-              height={100}
-              className="w-24 sm:w-28 mx-8 sm:mx-16"
-            />
-          ))}
-        </div> */}
+       
       </div>
     </>
 

@@ -44,7 +44,7 @@ const Stepper: React.FC<StepperProps> = ({ steps }) => {
             
             {/* Step content */}
             <div className={`  ${index === steps.length - 1 ? 'pb-0' : ''}`}>
-              <h3 className={`text-sm font-semibold text-white`}>
+              <h3 className={`text-[17px] font-normal text-white`}>
                 {step.title}
               </h3>
              
