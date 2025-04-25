@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import classNames from "classnames";
-import Link from "next/link";
+// import Link from "next/link";
 import aiImage from "@/app/Ourservices/image/AIDevelopment.jpg"
 import GraphicDesigning from "@/app/Ourservices/image/GraphicDesigning.jpg"
 import uiux from "@/app/Ourservices/image/uiux.jpg"
@@ -121,11 +121,11 @@ export default function Ourservices() {
         <div className="relative z-10 p-6 md:p-10 h-full flex flex-col justify-center">
           <h2 className="text-lg md:text-3xl font-bold mb-4">{activeService.title}</h2>
           <p className="text-sm md:text-lg">{activeService.description}</p>
-          <Link href={activeService.link}>
-          <button  className="mt-6 px-4 py-4 font-bold cursor-pointer  text-white bg-[#00d280] rounded-lg w-fit">
+          {/* <Link href={activeService.link}> */}
+          <button  className="mt-6 px-4 py-4 font-bold   text-white bg-[#00d280] rounded-lg w-fit">
             Learn More
           </button>
-          </Link>
+          {/* </Link> */}
 
         </div>
       </div>

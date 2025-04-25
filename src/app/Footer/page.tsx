@@ -18,10 +18,19 @@ export default function Footer() {
       <div className="grid xs:grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8 text-sm">
         <div className='col-span-2'>
           <h2 className="text-3xl font-semibold mb-4">MindSees</h2>
-          <p className="flex items-start gap-2 mb-2 text-lg">
-            <FaMapMarkerAlt className="mt-1 " />
-            30-B Malik Tufail Rd, Block B1 Block A 1 Phase 1 Johar Town, Lahore, 54770
-          </p>
+          {/* <p className="flex items-start gap-2 mb-2 text-lg">
+            <FaMapMarkerAlt className="mt-1 " /> */}
+            <a href="https://www.google.com/maps/place/MindSees/@31.4642669,74.2988289,17z/data=!3m1!4b1!4m6!3m5!1s0x8562bef8b6b348af:0x2228a06e52354095!8m2!3d31.4642624!4d74.3014038!16s%2Fg%2F11mcwzy2ny?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D" target="_blank"
+            rel="noopener noreferrer">
+              <div  className="text-[17px] mt-1 flex" >
+    
+              <span className="mr-1"><FaMapMarkerAlt className="h-6 mt-1 w-6 "/></span> 30-B, Malik Tufail Rd, Block B1 Block A 1 Phase 1 Johar Town, Lahore, 54770, Pakistan
+              </div>
+    
+    
+                </a>
+            {/* 30-B Malik Tufail Rd, Block B1 Block A 1 Phase 1 Johar Town, Lahore, 54770
+          </p> */}
           <p className="flex items-center gap-2 mb-2 text-lg mt-4">
             <FaPhone /> +92 3047755843
           </p>
