@@ -207,11 +207,11 @@ const Navbar = () => {
             )}
           </div>
 
-          <Link href="#" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
+          <Link href="/portfolio" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
             Portfolio
           </Link>
           
-          <Link href="#" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
+          <Link href="/about" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
             About Us
           </Link>
 
@@ -245,7 +245,7 @@ const Navbar = () => {
             )}
           </div>
 
-          <Link href="#" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
+          <Link href="/careers" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
             Careers
           </Link>
           

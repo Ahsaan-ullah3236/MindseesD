@@ -127,7 +127,7 @@ export default function ContactPage() {
   return (
     <div >
     <div className="h-[400px] bg-[#023047] px-4 py-12 spacing-secton">
-        <div className="text-5xl font-bold text-center mt-8 mb-20 ">
+        <div className="text-2xl md:text-5xl font-bold text-center mt-8 mb-20 ">
             <span className="text-white">Schedule A </span>
             <span className="text-[#00d280]">Free Consultation</span>
         </div>
@@ -135,9 +135,9 @@ export default function ContactPage() {
     </div>
     <div className="spacing-secton max-w-7xl mx-auto -mt-50">
 
-    <div className="bg-white rounded-2xl shadow-lg p-3 sm:p-8 py-12 w-full block  sm:grid md:grid-cols-2 gap-8">
+    <div className="bg-white rounded-2xl shadow-lg p-3 sm:p-8 py-12 w-full flex flex-col-reverse  sm:grid md:grid-cols-2 gap-8">
         <form onSubmit={handleSubmit} className="space-y-4">
-          <h2 className="text-5xl font-bold">Contact Us</h2>
+          <h2 className="text-2xl md:text-5xl font-bold">Contact Us</h2>
           <p className="text-md text-black mb-4">Feel free to reach out, and we will be happy to promptly discuss your project with you.</p>
 
           <div className="block sm:grid grid-cols-2 gap-4">
@@ -202,7 +202,7 @@ export default function ContactPage() {
 
           <div className="flex items-center justify-center">
         <div className="bg-gradient-to-b from-[#036087] min-h-[450px] to-[#002D46] text-white rounded-xl p-2 sm:p-6 space-y-6 ">
-          <h3 className="text-3xl font-bold text-center mt-6">Whats Next?</h3>
+          <h3 className="text-xl md:text-3xl font-bold text-center mt-6">Whats Next?</h3>
           <div className=" text-sm">
           <Stepper steps={steps}/>
           </div>
