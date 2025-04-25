@@ -1,15 +1,21 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
+import brandimage1 from "@/app/Award/image/ brand img 6 (1).svg"
+import brandimage2 from "@/app/Award/image/ brand img 6 (2).svg"
+import brandimage3 from "@/app/Award/image/ brand img 6 (3).svg"
+import brandimage4 from "@/app/Award/image/ brand img 6 (4).svg"
+import brandimage5 from "@/app/Award/image/ brand img 6 (5).svg"
+import brandimage6 from "@/app/Award/image/ brand img 6 (6).svg"
 
 const AwardsSection = () => {
   const images = [
-    'brands1.f2880f28.png',
-    'brand2.70e70a6c.png',
-    'brand6.0207e26d.png',
-    'brand4.491c26a3.png',
-    'brand7.18f88ef7.png',
-    'brand5.0149455e.png',
+   {Image:brandimage1},
+   {Image:brandimage2},
+   {Image:brandimage3},
+   {Image:brandimage4},
+   {Image:brandimage5},
+   {Image:brandimage6},
   ];
 
   return (
@@ -23,14 +29,14 @@ const AwardsSection = () => {
         </h2>
 
         <div className="flex flex-wrap justify-around items-center gap-6 spacing-secton">
-          {images.map((img, idx) => (
+          {images.map((item, idx) => (
             <div key={idx} className="w-1/4 sm:w-1/6 md:w-1/6 lg:w-1/8 xl:w-1/12 transition-transform duration-300 hover:scale-105">
               <Image
-                src={`https://kavelogics.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F${img}&w=640&q=75`}
+                src={item?.Image}
                 alt={`Award ${idx + 1}`}
                 width={180} 
                 height={120} 
-                className="w-full h-auto"
+                className="w-20 h-20"
                 unoptimized 
               />
             </div>

@@ -1,14 +1,21 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import classNames from "classnames";
 import Link from "next/link";
+import aiImage from "@/app/Ourservices/image/AIDevelopment.jpg"
+import GraphicDesigning from "@/app/Ourservices/image/GraphicDesigning.jpg"
+import uiux from "@/app/Ourservices/image/uiux.jpg"
+import WebsiteDevelopment from "@/app/Ourservices/image/WebsiteDevelopment.jpg"
+import SEO from "@/app/Ourservices/image/SEO.jpg"
+import SaaS from "@/app/Ourservices/image/SaaS.jpg"
+import mobile from "@/app/Ourservices/image/mobile.jpg"
 
 type Service = {
   title: string;
   description: string;
-  image: string;
+  image: string | StaticImageData;
   link:string;
 };
 
@@ -17,43 +24,43 @@ const services: Service[] = [
     title: "AI Development",
     description:
       "At our agency, we specialize in cutting-edge AI development that transforms the way businesses operate. From intelligent automation to data-driven insights, our solutions are designed to boost efficiency and decision-making. Partner with us to harness the true power of artificial intelligence.",
-    image: "https://img.freepik.com/free-photo/html-css-collage-concept_23-2150061955.jpg",
+    image: aiImage,
     link:"/services/ai",
   },
   {
     title: "Mobile App Development",
     description: "We craft high-performance mobile applications tailored to your business goals. Whether it’s iOS, Android, or cross-platform, our apps combine sleek design with powerful functionality. From concept to launch, we ensure a seamless user experience that drives engagement and growth.",
-    image: "https://img.freepik.com/free-photo/logo-designer-working-computer-desktop_23-2149142153.jpg",
+    image: mobile,
     link:"/services/mobile",
   },
   {
     title: "Website Development",
     description: "We specialize in crafting high-performance, user-friendly websites tailored to your business needs. From sleek landing pages to robust web applications, our development services combine clean code with modern design. Let us help you create a powerful online presence that drives results.",
-    image: "https://img.freepik.com/premium-photo/young-woman-using-source-code-develop-new-online-app-working-with-html-script-terminal-window-program-database-software-it-manager-planning-artificial-intelligence-network_1035542-260.jpg",
+    image: WebsiteDevelopment,
     link:"/services/website",
   },
   {
     title: "Graphic Designing",
     description: "Our graphic design services blend creativity with strategy to bring your brand to life. From logos and branding to social media visuals and marketing materials, we craft designs that captivate and communicate. Let us help you leave a lasting visual impression with designs that truly represent your vision.",
-    image: "https://img.freepik.com/free-photo/html-css-collage-concept_23-2150061955.jpg",
+    image: GraphicDesigning,
     link:"/services/graphic",
   },
   {
     title: "UI/UX Designing",
     description: "At our agency, we craft seamless and intuitive user experiences through expert UI/UX design. By combining aesthetic appeal with functionality, we ensure your digital products are not only visually stunning but also user-friendly. Our goal is to create designs that engage users and drive meaningful interactions.",
-    image: "https://img.freepik.com/premium-photo/ar-brainstorming-mobile-app-interface-design-modern-office_1105604-39210.jpg",
+    image: uiux,
     link:"/services/uiux",
   },
   {
     title: "SaaS Based Website Development",
     description: "We specialize in SaaS-based website development, delivering scalable, secure, and customizable solutions tailored to your business needs. Our team builds intuitive platforms that streamline operations, enhance user experiences, and drive growth. From seamless integrations to robust performance, we ensure your SaaS product is optimized for success.",
-    image: "https://img.freepik.com/free-photo/logo-designer-working-computer-desktop_23-2149142153.jpg",
+    image: SaaS,
     link:"/services/saas",
   },
   {
     title: "SEO & Marketing",
     description: "At our agency, we specialize in SEO and digital marketing strategies designed to drive results. By optimizing your online presence and leveraging targeted marketing techniques, we help businesses grow, reach their audience, and stay ahead of the competition. Our data-driven approach ensures sustainable growth and long-term success for your brand.",
-    image: "https://img.freepik.com/premium-photo/young-woman-using-source-code-develop-new-online-app-working-with-html-script-terminal-window-program-database-software-it-manager-planning-artificial-intelligence-network_1035542-260.jpg",
+    image: SEO,
     link:"/services/seo",
   },
 ];
@@ -115,7 +122,7 @@ export default function Ourservices() {
           <h2 className="text-lg md:text-3xl font-bold mb-4">{activeService.title}</h2>
           <p className="text-sm md:text-lg">{activeService.description}</p>
           <Link href={activeService.link}>
-          <button  className="mt-6 px-6 py-2 font-bold cursor-pointer text-[#00d280] rounded w-fit">
+          <button  className="mt-6 px-4 py-4 font-bold cursor-pointer  text-white bg-[#00d280] rounded-lg w-fit">
             Learn More
           </button>
           </Link>

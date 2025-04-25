@@ -1,58 +1,103 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+import reactIcon from "@/app/Innovation/image/frontend/react.svg"
+import VueIcon from "@/app/Innovation/image/frontend/Vue.svg"
+import JavaScriptIcon from "@/app/Innovation/image/frontend/JavaScript.svg"
+import TypeScriptIcon from "@/app/Innovation/image/frontend/TypeScript.svg"
+import AndroidIcon from "@/app/Innovation/image/frontend/Android.svg"
+import ReactnativeIcon from "@/app/Innovation/image/frontend/React Native.svg"
+import FlutterIcon from "@/app/Innovation/image/frontend/Flutter.svg"
+import IOsIcon from "@/app/Innovation/image/frontend/iOS.svg"
+import ElectronIcon from "@/app/Innovation/image/frontend/Electron.svg"
+import AngularIcon from "@/app/Innovation/image/frontend/Angular.svg"
+import WordpressIcon from "@/app/Innovation/image/frontend/Wordpress.svg"
+import NextIcon from "@/app/Innovation/image/frontend/Next.js.svg"
+import DjangoIcon from "@/app/Innovation/image/frontend/Django.svg"
+import SvelteIcon from "@/app/Innovation/image/frontend/Svelte.svg"
+import FlaskIcon from "@/app/Innovation/image/frontend/Flask.svg"
+import LaravelIcon from "@/app/Innovation/image/backend/Laravel.svg"
+import NodeIcon from "@/app/Innovation/image/backend/Node Js.svg"
+import ExpressIcon from "@/app/Innovation/image/backend/Xpress.js.svg"
+import PythonIcon from "@/app/Innovation/image/backend/Python.svg"
+import FastapiIcon from "@/app/Innovation/image/backend/Fastapi.svg"
+import JavaIcon from "@/app/Innovation/image/backend/Java.svg"
+import SpringbootIcon from "@/app/Innovation/image/backend/Spring Boot.svg"
+import RailsIcon from "@/app/Innovation/image/backend/Rails.svg"
+import PhpIcon from "@/app/Innovation/image/backend/PHP.svg"
+import GoLangIcon from "@/app/Innovation/image/backend/Go Lang.svg"
+import FireBAseIcon from "@/app/Innovation/image/backend/Firebase.svg"
+import SailsIcon from "@/app/Innovation/image/backend/Sails.js.svg"
+import SymfonyIcon from "@/app/Innovation/image/backend/Symfony.svg"
+import GrailsIcon from "@/app/Innovation/image/backend/Grails.svg"
+import HapiIcon from "@/app/Innovation/image/backend/Hapi.js.svg"
+import BitbucketIcon from "@/app/Innovation/image/devops/Bitbucket.svg"
+import AWSIcon from "@/app/Innovation/image/devops/AWS.svg"
+import JenkinsIcon from "@/app/Innovation/image/devops/Jenkins.svg"
+import PuppetIcon from "@/app/Innovation/image/devops/Puppet.svg"
+import DockerIcon from "@/app/Innovation/image/devops/Docker.svg"
+import GithubIcon from "@/app/Innovation/image/devops/GitHub.svg"
+import KubernetesIcon from "@/app/Innovation/image/devops/Kubernetes.svg"
+import GitLabIcon from "@/app/Innovation/image/devops/GitLab.svg"
+import BambooIcon from "@/app/Innovation/image/devops/Bamboo.svg"
+import NewRelicIcon from "@/app/Innovation/image/devops/New Relic.svg"
+import ELKStackIcon from "@/app/Innovation/image/devops/ELK Stack.svg"
+import GoogleIcon from "@/app/Innovation/image/devops/Google Cloud.svg"
+import TravisIcon from "@/app/Innovation/image/devops/TravisCI.svg"
+import circleIcon from "@/app/Innovation/image/devops/CircleCI.svg"
+import chefIcon from "@/app/Innovation/image/devops/chef.svg"
 
 const technologies = {
   Frontend: [
-    { name: "React", icon: "https://kavelogics.com/landing/technologies/react.svg" },
-    { name: "JavaScript", icon: "https://kavelogics.com/landing/technologies/js.svg" },
-    { name: "TypeScript", icon: "https://kavelogics.com/landing/technologies/ts.svg" },
-    { name: "Android", icon: "https://kavelogics.com/landing/technologies/android.svg" },
-    { name: "React-native", icon: "https://kavelogics.com/landing/technologies/react-native.svg" },
-    { name: "Flutter", icon: "https://kavelogics.com/landing/technologies/flutter.svg" },
-    { name: "IOs", icon: "https://kavelogics.com/landing/technologies/ios.svg" },
-    { name: "Electron", icon: "https://kavelogics.com/landing/technologies/electron.svg" },
-    { name: "Angular.js", icon: "https://kavelogics.com/landing/technologies/angular.svg" },
-    { name: "Wordpress.js", icon: "https://kavelogics.com/landing/technologies/wordpress.svg" },
-    { name: "Next", icon: "https://kavelogics.com/landing/technologies/next.svg" },
-    { name: "Django", icon: "https://kavelogics.com/landing/technologies/django.svg" },
-    { name: "Svelte", icon: "https://kavelogics.com/landing/technologies/svelte.svg" },
-    { name: "Flask", icon: "https://kavelogics.com/landing/technologies/flask.svg" },
-    { name: "Next", icon: "https://kavelogics.com/landing/technologies/next.svg" },
+    { name: "React", icon: reactIcon },
+    { name: "JavaScript", icon:JavaScriptIcon  },
+    { name: "TypeScript", icon: TypeScriptIcon },
+    { name: "Android", icon: AndroidIcon},
+    { name: "React-native", icon: ReactnativeIcon },
+    { name: "Flutter", icon:FlutterIcon },
+    { name: "IOs", icon: IOsIcon },
+    { name: "Electron", icon:ElectronIcon },
+    { name: "Angular.js", icon: AngularIcon },
+    { name: "Wordpress.js", icon: WordpressIcon },
+    { name: "Next", icon: NextIcon },
+    { name: "Vue", icon: VueIcon },
+    { name: "Django", icon: DjangoIcon },
+    { name: "Svelte", icon: SvelteIcon },
+    { name: "Flask", icon: FlaskIcon },
   ],
   Backend: [
-    { name: "Laravel", icon: "https://kavelogics.com/landing/technologies/laravel.svg" },
-    { name: "Node", icon: "https://kavelogics.com/landing/technologies/node.svg" },
-    { name: "Express", icon: "https://kavelogics.com/landing/technologies/express.svg" },
-    { name: "Python", icon: "https://kavelogics.com/landing/technologies/python.svg" },
-    { name: "Fastapi", icon: "https://kavelogics.com/landing/technologies/fastapi.svg" },
-    { name: "Java", icon: "https://kavelogics.com/landing/technologies/java.svg" },
-    { name: "Springboot", icon: "https://kavelogics.com/landing/technologies/spring.svg" },
-    { name: "Rails", icon: "https://kavelogics.com/landing/technologies/rails.svg" },
-    { name: "Php", icon: "https://kavelogics.com/landing/technologies/php.svg" },
-    { name: "Go Lang", icon: "https://kavelogics.com/landing/technologies/go.svg" },
-    { name: "FireBAse", icon: "https://kavelogics.com/landing/technologies/firebase.svg" },
-    { name: "Sails Js", icon: "https://kavelogics.com/landing/technologies/sails.svg" },
-    { name: "Symfony", icon: "https://kavelogics.com/landing/technologies/symfony.svg" },
-    { name: "Grails", icon: "https://kavelogics.com/landing/technologies/grails.svg" },
-    { name: "Hapi.js", icon: "https://kavelogics.com/landing/technologies/hapi.svg" },
+    { name: "Laravel", icon:LaravelIcon },
+    { name: "Node", icon: NodeIcon },
+    { name: "Express", icon: ExpressIcon },
+    { name: "Python", icon: PythonIcon },
+    { name: "Fastapi", icon: FastapiIcon },
+    { name: "Java", icon:  JavaIcon},
+    { name: "Springboot", icon: SpringbootIcon },
+    { name: "Rails", icon:  RailsIcon},
+    { name: "Php", icon:  PhpIcon},
+    { name: "Go Lang", icon:  GoLangIcon},
+    { name: "FireBAse", icon: FireBAseIcon },
+    { name: "Sails Js", icon: SailsIcon },
+    { name: "Symfony", icon: SymfonyIcon },
+    { name: "Grails", icon: GrailsIcon },
+    { name: "Hapi.js", icon: HapiIcon },
   ],
   DevOps: [
-    { name: "Bitbucket", icon: "https://kavelogics.com/landing/technologies/bitbucket.svg" },
-    { name: "AWS", icon: "https://kavelogics.com/landing/technologies/aws.svg" },
-    { name: "Jenkins", icon: "https://kavelogics.com/landing/technologies/jenkins.svg" },
-    { name: "Puppet", icon: "https://kavelogics.com/landing/technologies/puppet.svg" },
-    { name: "Docker", icon: "https://kavelogics.com/landing/technologies/docker.svg" },
-    { name: "Github", icon: "https://kavelogics.com/landing/technologies/github.svg" },
-    { name: "Kubernetes", icon: "https://kavelogics.com/landing/technologies/kubernetes.svg" },
-    { name: "Chef", icon: "https://kavelogics.com/landing/technologies/chef.svg" },
-    { name: "GitLab", icon: "https://kavelogics.com/landing/technologies/gitlab.svg" },
-    { name: "Bamboo", icon: "https://kavelogics.com/landing/technologies/bamboo.svg" },
-    { name: "NewRelic", icon: "https://kavelogics.com/landing/technologies/newrelic.svg" },
-    { name: "Grafana", icon: "https://kavelogics.com/landing/technologies/elastic.svg" },
-    { name: "ELK Stack", icon: "https://kavelogics.com/landing/technologies/circle.svg" },
-    { name: "Google ", icon: "https://kavelogics.com/landing/technologies/google-cloud.svg" },
-    { name: "Travis", icon: "https://kavelogics.com/landing/technologies/travis.svg" },
+    { name: "Bitbucket", icon: BitbucketIcon},
+    { name: "AWS", icon :AWSIcon},
+    { name: "Jenkins", icon:JenkinsIcon },
+    { name: "Puppet", icon: PuppetIcon},
+    { name: "Docker", icon: DockerIcon},
+    { name: "Github", icon: GithubIcon },
+    { name: "Kubernetes", icon:  KubernetesIcon},
+    { name: "GitLab", icon: GitLabIcon},
+    { name: "Bamboo", icon: BambooIcon},
+    { name: "NewRelic", icon:  NewRelicIcon},
+    { name: "ELK Stack", icon: ELKStackIcon },
+    { name: "Google ", icon:  GoogleIcon},
+    { name: "Travis", icon: TravisIcon },
+    { name: "CircleCI", icon: circleIcon },
+    { name: "Chef ", icon: chefIcon },
   ],
 };
 
@@ -82,7 +127,7 @@ export default function Innovation() {
             </p>
 
         {/* Tabs and Rows */}
-        <div className="bg-[#d6f1ff] rounded-lg max-w-4xl mx-auto p-6 px-4 lg:px-20 mb-20">
+        <div className="bg-[#d6f1ff] rounded-lg max-w-4xl mx-auto pt-12 pb-16 px-4 lg:px-20 mb-20">
           {/* Tab Buttons */}
           <div className="flex justify-center mb-8">
             <div className="bg-[#c0edf2] p-1 rounded-full border-2 border-[#00d280] inline-flex w-full justify-around">
@@ -112,14 +157,14 @@ export default function Innovation() {
                 {row.map((tech, index) => (
                   <div
                     key={`${rowIndex}-${index}`}
-                    className="flex flex-col items-center w-1/3 sm:w-1/4 md:w-1/5 lg:w-1/6 max-w-[120px] text-center"
+                    className="flex flex-col  mt-4 items-center w-1/3 sm:w-1/4 md:w-1/5 lg:w-1/6 max-w-[120px] text-center"
                   >
                     <Image
                       src={tech.icon}
                       alt={tech.name}
                       width={64}
                       height={64}
-                      className="mb-3 sm:mb-4 object-contain"
+                      className="mb-3 h-10 w-10 sm:mb-4 object-contain"
                     />
                     <p className="text-xs sm:text-sm md:text-base font-semibold text-gray-700">
                       {tech.name}

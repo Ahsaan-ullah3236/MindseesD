@@ -2,6 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import { Linkedin,Facebook,Instagram,X ,Youtube  } from 'lucide-react';
+import LahoreOffice from "@/app/globalPresance/image/LahoreOffice.svg"
+import USAOffice from "@/app/globalPresance/image/USAOffice.svg"
 
 const GlobalPressance=()=>{
     return(
@@ -9,7 +11,7 @@ const GlobalPressance=()=>{
         <div className="pt-8 pb-16">
                 <h1 className="text-4xl font-bold text-gray-800 text-center mb-3">Our Global Presence</h1>
                 <p className="text-black-200 text-center">
-                  We serve clients worldwide, offering tailored software solutions to meet diverse requirements.
+                We provide customized software solutions to clients around the world, designed to meet their unique needs.
                 </p>
               </div>
           <div className="grid lg:grid-cols-4 gap-8">
@@ -36,7 +38,7 @@ const GlobalPressance=()=>{
     
            
             <div className="lg:pl-8 pt-6 lg:pt-0">
-                <Image src="https://kavelogics.com/about/offices/lahore.svg" alt="lahore-office" height={80} width={150} />
+                <Image src={LahoreOffice} alt="lahore-office" height={80} width={150} />
               <h2 className="font-semibold text-black-700 mt-2"  style={{fontSize:"12px"}}>Lahore Office</h2>
               <address className="text-black-600  font-semibold not-italic"  style={{fontSize:"12px"}}>
                 MindSees PVT LTD
@@ -54,7 +56,7 @@ const GlobalPressance=()=>{
             </div>
     
             <div className="lg:pl-8 pt-6 lg:pt-0">
-                <Image src="https://kavelogics.com/about/offices/usa.svg" alt="USA-office" height={80} width={150} />
+                <Image src={USAOffice} alt="USA-office" height={80} width={150} />
               <h2 className="font-semibold text-black-700 mt-2" style={{fontSize:"12px"}}>USA Office</h2>
               <address className="text-black-600 font-semibold not-italic" style={{fontSize:"12px"}}>
                 MindSees LLC

@@ -2,6 +2,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import callToAction from "@/app/Lastbusinesses/image/calltoaction.svg"
+
 const LastBusinessesSection = () => {
   return (
     <section className="bg-no-repeat bg-center spacing-secton max-w-7xl mx-auto mt-14 md:mt-25">
@@ -11,14 +13,14 @@ const LastBusinessesSection = () => {
         {/* Right Content */}
         <div className="flex-1 space-y-6 text-center md:text-left">
           <h2 className="text-xl md:text-4xl font-bold text-white">
-            Ready to boost your business?
+          Ready to take your business to the next level<span className='text-[#00b96a] ml-1 '>?</span>
           </h2>
           <p className="text-lg text-white">
-            Elevate your business with advanced technologies, expert insights, and unmatched support for a brighter future.
+          Transform your business with cutting-edge technologies, expert guidance, and unparalleled support for a brighter tomorrow.
           </p>
           <Link href={"/contact-us"}>
-          <button className="bg-[#00D280] cursor-pointer text-white px-6 py-4 mt-4 text-lg rounded-lg hover:bg-[#00b96a] transition duration-300">
-            Schedule free consultant
+          <button className="bg-[#00D280] cursor-pointer text-white px-6 py-4 mt-4 text-lg font-medium rounded-lg hover:bg-[#00b96a] transition duration-300">
+            Schedule Free Consultant
           </button>
           </Link>
 
@@ -27,7 +29,7 @@ const LastBusinessesSection = () => {
         {/* Left Image */}
         <div className="relative">
           <Image
-            src="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/707e3d37-8f7d-4a31-40cb-c827cd3b3e00/w=3840,q=75"
+            src={callToAction}
             alt="Success Case Study"
             width={400}
             height={644}

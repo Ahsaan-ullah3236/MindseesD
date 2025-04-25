@@ -1,29 +1,40 @@
 "use client";
 import React, { useRef, useEffect } from "react";
 import Link from "next/link";
+import expertiseIcon from "@/app/Topchoice/image/expertisesvgfill.svg" 
+import clientIcon from "@/app/Topchoice/image/clientsvgfill.svg" 
+import globalIcon from "@/app/Topchoice/image/globalsvgfill.svg" 
+import qualityIcon from "@/app/Topchoice/image/qualitysvgfill.svg"  
+import integrityIcon from "@/app/Topchoice/image/integritysvgfill.svg"  
+import Image from "next/image";
 
 function Page() {
  
   const scrollItems = [
     {
       title: "Expertise & Innovation",
-      content: "With 5+ years' experience, MindSees delivers tailored solutions using industry expertise, certified developers, and cutting-edge technologies to drive business forward."
+      content: "With 5+ years' experience, MindSees delivers tailored solutions using industry expertise, certified developers, and cutting-edge technologies to drive business forward.",
+    icon:expertiseIcon,
     },
     {
       title: "Quality Assurance",
-      content: "We ensure robust, reliable, and secure software solutions through thorough testing at every stage. Our commitment to excellence guarantees solutions that exceed expectations."
+      content: "We ensure robust, reliable, and secure software solutions through thorough testing at every stage. Our commitment to excellence guarantees solutions that exceed expectations.",
+      icon:qualityIcon,
     },
     {
       title: "Client-Centric Solutions",
-      content: "Our approach revolves around understanding your unique needs and delivering solutions that align perfectly with your business goals and objectives."
+      content: "Our approach revolves around understanding your unique needs and delivering solutions that align perfectly with your business goals and objectives.",
+      icon:clientIcon,
     },
     {
       title: "Cutting-Edge Technologies",
-      content: "We stay ahead of the curve by leveraging the latest technologies to build future-proof solutions that give you a competitive edge."
+      content: "We stay ahead of the curve by leveraging the latest technologies to build future-proof solutions that give you a competitive edge.",
+      icon:globalIcon,
     },
     {
       title: "Transparent Process",
-      content: "From initial consultation to final delivery, we maintain clear communication and complete transparency at every step of the project."
+      content: "From initial consultation to final delivery, we maintain clear communication and complete transparency at every step of the project.",
+      icon:integrityIcon,
     }
   ];
 
@@ -99,11 +110,9 @@ function Page() {
           </div>
         </div>
 
-        {/* Right Scrolling Content with Left Scrollbar */}
         <div className="relative">
           <div 
             ref={sectionRef}
-            // onWheel={handleScroll}
             className="h-[80vh] overflow-y-auto scroll-smooth left-scrollbar pl-4 space-y-8"
           >
             {scrollItems.map((item, index) => (
@@ -111,7 +120,11 @@ function Page() {
                 key={index}
                 className="bg-[#d6f1ff] p-8 rounded-xl "
               >
-                <h3 className="text-xl font-bold text-[#00d280] mb-4">{item.title}</h3>
+                <div className="flex mb-4">
+                  <Image src={item.icon} height={20} width={20} alt="logo" className="h-10 w-10 mr-3"/>
+
+                <h3 className="text-xl font-bold text-[#00d280] mt-2 ">{item.title}</h3>
+                  </div>
                 <p className="text-black">{item.content}</p>
               </div>
             ))}
@@ -120,7 +133,6 @@ function Page() {
       </div>
     </div>
 
-    {/* Custom left-side scrollbar styling */}
     <style jsx>{`
       .left-scrollbar {
         direction: rtl; /* Reverse the direction to move scrollbar to left */
@@ -129,7 +141,7 @@ function Page() {
         direction: ltr; /* Reset direction for content */
       }
       .left-scrollbar::-webkit-scrollbar {
-        width: 6px;
+        width: 8px;
       }
       .left-scrollbar::-webkit-scrollbar-track {
         background: #f2f2f2;

@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import heroGif from "@/app/Herosection/image/Her0gif.gif"
 
 import { ChevronRight } from 'lucide-react';
 // ✅ Outside the component
@@ -75,13 +76,13 @@ function Herosection() {
           </div>
           
           <div>
-          <div className='-mt-4'>
+          <div className='mt-4'>
        <Image
-              src="/image.png"
+              src={heroGif}
               alt="Hero Illustration"
-              width={400}
-              height={400}
-              className="h-[450px] object-cover -mt-40"
+              width={500}
+              height={600}
+              className="flex justify-center mt-18"
             />
       </div>
     </div>

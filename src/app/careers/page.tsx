@@ -81,7 +81,7 @@ const perkData=[
 
     return (
         <div className=''>
-            <div className="bg-[#002f46] max-w-6xl mx-auto py-16 spacing-secton">
+            <div className="bg-[#002f46] py-16 spacing-secton">
             <div className='grid grid-cols-1 md:grid-cols-3  '>
             <div className='col-span-2'>
             <div className="text-white  text-center md:text-left">
@@ -136,7 +136,7 @@ const perkData=[
 
             <div
                
-                className="relative max-w-6xl mx-auto bg-linear-to-r/srgb from-[#033f5d] to-[#056ea3] mt-22 py-24 "
+                className="relative max-w-7xl mx-auto bg-linear-to-r/srgb from-[#033f5d] to-[#056ea3] mt-22 py-24 "
             >
                 <Recruitment/>
                 

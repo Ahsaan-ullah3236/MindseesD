@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
+import leftImage from "@/app/Ourprocess/image/bgimage.png"
 interface AccordionItem {
   title: string;
   content: string;
@@ -10,8 +11,6 @@ interface AccordionItem {
       description3:string,
       description4:string,
 }
-
-
 
 export default function Ourprocess() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -54,13 +53,13 @@ console.log("activeIndex",activeIndex)
   };
 
   return (
-    <div className="OurProcess-main-container max-w-7xl mx-auto spacing-secton ">
+    <div className="OurProcess-main-container max-w-7xl mx-auto ">
       <div className="OurProcess-second-container grid grid-cols-1 md:grid-cols-3">
         
        
         <div className="w-full h-auto relative  overflow-hidden">
           <Image
-            src="/processimg.webp"
+            src={leftImage}
             alt="Process"
             fill
             className="object-cover"
@@ -113,7 +112,7 @@ console.log("activeIndex",activeIndex)
               <div className="px-6 bg-white pb-4 pt-2">
                
                 {activeIndex===0 && <div>
-                  <p className="text-black">{item.content}</p>
+                  <p className="text-black font-medium">{item.content}</p>
                   <div className="bg-[#d6f1ff] py-3 px-2 mt-5 rounded-lg w-[90%] text-black">{item?.description1}</div>
               <div className="bg-[#d6f1ff] py-3 px-2 mt-2 rounded-lg w-[90%] text-black">{item?.description2}</div>
               <div className="bg-[#d6f1ff] py-3 px-2 mt-2 rounded-lg w-[90%] text-black">{item?.description3}</div>

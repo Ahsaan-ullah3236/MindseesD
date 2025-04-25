@@ -155,7 +155,7 @@ const Navbar = () => {
           </div>
 
           <Link  href="/careers"  className="hover:text-[#00d280] text-sm lg:text-lg" >Careers</Link>
-          <Link href="#" className="hover:text-[#00d280] text-sm lg:text-lg">Blogs</Link>
+          <div  className="hover:text-[#00d280] text-sm lg:text-lg">Blogs</div>
         </nav>
 
         <Link

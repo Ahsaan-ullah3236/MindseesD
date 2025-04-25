@@ -3,6 +3,7 @@
 import React,{ useState } from 'react';
 import Image from 'next/image';
 import { StaticImageData } from 'next/image';
+import projectimage from "@/app/Stories/image/image.svg"
 
 type Testimonial = {
   id: number;
@@ -31,7 +32,7 @@ export default function SuccessStoriesPage() {
       author: 'Wade Warren',
       role: 'Co-Founder',
       cta: 'See Case Study',
-      imageUrl: "https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/b9731157-4ea3-469b-2b30-5513fe5d0900/w=640,q=75",
+      imageUrl: projectimage,
       
       discoverText: 'Discover the Wellness Medical Center Difference',
         description: ''
@@ -77,7 +78,7 @@ export default function SuccessStoriesPage() {
   return (
     <div className='max-w-7xl mx-auto'>
       <div className="text-[45px] text-black font-bold text-center"style={{lineHeight:"42px"}}> Our Success Stories</div>
-      <div className="text-[18px] text-black max-w-3xl mx-auto -mb-10   mt-8 text-center"style={{lineHeight:"22px"}}>Read testimonials from our satisfied clients who have experienced our outstanding services. See how we have helped businesses like yours succeed and enhance their online presence.</div>
+      <div className="text-[18px] text-black max-w-3xl mx-auto mb-10  mt-8 text-center"style={{lineHeight:"22px"}}>Read testimonials from our satisfied clients who have experienced our outstanding services. See how we have helped businesses like yours succeed and enhance their online presence.</div>
      
 
     <div className="relative  min-h-screen flex items-center justify-center spacing-secton px-2 md:px-4">
