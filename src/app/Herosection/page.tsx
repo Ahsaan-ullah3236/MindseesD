@@ -3,6 +3,11 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import heroGif from "@/app/Herosection/image/Her0gif.gif"
+import icon1 from "@/app/Herosection/image/icon1.svg"
+import icon2 from "@/app/Herosection/image/icon2.svg"
+import icon3 from "@/app/Herosection/image/icon3.svg"
+import icon4 from "@/app/Herosection/image/icon4.svg"
+import icon5 from "@/app/Herosection/image/icon5.svg"
 
 import { ChevronRight } from 'lucide-react';
 // ✅ Outside the component
@@ -14,6 +19,13 @@ const words = [
   "SaaS-Based Website",
   "SEO & Marketing",
 ];
+const marqueeLogo=[
+  {icon: icon1},
+  {icon: icon2},
+  {icon: icon3},
+  {icon: icon4},
+  {icon: icon5},
+]
 
 function Herosection() {
   const [displayText, setDisplayText] = useState("");
@@ -97,28 +109,40 @@ function Herosection() {
 
 
       <div className="w-full mt-12 py-8 bg-[#002f46] overflow-hidden spacing-secton">
-        <div className="marquee flex items-center whitespace-nowrap animate-marquee">
-          {["payme", "smplcards", "appreciate", "opstion"].map((logo, index) => (
+      <div className="flex animate-marquee whitespace-nowrap w-max">
+      {[...marqueeLogo, ...marqueeLogo].map((logo, index) => (
+        <Image
+          key={index}
+          src={logo.icon}
+          alt={`Logo ${index + 1}`}
+          width={100}
+          height={100}
+          className="w-24 sm:w-28 mx-8 sm:mx-16"
+        />
+      ))}
+    </div>
+        {/* <div className="marquee flex items-center whitespace-nowrap animate-marquee">
+          {marqueeLogo?.map((logo, index) => (
             <Image
               key={index}
-              src={`https://kavelogics.com/landing/clients/${logo}.svg`}
+              src={logo?.icon}
               alt={`Logo ${index + 1}`}
               width={100}
               height={100}
               className="w-24 sm:w-28 mx-8 sm:mx-16"
             />
           ))}
-          {["payme", "smplcards", "appreciate", "opstion"].map((logo, index) => (
+          {marqueeLogo?.map((logo, index) => (
             <Image
               key={`repeat-${index}`}
-              src={`https://kavelogics.com/landing/clients/${logo}.svg`}
+              src={logo?.icon}
               alt={`Logo ${index + 1}`}
               width={100}
               height={100}
               className="w-24 sm:w-28 mx-8 sm:mx-16"
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </>
 

@@ -97,7 +97,7 @@ const Navbar = () => {
             onMouseEnter={() => setHoveredMenu('services')}
             onMouseLeave={() => setHoveredMenu(null)}
           >
-            <button className="flex items-center gap-1 hover:text-[#00d280] text-sm lg:text-lg">
+            <button className="flex items-center cursor-pointer gap-1 hover:text-[#00d280] text-sm lg:text-lg">
               Services{' '}
               <ChevronDown
                 size={16}
@@ -110,8 +110,7 @@ const Navbar = () => {
               
               <>
               
-              {/* <div className="w-0 h-0 border-l-[30px] border-r-[30px] border-b-[25px] border-transparent border-b-gray-500 absolute top-full left-0 shadow-2xl"></div> */}
-                            <div className="absolute top-5 left-0 bg-[#ffffff] shadow-custom p-2 rounded-lg mt-2 pt-3 w-67 z-10">
+             <div className="absolute top-5 left-0 bg-[#ffffff] shadow-custom p-2 rounded-lg mt-2 pt-3 w-67 z-10">
                               {menuItem.map((item,i)=>(
               
                               <Link key={i} href={item?.link} className="block hover:bg-[#d6f1ff] pl-3 pr-3 pt-2 pb-2 rounded-lg text-sm ">{item?.item}</Link>
@@ -131,7 +130,7 @@ const Navbar = () => {
             onMouseEnter={() => setHoveredMenu('industries')}
             onMouseLeave={() => setHoveredMenu(null)}
           >
-            <button className="flex items-center gap-1 hover:text-[#00d280] text-sm lg:text-lg">
+            <button className="flex  cursor-pointer items-center gap-1 hover:text-[#00d280] text-sm lg:text-lg">
               Industries{' '}
               <ChevronDown
                 size={16}

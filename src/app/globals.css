@@ -10,8 +10,20 @@
 
 /* styles/globals.css */
 
-.marquee {
-  animation: scroll-left 10s linear infinite;
+
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
 }
 body{
   font-family: 'Roboto', sans-serif;
