@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { StaticImageData } from 'next/image';
 import projectimage from "@/app/Stories/image/image.svg"
 import personImage from "@/app/Stories/image/person.jpeg"
+import casestudy from "@/app/Stories/image/CaseStudyImage.svg"
 
 type Testimonial = {
   id: number;
@@ -47,23 +48,11 @@ export default function SuccessStoriesPage() {
       author: 'Jane Smith',
       role: 'CEO',
       cta: 'See Case Study',
-      imageUrl: "https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/bc4e92e7-e761-40ca-6933-b27bc30cf000/w=640,q=75",
+      imageUrl: casestudy,
       discoverText: 'Discover More Benefits',
         description: ''
     },
-    {
-        id: 3,
-        name:"Business",
-        title: 'Third testimonial example with unique content for the slider.',
-        services: ['Consulting', 'Strategy', 'Implementation'],
-        testimonial: 'Final example testimonial showing how versatile this slider component can be with different content.',
-        author: 'John Doe',
-        role: 'Marketing Director',
-        cta: 'See Case Study',
-        imageUrl: "https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/bc4e92e7-e761-40ca-6933-b27bc30cf000/w=640,q=75",
-        discoverText: 'Explore Our Services',
-        description: ''
-    }
+  
   ];
 
  

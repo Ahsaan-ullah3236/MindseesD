@@ -141,17 +141,18 @@ export default function ContactPage() {
           <p className="text-md text-black mb-4">Feel free to reach out, and we will be happy to promptly discuss your project with you.</p>
 
           <div className="block sm:grid grid-cols-2 gap-4">
-            <Input name="firstName" placeholder="First Name" value={formData.firstName} onChange={handleChange} />
-            <Input name="lastName" placeholder="Last Name"  className="mt-4 sm:mt-0" value={formData.lastName} onChange={handleChange} />
+            <Input name="firstName" required placeholder="First Name" value={formData.firstName} onChange={handleChange} />
+            <Input name="lastName" required placeholder="Last Name"  className="mt-4 sm:mt-0" value={formData.lastName} onChange={handleChange} />
           </div>
 
           <div className="block sm:grid grid-cols-2 gap-4">
-            <Input name="phone" placeholder="Phone" value={formData.phone} onChange={handleChange} />
-            <Input name="email" placeholder="Email" className="mt-4 sm:mt-0"  value={formData.email} onChange={handleChange} />
+            <Input name="phone" required placeholder="Phone" value={formData.phone} onChange={handleChange} />
+            <Input name="email" required placeholder="Email" className="mt-4 sm:mt-0"  value={formData.email} onChange={handleChange} />
           </div>
 
           <DropdownMultiSelect
         options={services}
+        
         onChange={(selected) => setSelectedServices(selected)}
         placeholder="Select services you want"
       />
@@ -167,7 +168,7 @@ export default function ContactPage() {
       
     
 
-          <Textarea name="description" placeholder="Write your project description here..." className="h-40" value={formData.description} onChange={handleChange} />
+          <Textarea name="description" required placeholder="Write your project description here..." className="h-40" value={formData.description} onChange={handleChange} />
 
           <div className="flex items-center justify-end text-gray-500  gap-2">
           <label className="cursor-pointer flex items-center justify-end gap-2 text-xs">

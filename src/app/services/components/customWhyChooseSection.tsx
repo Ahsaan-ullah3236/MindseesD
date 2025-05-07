@@ -25,8 +25,8 @@ export default function CustomWhyChoose({ heading, CustomWhyChoose }: SolutionSe
             <div className="h-16 w-16 bg-white mx-auto -mt-13 rounded-full border-2 border-gray-300 flex justify-center items-center">
             <Image
               src={item?.icon}
-              width={40}
-              height={40}
+              width={35}
+              height={35}
               alt={`${item?.title} Icon`}
               className=""
             />

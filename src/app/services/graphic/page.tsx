@@ -18,20 +18,20 @@ const Graphic=()=>{
   
     const faqs = [
         {
-          question: "What graphic design services do you offer?",
-          answer: "We offer a wide range of graphic design services, including logo design, branding, marketing materials (such as brochures, flyers, and posters), social media graphics, and more. Our team of experienced designers can handle various design needs to help elevate your brand identity and visual presence.",
+          question: "What types of graphic design services do you offer?",
+          answer: "We provide a comprehensive range of graphic design services, including logo design, branding, marketing materials (such as brochures, flyers, and posters), social media graphics, and more. Our experienced design team is equipped to handle all your design needs, helping to enhance your brand identity and visual presence.",
         },
         {
-          question: "What is your design process like?",
-          answer: "Our design process typically begins with an initial consultation to understand your design requirements, brand identity, and objectives. We then proceed with concept development, where we present you with design mockups or concepts for feedback and revisions. Once the design is finalized, we proceed with the implementation phase, where we prepare the final deliverables for your approval.",
+          question: "How do you approach the design process??",
+          answer: "Our design process involves understanding your goals, creating tailored concepts, refining through feedback, and delivering a final product that aligns with your brand vision.",
         },
         {
-          question: "Can I request revisions to the initial design concepts?",
-          answer: "Yes, we value your feedback and offer revision rounds to ensure the final design aligns perfectly with your vision. Our designers work closely with you to make adjustments until you are completely satisfied with the result.",
+          question: "Is it possible to request revisions to the initial design concepts?",
+          answer: "Absolutely, we value your input and provide revision rounds to ensure the final design meets your vision. Our designers collaborate with you to make adjustments until you're fully satisfied with the outcome.",
         },
         {
-          question: "Can I provide input or feedback during the design process?",
-          answer: "Absolutely! We encourage client involvement and feedback throughout the design process to ensure that the final deliverables meet your expectations and vision. Your input is valuable to us, and we take it into account at every stage of the project to ensure your satisfaction.",
+          question: "Is it possible for me to give input or feedback throughout the design process?",
+          answer: "Definitely! We encourage your involvement and feedback throughout the design process to ensure the final result aligns with your expectations and vision. Your input is important to us, and we consider it at every stage to ensure your satisfaction.",
         },
       
       ];
@@ -60,37 +60,37 @@ const Graphic=()=>{
       icon: "https://kavelogics.com/about/integrity.svg",
       title: "Creativity",
       description:
-        "Our team of graphic designers doesn't just create designs, they craft visual experiences that resonate with your audience and elevate your brand.",
+        "Our team of graphic designers creates powerful visual experiences that engage your audience and strengthen your brand identity.",
     },
     {
       icon: "https://kavelogics.com/about/centricity.svg",
       title: "Customized Solutions",
       description:
-        "We understand that every business is unique, which is why we offer customized graphic design solutions tailored to your specific needs and brand identity.",
+        "We recognize that every business is unique, which is why we provide personalized graphic design solutions that are tailored to your specific needs and brand identity.",
     },
     {
       icon: "https://kavelogics.com/about/integrity.svg",
       title: "Strategic Approach",
       description:
-        "We prioritize results over aesthetics in our graphic design process, adopting a strategic approach. Each design element is purposeful and aligned with your business objectives.",
+        "We focus on results rather than just aesthetics in our graphic design process, taking a strategic approach where every design element is intentional and aligned with your business goals.",
     },
     {
       icon: "https://kavelogics.com/about/integrity.svg",
       title: "Timely Delivery",
       description:
-        "We prioritize meeting deadlines with high-quality graphic designs through efficient project management processes. Trust us to deliver on time, every time, without sacrificing quality.",
+        "We prioritize delivering high-quality graphic designs on time by implementing efficient project management processes. Trust us to meet deadlines consistently without compromising on quality.",
     },
     {
       icon: "https://kavelogics.com/about/integrity.svg",
       title: "Client Satisfaction",
       description:
-        "Your satisfaction is our goal. We measure success not just by design quality, but by project success. We go above and beyond for every client to ensure they're thrilled with the result.",
+        "Your satisfaction is our top priority. We define success not only by the quality of our designs but by the overall success of the project. We go the extra mile for every client to ensure they are delighted with the outcome.",
     },
     {
       icon: "https://kavelogics.com/about/integrity.svg",
       title: "Proven Track Record",
       description:
-        "Trust Kavelogics for exceptional graphic design services that exceed expectations, backed by years of industry experience and a proven portfolio of successful projects.",
+        "Trust MindSees for outstanding graphic design services that surpass expectations, backed by years of industry experience and a proven track record of successful projects.",
     },
     
   ];
@@ -99,31 +99,31 @@ const Graphic=()=>{
       icon: "https://kavelogics.com/about/integrity.svg",
       title: "Business Card Design",
       description:
-        "We make a lasting impression with professionally designed business cards that reflect your brand identity and leave a memorable impact on potential clients and partners.",
+        "We create professionally designed business cards that showcase your brand identity and leave a lasting impression on potential clients and partners.",
     },
     {
       icon: "https://kavelogics.com/about/centricity.svg",
       title: "Postcard, Flyer or Print",
       description:
-        "Enhance your marketing with our captivating postcards, flyers, and printed materials crafted to grab attention, communicate effectively, and engage your audience.",
+        "Elevate your marketing with our eye-catching postcards, flyers, and printed materials designed to capture attention, deliver your message clearly, and engage your audience.",
     },
     {
       icon: "https://kavelogics.com/about/integrity.svg",
       title: "Poster Design",
       description:
-        "Elevate your events, products, or services with our captivating posters! Our striking visuals effortlessly grab attention & can convey key information.",
+        "Promote your events, products, or services with our captivating posters, designed to grab attention and clearly communicate key information.",
     },
     {
       icon: "https://kavelogics.com/about/integrity.svg",
       title: "Brochure",
       description:
-        "Elevate your brand presence with our meticulously designed brochures that captivate audiences, conveying your brand narrative and showcasing standout features.",
+        "Enhance your brand presence with our expertly crafted brochures that engage audiences, tell your brand story, and highlight your key features.",
     },
     {
       icon: "https://kavelogics.com/about/integrity.svg",
       title: "Clothing & Apparel",
       description:
-        "Elevate your style and brand presence with our custom-designed apparel that reflects your unique brand identity, making a lasting impression wherever you go.",
+        "Enhance your style and brand presence with our custom-designed apparel, crafted to showcase your unique identity and leave a lasting impression wherever you go.",
     },
     
   ];
@@ -132,7 +132,7 @@ const Graphic=()=>{
             <ServicesCustomBanner
              heading={"Graphic Designing"}
              description={
-               "Connect with creative designers who can enhance the professional appearance and feel of your business. Join us on a transformative journey to turn your vision into a captivating reality."
+               "Connect with talented designers who can elevate the professional look and feel of your business. Join us on a transformative journey to bring your vision to life in a compelling way."
              }
              buttonText="Book Consultation"
              buttonLink="/contact-us"
@@ -142,15 +142,15 @@ const Graphic=()=>{
             
 
             <CustomSolutionCard 
-      heading="Our Diverse Graphic Design Solutions" 
-      subHeading="Unlock the full potential of your online presence with our tailored SEO & Marketing services. Elevate your brand visibility and drive targeted traffic to maximize your digital success."
+      heading="Our Wide Range of Graphic Design Solutions" 
+      subHeading="Maximize your online potential with our customized SEO and marketing services. Boost your brand visibility and drive targeted traffic to achieve digital success."
       Solution={SolutionData} 
     />
 
             <section className="py-16 text-center bg-white">
       <h2 className="text-5xl font-bold text-[#013a54] mb-4">Our Graphic Design Process</h2>
       <p className="text-center mb-16 max-w-3xl mx-auto text-lg leading-[1.3] text-[#013a54]">
-      Kavelogics makes your firm a vital partner in the designing of your branding offerings. From the start to the finish, we make sure that you and your brand are our only focus.
+      MindSees positions your firm as a key partner in shaping your branding solutions. From start to finish, we ensure that you and your brand remain our top priority.
       </p>
 
       <div className="relative flex justify-center gap-10 flex-wrap">
@@ -217,9 +217,9 @@ const Graphic=()=>{
             </section>
 
             <CustomServiceDetail
-             heading={"Graphic Design Service From \nBest Designers"}
+             heading={"Graphic Design Services by Top Designers"}
              description={
-               "Work with Kavelogics’ designers with confidence. All of our designers are highly skilled and experienced professionals that have collaborated with numerous companies to realize their visions. With a keen eye for detail and a commitment to excellence, they bring creativity and innovation to every project."
+               "Partner with MindSees designers with confidence. Our highly skilled and experienced professionals have worked with numerous companies to bring their visions to life. With a sharp eye for detail and a passion for excellence, they infuse creativity and innovation into every project."
              }
              buttonText="Book Consultation"
              buttonLink="/contact-us"

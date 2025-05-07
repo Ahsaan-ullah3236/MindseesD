@@ -84,6 +84,7 @@ export default function DropdownMultiSelect({
               >
                 <input
                   type="checkbox"
+                  required
                   checked={option.checked}
                   onChange={() => handleCheckboxChange(option.id)}
                   className="h-3 w-4 rounded border-gray-300 text-[#ffffff] accent-[#818087] focus:ring-[#818087]"

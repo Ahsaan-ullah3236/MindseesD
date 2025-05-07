@@ -20,7 +20,6 @@ const CustomValue: React.FC<CustomValueProps> = ({ heading, subheading, values }
       <div className="max-w-5xl mx-auto py-16">
         <div className="text-center text-white text-[30px] lg:text-[42px] font-bold">{heading}</div>
         <div className="text-lg text-white text-center mt-4">{subheading}</div>
-
         <div className="three-divs grid grid-cols-1 md:grid-cols-3 gap-8 mt-18">
           {values.map((item, index) => (
             <div key={index} className="value-card p-6  pt-5">
@@ -36,7 +35,7 @@ const CustomValue: React.FC<CustomValueProps> = ({ heading, subheading, values }
                 </div>
               </div>
               <h2 className="text-xl text-[#00d280] text-center font-semibold mt-6">{item.title}</h2>
-              <p className="text-sm text-white text-center mt-3">{item.description}</p>
+              <p className="text-[15px] text-white text-center mt-3">{item.description}</p>
             </div>
           ))}
         </div>

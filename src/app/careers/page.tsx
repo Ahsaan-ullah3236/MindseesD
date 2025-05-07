@@ -53,28 +53,28 @@ function Page() {
     
 const perkData=[
     {
-        title:"Competitive Salary Packages",
-        decription:"We provide competitive salaries as acknowledgment of the value and expertise our employees contribute.",
+        title:"Attractive Salary Packages",
+        decription:"We offer competitive salaries to recognize the value and expertise our employees bring to the table.",
     },
     {
-        title:"Flexible Work Arrangements",
-        decription:"Our EAP ensures confidential support for personal and professional challenges, prioritizing your well-being.",
+        title:"Flexible Work Options",
+        decription:"Our EAP provides confidential support for both personal and professional challenges, prioritizing your well-being.",
     },
     {
-        title:"Employee Assistance Program (EAP)",
-        decription:"At MindSees, we prioritize trust and transparency in all interactions—with clients, partners, and within our team.",
+        title:"Employee Support Program",
+        decription:"At MindSees, we emphasize trust and transparency in every interaction—whether with clients, partners, or within our team.",
     },
     {
-        title:"Competitive Salary Packages",
-        decription:"We provide competitive salaries as acknowledgment of the value and expertise our employees contribute.",
+        title:"Remote Work Options",
+        decription:"Embracing remote work enables our team to collaborate and stay productive from anywhere.We provide competitive salaries as acknowledgment of the value and expertise our employees contribute.",
     },
     {
-        title:"Flexible Work Arrangements",
-        decription:"Our EAP ensures confidential support for personal and professional challenges, prioritizing your well-being.",
+        title:"Company Events & Celebrations",
+        decription:"We celebrate milestones and achievements through regular team events, fostering unity and a spirit of celebration.",
     },
     {
-        title:"Employee Assistance Program (EAP)",
-        decription:"At MindSees, we prioritize trust and transparency in all interactions—with clients, partners, and within our team.",
+        title:"Fun Loving Activities",
+        decription:"Each week, our vibrant academic groups center around activities that broaden the mind and stimulate intellectual growth.",
     },
     
 ]
@@ -85,9 +85,9 @@ const perkData=[
             <div className='grid grid-cols-1 md:grid-cols-2  '>
             <div className=''>
             <div className="text-white  text-center md:text-left">
-                        <h1 className="text-5xl font-bold mb-7">Lets Drive tech forward</h1>
+                        <h1 className="text-5xl font-bold mb-7">Let’s propel technology forward.</h1>
                         <p className="text-[19px] ">
-                            Explore exciting career opportunities at MindSees, where innovation meets passion. Join us to collaborate with experts, tackle challenging projects, and make a meaningful impact in technology.
+                        Discover exciting career opportunities at MindSees, where innovation and passion come together. Join our team to work with experts, tackle challenging projects, and make a real impact in technology.
                         </p>
                         <div className="mt-13 flex justify-center md:justify-start">
                             <button className="bg-[#00D280] text-white font-semibold px-5 py-4 text-lg rounded-sm hover:bg-[#00b96a] transition-colors">
@@ -114,11 +114,11 @@ const perkData=[
             <div className='grid grid-cols-1 md:grid-cols-2 gap-14  mt-40 mb-10'>
             <div className=''>
             <div className=" text-center md:text-left">
-                        <h1 className="text-5xl text-[#023047] font-bold mb-6">Seeking Visionary Individuals</h1>
+                        <h1 className="text-5xl text-[#023047] font-bold mb-6">Looking for Visionary Talent.</h1>
                         <p className="text-lg text-[#023047] mt-12">
-                            At MindSees, we are dedicated to transform users lives through our innovative solutions. We seek individuals who share and contribute to our vision. Our company fosters an environment of open communication, collaboration, and equal opportunities. We are passionate about growth and always eager to discover dynamic talent.
+                        At MindSees, we're committed to transforming lives through innovative solutions. We’re looking for individuals who align with and contribute to our vision. Our company promotes open communication, collaboration, and equal opportunities. We’re passionate about growth and always excited to discover dynamic talent.
                         </p>
-                        <p className='text-lg text-[#023047] pt-6'>Join us to elevate not only our companys standards but also your own personal and professional benchmarks.</p>
+                        <p className='text-lg text-[#023047] pt-6'>Join us to elevate both our company's standards and your own personal and professional growth.</p>
                     </div>
                 </div>
                 <div className=" flex justify-center">
@@ -147,7 +147,7 @@ const perkData=[
                 <div className="inner-container w-full max-w-6xl">
                     <h1 className="text-5xl text-[#023047] font-bold mt-22 mb-6">Employee Benefits & Perks
                     </h1>
-                    <p className='text-lg text-[#023047] mx-auto max-w-4xl mb-12'>Elevate your experience at MindSees with our comprehensive suite of employee benefits and perks. From competitive salaries to flexible work arrangements, we prioritize your well-being and professional growth, creating an environment where you can thrive</p>
+                    <p className='text-lg text-[#023047] mx-auto max-w-4xl mb-12'>Enhance your journey at MindSees with our comprehensive employee benefits and perks. From competitive salaries to flexible work arrangements, we prioritize your well-being and professional development, fostering an environment where you can truly thrive.</p>
                     <div className="three-divs grid grid-cols-1 md:grid-cols-3 gap-8 m-12">
 
                         {perkData?.map((item,i)=>(

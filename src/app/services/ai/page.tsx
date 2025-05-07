@@ -12,38 +12,59 @@ import CustomServiceDetail from "../components/customServiceDetail";
 import CustomWhyChoose from "../components/customWhyChooseSection";
 import { TechnologyGrid } from "../components/customTechnologiesSection";
 import { FaqAccordion } from "../components/custonFAQ";
+import machinelearning from "@/app/services/ai/image/machinelerning.svg"
+import customAi from "@/app/services/ai/image/customAI.svg"
+import nlp from "@/app/services/ai/image/NLP.svg"
+import computervision from "@/app/services/ai/image/computervision.svg"
+import consulting from "@/app/services/ai/image/consulting.svg"
+import experties from "@/app/services/ai/image/Expertise.svg"
+import comprehensive from "@/app/services/ai/image/Comprehensive.svg"
+import tailored from "@/app/services/ai/image/Tailored.svg"
+import seamless from "@/app/services/ai/image/Seamless.svg"
+import proven from "@/app/services/ai/image/Proven.svg"
+import support from "@/app/services/ai/image/Support.svg"
+import TensorFlow from "@/app/services/ai/image/tensorflow-logo.svg"
+import MXNet from "@/app/services/ai/image/mxnet-logo.svg"
+import Keras from "@/app/services/ai/image/keras-logo.svg"
+import Scikit from "@/app/services/ai/image/Scikit-LearnLogo.svg"
+import PyTorch from "@/app/services/ai/image/PyTorchLogo.svg"
+import OpenCV from "@/app/services/ai/image/Opencv.svg"
+import YOLO from "@/app/services/ai/image/YOLO.svg"
+import Microsoft from "@/app/services/ai/image/microsoft-azure-logo.svg"
+import Power from "@/app/services/ai/image/power-bi-logo.svg"
+import AIDevelopment from "@/app/services/ai/image/AIDevelopment.png"
 const Ai=()=>{
 
     const faqs = [
         {
-          question: "What is AI Development, and how can it benefit my business??",
-          answer: "AI development involves creating intelligent software that can learn, reason, and make decisions. It benefits your business by automating processes, enhancing decision-making, improving customer experiences, and providing insights from data.",
+          question: "What is AI Development, and How Can It Benefit Your Business?",
+          answer: "AI development involves creating intelligent systems and software that can learn, reason, and make decisions. By leveraging machine learning, natural language processing, and other advanced technologies, AI enables businesses to automate tasks, enhance decision-making, improve customer experiences, and extract valuable insights from data.",
         },
         {
-          question: "What types of AI solutions do you offer?",
-          answer: "We offer custom AI solutions, machine learning development, natural language processing (NLP), computer vision solutions, and AI consulting services. These solutions are tailored to meet your specific business needs and objectives.",
+          question: "What AI Solutions Do We Offer?",
+          answer: "Our AI solutions are designed to streamline operations, improve decision-making, and drive business growth through intelligent, data-driven innovations.",
         },
         {
-          question: "How does Kavelogics ensure the quality and accuracy of AI models?",
-          answer: "We conduct rigorous testing and validation of AI models using real-world data. Our quality assurance process ensures that the models meet performance, accuracy, and security standards before deployment",
+          question: "How Does MindSees Guarantee the Quality and Accuracy of AI Models?",
+          answer: "MindSees ensures the quality and accuracy of AI models through rigorous data preprocessing, advanced algorithm selection, and continuous testing. We also monitor model performance and optimize based on real-time feedback to deliver precise and reliable results.",
         },
         {
-          question: "Can AI be integrated into my existing systems?",
-          answer: "Yes, our AI solutions are designed for seamless integration into your existing systems and applications, ensuring minimal disruption and maximum efficiency.",
+          question: "Can AI Be Seamlessly Integrated into My Existing Systems?",
+          answer: "Yes, AI can be seamlessly integrated into your current systems to enhance functionality and performance. Our team ensures smooth integration with minimal disruption, optimizing your existing workflows for greater efficiency and value.",
         },
       
       ];
 
     const technologies = [
-        { name: "TensorFlow", icon: "https://kavelogics.com/services/ai/media/tensorflow-logo.svg" },
-        { name: "MXNet", icon: "https://kavelogics.com/services/ai/media/mxnet-logo.svg"},
-        { name: "Keras", icon: "https://kavelogics.com/services/ai/media/keras-logo.svg"},
-        { name: "Scikit-Learn", icon: "https://kavelogics.com/services/ai/media/scikit-learn-logo.svg" },
-        { name: "PyTorch", icon: "https://kavelogics.com/services/ai/media/pytorch-logo.svg" },
-        { name: "OpenCV", icon: "https://kavelogics.com/services/ai/media/opencv-logo.svg "},
-        { name: "YOLO", icon: "https://kavelogics.com/services/ai/media/yolo-logo.svg"},
-        { name: "Microsoft Azure", icon: "https://kavelogics.com/services/ai/media/microsoft-azure-logo.svg"},
-        { name: "Power BI", icon: "https://kavelogics.com/services/ai/media/power-bi-logo.svg" },
+        { name: "TensorFlow", icon: TensorFlow },
+        { name: "MXNet", icon: MXNet},
+        { name: "Keras", icon: Keras},
+        { name: "Scikit-Learn", icon: Scikit },
+        { name: "PyTorch", icon: PyTorch},
+        { name: "OpenCV", icon: OpenCV},
+        { name: "YOLO", icon: YOLO},
+        { name: "Microsoft Azure", icon: Microsoft},
+        { name: "Power BI", icon: Power },
       ];
 
        const features = [
@@ -55,82 +76,84 @@ const Ai=()=>{
 
   const CustomWhyChooseData = [
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: experties,
       title: "Expertise & Innovation",
       description:
-        "Tailored development of AI algorithms and models to address specific business challenges and objectives, ensuring precise alignment with organizational goals and requirements.",
+        "Custom development of AI algorithms and models designed to tackle specific business challenges and objectives, ensuring precise alignment with your organization's goals and requirements.",
     },
     {
-      icon: "https://kavelogics.com/about/centricity.svg",
+      icon: comprehensive,
       title: "Comprehensive Approach",
       description:
-        "Design and implementation of machine learning models to automate processes and derive actionable insights from data.",
+        "Development and execution of machine learning models to automate workflows and uncover actionable insights from data.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: tailored,
       title: "Tailored Solution",
       description:
-        "Development of applications that understand and generate human language, enhancing customer interaction and data processing capabilities.",
+        "Development of applications that comprehend and generate human language, improving customer interactions and enhancing data processing capabilities.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: seamless,
       title: "Seamless Integration",
       description:
-        "Creation of systems that interpret and analyze visual data, enabling advanced image recognition, object detection, and decision-making capabilities.",
+        "Building systems that process and analyze visual data, unlocking advanced image recognition, object detection, and intelligent decision-making.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: proven,
       title: "Proven Track Record",
       description:
-        "Expert guidance on AI strategy, implementation, and optimization to maximize ROI and business competitiveness.",
+        "Specialized expertise in AI strategy, implementation, and optimization to drive ROI and enhance your business competitiveness.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: support,
       title: "Support & Improvement",
       description:
-        "Expert guidance on AI strategy, implementation, and optimization to maximize ROI and business competitiveness.",
+        "Professional expertise in AI strategy, implementation, and optimization to drive ROI and enhance your business competitiveness.",
     },
     
   ];
+
   const SolutionData = [
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon:customAi ,
       title: "Custom AI Solutions",
       description:
-        "Tailored development of AI algorithms and models to address specific business challenges and objectives, ensuring precise alignment with organizational goals and requirements.",
+        "Customized development of AI algorithms and models designed to tackle specific business challenges and objectives, ensuring seamless alignment with your organization's goals and needs.",
     },
     {
-      icon: "https://kavelogics.com/about/centricity.svg",
+      icon: machinelearning,
       title: "Machine Learning",
       description:
-        "Design and implementation of machine learning models to automate processes and derive actionable insights from data.",
+        "Design and deployment of machine learning models to automate processes and extract actionable insights from data.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: nlp,
       title: "NLP",
       description:
-        "Development of applications that understand and generate human language, enhancing customer interaction and data processing capabilities.",
+        "Development of applications that comprehend and generate human language, elevating customer engagement and optimizing data processing capabilities.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: computervision,
       title: "Computer Vision Solutions",
       description:
-        "Creation of systems that interpret and analyze visual data, enabling advanced image recognition, object detection, and decision-making capabilities.",
+        "Building intelligent systems that analyze visual information, unlocking capabilities in image recognition, object detection, and data-driven decisions.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: consulting,
       title: "AI Consulting Services",
       description:
-        "Expert guidance on AI strategy, implementation, and optimization to maximize ROI and business competitiveness.",
+        "Strategic guidance on AI adoption, deployment, and optimization to drive maximum ROI and sharpen your competitive edge.",
     },
     
   ];
+
     return(
         <div>
             <ServicesCustomBanner
              heading={"AI Development"}
              description={
-               "Enhance your digital presence with our cutting-edge AI Development solutions. Embark on a transformative journey to turn your vision into intelligent reality."
+               "Elevate your digital presence with our advanced AI development solutions. Begin a transformative journey to bring your vision to life with intelligent innovation."
              }
              buttonText="Book Consultation"
              buttonLink="/contact-us"
@@ -141,14 +164,14 @@ const Ai=()=>{
 
             <CustomSolutionCard 
       heading="Our Advanced AI Development Solutions" 
-      subHeading="At MindSees, we recognize the pivotal role of harnessing artificial intelligence in today's dynamic business environment. That's why we specialize in cutting-edge AI development, empowering businesses to excel in an era driven by intelligent technologies. Partner with us to transform your vision into innovative AI-powered solutions that propel your business forward."
+      subHeading="At MindSees, we understand the critical importance of leveraging artificial intelligence in today’s fast-evolving business landscape. We specialize in cutting-edge AI development, helping businesses thrive in an era fueled by intelligent technologies. Partner with us to transform your vision into innovative, AI-driven solutions that drive your business forward."
       Solution={SolutionData} 
     />
 
             <section className="py-16 text-center bg-white">
       <h2 className="text-5xl font-bold text-[#013a54] mb-4">Our AI Development Process</h2>
       <p className="text-center mb-16 max-w-3xl mx-auto text-lg leading-[1.3] text-[#013a54]">
-      Our comprehensive AI Development services are crafted to meet your unique needs, from custom AI solutions to seamless integration and ongoing optimization. Partner with us to unlock the full potential of AI and stay ahead in todays competitive landscape.
+      Our all-encompassing AI Development services are tailored to your specific needs, offering everything from bespoke AI solutions to seamless integration and continuous optimization. Partner with us to unlock AI’s full potential and maintain a competitive edge in today’s fast-paced landscape.
       </p>
 
       <div className="relative flex justify-center gap-10 flex-wrap">
@@ -215,13 +238,13 @@ const Ai=()=>{
             </section>
 
             <CustomServiceDetail
-             heading={"Transform Your Business \nwith AI Solutions"}
+             heading={"Revolutionize Your Business with Cutting-Edge AI Solutions"}
              description={
-               "Modern AI solutions prioritize simplicity and effectiveness, integrating advanced features while maintaining ease of use. By striking a balance between user-friendly interfaces and powerful functionalities, these AI systems empower businesses to enhance productivity, improve decision-making, and drive customer satisfaction in today's fast-paced environment."
+               "Today’s AI solutions prioritize both simplicity and power, offering advanced features in an easy-to-use format. This balance empowers businesses to improve productivity, make smarter decisions, and enhance customer satisfaction in a rapidly evolving market."
              }
              buttonText="Book Consultation"
              buttonLink="/contact-us"
-             image="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/c23718a1-02af-4581-5cc1-93d939042e00/w=1920,q=75"
+             image={AIDevelopment}
            
              />
             <Clientsline/>

@@ -245,4 +245,23 @@ body{
 }
 /* ////////////////// */
 
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px; /* Set height of the scrollbar */
+  position: absolute;
+}
 
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #0D6E9C; /* Scrollbar color */
+  border-radius: 10px;
+  position: absolute;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+.itemButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

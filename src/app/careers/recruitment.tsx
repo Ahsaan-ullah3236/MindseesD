@@ -5,24 +5,24 @@ function Recruitment() {
  
   const scrollItems = [
     {
-      title: "01 Expertise & Innovation",
-      content: "With 5+ years' experience, MindSees delivers tailored solutions using industry expertise, certified developers, and cutting-edge technologies to drive business forward."
+      title: "01 Application Screening:",
+      content: "Candidates can submit their applications via our online portal, where our HR team thoroughly evaluates each one to ensure qualifications and alignment with our company values."
     },
     {
-      title: "02 Quality Assurance",
-      content: "We ensure robust, reliable, and secure software solutions through thorough testing at every stage. Our commitment to excellence guarantees solutions that exceed expectations."
+      title: "02 Initial Screening:",
+      content: "Qualified candidates undergo an initial screening, which may involve a phone interview or online assessment, allowing us to assess their skills and experience more thoroughly."
     },
     {
-      title: "03 Client-Centric Solutions",
-      content: "Our approach revolves around understanding your unique needs and delivering solutions that align perfectly with your business goals and objectives."
+      title: "03 Interviews:",
+      content: "Shortlisted candidates are invited to interview with key team members, including hiring managers and potential colleagues, to explore their technical skills, experiences, and cultural fit in greater detail."
     },
     {
-      title: "04 Cutting-Edge Technologies",
-      content: "We stay ahead of the curve by leveraging the latest technologies to build future-proof solutions that give you a competitive edge."
+      title: "04 Assessment:",
+      content: "Depending on the role, candidates may be required to complete technical assessments or other evaluations to showcase their skills and capabilities."
     },
     {
-      title: "05 Transparent Process",
-      content: "From initial consultation to final delivery, we maintain clear communication and complete transparency at every step of the project."
+      title: "05 Onboarding:",
+      content: "Once an offer is accepted, our HR team supports new hires throughout the onboarding process, offering necessary paperwork, training, and team introductions."
     }
   ];
 
@@ -82,7 +82,7 @@ function Recruitment() {
           </h1>
           
           <p className="text-lg text-white mb-8">
-          At MindSees, our recruitment process is transparent and inclusive. We assess qualifications and cultural fit through initial screenings and interviews with key team members. We value open communication and provide timely feedback to ensure a positive experience. Join us in our commitment to innovation and excellence.
+          At MindSees, our recruitment process is transparent and inclusive. We evaluate both qualifications and cultural fit through initial screenings and interviews with key team members. We prioritize open communication and provide timely feedback to ensure a positive experience. Join us in our dedication to innovation and excellence.
           </p>
           
           <div className="mt-9 text-black">

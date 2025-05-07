@@ -16,19 +16,19 @@ const Retail =()=>{
           iconUrl: "https://kavelogics.com/actual-industries/health/card/card-1.svg",
           title: "Inventory Management",
           description:
-            "Optimize stock levels and streamline supply chains with real-time visibility, reducing costs in retail.",
+            "Enhance stock management and optimize supply chains with real-time visibility, helping to reduce costs in retail.",
         },
         {
           iconUrl: "https://kavelogics.com/actual-industries/health/card/card-2.svg",
           title: "Customer Experiences",
           description:
-            "Drive engagement with AI-driven personalized shopping tools, fostering lasting customer relationships.",
+            "Boost engagement with AI-powered personalized shopping tools, building lasting customer relationships.",
         },
         {
           iconUrl: "https://kavelogics.com/actual-industries/health/card/card-3.svg",
           title: "Omni-channel Integration",
           description:
-            "Deliver a seamless shopping journey across all channels for a cohesive customer experience.",
+            "Provide a seamless shopping experience across all channels, ensuring a unified customer journey.",
         },
       ]
 
@@ -53,11 +53,7 @@ const Retail =()=>{
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
           title: "CRM Software",
         },
-        {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud-hover.svg",
-          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
-          title: "CRM Software",
-        },
+       
         {
           imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth-hover.svg",
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
@@ -82,6 +78,11 @@ const Retail =()=>{
           imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud-hover.svg",
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
           title: "Payment Integration",
+        },
+        {
+          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud-hover.svg",
+          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+          title: "Custom Software",
         }
       ];
 
@@ -90,37 +91,37 @@ const Retail =()=>{
           icon: "https://kavelogics.com/about/integrity.svg",
           title: "Enhanced Efficiency",
           description:
-            "Streamline operations with advanced inventory management and automation, reducing manual tasks and optimizing workflows for enhanced efficiency and productivity.",
+            "Simplify operations with advanced inventory management and automation, minimizing manual tasks and optimizing workflows to boost efficiency and productivity.",
         },
         {
           icon: "https://kavelogics.com/about/centricity.svg",
           title: "Enhanced CX",
           description:
-            "Deliver personalized shopping experiences across all channels, enhancing customer satisfaction and loyalty with streamlined operations and advanced automation.",
+            "Create personalized shopping experiences across all channels, boosting customer satisfaction and loyalty through streamlined operations and advanced automation.",
         },
         {
           icon: "https://kavelogics.com/about/integrity.svg",
           title: "Data-Driven Decisions",
           description:
-            "Utilize powerful analytics to gain actionable insights into customer behavior, market trends, operational performance, and optimize strategic decision-making processes effectively.",
+            "Leverage advanced analytics to extract actionable insights into customer behavior, market trends, and operational performance, optimizing strategic decision-making processes.",
         },
         {
           icon: "https://kavelogics.com/about/integrity.svg",
           title: "Scalability & Flexibility",
           description:
-            "Adapt and grow seamlessly with scalable solutions that flexibly accommodate changing business needs and dynamic market demands for sustained success.",
+            "Easily adapt and scale with flexible solutions that accommodate evolving business needs and dynamic market demands, ensuring long-term success.",
         },
         {
           icon: "https://kavelogics.com/about/integrity.svg",
           title: "Cost Savings",
           description:
-            "Increase cost efficiency through optimized processes, reduced inventory holding costs, improved resource allocation, and enhanced operational effectiveness.",
+            "Boost cost efficiency by optimizing processes, reducing inventory holding costs, improving resource allocation, and enhancing overall operational effectiveness.",
         },
         {
           icon: "https://kavelogics.com/about/integrity.svg",
           title: "Security & Compliance",
           description:
-            "Ensure data security and compliance with industry standards, safeguarding customer information, maintaining trust, and meeting regulatory requirements effectively.",
+            "Safeguard customer information and maintain trust by ensuring data security and compliance with industry standards, while effectively meeting regulatory requirements.",
         },
       ];
     return(
@@ -128,7 +129,7 @@ const Retail =()=>{
         <CustomBanner 
         heading={"Transforming Retail with \nInnovative Technology"}
         description={
-          "Enhance customer experiences, streamline operations, and drive growth with Kavelogics' custom software solutions for retailers. Stay ahead with our tailored solutions and advanced technologies. Choose Kavelogics for innovation that propels your retail business forward."
+          "Elevate customer experiences, optimize operations, and fuel growth with Mindsees' custom software solutions for retailers. Stay ahead with our tailored solutions and cutting-edge technologies. Choose Mindsees for the innovation that propels your retail business forward."
         }
         buttonText="Book Consultation"
         buttonLink="/contact-us"
@@ -136,14 +137,14 @@ const Retail =()=>{
        />
            <CustomValue
             heading="How MindSees Can Help in Retail"
-            subheading="Explore how MindSees can revolutionize your retail operations with our tailored solutions for the retail industry."
+            subheading="Discover how MindSees can transform your retail operations with our customized solutions designed specifically for the retail industry."
             values={valueItems}
            />
             <ServicePlatform
  title="Our Retail Platform Services"
- subtitle="Discover how MindSees can revolutionize your retail operations with our customized suite of enterprise solutions, optimizing processes and fostering growth."
+ subtitle="Explore how MindSees can transform your retail operations with our tailored enterprise solutions, streamlining processes and driving growth."
  imageUrl="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/2743efc8-f659-4d64-41b9-42cd51abca00/w=3840,q=75"
- description="Transform your retail business with Kavelogics' advanced tech solutions. Our team drives efficiency, fuels growth, and unlocks new opportunities. Partner with us to innovate and propel your success to new heights, delivering exceptional value to your customers at every touchpoint."
+ description="Revolutionize your retail business with Kavelogics' cutting-edge tech solutions. Our expert team enhances efficiency, drives growth, and creates new opportunities. Partner with us to innovate and elevate your success, delivering unmatched value to your customers at every interaction."
  scrollItems={scrollItems}
  buttonText="Let's discuss"
  buttonColor="#00d280"

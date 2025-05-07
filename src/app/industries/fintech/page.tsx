@@ -16,19 +16,19 @@ const FinTech=()=>{
           iconUrl: "https://kavelogics.com/actual-industries/health/card/card-1.svg",
           title: "Digital Banking",
           description:
-            "Develop customized digital banking solutions to enhance customer experience and streamline financial operations.",
+            "Create tailored digital banking solutions to improve customer experience and optimize financial operations.",
         },
         {
           iconUrl: "https://kavelogics.com/actual-industries/health/card/card-2.svg",
           title: "Blockchain Integration",
           description:
-            "Implement blockchain technology for secure and transparent transactions, ensuring data integrity and reducing fraud.",
+            "Integrate blockchain technology to ensure secure, transparent transactions, maintaining data integrity and minimizing fraud.",
         },
         {
           iconUrl: "https://kavelogics.com/actual-industries/health/card/card-3.svg",
           title: "Mobile Payments",
           description:
-            "Create secure and user-friendly mobile payment applications to facilitate seamless transactions and improve customer convenience.",
+            "Develop secure and intuitive mobile payment applications to enable smooth transactions and enhance customer convenience.",
         },
       ]
 
@@ -72,6 +72,16 @@ const FinTech=()=>{
           imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud-hover.svg",
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
           title: "Payment Gateway",
+        },
+        {
+          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud-hover.svg",
+          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+          title: "Regtech Solutions",
+        },
+        {
+          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud-hover.svg",
+          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+          title: "Financial Analytics",
         }
       ];
       const benefitsData = [
@@ -79,37 +89,37 @@ const FinTech=()=>{
           icon: "https://kavelogics.com/about/integrity.svg",
           title: "Enhanced Security",
           description:
-            "Our solutions prioritize your company's data security, ensuring safe transactions, protecting against fraud, and maintaining regulatory compliance standards.",
+            "Our solutions focus on safeguarding your company's data, ensuring secure transactions, preventing fraud, and upholding regulatory compliance standards.",
         },
         {
           icon: "https://kavelogics.com/about/centricity.svg",
           title: "User-Friendly Platforms",
           description:
-            "We design intuitive interfaces, making it easier for your customers to navigate, understand, and seamlessly use your fintech services. This enhances user satisfaction and engagement.",
+            "We create intuitive interfaces that make it easy for your customers to navigate, understand, and seamlessly use your FinTech services, boosting user satisfaction and engagement.",
         },
         {
           icon: "https://kavelogics.com/about/integrity.svg",
           title: "Seamless Integration",
           description:
-            "We ensure that your fintech solutions integrate smoothly with existing systems, minimizing downtime and operational disruption for seamless functionality.",
+            "We ensure your FinTech solutions integrate seamlessly with existing systems, minimizing downtime and operational disruptions for smooth, uninterrupted functionality.",
         },
         {
           icon: "https://kavelogics.com/about/integrity.svg",
           title: "Scalable Solutions",
           description:
-            "Our fintech platforms are built to grow with your business, accommodating increased user demand effortlessly while ensuring scalability and performance.",
+            "Our FinTech platforms are designed to scale with your business, effortlessly handling growing user demand while maintaining high performance and reliability.",
         },
         {
           icon: "https://kavelogics.com/about/integrity.svg",
           title: "Regulatory Compliance",
           description:
-            "We provide Regtech solutions that help your business stay compliant with ever-changing financial regulations and standards, ensuring peace of mind and operational efficiency.",
+            "We deliver RegTech solutions that keep your business compliant with evolving financial regulations and standards, ensuring peace of mind and operational efficiency.",
         },
         {
           icon: "https://kavelogics.com/about/integrity.svg",
           title: "Advanced Analytics",
           description:
-            "Our financial analytics tools give your business deep insights into market trends, customer behavior, operational efficiency, and competitive landscape, empowering informed decision-making.",
+            "Our financial analytics tools provide deep insights into market trends, customer behavior, operational efficiency, and the competitive landscape, empowering your business to make informed decisions.",
         },
       ];
     return(
@@ -117,7 +127,7 @@ const FinTech=()=>{
              <CustomBanner 
              heading={"Cutting-Edge FinTech \nSoftware Solutions"}
              description={
-               "FinTech is revolutionizing finance with interactive platforms and personalized services, catering to diverse needs and making financial management globally accessible."
+               "FinTech is transforming the financial sector with interactive platforms and personalized services, addressing a wide range of needs and making financial management accessible worldwide."
              }
              buttonText="Book Consultation"
              buttonLink="/contact-us"
@@ -125,15 +135,15 @@ const FinTech=()=>{
             />
             <CustomValue
       heading="How MindSees Can Help in Fintech"
-      subheading="Explore how MindSees can revolutionize your financial operations with our tailored Fintech solutions."
+      subheading="Discover how MindSees can transform your financial operations with our customized FinTech solutions."
       values={valueItems}
     />
 
 <ServicePlatform
       title="Our Fintech Platform Services"
-      subtitle="Discover how MindSees can  revolutionize your financial education and streamline operations with our comprehensive suite of tailored Fintech solutions."
+      subtitle="Explore how MindSees can transform your financial education and optimize operations with our all-encompassing suite of customized FinTech solutions."
       imageUrl="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/5cea0081-83f7-4c19-9470-e6cb15b12500/w=3840,q=75"
-      description="Integrating fintech services into your business holds the potential to revolutionize financial processes, boost efficiency, and enhance customer satisfaction. Embracing these innovative solutions requires careful planning and compliance with regulatory standards, offering your business a pathway to stay competitive in the digital era."
+      description="Integrating FinTech services into your business can transform financial processes, improve efficiency, and elevate customer satisfaction. Adopting these innovative solutions requires thoughtful planning and adherence to regulatory standards, providing your business with a competitive edge in the digital age."
       scrollItems={scrollItems}
       buttonText="Let's discuss"
       buttonColor="#00d280"

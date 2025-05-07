@@ -1,8 +1,15 @@
+"use client"
+import {useState} from 'react';
 import Image from 'next/image';
 import Lastbusinesses from "@/app/Lastbusinesses/page";
 import React from 'react'
+import Pagination from '../components/pagination';
 
 function page() {
+
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 4;
+  
     const CaseStudyData=[
         {
             image:"https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/8b2819ae-4071-46ae-fb62-ec094913f000/w=640,q=75",
@@ -35,18 +42,35 @@ function page() {
             description:"Life Up Top, is a user-friendly platform that provides customizable global tourism packages for unforgettable travel adventures.",
         },
     ]
+    const totalPages = Math.ceil(CaseStudyData.length / itemsPerPage);
+
+  const handleNext = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage((prev) => prev + 1);
+    } 
+  };
+  const handleBack = () => {
+    if (currentPage > 1) {
+      setCurrentPage((prev) => prev - 1);
+    }
+  };
+
+  const paginatedData = CaseStudyData.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
     return (
        
          <>
             <div className="pherosection-main-container spacing-secton">
                 <div className="pherosection-second-container ">
                     <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mb-6 mt-10">Case Studies</h1>
-                    <p className="text-sm text-gray-900 mb-10 max-w-3xl">
+                    <p className="text-[18px] text-gray-900 mb-10 max-w-3xl">
                         Explore the comprehensive and insightful case studies of our remarkably successful projects.
                     </p>
 
                     <div className="inner-mian-container-6 grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
-                        {CaseStudyData?.map((item, i)=>(
+                        {paginatedData?.map((item, i)=>(
                             <div className="first-container rounded-lg overflow-hidden group " key={i}>
                             <div className="overflow-hidden rounded-lg">
                                 <Image
@@ -70,13 +94,8 @@ function page() {
                         
                     </div>
                 </div>
-                 <div className="flex justify-center m-12">
-                    <a
-                    href="/portfolio/Nextpage"  rel="noopener noreferrer"
-                    className="bg-[#00D280] text-white px-3 py-4 text-sm font-bold rounded-sm hover:bg-[#00b96a] transition-colors w-full sm:w-auto text-center">
-                    Next Page 
-                   </a>
-                </div>
+                <Pagination currentPage={currentPage} totalPages={totalPages} onNext={handleNext}  onBack={handleBack}/>
+                
              </div>
              <Lastbusinesses/>
             

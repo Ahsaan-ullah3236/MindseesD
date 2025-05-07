@@ -2,7 +2,8 @@
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
-import leftImage from "@/app/Ourprocess/image/bgimage.png"
+// import leftImage from "@/app/Ourprocess/image/bgimage.png"
+import leftImage from "./image/bgimage.png"
 interface AccordionItem {
   title: string;
   content: string;

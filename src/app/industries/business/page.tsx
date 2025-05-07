@@ -16,19 +16,19 @@ const Business =()=>{
           iconUrl: "https://kavelogics.com/actual-industries/health/card/card-1.svg",
           title: "Business Automation",
           description:
-            "Implement automated solutions to streamline workflows and improve efficiency.",
+            "Deploy automated solutions to optimize workflows and enhance operational efficiency.",
         },
         {
           iconUrl: "https://kavelogics.com/actual-industries/health/card/card-2.svg",
           title: "Custom Development",
           description:
-            "Develop tailored software applications to meet specific business needs and goals.",
+            "Create customized software applications designed to address your unique business needs and objectives.",
         },
         {
           iconUrl: "https://kavelogics.com/actual-industries/health/card/card-3.svg",
           title: "Cloud Integration",
           description:
-            "Assist in migrating business operations to the cloud for scalability and enhanced collaboration.",
+            "Help migrate your business operations to the cloud, ensuring scalability and fostering improved collaboration.",
         },
       ]
 
@@ -80,60 +80,60 @@ const Business =()=>{
           icon: "https://kavelogics.com/about/integrity.svg",
           title: "Streamlined Prototyping",
           description:
-            "We accelerate your product development lifecycle, transforming innovative ideas into prototypes efficiently with our expert guidance, support, and industry-leading technology solutions.",
+            "We fast-track your product development lifecycle, turning innovative ideas into prototypes quickly with our expert guidance, support, and cutting-edge technology solutions.",
         },
         {
           icon: "https://kavelogics.com/about/centricity.svg",
           title: "Holistic Transformation",
           description:
-            "We tailor comprehensive digital transformation solutions to align with your business goals, enhancing efficiency and competitiveness across operations and ensuring sustainable growth.",
+            "We create customized digital transformation solutions that align with your business goals, boosting efficiency and competitiveness across operations while ensuring long-term growth.",
         },
         {
           icon: "https://kavelogics.com/about/integrity.svg",
           title: "Actionable Insights",
           description:
-            "We empower data-driven decision-making with powerful analytics and visualization tools, optimizing performance across your entire organization and enabling strategic insights",
+            "We enable data-driven decision-making with advanced analytics and visualization tools, optimizing performance across your organization and providing strategic insights.",
         },
         {
           icon: "https://kavelogics.com/about/integrity.svg",
           title: "Efficient Delivery",
           description:
-            "We ensure timely project success with agile methodologies that adapt to evolving needs, aligning with your business objectives under our expert project management.",
+            "We guarantee timely project success by using agile methodologies that adapt to changing needs, ensuring alignment with your business objectives through expert project management.",
         },
         {
           icon: "https://kavelogics.com/about/integrity.svg",
           title: "Strategic Protection",
           description:
-            "We provide strategic insights and advisory services, safeguarding your innovations and maximizing intellectual property value in navigating patent landscapes.",
+            "We offer strategic insights and advisory services, protecting your innovations and maximizing the value of your intellectual property as you navigate patent landscapes.",
         },
         {
           icon: "https://kavelogics.com/about/integrity.svg",
           title: "Competitive Edge",
           description:
-            "We drive sustainable growth and market leadership with robust market strategies tailored to capitalize on opportunities and enhance industry presence.",
+            "We foster sustainable growth and market leadership with strong, tailored market strategies that capitalize on opportunities and strengthen your industry presence.",
         },
       ];
     return(
         <div>
         <CustomBanner 
-        heading={"Transformative Business \nSoftware Solutions"}
+        heading={"Transformative Business Software Solutions"}
         description={
-          "Drive success with MindSees' innovative solutions for tech businesses. Stay ahead with our cutting-edge software and advanced integrations. Choose Kavelogics for innovation that propels your business forward."
+          "Accelerate your success with MindSees' innovative solutions for tech businesses. Stay ahead with our cutting-edge software and seamless integrations. Choose MindSees for innovation that drives your business forward."
         }
         buttonText="Book Consultation"
         buttonLink="/contact-us"
         image={bannerImage}
        />
            <CustomValue
-            heading="How MindSees Can Help in Business"
-            subheading="Explore how MindSees can revolutionize your business operations with our tailored Business solutions."
+            heading="How MindSees Can Support Your Business"
+            subheading="Discover how MindSees can transform your business operations with our customized business solutions."
             values={valueItems}
            />
             <ServicePlatform
  title="Our Business Platform Services"
- subtitle="Explore how MindSees can transform your business operations with our tailored suite of enterprise solutions, optimizing processes and driving growth"
+ subtitle="Discover how MindSees can transform your business operations with our customized suite of enterprise solutions, streamlining processes and driving growth."
  imageUrl="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/20aaebc0-a483-4372-6716-8ff91e6abc00/w=3840,q=75"
- description="Elevate your business with MindSees' cutting-edge tech solutions. Our expert team delivers innovative services to enhance efficiency, drive growth, and unlock new opportunities. Partner with us to unleash the power of innovation and propel your business to unprecedented success."
+ description="Boost your business with MindSees' advanced tech solutions. Our expert team provides innovative services that enhance efficiency, foster growth, and open new opportunities. Partner with us to harness the power of innovation and take your business to new heights."
  scrollItems={scrollItems}
  buttonText="Let's discuss"
  buttonColor="#00d280"
@@ -144,7 +144,7 @@ const Business =()=>{
 />
 <Clientsline/>
 <BenefitsCard 
-     heading="Benefits of Having MindSees' Business Solutions" 
+     heading="Advantages of Choosing MindSees' Business Solutions" 
      benefits={benefitsData} 
    />
    <div className="mt-14 mb-20">

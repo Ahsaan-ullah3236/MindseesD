@@ -78,6 +78,7 @@ export default function SingleSelectDropdown({
             {options.map((option) => (
               <div
                 key={option.id}
+                
                 onClick={() => handleOptionClick(option)}
                 className={`px-3 py-2 hover:bg-gray-100 rounded cursor-pointer flex items-center ${
                   selectedOption?.id === option.id ? '' : ''

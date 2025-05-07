@@ -2,6 +2,8 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
+import bgoverlay from "@/app/services/ai/image/Background.svg"
+
 
 interface Technology {
   name: string;
@@ -36,7 +38,7 @@ export const TechnologyGrid: React.FC<TechnologyGridProps> = ({
             >
               <div className="w-16 h-16 relative flex justify-center">
                 <Image
-                  src={tech.icon.trim()}
+                  src={tech.icon}
                   alt={tech.name}
                   height={50}
                   width={50}
@@ -49,8 +51,17 @@ export const TechnologyGrid: React.FC<TechnologyGridProps> = ({
         </div>
       </div>
     </div>
-    <div className="max-w-5xl bg-[#013a54] h-[70vh] mx-auto -mt-30 mb-20 rounded-2xl">
-<div className="flex justify-center items-center h-full ">
+    <div className="relative">
+    <Image
+          src={bgoverlay}
+          alt="Blog illustration"
+          
+          
+
+
+          className="object-cover -mt-28 w-full h-[360] rounded-lg md:max-w-5xl mx-auto"
+        />
+<div className="flex justify-center items-center itemButton ">
 <Link href="/contact-us">
 <button className="bg-[#00d280] cursor-pointer text-white font-medium text-sm md:text-lg py-4 px-4 rounded-md transition-colors duration-300">
   Chat with Experts

@@ -17,20 +17,20 @@ const WebsiteDevelopment=()=>{
 
     const faqs = [
         {
-          question: "Can you help with content creation and copywriting for websites?",
-          answer: "While our primary focus is on website development and design, we can provide guidance and recommendations for content creation and copywriting. We work closely with clients to understand their messaging and branding, and can collaborate with external content creators if needed.",
+          question: "Do you offer content creation and copywriting services for websites?",
+          answer: "Yes, we provide expert content creation and copywriting services to ensure your website engages and converts visitors effectively.",
         },
         {
-          question: "What is your process for website testing and quality assurance?",
-          answer: "We conduct thorough testing throughout the website development process to ensure that all features and functionalities work as intended. Our testing includes functional testing, usability testing, compatibility testing, performance testing, and security testing to identify and address any issues before launch.",
+          question: "What steps do you take for website testing and quality assurance?",
+          answer: "We conduct thorough testing across multiple devices and browsers to ensure functionality, performance, and security, delivering a flawless website experience.",
         },
         {
-          question: "How do you handle website hosting and domain registration?",
-          answer: "We can assist with website hosting and domain registration, either by recommending reliable hosting providers and domain registrars or by managing the process on behalf of the client. We ensure that websites are hosted on secure and reliable servers to guarantee optimal performance and uptime.",
+          question: "How do you manage website hosting and domain registration?",
+          answer: "We assist with selecting the right hosting provider and handle domain registration to ensure a seamless launch and ongoing performance of your website.",
         },
         {
-          question: "Do you provide website maintenance and support services after launch?",
-          answer: "Yes, we offer ongoing website maintenance and support services to ensure that your website remains secure, up-to-date, and performing optimally post-launch. Our maintenance services include regular updates, security monitoring, backup management, and technical support.",
+          question: "Do you offer post-launch website maintenance and support services?",
+          answer: "Yes, we offer ongoing website maintenance and support services to ensure your website stays updated, secure, and performs optimally.",
         },
       
       ];
@@ -59,37 +59,37 @@ const WebsiteDevelopment=()=>{
       icon: "https://kavelogics.com/about/integrity.svg",
       title: "Expertise & Experience",
       description:
-        "With years of experience under our belt, we have successfully delivered numerous projects across various industries, ensuring high-quality results that meet our clients' needs.",
+        "With years of expertise, we have successfully completed numerous projects across diverse industries, consistently delivering high-quality results that align with our clients' needs.",
     },
     {
       icon: "https://kavelogics.com/about/centricity.svg",
       title: "Customized Solutions",
       description:
-        "We take the time to understand your unique requirements, goals, and brand identity to tailor a customized solution that perfectly aligns with your vision and objectives.",
+        "We invest time in understanding your unique needs, goals, and brand identity to create a personalized solution that aligns perfectly with your vision and objectives.",
     },
     {
       icon: "https://kavelogics.com/about/integrity.svg",
       title: "Cutting-edge Technology",
       description:
-        "We stay ahead of the curve by leveraging the latest tools, technologies, and frameworks in website development. We ensure to deliver optimal performance and user experience.",
+        "We stay at the forefront of innovation by utilizing the latest tools, technologies, and frameworks in website development, ensuring optimal performance and an exceptional user experience.",
     },
     {
       icon: "https://kavelogics.com/about/integrity.svg",
       title: "Attention to Detail",
       description:
-        "Our meticulous approach to website development ensures that every aspect of your website, from design elements to coding standards, is carefully crafted to perfection.",
+        "Our thorough approach to website development guarantees that every detail, from design elements to coding standards, is meticulously crafted to deliver perfection.",
     },
     {
       icon: "https://kavelogics.com/about/integrity.svg",
       title: "Timely Delivery",
       description:
-        "Our streamlined development process, coupled with effective project management practices, enables us to meet tight deadlines without compromising on quality.",
+        "Our efficient development process, combined with strong project management practices, ensures we meet tight deadlines while maintaining the highest quality standards.",
     },
     {
       icon: "https://kavelogics.com/about/integrity.svg",
       title: "Exceptional Support",
       description:
-        "We offer ongoing support and maintenance services to ensure that your website remains up and running smoothly at all times. Our team is here to help you every step of the way.",
+        "We provide continuous support and maintenance services to keep your website running smoothly. Our team is dedicated to assisting you at every stage.",
     },
     
   ];
@@ -99,37 +99,37 @@ const WebsiteDevelopment=()=>{
       icon: "https://kavelogics.com/about/integrity.svg",
       title: "Custom Web Development",
       description:
-        "We provide custom web development, crafting websites from scratch to precisely match clients' brand identity, functional needs, and target audience preferences.",
+        "We offer custom web development, building websites from the ground up to perfectly align with clients' brand identity, functional requirements, and target audience needs.",
     },
     {
       icon: "https://kavelogics.com/about/centricity.svg",
       title: "E-commerve Development",
       description:
-        "We offer end-to-end e-commerce development solutions, including online store setup, product catalog management, secure payment gateway and order processing functionalities.",
+        "We provide comprehensive e-commerce development solutions, covering online store setup, product catalog management, secure payment gateways, and seamless order processing functionalities.",
     },
     {
       icon: "https://kavelogics.com/about/integrity.svg",
       title: "Website Maintenance",
       description:
-        "We provide clients with website maintenance plans that include frequent updates, backups, performance tracking, and help with trouble to ensure their websites are up and operating.",
+        "We offer website maintenance plans that include regular updates, backups, performance monitoring, and troubleshooting support to ensure your website remains operational and efficient.",
     },
     {
       icon: "https://kavelogics.com/about/integrity.svg",
       title: "PWA Development",
       description:
-        "We explore the creation of progressive web applications (PWAs) aiming to deliver a web browser experience comparable to that of native apps.",
+        "We specialize in developing Progressive Web Applications (PWAs) that offer a web browser experience on par with native apps.",
     },
     {
       icon: "https://kavelogics.com/about/integrity.svg",
       title: "Performance Optimization",
       description:
-        "We optimize website performance by implementing techniques such as image compression, use of CSS & JavaScript, and leveraging content delivery networks.",
+        "We enhance website performance through techniques like image compression, efficient use of CSS and JavaScript, and leveraging content delivery networks (CDNs).",
     },
     {
       icon: "https://kavelogics.com/about/integrity.svg",
       title: "CMS Integration",
       description:
-        "Our team offers integration with popular CMS platforms such as WordPress, Drupal, or Joomla for easy content updates and management by clients.",
+        "Our team provides seamless integration with popular CMS platforms like WordPress, Drupal, and Joomla, allowing clients to easily manage and update their content.",
     },
     
   ];
@@ -138,7 +138,7 @@ const WebsiteDevelopment=()=>{
             <ServicesCustomBanner
              heading={"Website Development"}
              description={
-               "Get full stack web development services that connect front-end design, user experience, back-end management, and database. Join us on a transformative journey to turn your vision into a captivating reality."
+               "Experience comprehensive full-stack web development services that seamlessly integrate front-end design, user experience, back-end management, and database functionality. Let us help transform your vision into a captivating reality."
              }
              buttonText="Book Consultation"
              buttonLink="/contact-us"
@@ -148,15 +148,15 @@ const WebsiteDevelopment=()=>{
             
 
             <CustomSolutionCard 
-      heading="Our Innovative Website Development Solutions" 
-      subHeading="At MindSees, we specialize in developing captivating websites that drive business growth. Our technical expertise ensures your digital presence stands out in today's competitive landscape."
+      heading="Our Cutting-Edge Website Development Solutions" 
+      subHeading="At MindSees, we specialize in creating engaging websites that fuel business growth. Our technical expertise ensures your digital presence excels in today’s competitive market."
       Solution={SolutionData} 
     />
 
             <section className="py-16 text-center bg-white">
       <h2 className="text-5xl font-bold text-[#013a54] mb-4">Our Website Devlopment Process</h2>
       <p className="text-center mb-16 max-w-3xl mx-auto text-lg leading-[1.3] text-[#013a54]">
-      Our team of professionals will design, build, test, and release new applications created especially for you using the power of bespoke web development. It will take a collaborative effort from front-end, back-end, and full-stack developers, business analysts, and quality assurance testers to pull this off.
+      Our team of experts will design, build, test, and launch custom applications tailored to your needs through bespoke web development. This collaborative effort involves front-end, back-end, and full-stack developers, business analysts, and quality assurance testers to ensure success.
       </p>
 
       <div className="relative flex justify-center gap-10 flex-wrap">
@@ -223,9 +223,9 @@ const WebsiteDevelopment=()=>{
             </section>
 
             <CustomServiceDetail
-             heading={"Pinnacle Website \nDevelopment Services"}
+             heading={"Premier Website Development Services"}
              description={
-               "Embark on a journey of innovation with our top-tier development services. We deliver solutions that redefine industry standards, ensuring a seamless experience from concept to execution. Elevate your digital presence with our commitment to excellence. Partner with us today and transform your ideas into impactful realities."
+               "Embark on an innovative journey with our premier development services. We provide solutions that set new industry standards, ensuring a smooth experience from concept to execution. Enhance your digital presence with our dedication to excellence. Partner with us today to turn your ideas into impactful realities."
              }
              buttonText="Book Consultation"
              buttonLink="/contact-us"

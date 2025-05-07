@@ -15,39 +15,39 @@ const Health =()=>{
     const benefitsData = [
         {
           icon: "https://kavelogics.com/about/integrity.svg",
-          title: "Innovation",
+          title: "Improved Accuracy",
           description:
-            "Our advanced healthcare tools enhance your data accuracy, effectively minimizing errors in patient records and treatment plans.",
+            "Our advanced healthcare tools boost data accuracy, helping to minimize errors in patient records and treatment plans.",
         },
         {
           icon: "https://kavelogics.com/about/centricity.svg",
-          title: "Customer-Centricity",
+          title: "Patient Satisfaction",
           description:
-            "Our user-friendly systems enhance your patient engagement and satisfaction through better, more efficient, and personalized service delivery.",
+            "Our user-friendly systems elevate patient engagement and satisfaction by delivering better, more efficient, and personalized care.",
         },
         {
           icon: "https://kavelogics.com/about/integrity.svg",
-          title: "Integrity",
+          title: "Enhanced Efficiency",
           description:
-            "Our innovative solutions seamlessly streamline your processes, reducing manual work and significantly increasing overall operational efficiency.",
+            "Our innovative solutions effortlessly streamline your processes, cut down manual tasks, and greatly enhance overall operational efficiency.",
         },
         {
           icon: "https://kavelogics.com/about/integrity.svg",
-          title: "Integrity",
+          title: "Data Security",
           description:
-            "Our innovative solutions seamlessly streamline your processes, reducing manual work and significantly increasing overall operational efficiency.",
+            "We safeguard your data with advanced security measures, ensuring patient confidentiality and full compliance with industry standards and regulations.",
         },
         {
           icon: "https://kavelogics.com/about/integrity.svg",
-          title: "Integrity",
+          title: "Scalable Solutions",
           description:
-            "Our innovative solutions seamlessly streamline your processes, reducing manual work and significantly increasing overall operational efficiency.",
+            "Our services offer scalable solutions that grow with your facility, effortlessly adapting to your changing needs and requirements.",
         },
         {
           icon: "https://kavelogics.com/about/integrity.svg",
-          title: "Integrity",
+          title: "Seamless Integration",
           description:
-            "Our innovative solutions seamlessly streamline your processes, reducing manual work and significantly increasing overall operational efficiency.",
+            "Our integration services enable seamless data flow between systems, enhancing information accessibility and supporting better decision-making.",
         },
       ];
 
@@ -55,63 +55,73 @@ const Health =()=>{
         {
           imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/medical-hover.svg",
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/medical.svg",
-          title: "Expertise & Innovation",
+          title: "Medical Image Interpretation",
         },
         {
           imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/management-hover.svg",
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/management.svg",
-          title: "Quality Assurance",
+          title: "Management Systems for Hospitals",
         },
         {
           imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth-hover.svg",
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
-          title: "Client-Centric Solutions",
+          title: "Telehealth App Development",
         },
         {
           imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/integration-hover.svg",
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
-          title: "Cutting-Edge Technologies",
+          title: "Integration of Health Data",
         },
         {
           imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud-hover.svg",
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
-          title: "Transparent Process",
+          title: "Cloud Health Services",
         },
         {
           imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth-hover.svg",
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
-          title: "Client",
+          title: "EHR Creation",
         },
         {
           imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/integration-hover.svg",
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
-          title: "Technologies",
+          title: "Development of LIMS",
         },
         {
           imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud-hover.svg",
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
-          title: "Transparent",
+          title: "Remote Patient Observation",
+        },
+        {
+          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud-hover.svg",
+          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+          title: "CRM for Healthcare",
+        },
+        {
+          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud-hover.svg",
+          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+          title: "Solutions for Pharmacy Management",
         }
       ];
 
     const valueItems=[
         {
           iconUrl: "https://kavelogics.com/actual-industries/health/card/card-1.svg",
-          title: "Innovation",
+          title: "Digital Health Solutions",
           description:
-            "We pioneer new ideas and technologies to deliver solutions that drive your business forward.",
+            "Unlock personalized digital health solutions to enhance patient care and streamline operational efficiency.",
         },
         {
           iconUrl: "https://kavelogics.com/actual-industries/health/card/card-2.svg",
-          title: "Customer-Centricity",
+          title: "Data Analytics",
           description:
-            "Your needs and goals are our top priority, and we tailor our solutions to meet them perfectly.",
+            "Leverage advanced data analytics to gain valuable insights and enhance decision-making in healthcare operations.",
         },
         {
           iconUrl: "https://kavelogics.com/actual-industries/health/card/card-3.svg",
-          title: "Integrity",
+          title: "Telehealth Applications",
           description:
-            "At Kavelogics, we prioritize trust and transparency in all interactions—with clients, partners, and within our team.",
+            "Access cutting-edge telehealth applications for seamless remote patient consultation and monitoring.",
         },
       ]
 
@@ -120,7 +130,7 @@ const Health =()=>{
             <CustomBanner 
              heading={"Custom Healthcare \nSoftware Solutions"}
              description={
-               "Reshape healthcare system with personalized digital solutions by enhancing accessibility and improving patient outcomes. Join us on a transformative journey to turn your vision into a captivating reality."
+               "Revolutionize the healthcare system with tailored digital solutions that boost accessibility and improve patient outcomes. Embark on a transformative journey with us to bring your vision to life and make a lasting impact. "
              }
              buttonText="Book Consultation"
              buttonLink="/contact-us"
@@ -128,15 +138,15 @@ const Health =()=>{
             />
             <CustomValue
       heading="How MindSees Can Help in Healthcare"
-      subheading="Explore how MindSees can transform your healthcare operations with our tailored digital solutions."
+      subheading="Discover how MindSees can elevate your healthcare operations through our customized digital solutions."
       values={valueItems}
     />
 
    <ServicePlatform
       title="Our Health Platform Services"
-      subtitle="Discover how Kavelogics can enhance patient care and streamline operations with our comprehensive suite of tailored digital health solutions"
+      subtitle="Explore how MindSees can elevate patient care and optimize operations with our comprehensive range of customized digital health solutions."
       imageUrl="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/5cea0081-83f7-4c19-9470-e6cb15b12500/w=3840,q=75"
-      description="Our custom telehealth software empowers physicians with virtual consultations, mobile healthcare services, video conferencing, real-time data handling, user-friendly screen sharing, and advanced annotation features, ensuring a revolutionary healthcare experience for hospitals and startups alike."
+      description="Our custom telehealth software empowers physicians with virtual consultations, mobile healthcare services, video conferencing, real-time data management, intuitive screen sharing, and advanced annotation tools, delivering a transformative healthcare experience for both hospitals and startups."
       scrollItems={scrollItems}
       buttonText="Let's discuss"
       buttonColor="#00d280"
@@ -150,7 +160,7 @@ const Health =()=>{
     
     <Clientsline/>
     <BenefitsCard 
-      heading="Benefits of Having Kavelogics' Health Solutions" 
+      heading="Advantages of Choosing MindSees Health Solutions" 
       benefits={benefitsData} 
     />
     <div className="mt-14 mb-20">
