@@ -13,40 +13,57 @@ import teleHealth  from "@/app/industries/health/image/teleHealth.svg"
 import digital from "@/app/industries/health/image/digital.svg"
 import dataAnal from "@/app/industries/health/image/dataAnal.svg"
 
+import medicalImageInter from "@/app/industries/health/image/dataAnal.svg"
+import mhospital from "@/app/industries/health/image/mhospital.svg"
+import  integration from "@/app/industries/health/image/integration.svg"
+import telehealthMangment from "@/app/industries/health/image/telehealthMangment.svg"
+import cloudHealthServices from "@/app/industries/health/image/dataAnal.svg"
+import ehr from "@/app/industries/health/image/ehr.svg"
+import lims1 from "@/app/industries/health/image/lims1.svg"
+import remote from "@/app/industries/health/image/remote.svg"
+import  CRM from "@/app/industries/health/image/CRM.svg"
+import pharmacy from "@/app/industries/health/image/pharmacy.svg"
+
+import ImprovedAccurac from "@/app/industries/health/image/ImprovedAccurac.svg"
+import PatientSatisfaction from "@/app/industries/health/image/PatientSatisfaction.svg"
+import EnhancedEfficiency from "@/app/industries/health/image/EnhancedEfficiency.svg"
+import dataSecurity2 from "@/app/industries/health/image/dataSecurity2.svg"
+import scalabelSolution from "@/app/industries/health/image/scalabelSolution.svg"
+import SeamlessIntegration from "@/app/industries/health/image/SeamlessIntegration.svg"
 const Health =()=>{
     const benefitsData = [
         {
-          icon: "https://kavelogics.com/about/integrity.svg",
+          icon: ImprovedAccurac,
           title: "Improved Accuracy",
           description:
             "Our advanced healthcare tools boost data accuracy, helping to minimize errors in patient records and treatment plans.",
         },
         {
-          icon: "https://kavelogics.com/about/centricity.svg",
+          icon: PatientSatisfaction,
           title: "Patient Satisfaction",
           description:
             "Our user-friendly systems elevate patient engagement and satisfaction by delivering better, more efficient, and personalized care.",
         },
         {
-          icon: "https://kavelogics.com/about/integrity.svg",
+          icon: EnhancedEfficiency,
           title: "Enhanced Efficiency",
           description:
             "Our innovative solutions effortlessly streamline your processes, cut down manual tasks, and greatly enhance overall operational efficiency.",
         },
         {
-          icon: "https://kavelogics.com/about/integrity.svg",
+          icon: dataSecurity2,
           title: "Data Security",
           description:
             "We safeguard your data with advanced security measures, ensuring patient confidentiality and full compliance with industry standards and regulations.",
         },
         {
-          icon: "https://kavelogics.com/about/integrity.svg",
+          icon: scalabelSolution,
           title: "Scalable Solutions",
           description:
             "Our services offer scalable solutions that grow with your facility, effortlessly adapting to your changing needs and requirements.",
         },
         {
-          icon: "https://kavelogics.com/about/integrity.svg",
+          icon: SeamlessIntegration,
           title: "Seamless Integration",
           description:
             "Our integration services enable seamless data flow between systems, enhancing information accessibility and supporting better decision-making.",
@@ -54,52 +71,52 @@ const Health =()=>{
       ];
     const scrollItems = [
         {
-          imagelight: medicalImageI,
-          imageDark: medicalImageI,
+          imagelight: medicalImageInter,
+          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/management.svg",
           title: "Medical Image Interpretation",
         },
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/management-hover.svg",
+          imagelight: mhospital,
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/management.svg",
           title: "Management Systems for Hospitals",
         },
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth-hover.svg",
+          imagelight: telehealthMangment,
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
           title: "Telehealth App Development",
         },
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/integration-hover.svg",
+          imagelight: integration,
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
           title: "Integration of Health Data",
         },
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud-hover.svg",
+          imagelight: cloudHealthServices,
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
           title: "Cloud Health Services",
         },
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth-hover.svg",
+          imagelight: ehr,
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
           title: "EHR Creation",
         },
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/integration-hover.svg",
+          imagelight: lims1,
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
           title: "Development of LIMS",
         },
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud-hover.svg",
+          imagelight: remote,
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
           title: "Remote Patient Observation",
         },
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud-hover.svg",
+          imagelight: CRM ,
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
           title: "CRM for Healthcare",
         },
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud-hover.svg",
+          imagelight: pharmacy,
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
           title: "Solutions for Pharmacy Management",
         }
