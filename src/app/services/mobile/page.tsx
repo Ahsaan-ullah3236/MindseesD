@@ -13,10 +13,30 @@ import CustomServiceDetail from "../components/customServiceDetail";
 import CustomWhyChoose from "../components/customWhyChooseSection";
 import { TechnologyGrid } from "../components/customTechnologiesSection";
 import { FaqAccordion } from "../components/custonFAQ";
+import MobileAppdevelopment from "@/app/services/mobile/image/MobileAppdevelopment.svg"
+import iosDevelopment from "@/app/services/mobile/image/iosDevelopment.svg"
+import BackendDevelopment from "@/app/services/mobile/image/BackendDevelopment.svg"
+import AppStoreDevelopment from "@/app/services/mobile/image/AppStoreDevelopment.svg"
+import AppMaintainance from "@/app/services/mobile/image/AppMaintainance.svg"
+import QualityA  from "@/app/services/mobile/image/QualityA.svg"
+import ExpertiseAcross  from "@/app/services/mobile/image/ExpertiseAcross.svg"
+import CustomizedSolution2  from "@/app/services/mobile/image/CustomizedSolution2.svg"
+import MCentric  from "@/app/services/mobile/image/MCentric.svg"
+import MQualityA  from "@/app/services/mobile/image/MQualityA.svg"
+import MScalability  from "@/app/services/mobile/image/MScalability.svg"
+import MtimelyDelivery  from "@/app/services/mobile/image/MtimelyDelivery.svg"
+
+import  reactlogo from "@/app/services/mobile/image/reactlogo.svg"
+import flutter  from "@/app/services/mobile/image/flutter.svg"
+import ionic  from "@/app/services/mobile/image/Ionic.svg"
+import  NativeLogo  from "@/app/services/mobile/image/NativeLogo.svg"
+import SwiftLogo  from "@/app/services/mobile/image/SwiftLogo.svg"
+import AngularLogo  from "@/app/services/mobile/image/AngularLogo.svg"
+import AppSheetLogo  from "@/app/services/mobile/image/AppSheetLogo.svg"
+import  jquery from "@/app/services/mobile/image/jquery.svg"
+import AndroidStudio  from "@/app/services/mobile/image/AndroidStudio.svg"
 
 const MobileAppDevelopment=()=>{
-
-
     const faqs = [
         {
           question: "Why is mobile app development important?",
@@ -36,59 +56,56 @@ const MobileAppDevelopment=()=>{
         },
       
       ];
-
     const technologies = [
-        { name: "React Native", icon: "https://kavelogics.com/services/mobile/media/react-native-logo.svg" },
-        { name: "Flutter", icon: "https://kavelogics.com/services/mobile/media/flutter-logo.svg"},
-        { name: "Ionic", icon: "https://kavelogics.com/services/mobile/media/ionic-logo.svg"},
-        { name: "NativeScript", icon: "https://kavelogics.com/services/mobile/media/nativescript-logo.svg" },
-        { name: "Swift", icon: "https://kavelogics.com/services/mobile/media/swift-logo.svg" },
-        { name: "Angular", icon: "https://kavelogics.com/services/mobile/media/angular-logo.svg"},
-        { name: "App Sheet", icon: "https://kavelogics.com/services/mobile/media/app-sheet-logo.svg"},
-        { name: "jQuery", icon: "https://kavelogics.com/services/mobile/media/jquery-logo.svg"},
-        { name: "Android Studio", icon: "https://kavelogics.com/services/mobile/media/android-studio-logo.svg" },
+        { name: "React Native", icon: reactlogo },
+        { name: "Flutter", icon: flutter},
+        { name: "Ionic", icon: ionic},
+        { name: "NativeScript", icon: NativeLogo },
+        { name: "Swift", icon: SwiftLogo },
+        { name: "Angular", icon: AngularLogo},
+        { name: "App Sheet", icon: AppSheetLogo},
+        { name: "jQuery", icon: jquery},
+        { name: "Android Studio", icon: AndroidStudio },
       ];
-
        const features = [
     { title: 'API Integration', subtitle: 'Services' },
     { title: 'Cross Platform', subtitle: 'App Development' },
     { title: 'Android App', subtitle: 'Development' },
     { title: 'iOS', subtitle: 'Applications' },
   ];
-
   const CustomWhyChooseData = [
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: ExpertiseAcross,
       title: "Expertise Across Platforms",
       description:
         "We create mobile apps for iOS, Android, and cross-platform solutions, ensuring seamless compatibility and broad reach across various devices and operating systems.",
     },
     {
-      icon: "https://kavelogics.com/about/centricity.svg",
+      icon: CustomizedSolution2,
       title: "Customized Solutions",
       description:
         "We design custom mobile apps tailored to your specific needs, guiding the process from concept to completion to ensure alignment with your vision and goals.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: MCentric,
       title: "User-Centric Design",
       description:
         "Our mobile app development focuses on intuitive interfaces, smooth navigation, and engaging interactions to deliver exceptional user satisfaction.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: MQualityA ,
       title: "Quality Assurance",
       description:
         "We prioritize quality by performing extensive testing and code reviews to ensure each mobile app meets the highest standards of performance, reliability, and security.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: MScalability,
       title: "Scalability & Flexibility",
       description:
         "Scalable and adaptable mobile app solutions for startups and enterprises, built to evolve with your business needs and emerging technologies.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: MtimelyDelivery,
       title: "Timely Delivery & Support",
       description:
         "We deliver mobile apps on time, within budget, and with uncompromised quality. Our support team is available post-launch to promptly address any concerns.",
@@ -97,37 +114,37 @@ const MobileAppDevelopment=()=>{
   ];
   const SolutionData = [
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: MobileAppdevelopment,
       title: "Mobile App Development",
       description:
         "We offer customized mobile app development solutions tailored to client needs, including native, hybrid, and cross-platform options.",
     },
     {
-      icon: "https://kavelogics.com/about/centricity.svg",
+      icon: iosDevelopment,
       title: "iOS App Development",
       description:
         "We specialize in developing high-quality, user-friendly iOS applications that are compatible with all Apple devices, including iPhones, iPads, and Apple Watches.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: BackendDevelopment,
       title: "Backend Development",
       description:
         "We create robust backend systems, APIs, and databases to support mobile app functionality, ensuring smooth data synchronization, storage, and retrieval.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: AppStoreDevelopment ,
       title: "App Store Deployment",
       description:
         "We guide clients through app store submission, optimization, and compliance, ensuring successful deployment and increased visibility on platforms.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: AppMaintainance,
       title: "App Maintenance",
       description:
         "We offer continuous maintenance and support services, including updates, bug fixes, performance optimization, security patches, and compatibility improvements.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: QualityA,
       title: "Quality Assurance",
       description:
         "We perform extensive testing across multiple devices, platforms, and network conditions to identify and fix bugs, ensuring peak performance, security, and reliability.",

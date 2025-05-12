@@ -12,7 +12,25 @@ import CustomServiceDetail from "../components/customServiceDetail";
 import CustomWhyChoose from "../components/customWhyChooseSection";
 import { TechnologyGrid } from "../components/customTechnologiesSection";
 import { FaqAccordion } from "../components/custonFAQ";
-
+import design from "@/app/services/uiux/image/design.svg"
+import designing from "@/app/services/uiux/image/designing.svg"
+import audits from "@/app/services/uiux/image/audits.svg"
+import Wireframing from "@/app/services/uiux/image/Wireframing.svg"
+import rdesign from "@/app/services/uiux/image/rdesign.svg"
+import Continuous from "@/app/services/uiux/image/Continuous.png"
+import Accessibility from "@/app/services/uiux/image/Accessibility.svg"
+import  customizedSolutions from "@/app/services/uiux/image/customizedSolutions.svg"
+import prototyping from "@/app/services/uiux/image/prototyping.svg"
+import crossPlatfrom from "@/app/services/uiux/image/crossPlatfrom.svg"
+import marvelLogo from "@/app/services/uiux/image/marvelLogo.svg.svg"
+import FramerLogo from "@/app/services/uiux/image/FramerLogo.svg"
+import FigmaLogo from "@/app/services/uiux/image/FigmaLogo.svg"
+import InvisionLogo from "@/app/services/uiux/image/InvisionLogo.svg"
+import AxureLogo from "@/app/services/uiux/image/AxureLogo.svg"
+import AdobeXDLogo from "@/app/services/uiux/image/AdobeXDLogo.svg"
+import BalsamiqLogo from "@/app/services/uiux/image/BalsamiqLogo.svg"
+import WebflowLogo  from "@/app/services/uiux/image/WebflowLogo.svg"
+import sketchLogo  from "@/app/services/uiux/image/sketchLogo.svg"
 const UiUx=()=>{
 
     const faqs = [
@@ -36,15 +54,15 @@ const UiUx=()=>{
       ];
 
     const technologies = [
-        { name: "Marvel", icon: "https://kavelogics.com/services/uiux/media/marvel-logo.svg" },
-        { name: "Sketch", icon: "https://kavelogics.com/services/uiux/media/sketch-logo.svg"},
-        { name: "Framer", icon: "https://kavelogics.com/services/uiux/media/framer-logo.svg"},
-        { name: "Figma", icon: "https://kavelogics.com/services/uiux/media/figma-logo.svg" },
-        { name: "Invision", icon: "https://kavelogics.com/services/uiux/media/invision-logo.svg" },
-        { name: "Axure", icon: "https://kavelogics.com/services/uiux/media/axure-logo.svg"},
-        { name: "Adobe XD", icon: "https://kavelogics.com/services/uiux/media/adobexd-logo.svg"},
-        { name: "Webflow", icon: "https://kavelogics.com/services/uiux/media/webflow-logo.svg"},
-        { name: "Balsamiq", icon: "https://kavelogics.com/services/uiux/media/balsamiq-logo.svg" },
+        { name: "Marvel", icon: marvelLogo},
+        { name: "Sketch", icon: sketchLogo},
+        { name: "Framer", icon: FramerLogo},
+        { name: "Figma", icon: FigmaLogo},
+        { name: "Invision", icon: InvisionLogo },
+        { name: "Axure", icon: AxureLogo},
+        { name: "Adobe XD", icon: AdobeXDLogo},
+        { name: "Webflow", icon: WebflowLogo},
+        { name: "Balsamiq", icon: BalsamiqLogo},
       ];
 
        const features = [
@@ -56,37 +74,37 @@ const UiUx=()=>{
 
   const CustomWhyChooseData = [
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: Centric,
       title: "User-Centric Design",
       description:
         "Our team excels at creating designs that prioritize user needs and preferences, resulting in interfaces that are both intuitive and engaging.",
     },
     {
-      icon: "https://kavelogics.com/about/centricity.svg",
+      icon: customizedSolutions,
       title: "Customized Solutions",
       description:
         "We tailor our designs to align with your brand identity and business goals, ensuring that each solution is unique and effectively fulfills its purpose.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: crossPlatfrom,
       title: "Cross-Platform Compatibility",
       description:
         "Focusing on seamless performance across devices and platforms, our designs ensure a consistent user experience for all users.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: prototyping,
       title: "Prototyping & Testing",
       description:
         "We use prototyping and testing techniques to validate design concepts early, saving time and resources while ensuring optimal usability.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: Accessibility ,
       title: "Accessibility Compliance",
       description:
         "Our designs are crafted in compliance with accessibility standards, ensuring usability for individuals with disabilities and fostering inclusivity across all user demographics.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: Continuous,
       title: "Continuous Support",
       description:
         "Our designs adhere to accessibility standards, ensuring usability for individuals with disabilities and promoting inclusivity across all user demographics.",
@@ -95,31 +113,31 @@ const UiUx=()=>{
   ];
   const SolutionData = [
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: design,
       title: "Web UI/UX Design",
       description:
         "Our web UI/UX design methodology adheres to the highest standards of accessibility, compatibility, and usability.",
     },
     {
-      icon: "https://kavelogics.com/about/centricity.svg",
+      icon: designing,
       title: "Mobile App Designing",
       description:
         "We specialize in creating visually captivating mobile apps that deliver seamless user experiences across all devices and platforms, driving engagement and customer satisfaction.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: audits,
       title: "UI/UX Audits",
       description:
         "We perform comprehensive UI/UX audits for underperforming websites and apps, providing strategic recommendations to improve usability and boost user satisfaction.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: Wireframing,
       title: "Prototyping & Wireframing",
       description:
         "We provide prototyping and wireframing services, enabling stakeholders to validate design concepts early, saving both time and resources.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: rdesign,
       title: "Responsive Design",
       description:
         "Our team applies responsive design principles to ensure seamless adaptation across all devices, maximizing accessibility and enhancing user engagement.",
