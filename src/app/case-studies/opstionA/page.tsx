@@ -56,7 +56,7 @@ const CaseStudy=()=>{
   ];
     return(
         <div>
-             <div className="bg-[#0f3b500] pt-26 pb-40">
+             <div className="bg-[#0f3b50] pt-26 pb-40">
                 <div className='max-w-7xl mx-auto'>
                 <div className="spacing-secton flex flex-col md:flex-row items-center justify-between gap-12 px-4">
                     <div className='grid grid-cols-1 md:grid-cols-2'>
