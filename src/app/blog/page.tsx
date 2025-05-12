@@ -96,8 +96,8 @@ function Page() {
           <p className="text-[#070707] mt-5 group-hover:hidden">
           {item?.description}
            </p>
-          <p className="text-[#00d280] text-xl font-bold mt-5 flex hidden group-hover:flex">
-          {item?.hoverTitle} <ArrowRight className="mt-1 ml-1"/>
+          <p className="text-[#00d280] text-[18px] font-bold mt-5 flex hidden group-hover:flex">
+          {item?.hoverTitle} <ArrowRight className="mt-[2px] ml-1"/>
            </p>
         </div>
           </div>
