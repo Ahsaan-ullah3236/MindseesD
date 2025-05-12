@@ -12,9 +12,29 @@ import CustomServiceDetail from "../components/customServiceDetail";
 import CustomWhyChoose from "../components/customWhyChooseSection";
 import { TechnologyGrid } from "../components/customTechnologiesSection";
 import { FaqAccordion } from "../components/custonFAQ";
+import Scustom  from "@/app/services/saas/image/Scustom.svg"
+import  Scommerce from "@/app/services/saas/image/Scommerce.svg"
+import SCRM  from "@/app/services/saas/image/SCRM.svg"
+import SPerformance from "@/app/services/saas/image/SPerformance.svg"
+import shopify from "@/app/services/saas/image/shopify.svg"
+import bigcommerce from "@/app/services/saas/image/bigcommerce.svg"
+import magento from "@/app/services/saas/image/magento.svg"
+import Framer from "@/app/services/saas/image/Framer.svg"
+import squarespace from "@/app/services/saas/image/squarespace.svg"
+import prestashop from "@/app/services/saas/image/prestashop.svg"
+import wordpress from "@/app/services/saas/image/wordpress.svg"
+import webflow from "@/app/services/saas/image/webflow.svg"
+import wix from "@/app/services/saas/image/wix.svg"
+
+import Sexperties from "@/app/services/saas/image/Sexperties.svg"
+import ScustomizedS from "@/app/services/saas/image/ScustomizedS.svg"
+import Scentric from "@/app/services/saas/image/Scentric.svg"
+import Sscalability from "@/app/services/saas/image/Sscalability.svg"
+import Srobust from "@/app/services/saas/image/Srobust.svg"
+import Ssupport from "@/app/services/saas/image/Ssupport.svg"
+
 
 const SaaS=()=>{
-
     const faqs = [
         {
           question: "What is SaaS-based website development, and how does it differ from traditional website development?",
@@ -34,87 +54,83 @@ const SaaS=()=>{
         },
       
       ];
-
     const technologies = [
-        { name: "Shopify", icon: "https://kavelogics.com/services/saas/tech/shopify.svg" },
-        { name: "Big Commerce", icon: "https://kavelogics.com/services/saas/tech/big-commerce.svg"},
-        { name: "Magento", icon: "https://kavelogics.com/services/saas/tech/magento.svg"},
-        { name: "Framer", icon: "https://kavelogics.com/services/saas/tech/framer.svg" },
-        { name: "Squarespace", icon: "https://kavelogics.com/services/saas/tech/squarespace.svg" },
-        { name: "Prestashop", icon: "https://kavelogics.com/services/saas/tech/prestashop.svg"},
-        { name: "WordPress", icon: "https://kavelogics.com/services/saas/tech/wordpress.svg"},
-        { name: "Webflow", icon: "https://kavelogics.com/services/saas/tech/webflow.svg"},
-        { name: "WIX e-Commerce", icon: "https://kavelogics.com/services/saas/tech/wix.svg" },
+        { name: "Shopify", icon: shopify },
+        { name: "Big Commerce", icon: bigcommerce},
+        { name: "Magento", icon: magento},
+        { name: "Framer", icon: Framer},
+        { name: "Squarespace", icon: squarespace},
+        { name: "Prestashop", icon: prestashop},
+        { name: "WordPress", icon: wordpress},
+        { name: "Webflow", icon: webflow},
+        { name: "WIX e-Commerce", icon: wix },
       ];
-
        const features = [
     { title: 'Mobile Commerce', subtitle: 'Integration' },
     { title: 'Third Party', subtitle: 'Integration' },
     { title: 'Ongoing Support &', subtitle: 'Maintenance' },
     { title: 'Performance', subtitle: 'Optimization' },
   ];
-
   const CustomWhyChooseData = [
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: Sexperties ,
       title: "Expertise in SaaS Solutions",
       description:
         "MindSees specializes in innovative SaaS-based solutions, using years of expertise to tackle unique industry challenges and meet specific business needs.",
     },
     {
-      icon: "https://kavelogics.com/about/centricity.svg",
+      icon: ScustomizedS ,
       title: "Customized Solutions",
       description:
         "We customize SaaS-based solutions to align with your unique goals, working closely with you to understand your specific needs, whether you're a large enterprise or a startup.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: Scentric,
       title: "User-Centric Design",
       description:
         "We focus on delivering exceptional user experiences by designing intuitive interfaces that enhance engagement and drive conversions, ensuring a smooth and seamless user journey.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: Sscalability,
       title: "Scalability & Flexibility",
       description:
         "Our scalable SaaS solutions fuel your business growth by allowing you to easily add features, integrate tools, and manage higher traffic with ease and confidence.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: Srobust,
       title: "Robust Infrastructure",
       description:
         "We prioritize reliability in our SaaS solutions, ensuring high availability and uptime for your online store with robust infrastructure and advanced technologies.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: Ssupport,
       title: "Support & Maintenance",
       description:
         "We provide ongoing support and maintenance after launch, including security updates and performance optimization, to keep your SaaS platform secure and up-to-date.",
     },
     
   ];
-
   const SolutionData = [
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: Scustom ,
       title: "Custom SaaS Development",
       description:
         "We offer customized SaaS development with flexible features designed to address the unique needs of your business.",
     },
     {
-      icon: "https://kavelogics.com/about/centricity.svg",
+      icon: Scommerce,
       title: "M-commerce Development",
       description:
         "We create mobile-responsive e-commerce websites with integrated M-commerce functionality for a seamless shopping experience across all devices.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: SCRM,
       title: "CRM Integration",
       description:
         "We offer CRM-integrated systems to streamline customer interactions, sales processes, and marketing strategies, enhancing overall business efficiency.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: SPerformance,
       title: "Performance Optimization",
       description:
         "Our website development services are optimized for fast loading speeds and a smooth, seamless user experience.",

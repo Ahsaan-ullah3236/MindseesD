@@ -33,41 +33,42 @@ import YOLO from "@/app/services/ai/image/YOLO.svg"
 import Microsoft from "@/app/services/ai/image/microsoft-azure-logo.svg"
 import Power from "@/app/services/ai/image/power-bi-logo.svg"
 import AIDevelopment from "@/app/services/ai/image/AIDevelopment.png"
-const Ai=()=>{
+const Ai = () => {
 
-    const faqs = [
-        {
-          question: "What is AI Development, and How Can It Benefit Your Business?",
-          answer: "AI development involves creating intelligent systems and software that can learn, reason, and make decisions. By leveraging machine learning, natural language processing, and other advanced technologies, AI enables businesses to automate tasks, enhance decision-making, improve customer experiences, and extract valuable insights from data.",
-        },
-        {
-          question: "What AI Solutions Do We Offer?",
-          answer: "Our AI solutions are designed to streamline operations, improve decision-making, and drive business growth through intelligent, data-driven innovations.",
-        },
-        {
-          question: "How Does MindSees Guarantee the Quality and Accuracy of AI Models?",
-          answer: "MindSees ensures the quality and accuracy of AI models through rigorous data preprocessing, advanced algorithm selection, and continuous testing. We also monitor model performance and optimize based on real-time feedback to deliver precise and reliable results.",
-        },
-        {
-          question: "Can AI Be Seamlessly Integrated into My Existing Systems?",
-          answer: "Yes, AI can be seamlessly integrated into your current systems to enhance functionality and performance. Our team ensures smooth integration with minimal disruption, optimizing your existing workflows for greater efficiency and value.",
-        },
-      
-      ];
+  const faqs = [
+    {
+      question: "What is AI Development, and How Can It Benefit Your Business?",
+      answer: "AI development involves creating intelligent systems and software that can learn, reason, and make decisions. By leveraging machine learning, natural language processing, and other advanced technologies, AI enables businesses to automate tasks, enhance decision-making, improve customer experiences, and extract valuable insights from data.",
+    },
+    {
+      question: "What AI Solutions Do We Offer?",
+      answer: "Our AI solutions are designed to streamline operations, improve decision-making, and drive business growth through intelligent, data-driven innovations.",
+    },
+    {
+      question: "How Does MindSees Guarantee the Quality and Accuracy of AI Models?",
+      answer: "MindSees ensures the quality and accuracy of AI models through rigorous data preprocessing, advanced algorithm selection, and continuous testing. We also monitor model performance and optimize based on real-time feedback to deliver precise and reliable results.",
+    },
+    {
+      question: "Can AI Be Seamlessly Integrated into My Existing Systems?",
+      answer: "Yes, AI can be seamlessly integrated into your current systems to enhance functionality and performance. Our team ensures smooth integration with minimal disruption, optimizing your existing workflows for greater efficiency and value.",
+    },
 
-    const technologies = [
-        { name: "TensorFlow", icon: TensorFlow },
-        { name: "MXNet", icon: MXNet},
-        { name: "Keras", icon: Keras},
-        { name: "Scikit-Learn", icon: Scikit },
-        { name: "PyTorch", icon: PyTorch},
-        { name: "OpenCV", icon: OpenCV},
-        { name: "YOLO", icon: YOLO},
-        { name: "Microsoft Azure", icon: Microsoft},
-        { name: "Power BI", icon: Power },
-      ];
+  ];
+  
 
-       const features = [
+  const technologies = [
+    { name: "TensorFlow", icon: TensorFlow },
+    { name: "MXNet", icon: MXNet },
+    { name: "Keras", icon: Keras },
+    { name: "Scikit-Learn", icon: Scikit },
+    { name: "PyTorch", icon: PyTorch },
+    { name: "OpenCV", icon: OpenCV },
+    { name: "YOLO", icon: YOLO },
+    { name: "Microsoft Azure", icon: Microsoft },
+    { name: "Power BI", icon: Power },
+  ];
+
+  const features = [
     { title: 'Web UI/UX', subtitle: 'Design' },
     { title: 'Mobile UI/UX', subtitle: 'Design' },
     { title: 'Data', subtitle: 'Visualization' },
@@ -111,12 +112,12 @@ const Ai=()=>{
       description:
         "Professional expertise in AI strategy, implementation, and optimization to drive ROI and enhance your business competitiveness.",
     },
-    
+
   ];
 
   const SolutionData = [
     {
-      icon:customAi ,
+      icon: customAi,
       title: "Custom AI Solutions",
       description:
         "Customized development of AI algorithms and models designed to tackle specific business challenges and objectives, ensuring seamless alignment with your organization's goals and needs.",
@@ -145,38 +146,38 @@ const Ai=()=>{
       description:
         "Strategic guidance on AI adoption, deployment, and optimization to drive maximum ROI and sharpen your competitive edge.",
     },
-    
+
   ];
 
-    return(
-        <div>
-            <ServicesCustomBanner
-             heading={"AI Development"}
-             description={
-               "Elevate your digital presence with our advanced AI development solutions. Begin a transformative journey to bring your vision to life with intelligent innovation."
-             }
-             buttonText="Book Consultation"
-             buttonLink="/contact-us"
-             image={bannerImage}
-            />
-            <FeatureList features={features}/>
-            
+  return (
+    <div>
+      <ServicesCustomBanner
+        heading={"AI Development"}
+        description={
+          "Elevate your digital presence with our advanced AI development solutions. Begin a transformative journey to bring your vision to life with intelligent innovation."
+        }
+        buttonText="Book Consultation"
+        buttonLink="/contact-us"
+        image={bannerImage}
+      />
+      <FeatureList features={features} />
 
-            <CustomSolutionCard 
-      heading="Our Advanced AI Development Solutions" 
-      subHeading="At MindSees, we understand the critical importance of leveraging artificial intelligence in today’s fast-evolving business landscape. We specialize in cutting-edge AI development, helping businesses thrive in an era fueled by intelligent technologies. Partner with us to transform your vision into innovative, AI-driven solutions that drive your business forward."
-      Solution={SolutionData} 
-    />
 
-            <section className="py-16 text-center bg-white">
-      <h2 className="text-5xl font-bold text-[#013a54] mb-4">Our AI Development Process</h2>
-      <p className="text-center mb-16 max-w-3xl mx-auto text-lg leading-[1.3] text-[#013a54]">
-      Our all-encompassing AI Development services are tailored to your specific needs, offering everything from bespoke AI solutions to seamless integration and continuous optimization. Partner with us to unlock AI’s full potential and maintain a competitive edge in today’s fast-paced landscape.
-      </p>
+      <CustomSolutionCard
+        heading="Our Advanced AI Development Solutions"
+        subHeading="At MindSees, we understand the critical importance of leveraging artificial intelligence in today’s fast-evolving business landscape. We specialize in cutting-edge AI development, helping businesses thrive in an era fueled by intelligent technologies. Partner with us to transform your vision into innovative, AI-driven solutions that drive your business forward."
+        Solution={SolutionData}
+      />
 
-      <div className="relative flex justify-center gap-10 flex-wrap">
-        <div className="flex justify-center gap-6 sm:gap-13 relative w-full">
-         
+      <section className="py-16 text-center bg-white">
+        <h2 className="text-5xl font-bold text-[#013a54] mb-4">Our AI Development Process</h2>
+        <p className="text-center mb-16 max-w-3xl mx-auto text-lg leading-[1.3] text-[#013a54]">
+          Our all-encompassing AI Development services are tailored to your specific needs, offering everything from bespoke AI solutions to seamless integration and continuous optimization. Partner with us to unlock AI’s full potential and maintain a competitive edge in today’s fast-paced landscape.
+        </p>
+
+        <div className="relative flex justify-center gap-10 flex-wrap">
+          <div className="flex justify-center gap-6 sm:gap-13 relative w-full">
+
             <div
               className="z-10 relative flex flex-col items-center after:content-[''] after:absolute after:top-[72%] after:left-[89%] after:-translate-x-1/2 after:w-3 after:h-34 after:rounded-sm after:bg-gradient-to-b after:from-[#023047] after:to-[#0575ad]"
             >
@@ -207,11 +208,11 @@ const Ai=()=>{
                 </div>
               </div>
             </div>
-         
-        </div>
 
-        <div className="flex justify-center gap-7 sm:gap-14 mt-15 sm:mt-10 relative w-full">
-          
+          </div>
+
+          <div className="flex justify-center gap-7 sm:gap-14 mt-15 sm:mt-10 relative w-full">
+
             <div
               className="z-10 relative flex flex-col items-center after:content-[''] after:absolute after:top-[-140%] sm:after:top-[-96%] after:left-[80%] after:-translate-x-1/2 after:w-3 after:h-36 after:rounded-sm after:bg-gradient-to-b after:from-[#023047] after:to-[#0575ad]"
             >
@@ -232,36 +233,36 @@ const Ai=()=>{
                 </div>
               </div>
             </div>
-        </div>
-       
-      </div>
-            </section>
-
-            <CustomServiceDetail
-             heading={"Revolutionize Your Business with Cutting-Edge AI Solutions"}
-             description={
-               "Today’s AI solutions prioritize both simplicity and power, offering advanced features in an easy-to-use format. This balance empowers businesses to improve productivity, make smarter decisions, and enhance customer satisfaction in a rapidly evolving market."
-             }
-             buttonText="Book Consultation"
-             buttonLink="/contact-us"
-             image={AIDevelopment}
-           
-             />
-            <Clientsline/>
-            
-  
-            <CustomWhyChoose 
-      heading={"Why should you choose MindSees for AI Development"}
-      CustomWhyChoose={CustomWhyChooseData} 
-    />
-    <TechnologyGrid technologies={technologies} />
-
-    <FaqAccordion faqs={faqs} />
-            <Stories/>
-            <LastBusinessesSection/>
-
+          </div>
 
         </div>
-    )
+      </section>
+
+      <CustomServiceDetail
+        heading={"Revolutionize Your Business with Cutting-Edge AI Solutions"}
+        description={
+          "Today’s AI solutions prioritize both simplicity and power, offering advanced features in an easy-to-use format. This balance empowers businesses to improve productivity, make smarter decisions, and enhance customer satisfaction in a rapidly evolving market."
+        }
+        buttonText="Book Consultation"
+        buttonLink="/contact-us"
+        image={AIDevelopment}
+
+      />
+      <Clientsline />
+
+
+      <CustomWhyChoose
+        heading={"Why should you choose MindSees for AI Development"}
+        CustomWhyChoose={CustomWhyChooseData}
+      />
+      <TechnologyGrid technologies={technologies} />
+
+      <FaqAccordion faqs={faqs} />
+      <Stories />
+      <LastBusinessesSection />
+
+
+    </div>
+  )
 }
 export default Ai;

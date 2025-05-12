@@ -9,9 +9,11 @@ import Stories from "@/app/Stories/page"
 import ServicePlatform from "../components/customPlatformServices";
 import BenefitsCard from "../components/customBenefitCard";
 
+import teleHealth  from "@/app/industries/health/image/teleHealth.svg"
+import digital from "@/app/industries/health/image/digital.svg"
+import dataAnal from "@/app/industries/health/image/dataAnal.svg"
+
 const Health =()=>{
-
-
     const benefitsData = [
         {
           icon: "https://kavelogics.com/about/integrity.svg",
@@ -50,11 +52,10 @@ const Health =()=>{
             "Our integration services enable seamless data flow between systems, enhancing information accessibility and supporting better decision-making.",
         },
       ];
-
     const scrollItems = [
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/medical-hover.svg",
-          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/medical.svg",
+          imagelight: medicalImageI,
+          imageDark: medicalImageI,
           title: "Medical Image Interpretation",
         },
         {
@@ -103,28 +104,26 @@ const Health =()=>{
           title: "Solutions for Pharmacy Management",
         }
       ];
-
     const valueItems=[
         {
-          iconUrl: "https://kavelogics.com/actual-industries/health/card/card-1.svg",
+          iconUrl: digital,
           title: "Digital Health Solutions",
           description:
             "Unlock personalized digital health solutions to enhance patient care and streamline operational efficiency.",
         },
         {
-          iconUrl: "https://kavelogics.com/actual-industries/health/card/card-2.svg",
+          iconUrl: dataAnal,
           title: "Data Analytics",
           description:
             "Leverage advanced data analytics to gain valuable insights and enhance decision-making in healthcare operations.",
         },
         {
-          iconUrl: "https://kavelogics.com/actual-industries/health/card/card-3.svg",
+          iconUrl: teleHealth,
           title: "Telehealth Applications",
           description:
             "Access cutting-edge telehealth applications for seamless remote patient consultation and monitoring.",
         },
       ]
-
     return(
         <div>
             <CustomBanner 

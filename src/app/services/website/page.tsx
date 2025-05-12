@@ -12,9 +12,34 @@ import CustomServiceDetail from "../components/customServiceDetail";
 import CustomWhyChoose from "../components/customWhyChooseSection";
 import { TechnologyGrid } from "../components/customTechnologiesSection";
 import { FaqAccordion } from "../components/custonFAQ";
+import wCustomWevb  from "@/app/services/website/image/wCustomWevb.svg"
+import wEcommerce  from "@/app/services/website/image/wEcommerce.svg"
+import wMaintaince  from "@/app/services/website/image/wMaintaince.svg"
+import wPWADevelopment  from "@/app/services/website/image/wPWADevelopment.svg"
+import wPerformance  from "@/app/services/website/image/wPerformance.svg"
+import wCMS  from "@/app/services/website/image/wCMS.svg"
+import wExperties  from "@/app/services/website/image/wExperties.svg"
+import  wCustomizedS from "@/app/services/website/image/wCustomizedS.svg"
+import  wtechnology from "@/app/services/website/image/wtechnology.svg"
+import  WDetail from "@/app/services/website/image/WDetail.svg"
+import  wTimelyD from "@/app/services/website/image/wTimelyD.svg"
+import  WSupport from "@/app/services/website/image/WSupport.svg"
+
+import  php from "@/app/services/website/image/php.svg"
+import  python from "@/app/services/website/image/python.svg"
+import  HTML from "@/app/services/website/image/HTML.svg"
+import  javascript from "@/app/services/website/image/javascript.svg"
+import  Angular from "@/app/services/website/image/Angular.svg"
+import  React from "@/app/services/website/image/React.svg"
+import  RubyOnRails from "@/app/services/website/image/WSupport.svg"
+import  CSS from "@/app/services/website/image/CSS.svg"
+import  NodeJS  from "@/app/services/website/image/NodeJS.svg"
+
+
+
+
 
 const WebsiteDevelopment=()=>{
-
     const faqs = [
         {
           question: "Do you offer content creation and copywriting services for websites?",
@@ -34,99 +59,95 @@ const WebsiteDevelopment=()=>{
         },
       
       ];
-
     const technologies = [
-        { name: "php", icon: "https://kavelogics.com/services/web/tech/php.svg" },
-        { name: "Python", icon: "https://kavelogics.com/services/web/tech/Python.svg"},
-        { name: "HTML", icon: "https://kavelogics.com/services/web/tech/HTML.svg"},
-        { name: "Javascript", icon: "https://kavelogics.com/services/web/tech/js.svg" },
-        { name: "Angular", icon: "https://kavelogics.com/services/web/tech/Angular.svg" },
-        { name: "React", icon: "https://kavelogics.com/services/web/tech/React.svg"},
-        { name: "Ruby On Rails", icon: "https://kavelogics.com/services/web/tech/ror.svg"},
-        { name: "CSS", icon: "https://kavelogics.com/services/web/tech/css.svg"},
-        { name: "Node JS", icon: "https://kavelogics.com/services/web/tech/Node_JS.svg" },
+        { name: "php", icon: php},
+        { name: "Python", icon: python},
+        { name: "HTML", icon: HTML},
+        { name: "Javascript", icon: javascript},
+        { name: "Angular", icon: Angular},
+        { name: "React", icon: React},
+        { name: "Ruby On Rails", icon: RubyOnRails},
+        { name: "CSS", icon: CSS},
+        { name: "Node JS", icon: NodeJS },
       ];
-
        const features = [
     { title: 'API Intergation', subtitle: 'Services' },
     { title: 'Full Stack', subtitle: 'Development' },
     { title: 'Bubble ', subtitle: 'Development' },
     { title: 'WordPress', subtitle: 'Development' },
   ];
-
   const CustomWhyChooseData = [
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: wExperties ,
       title: "Expertise & Experience",
       description:
         "With years of expertise, we have successfully completed numerous projects across diverse industries, consistently delivering high-quality results that align with our clients' needs.",
     },
     {
-      icon: "https://kavelogics.com/about/centricity.svg",
+      icon: wCustomizedS ,
       title: "Customized Solutions",
       description:
         "We invest time in understanding your unique needs, goals, and brand identity to create a personalized solution that aligns perfectly with your vision and objectives.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: wtechnology,
       title: "Cutting-edge Technology",
       description:
         "We stay at the forefront of innovation by utilizing the latest tools, technologies, and frameworks in website development, ensuring optimal performance and an exceptional user experience.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: WDetail,
       title: "Attention to Detail",
       description:
         "Our thorough approach to website development guarantees that every detail, from design elements to coding standards, is meticulously crafted to deliver perfection.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: wTimelyD,
       title: "Timely Delivery",
       description:
         "Our efficient development process, combined with strong project management practices, ensures we meet tight deadlines while maintaining the highest quality standards.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: WSupport,
       title: "Exceptional Support",
       description:
         "We provide continuous support and maintenance services to keep your website running smoothly. Our team is dedicated to assisting you at every stage.",
     },
     
   ];
-
   const SolutionData = [
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: wCustomWevb ,
       title: "Custom Web Development",
       description:
         "We offer custom web development, building websites from the ground up to perfectly align with clients' brand identity, functional requirements, and target audience needs.",
     },
     {
-      icon: "https://kavelogics.com/about/centricity.svg",
+      icon: wEcommerce ,
       title: "E-commerve Development",
       description:
         "We provide comprehensive e-commerce development solutions, covering online store setup, product catalog management, secure payment gateways, and seamless order processing functionalities.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: wMaintaince,
       title: "Website Maintenance",
       description:
         "We offer website maintenance plans that include regular updates, backups, performance monitoring, and troubleshooting support to ensure your website remains operational and efficient.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon:  wPWADevelopment,
       title: "PWA Development",
       description:
         "We specialize in developing Progressive Web Applications (PWAs) that offer a web browser experience on par with native apps.",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: wPerformance,
       title: "Performance Optimization",
       description:
         "We enhance website performance through techniques like image compression, efficient use of CSS and JavaScript, and leveraging content delivery networks (CDNs).",
     },
     {
-      icon: "https://kavelogics.com/about/integrity.svg",
+      icon: wCMS,
       title: "CMS Integration",
       description:
         "Our team provides seamless integration with popular CMS platforms like WordPress, Drupal, and Joomla, allowing clients to easily manage and update their content.",
