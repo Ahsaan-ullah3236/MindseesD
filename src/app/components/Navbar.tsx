@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from 'next/link';
-import { Menu, X,ChevronDown  } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import clsx from 'clsx';
 import { Button } from "@/components/ui/button";
 
@@ -10,69 +10,69 @@ const Navbar = () => {
   const [mobileExpandedMenu, setMobileExpandedMenu] = useState<string | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
-  const menuItem=[{
-    item:"AI Development",
-    link:"/services/ai"
+  const menuItem = [{
+    item: "AI Development",
+    link: "/services/ai"
   },
   {
-    item:"UI/UX Development",
-    link:"/services/uiux"
+    item: "UI/UX Development",
+    link: "/services/uiux"
   },
   {
-    item:"Mobile App Development",
-    link:"/services/mobile"
+    item: "Mobile App Development",
+    link: "/services/mobile"
   },
   {
-    item:"Website Development",
-    link:"/services/website"
+    item: "Website Development",
+    link: "/services/website"
   },
   {
-    item:"SaaS-based Website Development",
-    link:"/services/saas"
+    item: "SaaS-based Website Development",
+    link: "/services/saas"
   },
   {
-    item:"SEO & Marketing",
-    link:"/services/seo"
+    item: "SEO & Marketing",
+    link: "/services/seo"
   },
   {
-    item:"Graphic Designing",
-    link:"/services/graphic"
-  },             
+    item: "Graphic Designing",
+    link: "/services/graphic"
+  },
   ]
-  
-  const industriesItems=[{
-    item:"Health",
-    link:"/industries/health"
+
+  const industriesItems = [{
+    item: "Health",
+    link: "/industries/health"
   },
   {
-    item:"Edtech",
-    link:"/industries/edtech"
+    item: "Edtech",
+    link: "/industries/edtech"
   },
   {
-    item:"Fintech",
-    link:"/industries/fintech"
+    item: "Fintech",
+    link: "/industries/fintech"
   },
   {
-    item:"Business",
-    link:"/industries/business"
+    item: "Business",
+    link: "/industries/business"
   },
   {
-    item:"Communication",
-    link:"/industries/communication"
+    item: "Communication",
+    link: "/industries/communication"
   },
   {
-    item:"Entertainment",
-    link:"/industries/entertainment"
+    item: "Entertainment",
+    link: "/industries/entertainment"
   },
   {
-    item:"E-Commerce",
-    link:"/industries/ecommerce"
+    item: "E-Commerce",
+    link: "/industries/ecommerce"
   },
   {
-    item:"Retail",
-    link:"/industries/retail"
+    item: "Retail",
+    link: "/industries/retail"
   },
-                
+
   ]
 
   const toggleMobileMenu = (menu: string) => {
@@ -88,7 +88,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between max-w-7xl mx-auto spacing-secton py-5">
         <div className="text-xl lg:text-2xl font-bold text-black">
           <Link href={"/"}>
-          <span className="font-mono" >MindSees</span>
+            <span className="font-mono" >MindSees</span>
           </Link>
         </div>
 
@@ -109,25 +109,25 @@ const Navbar = () => {
               />
             </button>
             {hoveredMenu === 'services' && (
-              
+
               <>
-              
-             <div className="absolute top-5 left-0 bg-[#ffffff] shadow-custom p-2 rounded-lg mt-2 pt-3 w-67 z-10">
-                              {menuItem.map((item,i)=>(
-              
-                              <Link key={i} href={item?.link} className="block hover:bg-[#d6f1ff] pl-3 pr-3 pt-2 pb-2 rounded-lg text-sm ">{item?.item}</Link>
-                              ))}
-                            </div>
+
+                <div className="absolute top-5 left-0 bg-[#ffffff] shadow-custom p-2 rounded-lg mt-2 pt-3 w-67 z-10">
+                  {menuItem.map((item, i) => (
+
+                    <Link key={i} href={item?.link} className="block hover:bg-[#d6f1ff] pl-3 pr-3 pt-2 pb-2 rounded-lg text-sm ">{item?.item}</Link>
+                  ))}
+                </div>
               </>
 
-             
+
             )}
           </div>
           <Link href="/portfolio">
 
-          <div  className="hover:text-[#00d280] text-sm lg:text-lg">
-          <span>Portfolio</span>
-          </div>
+            <div className="hover:text-[#00d280] text-sm lg:text-lg">
+              <span>Portfolio</span>
+            </div>
           </Link>
           <Link href="/about" className="hover:text-[#00d280] text-sm lg:text-lg">About Us</Link>
 
@@ -146,25 +146,27 @@ const Navbar = () => {
               />
             </button>
             {hoveredMenu === 'industries' && (
-                <>
-              
-                              <div className="absolute top-5  left-0 bg-[#ffffff] shadow-custom p-2 rounded-lg mt-2 pt-3 w-50 z-10">
-                                {industriesItems.map((item,i)=>(
-                
-                                <Link key={i} href={item?.link} className="block hover:bg-[#d6f1ff] pl-3 pr-3 pt-2 pb-2 rounded-lg text-sm ">{item?.item}</Link>
-                                ))}
-                              </div>
-                </>
-             
+              <>
+
+                <div className="absolute top-5  left-0 bg-[#ffffff] shadow-custom p-2 rounded-lg mt-2 pt-3 w-50 z-10">
+                  {industriesItems.map((item, i) => (
+
+                    <Link key={i} href={item?.link} className="block hover:bg-[#d6f1ff] pl-3 pr-3 pt-2 pb-2 rounded-lg text-sm ">{item?.item}</Link>
+                  ))}
+                </div>
+              </>
+
             )}
           </div>
           <Link href={"/careers"}>
-          <div    className="hover:text-[#00d280] text-sm lg:text-lg" >
-          <span>Careers</span>
-          </div>
+            <div className="hover:text-[#00d280] text-sm lg:text-lg" >
+              <span>Careers</span>
+            </div>
           </Link>
 
-          <div  className="hover:text-[#00d280] text-sm lg:text-[18px]">Blogs</div>
+          <Link href={"/blog"}>
+          <div className="hover:text-[#00d280] text-sm lg:text-[18px]">Blogs</div>
+          </Link>
         </nav>
 
         <Link
@@ -182,12 +184,12 @@ const Navbar = () => {
         </button>
       </div>
 
-     
+
       {mobileMenuOpen && (
         <div className="h-[100vh] md:hidden px-4 pb-4 bg-white shadow-md overflow-y-auto">
           {/* Services dropdown */}
           <div className="py-2">
-            <button 
+            <button
               className="flex items-center justify-between w-full font-semibold hover:text-[#00d280]"
               onClick={() => toggleMobileMenu('services')}
             >
@@ -202,15 +204,15 @@ const Navbar = () => {
             {mobileExpandedMenu === 'services' && (
               <div className="pl-4 mt-2 space-y-2">
                 {menuItem.map((item, i) => (
-                  <Link 
-                    key={i} 
+                  <Link
+                    key={i}
                     href={item?.link}
                     className="block py-1 hover:text-[#00d280]"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     <div className="text-sm">
-                    {item?.item}
-                      </div>
+                      {item?.item}
+                    </div>
                   </Link>
                 ))}
               </div>
@@ -220,14 +222,14 @@ const Navbar = () => {
           <Link href="" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
             Portfolio
           </Link>
-          
+
           <Link href="/about" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
             About Us
           </Link>
 
           {/* Industries dropdown */}
           <div className="py-2">
-            <button 
+            <button
               className="flex items-center justify-between w-full font-semibold hover:text-[#00d280]"
               onClick={() => toggleMobileMenu('industries')}
             >
@@ -242,9 +244,9 @@ const Navbar = () => {
             {mobileExpandedMenu === 'industries' && (
               <div className="pl-4 mt-2 space-y-2">
                 {industriesItems.map((item, i) => (
-                  <Link 
-                    key={i} 
-                    href={item?.link} 
+                  <Link
+                    key={i}
+                    href={item?.link}
                     className="block py-1 hover:text-[#00d280]"
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -258,11 +260,11 @@ const Navbar = () => {
           <Link href="" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
             Careers
           </Link>
-          
+
           <Link href="" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
             Blogs
           </Link>
-          
+
           <Link
             href="/contact us"
             className="mt-4 inline-block bg-[#00d280] text-white w-full text-center py-2 rounded-md font-bold hover:bg-green-600"
@@ -273,7 +275,7 @@ const Navbar = () => {
         </div>
       )}
 
-      
+
     </header>
   );
 };
