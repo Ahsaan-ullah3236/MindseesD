@@ -3,6 +3,7 @@ import React from "react"
 import { Info } from "lucide-react";
 import ServicesCustomBanner from "../components/servicesCustomBanner";
 import bannerImage from "@/app/services/mobile/image/mobileBanner.png"
+import bannerGig from "@/app/services/mobile/image/Untitled.gif"
 import { FeatureList } from "../components/FeatureList";
 import CustomSolutionCard from "../components/customSolutionCard";
 import LastBusinessesSection from "@/app/Lastbusinesses/page";
@@ -159,7 +160,7 @@ const MobileAppDevelopment=()=>{
              }
              buttonText="Book Consultation"
              buttonLink="/contact-us"
-             image={bannerImage}
+             image={bannerGig}
             />
             <FeatureList features={features}/>
             

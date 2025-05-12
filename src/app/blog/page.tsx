@@ -8,7 +8,7 @@ import { ArrowRight } from 'lucide-react';
 
 
 function Page() {
-  const items = [
+  const workName = [
     {
       title: 'Development',
       description: 'Read Development Articles Design Design Discover sophisticated design subjects, including thorough tutorials and extensive coverage of innovative design methods and technologies.',
@@ -46,8 +46,6 @@ function Page() {
       image: '/blogsvg/svg6.svg',
     },
   ];
-
-
   const UploadArticles = [
     { date: "24 March 2025", title: "Ai Revolution ", designation: "Digital Markiting", image: "https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/b6bb844e-f843-4c32-b4c7-b663c5d23800/w=640,q=75", description: "ADigital Marketing Trends for Startups and SMBs", subDescription: "The finance sector is changing as a result of artificial intelligence, which is opening up new possibilities for speed, accuracy, and customization. AI is helping financial services...", btn: "Continue Reading", link: "/blog/AiRevolution" },
 
@@ -105,25 +103,20 @@ function Page() {
         </div>
       </div>
 
-      <div className="spacing-secton grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16 py-18 gap-5">
-        {items?.map((item, i) => (
-          <div key={i}>
-            <div className="bg-[#d6f1ff] h-full px-9 pt-9 pb-9 group cursor-pointer">
-              <Image
-                src={item.image}
-                width={50}
-                height={50}
-                alt=""
-                className="mt-2"
-              />
-              <h2 className="text-2xl text-[#023047] font-bold mt-5">{item.title}</h2>
-              <p className="text-[#070707] mt-5 group-hover:hidden">
-                {item.description}
-              </p>
-              <p className="text-[#00d280] text-xl font-semibold mt-5 flex hidden group-hover:flex">
-                {item.hoverTitle} <ArrowRight className="mt-1 ml-1" />
-              </p>
-            </div>
+      <div className="spacing-secton grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16 py-18 gap-5 ">
+
+      {workName?.map((item, i)=>(
+        <div key={i}>
+           <div className="bg-[#d6f1ff] h-full px-9 pt-9 pb-9 group cursor-pointer">
+          <Image src="https://kavelogics.com/services/ai/media/ai-card-2.svg" width={50} height={50} alt="" className="mt-2" />
+          <h2 className="text-2xl text-[#023047] font-bold mt-5">{item?.title}</h2>
+          <p className="text-[#070707] mt-5 group-hover:hidden">
+          {item?.description}
+           </p>
+          <p className="text-[#00d280] text-[18px] font-bold mt-5 flex hidden group-hover:flex">
+          {item?.hoverTitle} <ArrowRight className="mt-[2px] ml-1"/>
+           </p>
+        </div>
           </div>
         ))}
       </div>
