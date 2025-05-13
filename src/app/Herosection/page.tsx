@@ -68,8 +68,6 @@ function Herosection() {
             Empower your digital journey with our custom-built software solutions. <br/>See how we can transform your online presence and fuel long-term growth for your business.
         </p>
         
-       
-        
         <div className="flex  gap-1 pt-23">
           <Link href={"/contact-us"}>
           <button className="bg-[#00d280] cursor-pointer  text-white  font-medium text-sm md:text-lg py-4 px-4 rounded-md transition-colors duration-300">

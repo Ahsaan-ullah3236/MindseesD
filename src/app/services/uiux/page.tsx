@@ -16,6 +16,8 @@ import design from "@/app/services/uiux/image/design.svg"
 import designing from "@/app/services/uiux/image/designing.svg"
 import audits from "@/app/services/uiux/image/audits.svg"
 import Wireframing from "@/app/services/uiux/image/Wireframing.svg"
+import centric from "@/app/services/uiux/image/Centric.svg"
+
 import rdesign from "@/app/services/uiux/image/rdesign.svg"
 import Continuous from "@/app/services/uiux/image/Continuous.png"
 import Accessibility from "@/app/services/uiux/image/Accessibility.svg"
@@ -72,7 +74,7 @@ const UiUx=()=>{
   ];
   const CustomWhyChooseData = [
     {
-      icon: Centric,
+      icon: centric,
       title: "User-Centric Design",
       description:
         "Our team excels at creating designs that prioritize user needs and preferences, resulting in interfaces that are both intuitive and engaging.",

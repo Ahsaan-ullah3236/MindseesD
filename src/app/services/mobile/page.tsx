@@ -2,8 +2,7 @@
 import React from "react"
 import { Info } from "lucide-react";
 import ServicesCustomBanner from "../components/servicesCustomBanner";
-import bannerImage from "@/app/services/mobile/image/mobileBanner.png"
-import bannerGig from "@/app/services/mobile/image/Untitled.gif"
+import bannerGig from "@/app/services/mobile/image/bgBanner.gif"
 import { FeatureList } from "../components/FeatureList";
 import CustomSolutionCard from "../components/customSolutionCard";
 import LastBusinessesSection from "@/app/Lastbusinesses/page";
@@ -25,7 +24,6 @@ import MCentric  from "@/app/services/mobile/image/MCentric.svg"
 import MQualityA  from "@/app/services/mobile/image/MQualityA.svg"
 import MScalability  from "@/app/services/mobile/image/MScalability.svg"
 import MtimelyDelivery  from "@/app/services/mobile/image/MtimelyDelivery.svg"
-
 import  reactlogo from "@/app/services/mobile/image/reactlogo.svg"
 import flutter  from "@/app/services/mobile/image/flutter.svg"
 import ionic  from "@/app/services/mobile/image/Ionic.svg"
