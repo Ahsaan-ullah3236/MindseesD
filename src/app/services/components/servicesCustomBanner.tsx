@@ -2,6 +2,7 @@
 "use client"
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import bgbanner from "@/app/services/mobile/image/bgBanner.png"
 
 interface CustomBannerProps {
   heading: string;
@@ -19,7 +20,7 @@ const ServicesCustomBanner: React.FC<CustomBannerProps> = ({
   image,
 }) => {
   return (
-    <div className="py-18 bg-[#013a54]  spacing-secton">
+    <div className="py-18 bg-[#012f47] bg-cover bg-right spacing-secton">
       <div className="grid grid-cols-1  md:grid-cols-2 gap-8 text-sm">
         <div className="">
           <div className="text-5xl font-bold mb-4">

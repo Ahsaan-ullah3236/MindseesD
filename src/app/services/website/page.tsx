@@ -2,7 +2,7 @@
 import React from "react"
 import { Info } from "lucide-react";
 import ServicesCustomBanner from "../components/servicesCustomBanner";
-import bannerImage from "@/app/services/website/image/websiteBanner.png"
+import bannerImage from "@/app/services/website/image/website.gif"
 import { FeatureList } from "../components/FeatureList";
 import CustomSolutionCard from "../components/customSolutionCard";
 import LastBusinessesSection from "@/app/Lastbusinesses/page";
@@ -28,9 +28,9 @@ import  WSupport from "@/app/services/website/image/WSupport.svg"
 import  php from "@/app/services/website/image/php.svg"
 import  python from "@/app/services/website/image/python.svg"
 import  HTML from "@/app/services/website/image/HTML.svg"
-import  javascript from "@/app/services/website/image/javascript.svg"
+import  java from "@/app/services/website/image/Javascript.svg"
 import  Angular from "@/app/services/website/image/Angular.svg"
-import  React from "@/app/services/website/image/React.svg"
+import  react from "@/app/services/website/image/React.svg"
 import  RubyOnRails from "@/app/services/website/image/WSupport.svg"
 import  CSS from "@/app/services/website/image/CSS.svg"
 import  NodeJS  from "@/app/services/website/image/NodeJS.svg"
@@ -63,9 +63,9 @@ const WebsiteDevelopment=()=>{
         { name: "php", icon: php},
         { name: "Python", icon: python},
         { name: "HTML", icon: HTML},
-        { name: "Javascript", icon: javascript},
+        { name: "Javascript", icon: java},
         { name: "Angular", icon: Angular},
-        { name: "React", icon: React},
+        { name: "React", icon: react},
         { name: "Ruby On Rails", icon: RubyOnRails},
         { name: "CSS", icon: CSS},
         { name: "Node JS", icon: NodeJS },

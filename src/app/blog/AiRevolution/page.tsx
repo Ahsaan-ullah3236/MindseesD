@@ -6,6 +6,8 @@ import image2 from "./image2.png"
 import Lastbusinesses from '@/app/Lastbusinesses/page'
 import { ChevronRight } from 'lucide-react';
 import { ChevronDown } from 'lucide-react';
+import Footer from '@/app/Footer/page'
+
 
 function page() {
   const categories = ['Development', 'Design', 'Marketing', 'Finance', 'Industries', 'Business'];
@@ -182,9 +184,10 @@ function page() {
           </span>
         </div>
       </div>
-      <div className="border-b-1 border-gray-300 mt-8"></div>
+      <div className="border-b-1 border-gray-300 mt-8 mb-34"></div>
       {/* third  */}
       <Lastbusinesses />
+      <Footer/>
     </>
   )
 }

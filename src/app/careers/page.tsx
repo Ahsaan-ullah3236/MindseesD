@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image';
-import image from './image.png';
+import image from './Career.gif';
 import React, { useRef, useEffect } from "react";
 import Recruitment from './recruitment';
 
