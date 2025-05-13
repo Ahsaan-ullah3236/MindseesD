@@ -24,6 +24,7 @@ import Accessibility from "@/app/services/uiux/image/Accessibility.svg"
 import  customizedSolutions from "@/app/services/uiux/image/customizedSolutions.svg"
 import prototyping from "@/app/services/uiux/image/prototyping.svg"
 import crossPlatfrom from "@/app/services/uiux/image/crossPlatfrom.svg"
+import Centric  from "@/app/services/uiux/image/Centric.svg"
 import marvelLogo from "@/app/services/uiux/image/marvelLogo.svg.svg"
 import FramerLogo from "@/app/services/uiux/image/FramerLogo.svg"
 import FigmaLogo from "@/app/services/uiux/image/FigmaLogo.svg"
@@ -34,7 +35,6 @@ import BalsamiqLogo from "@/app/services/uiux/image/BalsamiqLogo.svg"
 import WebflowLogo  from "@/app/services/uiux/image/WebflowLogo.svg"
 import sketchLogo  from "@/app/services/uiux/image/sketchLogo.svg"
 const UiUx=()=>{
-
     const faqs = [
         {
           question: "What Makes MindSees' UI/UX Design Stand Out?",
@@ -54,7 +54,6 @@ const UiUx=()=>{
         },
       
       ];
-
     const technologies = [
         { name: "Marvel", icon: marvelLogo},
         { name: "Sketch", icon: sketchLogo},
@@ -73,7 +72,6 @@ const UiUx=()=>{
     { title: 'Data', subtitle: 'Visualization' },
     { title: 'Wireframing &', subtitle: 'Prototyping' },
   ];
-
   const CustomWhyChooseData = [
     {
       icon: centric,
