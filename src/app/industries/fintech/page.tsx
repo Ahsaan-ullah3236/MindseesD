@@ -1,15 +1,13 @@
 "use client"
 import React from "react"
 import CustomBanner from "../components/customBanner"
-import bannerImage from "@/app/industries/fintech/image/fintectbanner.png"
+import FinTechback from "@/app/industries/fintech/image/FinTechback.gif"
 import CustomValue from "../components/customValue"
 import ServicePlatform from "../components/customPlatformServices"
 import Clientsline from "@/app/clientsline/page"
 import BenefitsCard from "../components/customBenefitCard"
 import Stories from "@/app/Stories/page"
 import LastBusinessesSection from "@/app/Lastbusinesses/page"
-
-
 import MobileBanking from "@/app/industries/fintech/image/ MobileBanking .svg"
 import crowdfunding from "@/app/industries/fintech/image/crowdfunding.svg"
 import P2Planding from "@/app/industries/fintech/image/P2Planding.svg"
@@ -20,11 +18,9 @@ import ApiIntegration from "@/app/industries/fintech/image/ApiIntegration.svg"
 import paymentGateWay from "@/app/industries/fintech/image/paymentGateWay.svg"
 import regtechSolutoin from "@/app/industries/fintech/image/regtechSolutoin.svg"
 import FinanAnalytics from "@/app/industries/fintech/image/FinanAnalytics.svg"
-
 import blockch from "@/app/industries/fintech/image/blockch.svg"
 import DigitalB from "@/app/industries/fintech/image/DigitalB.svg"
 import MobilePayments from "@/app/industries/fintech/image/MobilePayments.svg"
-
 import SamlesIntegration from "@/app/industries/fintech/image/SamlesIntegration.svg"
 import  enhancesecurity  from "@/app/industries/fintech/image/enhancesecurity.svg"
 import UserFriendly from "@/app/industries/fintech/image/UserFriendly.svg"
@@ -151,7 +147,7 @@ const FinTech = () => {
         }
         buttonText="Book Consultation"
         buttonLink="/contact-us"
-        image={bannerImage}
+        image={FinTechback}
       />
       <CustomValue
         heading="How MindSees Can Help in Fintech"
