@@ -150,7 +150,7 @@ const Business = () => {
         title="Our Business Platform Services"
         subtitle="Discover how MindSees can transform your business operations with our customized suite of enterprise solutions, streamlining processes and driving growth."
         imageUrl="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/20aaebc0-a483-4372-6716-8ff91e6abc00/w=3840,q=75"
-        description="Boost your business with MindSees' advanced tech solutions. Our expert team provides innovative services that enhance efficiency, foster growth, and open new opportunities. Partner with us to harness the power of innovation and take your business to new heights."
+        description="Boost your business with MindSees' advanced tech solutions. Our expert team provides innovative services that enhance efficiency, foster growth, and open new opportunities. Partner with us to harness the power of innovation and take your business to new heights.."
         scrollItems={scrollItems}
         buttonText="Let's discuss"
         buttonColor="#00d280"
