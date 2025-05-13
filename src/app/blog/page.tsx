@@ -266,7 +266,7 @@ function Page() {
       </div>
 
       <LastBusinessesSection />
-
+<Footer/>
     </>
   );
 }

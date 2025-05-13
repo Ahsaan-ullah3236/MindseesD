@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image';
-import image from './Career.gif';
+import image from './career1.gif';
 import React, { useRef, useEffect } from "react";
 import Recruitment from './recruitment';
 
@@ -100,9 +100,9 @@ const perkData=[
                         <Image
                             src={image}
                             alt="About Section"
-                            width={650}
+                            width={350}
                             height={400}
-                            className="rounded-2xl shadow-lg"
+                            className=""
                         />
                     </div>
 
