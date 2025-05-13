@@ -9,125 +9,148 @@ import BenefitsCard from "../components/customBenefitCard";
 import Stories from "@/app/Stories/page";
 import LastBusinessesSection from "@/app/Lastbusinesses/page";
 
+
+import LMSdevelopment from "@/app/industries/edtech/image/LMSdevelopment.svg"
+import mobileLearning from "@/app/industries/edtech/image/mobileLearning.svg"
+import TroubleShooting from "@/app/industries/edtech/image/TroubleShooting.svg"
+import DataCenterM from "@/app/industries/edtech/image/DataCenterM.svg"
+import EducationSoftwa from "@/app/industries/edtech/image/EducationSoftwa.svg"
+import mvp from "@/app/industries/edtech/image/mvp.svg"
+import vle from "@/app/industries/edtech/image/vle.svg"
+import gamifiedEducation from "@/app/industries/edtech/image/gamifiedEducation.svg"
+import TeachingDevelopment from "@/app/industries/edtech/image/TeachingDevelopment.svg"
+import elearnModernization from "@/app/industries/edtech/image/elearnModernization.svg"
+
+
+import ElearninhPlatforms from "@/app/industries/edtech/image/ElearninhPlatforms.svg"
+import virtualClassrom from "@/app/industries/edtech/image/virtualClassrom.svg"
+import dataAnalytics from "@/app/industries/edtech/image/dataAnalytics.svg"
+
+
+import EnhencedEngagement from "@/app/industries/edtech/image/EnhencedEngagement.svg"
+import samlessintegration from "@/app/industries/edtech/image/samlessintegration.svg"
+import improvedEfficiency  from "@/app/industries/edtech/image/improvedEfficiency.svg"
+import ReliableSupport from "@/app/industries/edtech/image/ReliableSupport.svg"
+import modernizedElearning from "@/app/industries/edtech/image/modernizedElearning.svg"
+
+
+
 const EdTech=()=>{
     const valueItems=[
         {
-          iconUrl: "https://kavelogics.com/actual-industries/health/card/card-1.svg",
+          iconUrl: ElearninhPlatforms,
           title: "E-learning Platforms",
           description:
             "Create tailored e-learning platforms to enhance student engagement and streamline the delivery of education.",
         },
         {
-          iconUrl: "https://kavelogics.com/actual-industries/health/card/card-2.svg",
+          iconUrl: virtualClassrom,
           title: "Virtual Classrooms",
           description:
             "Develop powerful virtual classroom solutions for interactive real-time learning and seamless remote education.",
         },
         {
-          iconUrl: "https://kavelogics.com/actual-industries/health/card/card-3.svg",
+          iconUrl: dataAnalytics,
           title: "Data Analytics",
           description:
             "Provide data analytics to track student performance, identify patterns, and facilitate informed decision-making.",
         },
       ]
-
       const scrollItems = [
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/medical-hover.svg",
+          imagelight: LMSdevelopment,
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/medical.svg",
           title: "LMS Development",
         },
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/management-hover.svg",
+          imagelight: mobileLearning,
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/management.svg",
           title: "Mobile Learning Applications",
         },
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth-hover.svg",
+          imagelight: DataCenterM,
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
           title: "Data Center & Network Management",
         },
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/integration-hover.svg",
+          imagelight: EducationSoftwa ,
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
           title: "Education Software Integration",
         },
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud-hover.svg",
+          imagelight: mvp,
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
           title: "MVP Development",
         },
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth-hover.svg",
+          imagelight: elearnModernization,
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
           title: "E-Learning Modernization",
         },
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/integration-hover.svg",
+          imagelight: vle,
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
           title: "VLE Development",
         },
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud-hover.svg",
+          imagelight: gamifiedEducation,
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
           title: "Gamified Education Services",
         },
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud-hover.svg",
+          imagelight: TroubleShooting,
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
           title: "Troubleshooting Support",
         },
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud-hover.svg",
+          imagelight: TeachingDevelopment,
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
           title: "Teaching Development Applications",
         },
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud-hover.svg",
+          imagelight: elearnModernization,
           imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
           title: "E-Learning Modernization",
         }
       ];
-
       const benefitsData = [
         {
-          icon: "https://kavelogics.com/about/integrity.svg",
+          icon: EnhencedEngagement,
           title: "Enhanced Engagement",
           description:
             "Our LMS and gamified education services greatly enhance student interaction and participation, fostering a more engaging and effective learning experience.",
         },
         {
-          icon: "https://kavelogics.com/about/centricity.svg",
+          icon: samlessintegration,
           title: "Seamless Integration",
           description:
             "Our software integration services ensure that all your educational tools work together seamlessly, enhancing efficiency and creating a more cohesive learning environment.",
         },
         {
-          icon: "https://kavelogics.com/about/integrity.svg",
+          icon: mobileLearning,
           title: "Mobile Learning",
           description:
             "Our mobile learning applications provide on-the-go access, boosting flexibility, engagement, and participation while enhancing accessibility for students.",
         },
         {
-          icon: "https://kavelogics.com/about/integrity.svg",
+          icon: improvedEfficiency,
           title: "Improved Effeciency",
           description:
             "Our data center and network management optimize your operations, reducing downtime and improving efficiency, reliability, and performance.",
         },
         {
-          icon: "https://kavelogics.com/about/integrity.svg",
+          icon: ReliableSupport,
           title: "Reliable Support",
           description:
             "Our troubleshooting services provide quick resolution of technical issues, ensuring uninterrupted learning experiences for students.",
         },
         {
-          icon: "https://kavelogics.com/about/integrity.svg",
+          icon: modernizedElearning,
           title: "Modernized E-learning",
           description:
             "Our e-learning modernization upgrades your existing systems to enhance functionality, usability, user experience, and performance.",
         },
       ];
-
     return(
         <div>
              <CustomBanner 
