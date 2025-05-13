@@ -8,7 +8,7 @@ import Clientsline from "@/app/clientsline/page"
 import BenefitsCard from "../components/customBenefitCard"
 import Stories from "@/app/Stories/page"
 import LastBusinessesSection from "@/app/Lastbusinesses/page"
-import MobileBanking from "@/app/industries/fintech/image/ MobileBanking .svg"
+import MobileBanking from "@/app/industries/fintech/image/MobileBanking.svg"
 import crowdfunding from "@/app/industries/fintech/image/crowdfunding.svg"
 import P2Planding from "@/app/industries/fintech/image/P2Planding.svg"
 import KnownYourCtmr from "@/app/industries/fintech/image/KnownYourCtmr.svg"
@@ -26,7 +26,7 @@ import  enhancesecurity  from "@/app/industries/fintech/image/enhancesecurity.sv
 import UserFriendly from "@/app/industries/fintech/image/UserFriendly.svg"
 import ScalableSolution  from "@/app/industries/fintech/image/ScalableSolution.svg"
 import RegulatoryCompliance from "@/app/industries/fintech/image/RegulatoryCompliance.svg"
-import AdvancedAnalytics from "@/app/industries/fintech/image/.svg"
+import AdvancedAnalytics from "@/app/industries/fintech/image/AdvancedAnalytics.svg"
 const FinTech = () => {
   const valueItems = [
     {
