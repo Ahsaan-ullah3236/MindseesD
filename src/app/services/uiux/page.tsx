@@ -2,7 +2,7 @@
 import React from "react"
 import { Info } from "lucide-react";
 import ServicesCustomBanner from "../components/servicesCustomBanner";
-import bannerImage from "@/app/services/uiux/image/uiuxBanner.png"
+import bannerImage from "@/app/services/uiux/image/uiuxBanner.gif"
 import { FeatureList } from "../components/FeatureList";
 import CustomSolutionCard from "../components/customSolutionCard";
 import LastBusinessesSection from "@/app/Lastbusinesses/page";
