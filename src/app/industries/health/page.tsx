@@ -11,7 +11,7 @@ import BenefitsCard from "../components/customBenefitCard";
 import teleHealth from "@/app/industries/health/image/teleHealth.svg"
 import digital from "@/app/industries/health/image/digital.svg"
 import dataAnal from "@/app/industries/health/image/dataAnal.svg"
-import medicalImageInter from "@/app/industries/health/image/dataAnal.svg"
+import medicalImageInter from "@/app/industries/health/image/medicalImageInter.svg"
 import mhospital from "@/app/industries/health/image/mhospital.svg"
 import integration from "@/app/industries/health/image/integration.svg"
 import telehealthMangment from "@/app/industries/health/image/telehealthMangment.svg"
@@ -27,6 +27,18 @@ import EnhancedEfficiency from "@/app/industries/health/image/EnhancedEfficiency
 import dataSecurity2 from "@/app/industries/health/image/dataSecurity2.svg"
 import scalabelSolution from "@/app/industries/health/image/scalabelSolution.svg"
 import SeamlessIntegration from "@/app/industries/health/image/SeamlessIntegration.svg"
+
+// white 
+import medicalImageInterptionWhite from "@/app/industries/health/image/medicalImageInterptionWhite.svg"
+import managmentSystemforHWhite from "@/app/industries/health/image/managmentSystemforHWhite.svg"
+import telehealthappWhite from "@/app/industries/health/image/telehealthappWhite.svg"
+import IntegrationofHealthDataWhite from "@/app/industries/health/image/IntegrationofHealthDataWhite.svg"
+import cloudHealthSWhite from "@/app/industries/health/image/cloudHealthSWhite.svg"
+import ehrCreationWhite from "@/app/industries/health/image/ehrCreationWhite.svg"
+import LIMSWhite from "@/app/industries/health/image/LIMSWhite.svg"
+import remotePatientWhite from "@/app/industries/health/image/remotePatientWhite.svg"
+import crmforHealthWhite from "@/app/industries/health/image/crmforHealthWhite.svg"
+import solutionforPharmacyMWhite from "@/app/industries/health/image/solutionforPharmacyMWhite.svg"
 const Health = () => {
   const benefitsData = [
     {
@@ -68,53 +80,53 @@ const Health = () => {
   ];
   const scrollItems = [
     {
-      imagelight: medicalImageInter,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/management.svg",
+      imagelight : medicalImageInter ,
+      imageDark:  medicalImageInterptionWhite ,
       title: "Medical Image Interpretation",
     },
     {
       imagelight: mhospital,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/management.svg",
+      imageDark: managmentSystemforHWhite,
       title: "Management Systems for Hospitals",
     },
     {
       imagelight: telehealthMangment,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
+      imageDark: telehealthappWhite ,
       title: "Telehealth App Development",
     },
     {
       imagelight: integration,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
+      imageDark: IntegrationofHealthDataWhite,
       title: "Integration of Health Data",
     },
     {
       imagelight: cloudHealthServices,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: cloudHealthSWhite ,
       title: "Cloud Health Services",
     },
     {
       imagelight: ehr,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
+      imageDark:  ehrCreationWhite , 
       title: "EHR Creation",
     },
     {
       imagelight: lims1,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
+      imageDark: LIMSWhite ,
       title: "Development of LIMS",
     },
     {
       imagelight: remote,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: remotePatientWhite,
       title: "Remote Patient Observation",
     },
     {
       imagelight: CRM,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: crmforHealthWhite ,
       title: "CRM for Healthcare",
     },
     {
       imagelight: pharmacy,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: solutionforPharmacyMWhite ,
       title: "Solutions for Pharmacy Management",
     }
   ];

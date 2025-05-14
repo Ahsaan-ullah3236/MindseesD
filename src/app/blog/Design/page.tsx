@@ -1,15 +1,9 @@
 "use client"
 import React,{useState} from 'react'
 import Image from "next/image"
-import image from './image.png'
-import image2 from "./image2.png"
 import Lastbusinesses from '@/app/Lastbusinesses/page'
-import Footer from '@/app/Footer/page'
-import { ChevronRight } from 'lucide-react';
 import { ChevronDown } from 'lucide-react';
-
 import { ArrowUpRight  } from 'lucide-react';
-import { ArrowRight } from 'lucide-react';
 function page() {
   const categories = ['Development', 'Design', 'Marketing', 'Finance', 'Industries', 'Business'];
     const [selectedCategory, setSelectedCategory] = useState('Marketing');
@@ -20,12 +14,6 @@ function page() {
   return (
     <>
      <div className="relative w-full pt-30 pb-40 bg-[#003252] overflow-hidden spacing-secton">
-        {/* <Image
-          src={image}
-          alt="Blog illustration"
-          fill
-          className="object-cover"
-        /> */}
         <div className=" bg-blue/2000 flex flex-col justify-center items-center text-center px-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             MindSees Industries Blogs
