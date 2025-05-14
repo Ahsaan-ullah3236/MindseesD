@@ -7,16 +7,13 @@ import Recruitment from './recruitment';
 function Page() {
     const sectionRef = useRef<HTMLDivElement>(null);
     const scrollableRef = useRef<HTMLDivElement>(null);
-    // const [componentHeight, setComponentHeight] = useState(0);
 
     useEffect(() => {
         const scrollable = scrollableRef.current;
 
         const updateHeight = () => {
             if (scrollable) {
-                // const scrollHeight = scrollable.scrollHeight;
-                // const clientHeight = scrollable.clientHeight;
-                // setComponentHeight(scrollHeight - clientHeight + window.innerHeight);
+                
             }
         };
 

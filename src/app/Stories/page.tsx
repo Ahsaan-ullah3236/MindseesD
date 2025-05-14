@@ -6,6 +6,7 @@ import { StaticImageData } from 'next/image';
 import projectimage from "@/app/Stories/image/image.svg"
 import personImage from "@/app/Stories/image/person.jpeg"
 import casestudy from "@/app/Stories/image/CaseStudyImage.svg"
+import Link from 'next/link';
 
 type Testimonial = {
   id: number;
@@ -107,10 +108,12 @@ export default function SuccessStoriesPage() {
 
                         </div>
                       </div>
-                      
-                      {/* <button className="bg-[#00d280] text-white px-6 py-4 rounded-lg font-bold text-md cursor-pointer">
+                      <Link href="case-studies/opstionA">
+                      <button  className="bg-[#00d280] text-white px-6 py-4 rounded-lg font-bold text-md cursor-pointer">
                         {testimonial.cta}
-                      </button> */}
+                      </button>
+                      </Link>
+
                     </div>
                     
                     {/* Right column */}

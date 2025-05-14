@@ -80,7 +80,7 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
                   {leftItems.map((item, index) => (
                     <div 
                       key={`left-${index}`}
-                      className={`hover:${textHoverColor} p-5 rounded-xl my-4 border-2`}
+                      className={`hover:${textHoverColor} p-5 group  rounded-xl my-4 border-2`}
                       style={{
                         backgroundColor: cardBgColor,
                         borderColor: cardBorderColor,
@@ -101,7 +101,14 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
                         alt="logo" 
                         height={20} 
                         width={20} 
-                        className="w-13 h-13 mx-auto" 
+                        className="w-13 h-13 mx-auto block group-hover:hidden" 
+                      />
+                      <Image 
+                        src={item.imagelight} 
+                        alt="logo" 
+                        height={20} 
+                        width={20} 
+                        className="w-13 h-13 mx-auto hidden group-hover:block" 
                       />
                       <h3 
                         className="font-bold text-black-800 mb-4 text-center mt-4" 

@@ -73,7 +73,7 @@ function page() {
                     <div className="inner-mian-container-6 grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
                         {paginatedData?.map((item, i) => (
                             <div className="first-container rounded-lg overflow-hidden group " key={i}>
-                                <Link href="/CaseStudy/optionA" passHref>
+                                <Link href="/case-studies/opstionA" passHref>
                                     <div className="overflow-hidden rounded-lg">
                                         <Image
                                             src={item?.image}
