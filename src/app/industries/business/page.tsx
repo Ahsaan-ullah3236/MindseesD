@@ -19,10 +19,10 @@ import InnovationLab from "@/app/industries/business/image/InnovationLab.svg"
 import BusinessAutomation from "@/app/industries/business/image/BusinessAutomation.svg"
 import CustotmDevelopment  from "@/app/industries/business/image/CustotmDevelopment.svg"
 import cloudIntergration from "@/app/industries/business/image/cloudIntergration.svg"
-import  streamline from "@/app/industries/business/image/streamline.svg"
+import streamline from "@/app/industries/business/image/streamline.svg"
 import HolisticTransformation  from "@/app/industries/business/image/HolisticTransformation.svg"
 import ActionableSight from "@/app/industries/business/image/ActionableSight.svg"
-import EfficeinetDelivery  from "@/app/industries/business/image/EfficeinetDelivery.svg"
+import efficientDelivery  from "@/app/industries/business/image/efficientDelivery.svg"
 import StrategicProtection from "@/app/industries/business/image/StrategicProtection.svg"
 import   competativeEdge from "@/app/industries/business/image/competativeEdge.svg"
 const Business =()=>{
@@ -90,7 +90,7 @@ const Business =()=>{
       ];
       const benefitsData = [
         {
-          ico: streamline,
+          icon: streamline,
           title: "Streamlined Prototyping",
           description:
             "We fast-track your product development lifecycle, turning innovative ideas into prototypes quickly with our expert guidance, support, and cutting-edge technology solutions.",
@@ -108,7 +108,7 @@ const Business =()=>{
             "We enable data-driven decision-making with advanced analytics and visualization tools, optimizing performance across your organization and providing strategic insights.",
         },
         {
-          icon: EfficeinetDelivery,
+          icon: efficientDelivery,
           title: "Efficient Delivery",
           description:
             "We guarantee timely project success by using agile methodologies that adapt to changing needs, ensuring alignment with your business objectives through expert project management.",
