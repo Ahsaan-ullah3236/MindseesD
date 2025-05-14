@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Healthcare from "@/app/industries/health/image/Healthcare.gif"
+import Healthcare from "@/app/industries/health/image/healthCare1.gif"
 import CustomBanner from "../components/customBanner";
 import CustomValue from "../components/customValue";
 import Clientsline from "@/app/clientsline/page";
