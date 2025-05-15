@@ -6,6 +6,7 @@ import { StaticImageData } from 'next/image';
 import projectimage from "@/app/Stories/image/image.svg"
 import personImage from "@/app/Stories/image/person.jpeg"
 import casestudy from "@/app/Stories/image/CaseStudyImage.svg"
+import Link from 'next/link';
 
 type Testimonial = {
   id: number;
@@ -99,18 +100,20 @@ export default function SuccessStoriesPage() {
                       <div className="p-6 rounded-lg mb-8 ">
                         <p className="text-white italic mb-4">{testimonial.testimonial}</p>
                         <div className="flex mt-6">
-                            <Image src={personImage} alt='avatar' width={15} height={15} className='h-13 w-13 object-cover rounded-full mr-3'/>
+                            <Image src="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/dfff5a3f-e899-438f-a825-4ae7f519c000/w=96,q=75" alt='avatar' width={65} height={65} className=' object-cover rounded-full mr-3'/>
                                 <div>
-                          <p className="font-medium text-white text-xl">{testimonial.author}</p>
+                          <p className="font-medium text-white text-xl mt-2">{testimonial.author}</p>
                           <p className="text-white font-small">{testimonial.role}</p>
                           </div>
 
                         </div>
                       </div>
-                      
-                      {/* <button className="bg-[#00d280] text-white px-6 py-4 rounded-lg font-bold text-md cursor-pointer">
+                      <Link href="case-studies/opstionA">
+                      <button  className="bg-[#00d280] text-white px-6 py-4 rounded-lg font-bold text-md cursor-pointer">
                         {testimonial.cta}
-                      </button> */}
+                      </button>
+                      </Link>
+
                     </div>
                     
                     {/* Right column */}

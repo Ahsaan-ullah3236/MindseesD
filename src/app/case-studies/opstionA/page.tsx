@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import caseStudy from "@/app/case-studies/opstionA/image/CaseStudyImage.svg"
+import caseStudy1 from "@/app/case-studies/opstionA/image/case-study.gif"
+import caseStudy2 from "@/app/case-studies/opstionA/image/case-study2.gif"
+import caseStudy3 from "@/app/case-studies/opstionA/image/case-study3.gif"
 import { ArrowRight } from 'lucide-react';
 import imageAnimation from "@/app/case-studies/opstionA/image/imageAnimation.png"
 import LastBusinessesSection from "@/app/Lastbusinesses/page";
@@ -117,9 +120,12 @@ const CaseStudy = () => {
 
         <div className="bg-[#00d084] md:rounded-r-xl text-white flex flex-col justify-center items-start md:items-center px-6 py-8 md:w-1/3">
           <h2 className="text-xl font-bold mb-2">Have an Idea?</h2>
-          <button className="flex items-center gap-2 font-medium hover:underline">
+          <Link href="/contact-us">
+          <button className="flex items-center cursor-pointer gap-2 font-medium hover:underline">
             Talk to our experts <ArrowRight className="w-5 h-5" />
           </button>
+          </Link>
+
         </div>
 
       </div>
@@ -144,15 +150,15 @@ const CaseStudy = () => {
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <Image src={imageAnimation} alt="" height={35} width={35} className="pr-2 h-[300] w-[300] object-cover" />
+            <Image src={caseStudy1} alt="" height={35} width={35} className="pr-2 h-[300] w-full object-cover" />
           </div>
         </div>
 
       </div>
       <div>
-        <div className='flex flex-col-reverse sm:flex-row spacing-secton pt-30'>
+        <div className='flex flex-col-reverse sm:flex-row spacing-secton pt-30 gap-8'>
           <div className="flex justify-center items-center sm:w-[70%] md:w-[80%] lg:w-[45%]" >
-            <Image src={imageAnimation} alt="" height={35} width={35} className="pr-2 h-[300] w-[300] object-cover" />
+            <Image src={caseStudy2} alt="" height={35} width={35} className="pr-2 h-full w-full object-cover" />
           </div>
           <div className="">
             <div className="text-4xl text-black font-bold">Design & Implementation</div>
@@ -199,13 +205,12 @@ const CaseStudy = () => {
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <Image src={imageAnimation} alt="" height={35} width={35} className="pr-2 h-[300] w-[300] object-cover" />
+            <Image src={caseStudy3} alt="" height={35} width={35} className="pr-2 h-[300] w-full object-cover" />
           </div>
         </div>
 
       </div>
       <div className="relative max-w-5xl mx-auto md:h-[800px] flex flex-col-reverse md:flex-row items-center justify-center px-4">
-        {/* Feature Cards */}
         {features.map((feature, index) => {
           const positionClass =
             index === 0
@@ -243,7 +248,7 @@ const CaseStudy = () => {
         {/* Central Image */}
         <div className="md:w-[500px]  object-cover overflow-hidden">
           <Image
-            src={caseStudy} // Place your image in the /public folder
+            src={caseStudy} 
             alt="Mockup"
             className=" object-cover"
           />
