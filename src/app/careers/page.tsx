@@ -117,9 +117,9 @@ const perkData=[
             <div className=" text-center md:text-left">
                         <h1 className="text-5xl text-[#023047] font-bold mb-6">Looking for Visionary Talent.</h1>
                         <p className="text-lg text-[#023047] mt-12">
-                        At MindSees, we're committed to transforming lives through innovative solutions. We’re looking for individuals who align with and contribute to our vision. Our company promotes open communication, collaboration, and equal opportunities. We’re passionate about growth and always excited to discover dynamic talent.
+                        At MindSees, we are committed to transforming lives through innovative solutions. We are looking for individuals who align with and contribute to our vision. Our company promotes open communication, collaboration, and equal opportunities. We are passionate about growth and always excited to discover dynamic talent.
                         </p>
-                        <p className='text-lg text-[#023047] pt-6'>Join us to elevate both our company's standards and your own personal and professional growth.</p>
+                        <p className="text-lg text-[#023047] pt-6">Join us to elevate both our companys standards and your own personal and professional growth.</p>
                     </div>
                 </div>
                 <div className=" flex justify-center">

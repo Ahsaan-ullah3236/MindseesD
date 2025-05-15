@@ -55,7 +55,7 @@ const PrivacyPolicy = () => {
                 <h2 className="text-3xl font-semibold mt-10">1. Contractual Obligations</h2>
                 <p className="mt-8 text-lg">
                     To facilitate the development, fulfillment, and management of purchase contracts for products,
-                    services, or items you have acquired through our platform, or any other contractual agreements you've
+                    services, or items you have acquired through our platform, or any other contractual agreements you have
                     entered into with us.
                 </p>
 
@@ -64,7 +64,7 @@ const PrivacyPolicy = () => {
                     We may reach out to you via email, phone calls, SMS, or other electronic means such as push
                     notifications on our mobile application, to provide updates, essential information regarding our
                     products/services, including security updates, and to offer news, special deals, and general
-                    information about offerings similar to those you've previously shown interest in, unless you've opted
+                    information about offerings similar to those you have previously shown interest in, unless you have opted
                     out.
                 </p>
 
@@ -117,14 +117,14 @@ const PrivacyPolicy = () => {
                 <p className="mt-6 text-lg leading-relaxed">
                     Kavelogics will retain your personal data only for as long as necessary for the purposes outlined in this Privacy Policy. We will keep and utilize your personal data to the extent required to meet our legal obligations, such as complying with applicable laws, resolving disputes, and enforcing our legal agreements and policies.
                     <br /><br />
-                    Additionally, Kavelogics will retain usage data for internal analysis purposes. Usage data is typically kept for a shorter duration, except when it's utilized to enhance security, improve service functionality, or when legally required to retain it for longer periods.
+                    Additionally, Kavelogics will retain usage data for internal analysis purposes. Usage data is typically kept for a shorter duration, except when its utilized to enhance security, improve service functionality, or when legally required to retain it for longer periods.
                 </p>
 
                 <h1 className="text-4xl font-semibold mt-14">Transfer of Your Personal Data</h1>
                 <p className="mt-6 text-lg leading-relaxed">
                     Kavelogics will retain your personal data only for as long as necessary for the purposes outlined in this Privacy Policy. We will keep and utilize your personal data to the extent required to meet our legal obligations, such as complying with applicable laws, resolving disputes, and enforcing our legal agreements and policies.
                     <br /><br />
-                    Additionally, Kavelogics will retain usage data for internal analysis purposes. Usage data is typically kept for a shorter duration, except when it's utilized to enhance security, improve service functionality, or when legally required to retain it for longer periods.
+                    Additionally, Kavelogics will retain usage data for internal analysis purposes. Usage data is typically kept for a shorter duration, except when its utilized to enhance security, improve service functionality, or when legally required to retain it for longer periods.
                 </p>
             </section>
 
@@ -160,7 +160,7 @@ const PrivacyPolicy = () => {
                 <p className="mb-4 text-lg leading-relaxed">Disclosure may be necessary to:</p>
                 <ul className="text-lg leading-relaxed list-decimal ml-6 space-y-2">
                     <li>Comply with legal obligations</li>
-                    <li>Protect Kavelogics' rights or property</li>
+                    <li>Protect Kavelogics rights or property</li>
                     <li>Investigate potential wrongdoing</li>
                     <li>Protect user or public safety</li>
                     <li>Defend against legal liabilities</li>
@@ -173,7 +173,7 @@ const PrivacyPolicy = () => {
             </section>
 
             <section>
-                <h1 className="text-4xl font-semibold mt-10">Children's Privacy</h1>
+                <h1 className="text-4xl font-semibold mt-10">Childrens Privacy</h1>
                 <p className="mt-6 text-lg leading-relaxed">
                     Our Service does not cater to individuals under the age of 13. We do not knowingly gather personally
                     identifiable information from anyone under the age of 13. If you are a parent or guardian and you are

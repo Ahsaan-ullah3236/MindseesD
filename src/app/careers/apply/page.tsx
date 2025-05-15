@@ -5,40 +5,41 @@ import { StepperApply } from "./component/Stepper";
 
 const Apply =()=>{
 
-  const [currentStep, setCurrentStep] = useState(0);
+  const [currentStep] = useState(0);
+  // const [currentStep, setCurrentStep] = useState(0);
 
  
-     const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    cnic: '',
-    country: '',
-    city: '',
-    zip: '',
-    phone: '',
-    address: '',
-    gender: '',
-    dob: '',
-    github: '',
-    linkedin: '',
-    resume: null,
-  });
+  //    const [formData, setFormData] = useState({
+  //   firstName: '',
+  //   lastName: '',
+  //   email: '',
+  //   cnic: '',
+  //   country: '',
+  //   city: '',
+  //   zip: '',
+  //   phone: '',
+  //   address: '',
+  //   gender: '',
+  //   dob: '',
+  //   github: '',
+  //   linkedin: '',
+  //   resume: null,
+  // });
 
-  const handleChange = (e: any) => {
-    const { name, value, files } = e.target;
-    if (name === 'resume') {
-      setFormData({ ...formData, [name]: files[0] });
-    } else {
-      setFormData({ ...formData, [name]: value });
-    }
-  };
+  // const handleChange = (e: any) => {
+  //   const { name, value, files } = e.target;
+  //   if (name === 'resume') {
+  //     setFormData({ ...formData, [name]: files[0] });
+  //   } else {
+  //     setFormData({ ...formData, [name]: value });
+  //   }
+  // };
 
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    console.log(formData);
-    // Add validation or API call here
-  };
+  // const handleSubmit = (e: any) => {
+  //   e.preventDefault();
+  //   console.log(formData);
+  //   // Add validation or API call here
+  // };
     return(
         <div className="py-12 md:py-22 spacing-secton">
             <div className="text-[#005078] text-[22px] md:text-[25px] font-semibold">Social Media Management Internship Leading to Job</div>
@@ -48,7 +49,7 @@ const Apply =()=>{
     
     </div>
         <form
-      onSubmit={handleSubmit}
+      // onSubmit={handleSubmit}
       className="px-6 md:px-20 py-14 bg-[#d6f1ff] rounded-md mt-10"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20">
@@ -58,7 +59,7 @@ const Apply =()=>{
           <input
             type="text"
             name="firstName"
-            onChange={handleChange}
+            // onChange={handleChange}
             className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
           />
         </div>
@@ -69,7 +70,7 @@ const Apply =()=>{
           <input
             type="text"
             name="lastName"
-            onChange={handleChange}
+            // onChange={handleChange}
             className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
           />
         </div>
@@ -80,7 +81,7 @@ const Apply =()=>{
           <input
             type="email"
             name="email"
-            onChange={handleChange}
+            // onChange={handleChange}
             className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
           />
         </div>
@@ -91,7 +92,7 @@ const Apply =()=>{
           <input
             type="text"
             name="cnic"
-            onChange={handleChange}
+            // onChange={handleChange}
             className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
           />
         </div>
@@ -102,7 +103,7 @@ const Apply =()=>{
           <input
             type="text"
             name="country"
-            onChange={handleChange}
+            // onChange={handleChange}
             className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
           />
         </div>
@@ -113,7 +114,7 @@ const Apply =()=>{
           <input
             type="text"
             name="city"
-            onChange={handleChange}
+            // onChange={handleChange}
             className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
           />
         </div>
@@ -124,7 +125,7 @@ const Apply =()=>{
           <input
             type="text"
             name="zip"
-            onChange={handleChange}
+            // onChange={handleChange}
             className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
           />
         </div>
@@ -135,7 +136,7 @@ const Apply =()=>{
           <input
             type="tel"
             name="phone"
-            onChange={handleChange}
+            // onChange={handleChange}
             className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
           />
         </div>
@@ -145,7 +146,7 @@ const Apply =()=>{
           <label className="block font-medium text-[18px] mb-2 ">Address *</label>
           <textarea
             name="address"
-            onChange={handleChange}
+            // onChange={handleChange}
             rows={8}
             placeholder="eg. House number 55 Street Number 04, Lahore"
             className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
@@ -157,7 +158,7 @@ const Apply =()=>{
           <label className="block font-medium text-[18px] mb-2 ">Gender *</label>
           <select
             name="gender"
-            onChange={handleChange}
+            // onChange={handleChange}
             className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
           >
             <option value="">Not Specified</option>
@@ -172,7 +173,7 @@ const Apply =()=>{
           <input
             type="date"
             name="dob"
-            onChange={handleChange}
+            // onChange={handleChange}
             className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
           />
         </div>
@@ -183,7 +184,7 @@ const Apply =()=>{
           <input
             type="url"
             name="github"
-            onChange={handleChange}
+            // onChange={handleChange}
             className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
           />
         </div>
@@ -194,7 +195,7 @@ const Apply =()=>{
           <input
             type="url"
             name="linkedin"
-            onChange={handleChange}
+            // onChange={handleChange}
             className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
           />
         </div>
@@ -220,7 +221,7 @@ const Apply =()=>{
         type="file"
         id="resume"
         name="resume"
-        onChange={handleChange}
+        // onChange={handleChange}
         className="hidden "
         accept=".pdf,.doc,.docx"
       />

@@ -4,7 +4,7 @@ import Image from "next/image"
 import Lastbusinesses from '@/app/Lastbusinesses/page'
 import { ChevronDown } from 'lucide-react';
 import { ArrowUpRight  } from 'lucide-react';
-function page() {
+const Design =()=> {
   const categories = ['Development', 'Design', 'Marketing', 'Finance', 'Industries', 'Business'];
     const [selectedCategory, setSelectedCategory] = useState('Marketing');
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -244,4 +244,4 @@ function page() {
   )
 }
 
-export default page
+export default Design;
