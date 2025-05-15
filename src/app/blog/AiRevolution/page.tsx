@@ -3,7 +3,8 @@ import React, {useState} from 'react'
 import Image from "next/image"
 import image from './image.png'
 import image2 from "./image2.png"
-import Lastbusinesses from '@/app/Lastbusinesses/page'
+// import Lastbusinesses from '@/app/Lastbusinesses/page'
+import LastBusinessesSection from '@/app/Lastbusinesses/page'
 import { ChevronRight } from 'lucide-react';
 import { ChevronDown } from 'lucide-react';
 import Footer from '@/app/Footer/page'
@@ -187,8 +188,8 @@ const AiRevolution =() =>{
       </div>
       <div className="border-b-1 border-gray-300 mt-8 mb-34"></div>
       {/* third  */}
-      <Lastbusinesses />
-      <Footer/>
+      <LastBusinessesSection/>
+      {/* <Footer/> */}
     </>
   )
 }
