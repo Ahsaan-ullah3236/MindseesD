@@ -27,6 +27,18 @@ import UserFriendly from "@/app/industries/fintech/image/UserFriendly.svg"
 import ScalableSolution  from "@/app/industries/fintech/image/ScalableSolution.svg"
 import RegulatoryCompliance from "@/app/industries/fintech/image/RegulatoryCompliance.svg"
 import AdvancedAnalytics from "@/app/industries/fintech/image/AdvancedAnalytics.svg"
+
+// white 
+import mobileBankingWhite from "@/app/industries/fintech/image/mobileBankingWhite.svg"
+import crowdFundingPlatofrmsWhite from "@/app/industries/fintech/image/crowdFundingPlatofrmsWhite.svg"
+import p2PLandingwhite from "@/app/industries/fintech/image/p2PLandingwhite.svg"
+import knownYourCustomerWhite from "@/app/industries/fintech/image/knownYourCustomerWhite.svg"
+import creditsScoringPlatformsWhite from "@/app/industries/fintech/image/creditsScoringPlatformsWhite.svg"
+import dagitalWalletsWhite from "@/app/industries/fintech/image/dagitalWalletsWhite.svg"
+import apiIntegrationWhite from "@/app/industries/fintech/image/apiIntegrationWhite.svg"
+import paymentGetwayWhite from "@/app/industries/fintech/image/paymentGetwayWhite.svg"
+import regtechSolutionWhite from "@/app/industries/fintech/image/regtechSolutionWhite.svg"
+import financialAnalyticsWhite from "@/app/industries/fintech/image/financialAnalyticsWhite.svg"
 const FinTech = () => {
   const valueItems = [
     {
@@ -51,52 +63,52 @@ const FinTech = () => {
   const scrollItems = [
     {
       imagelight: MobileBanking,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/medical.svg",
+      imageDark: mobileBankingWhite ,
       title: "Mobile Banking",
     },
     {
       imagelight: crowdfunding,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/management.svg",
+      imageDark: crowdFundingPlatofrmsWhite,
       title: "Crowd Funding Platforms",
     },
     {
       imagelight: P2Planding,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
+      imageDark: p2PLandingwhite,
       title: "P2P Lending",
     },
     {
       imagelight: KnownYourCtmr,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
+      imageDark: knownYourCustomerWhite,
       title: "Know your customer",
     },
     {
       imagelight: creditScrong,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: creditsScoringPlatformsWhite,
       title: "Credit Scoring Platforms",
     },
     {
       imagelight: DigitalValets,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
+      imageDark: dagitalWalletsWhite,
       title: "Digital Wallets",
     },
     {
       imagelight: ApiIntegration,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
+      imageDark: apiIntegrationWhite,
       title: "API Integration",
     },
     {
       imagelight: paymentGateWay,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: paymentGetwayWhite,
       title: "Payment Gateway",
     },
     {
       imagelight: regtechSolutoin,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: regtechSolutionWhite,
       title: "Regtech Solutions",
     },
     {
       imagelight: FinanAnalytics,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: financialAnalyticsWhite,
       title: "Financial Analytics",
     }
   ];

@@ -27,6 +27,19 @@ import blockchainDist from "@/app/industries/entertainment/image/blockchainDist.
 import ContentDistribution from "@/app/industries/entertainment/image/ContentDistribution.svg"
 import AugumentedReality from "@/app/industries/entertainment/image/AugumentedReality.svg"
 import Analytics from "@/app/industries/entertainment/image/Analytics.svg"
+
+// white  
+import vrExperienceWhite from "@/app/industries/entertainment/image/vrExperienceWhite.svg"
+import arApplicationWhite from "@/app/industries/entertainment/image/arApplicationWhite.svg"
+import aiContentWhite from "@/app/industries/entertainment/image/aiContentWhite.svg"
+import stramingPlatformsWhite from "@/app/industries/entertainment/image/stramingPlatformsWhite.svg"
+import liveInterctiveWhite from "@/app/industries/entertainment/image/liveInterctiveWhite.svg"
+import blockChainContentWhite from "@/app/industries/entertainment/image/blockChainContentWhite.svg"
+import gamifiedContentWhite from "@/app/industries/entertainment/image/gamifiedContentWhite.svg"
+import immersiveAudioWhite from "@/app/industries/entertainment/image/immersiveAudioWhite.svg"
+import personalizesMerchandisingWhite from "@/app/industries/entertainment/image/personalizesMerchandisingWhite.svg"
+import locationBasedEntertanimentWhite from "@/app/industries/entertainment/image/locationBasedEntertanimentWhite.svg"
+
 const Entertainment = () => {
   const valueItems = [
     {
@@ -51,52 +64,52 @@ const Entertainment = () => {
   const scrollItems = [
     {
       imagelight: VrE,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/medical.svg",
+      imageDark: vrExperienceWhite,
       title: "VR Experiences",
     },
     {
       imagelight: ARappli,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/management.svg",
+      imageDark: arApplicationWhite,
       title: "AR Applications",
     },
     {
       imagelight: Aicontent,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
+      imageDark: aiContentWhite,
       title: "AI Content Recommendations",
     },
     {
       imagelight: StreamingPlatfo,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
+      imageDark: stramingPlatformsWhite,
       title: "Streaming Platforms",
     },
     {
       imagelight: live,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: liveInterctiveWhite,
       title: "Live Interactive Broadcasting",
     },
     {
       imagelight: blockchain,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
+      imageDark: blockChainContentWhite,
       title: "Blockchain Content Distribution",
     },
     {
       imagelight: GemifiedContent,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
+      imageDark: gamifiedContentWhite ,
       title: "Gamified Content",
     },
     {
       imagelight: Audio,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: immersiveAudioWhite ,
       title: "Immersive Audio",
     },
     {
       imagelight: PersMerchandising,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
+      imageDark: personalizesMerchandisingWhite, 
       title: "Personalized Merchandising",
     },
     {
       imagelight: location,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: locationBasedEntertanimentWhite ,
       title: "Location-Based Entertainment",
     }
   ];

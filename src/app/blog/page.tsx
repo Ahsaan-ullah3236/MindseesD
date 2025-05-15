@@ -10,6 +10,7 @@ import Marketing from "@/app/blog/images/Marketing.svg"
 import Finance from "@/app/blog/images/Finance.svg"
 import Industries from "@/app/blog/images/Industries.svg"
 import Business from "@/app/blog/images/Business.svg"
+
 function Page() {
   const workName = [
     {
@@ -151,7 +152,7 @@ function Page() {
           </div>
           <p className="text-md mt-3 text-white sm:text-base">
             By entering your email, you are agreeing to our
-            <span className="underline"> privacy policies</span>
+            <Link href="/blog/privacypolicy" className="underline"> privacy policies</Link>
           </p>
         </div>
 
