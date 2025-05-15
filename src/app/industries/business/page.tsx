@@ -25,6 +25,16 @@ import ActionableSight from "@/app/industries/business/image/ActionableSight.svg
 import efficientDelivery  from "@/app/industries/business/image/EfficientDelivery.svg"
 import StrategicProtection from "@/app/industries/business/image/StrategicProtection.svg"
 import   competativeEdge from "@/app/industries/business/image/competativeEdge.svg"
+// white 
+import   productProttypingServicesWhite from "@/app/industries/business/image/productProttypingServicesWhite.svg"
+import   crossIndustryPartnerShipWhite from "@/app/industries/business/image/crossIndustryPartnerShipWhite.svg"
+import   businessInteligencetollsWhite from "@/app/industries/business/image/businessInteligencetollsWhite.svg"
+import   agileProjectManagmnetWhite from "@/app/industries/business/image/agileProjectManagmnetWhite.svg"
+import   patientAdvisoryServicesWhite from "@/app/industries/business/image/patientAdvisoryServicesWhite.svg"
+import   digitalTransfomationSolutionWhite from "@/app/industries/business/image/digitalTransfomationSolutionWhite.svg"
+import   SustainabilityConsultingWhite from "@/app/industries/business/image/SustainabilityConsultingWhite.svg"
+import   inovationLabsWhite from "@/app/industries/business/image/inovationLabsWhite.svg"
+
 const Business =()=>{
     const valueItems=[
         {
@@ -49,42 +59,42 @@ const Business =()=>{
       const scrollItems = [
         {
           imagelight: ProductProtoTypinf,
-          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/medical.svg",
+          imageDark: productProttypingServicesWhite,
           title: "Product Prototyping Services",
         },
         {
           imagelight: crossIndustryP,
-          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/management.svg",
+          imageDark: crossIndustryPartnerShipWhite,
           title: "Cross-Industry Partenrships",
         },
         {
           imagelight: BusinessInteli ,
-          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
+          imageDark: businessInteligencetollsWhite,
           title: "Business Intelligence Tools",
         },
         {
           imagelight: AgileProjectM ,
-          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
+          imageDark: agileProjectManagmnetWhite,
           title: "Agile Project Management",
         },
         {
           imagelight:PatentAdvisory ,
-          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+          imageDark: patientAdvisoryServicesWhite,
           title: "Patent Advisory Services",
         },
         {
           imagelight: DigitalTransformation,
-          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
+          imageDark: digitalTransfomationSolutionWhite,
           title: "Digital Transformation Solutions",
         },
         {
           imagelight: SustainabilityConsulting,
-          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
+          imageDark: SustainabilityConsultingWhite,
           title: "Sustainability Consulting",
         },
         {
           imagelight: InnovationLab ,
-          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+          imageDark: inovationLabsWhite ,
           title: "Innovation Labs",
         }
       ];

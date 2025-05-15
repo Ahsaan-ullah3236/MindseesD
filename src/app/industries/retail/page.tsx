@@ -28,7 +28,17 @@ import inventoryManagment  from "@/app/industries/retail/image/inventoryManagmen
 import customerExperience  from "@/app/industries/retail/image/customerExperience.svg"
 import ominChannelIntegration from "@/app/industries/retail/image/ominChannelIntegration.svg"
 
-
+// white 
+import ecommerceDevelopmentWhite from "@/app/industries/retail/image/ecommerceDevelopmentWhite.svg"
+import POSWhite  from "@/app/industries/retail/image/POSWhite.svg"
+import inventoryManagemntWhite  from "@/app/industries/retail/image/inventoryManagemntWhite.svg"
+import CRMsoftwareWhite from "@/app/industries/retail/image/CRMsoftwareWhite.svg"
+import omniChannelIntegrationWhite from "@/app/industries/retail/image/omniChannelIntegrationWhite.svg"
+import aiSolutionWhite from "@/app/industries/retail/image/aiSolutionWhite.svg"
+import dataAnalyticsWhite from "@/app/industries/retail/image/dataAnalyticsWhite.svg"
+import mobileAppsWhite from "@/app/industries/retail/image/mobileAppsWhite.svg"
+import paymentIntegrationWhite  from "@/app/industries/retail/image/paymentIntegrationWhite.svg"
+import customSoftwareWhite  from "@/app/industries/retail/image/customSoftwareWhite.svg"
 const Retail = () => {
   const valueItems = [
     {
@@ -53,52 +63,52 @@ const Retail = () => {
   const scrollItems = [
     {
       imagelight: ecommerceS,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/medical.svg",
+      imageDark: ecommerceDevelopmentWhite,
       title: "E-commerce Development",
     },
     {
       imagelight: POS,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/management.svg",
+      imageDark: POSWhite,
       title: "Point-of-Sale (POS) Systems",
     },
     {
       imagelight: InventoryManagmentS,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
+      imageDark: inventoryManagemntWhite ,
       title: "Inventory Management",
     },
     {
       imagelight: CRMS,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
+      imageDark:  CRMsoftwareWhite,
       title: "CRM Software",
     },
     {
       imagelight: omnichannelS,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
+      imageDark: omniChannelIntegrationWhite,
       title: "Omni-channel Integration",
     },
     {
       imagelight: AiSolutionS,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
+      imageDark:  aiSolutionWhite,
       title: "AI Solutions",
     },
     {
       imagelight: DataAnalyticsS,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: dataAnalyticsWhite,
       title: "Data Analytics",
     },
     {
       imagelight: mobileAppS,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
+      imageDark: mobileAppsWhite,
       title: "Mobile Apps",
     },
     {
       imagelight: paymentIntegration,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: paymentIntegrationWhite ,
       title: "Payment Integration",
     },
     {
       imagelight: customSoftwreS,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: customSoftwareWhite,
       title: "Custom Software",
     }
   ];
