@@ -7,6 +7,7 @@ import image2 from "./image2.png"
 import LastBusinessesSection from '@/app/Lastbusinesses/page'
 import { ChevronRight } from 'lucide-react';
 import { ChevronDown } from 'lucide-react';
+import Link from 'next/link'
 
 const AiRevolution =() =>{
 
@@ -129,9 +130,11 @@ const AiRevolution =() =>{
                 Hire a MindSees Finance Specialist
               </h1>
               <div className="flex justify-center ">
+                <Link href="/contact-us">
                 <button className="bg-[#00D280] text-white py-3 text-lg font-semibold mt-9 rounded-lg hover:bg-[#00b96a] transition-colors w-26">
                   Hire me
                 </button>
+                </Link>
               </div>
             </div>
         </div>
