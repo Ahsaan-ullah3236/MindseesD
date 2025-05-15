@@ -1,5 +1,5 @@
 "use client"
-import React,{useState} from 'react'
+import React, {useState} from 'react'
 import Image from "next/image"
 import image from './image.png'
 import image2 from "./image2.png"
@@ -9,11 +9,12 @@ import { ChevronDown } from 'lucide-react';
 import Footer from '@/app/Footer/page'
 
 
-function page() {
-  const categories = ['Development', 'Design', 'Marketing', 'Finance', 'Industries', 'Business'];
+const AiRevolution =() =>{
+
   const [selectedCategory, setSelectedCategory] = useState('Marketing');
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [search, setSearch] = useState('');
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); 
+  const categories = ['Development', 'Design', 'Marketing', 'Finance', 'Industries', 'Business'];
+
   return (
     <>
       {/* first section  */}
@@ -192,4 +193,4 @@ function page() {
   )
 }
 
-export default page
+export default AiRevolution;

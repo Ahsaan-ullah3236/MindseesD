@@ -4,7 +4,7 @@ import React,{ useState } from 'react';
 import Image from 'next/image';
 import { StaticImageData } from 'next/image';
 import projectimage from "@/app/Stories/image/image.svg"
-import personImage from "@/app/Stories/image/person.jpeg"
+// import personImage from "@/app/Stories/image/person.jpeg"
 import casestudy from "@/app/Stories/image/CaseStudyImage.svg"
 import Link from 'next/link';
 

@@ -11,8 +11,10 @@ import StreamliningGlobalPaymen from "@/app/portfolio/images/StreamliningGlobalP
 import StreamliningHealthcareOperations from "@/app/portfolio/images/StreamliningHealthcareOperations.svg"
 import SMPLCards from "@/app/portfolio/images/SMPLCards.svg"
 import CustomizationMemorableExperiences from "@/app/portfolio/images/CustomizationMemorableExperiences.svg"
-function page() {
+const Portfolio =()=> {
+
     const [currentPage, setCurrentPage] = useState(1);
+
     const itemsPerPage = 4;
     const CaseStudyData = [
         {
@@ -111,4 +113,4 @@ function page() {
     )
 }
 
-export default page
+export default Portfolio;

@@ -9,7 +9,7 @@ function page() {
             <section>
                 <h2 className="text-4xl font-semibold mt-16">Introduction</h2>
                 <p className="text-lg leading-relaxed mt-6">
-                    This Cookie Policy page explains how Kavelogics ("we," "us," or "our") uses cookies and similar technologies on our website. By using our Website, you give consent to the use of cookies in accordance with this Cookie Policy.
+                    This Cookie Policy page explains how Kavelogics (we, us, or our) uses cookies and similar technologies on our website. By using our Website, you give consent to the use of cookies in accordance with this Cookie Policy.
                 </p>
 
                 <h2 className="text-4xl font-semibold mt-10">What Are Cookies?</h2>
@@ -29,7 +29,7 @@ function page() {
                 </p>
                 <h2 className="text-3xl font-semibold mt-10">2. Performance Cookies</h2>
                 <p className="mt-8 text-lg">
-                    These cookies collect information about how you use our Website, such as which pages you visit most often. This data helps us improve the Website's performance.
+                    These cookies collect information about how you use our Website, such as which pages you visit most often. This data helps us improve the Websites performance.
                 </p>
 
                 <h2 className="text-3xl font-semibold mt-10">3. Functionality Cookies</h2>
