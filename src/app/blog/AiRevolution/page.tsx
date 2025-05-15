@@ -7,8 +7,6 @@ import image2 from "./image2.png"
 import LastBusinessesSection from '@/app/Lastbusinesses/page'
 import { ChevronRight } from 'lucide-react';
 import { ChevronDown } from 'lucide-react';
-import Footer from '@/app/Footer/page'
-
 
 const AiRevolution =() =>{
 
