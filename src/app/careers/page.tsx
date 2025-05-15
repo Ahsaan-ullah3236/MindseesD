@@ -3,6 +3,7 @@ import Image from 'next/image';
 import image from './career1.gif';
 import React, { useRef, useEffect } from "react";
 import Recruitment from './recruitment';
+import Link from 'next/link';
 
 function Page() {
     const sectionRef = useRef<HTMLDivElement>(null);
@@ -87,9 +88,12 @@ const perkData=[
                         Discover exciting career opportunities at MindSees, where innovation and passion come together. Join our team to work with experts, tackle challenging projects, and make a real impact in technology.
                         </p>
                         <div className="mt-13 flex justify-center md:justify-start">
-                            <button className="bg-[#00D280] text-white font-semibold px-5 py-4 text-lg rounded-sm hover:bg-[#00b96a] transition-colors">
+                            <Link href="/careers/jobs">
+                            <button className="bg-[#00D280] cursor-pointer text-white font-semibold px-5 py-4 text-lg rounded-sm hover:bg-[#00b96a] transition-colors">
                                 See job Opportunities
                             </button>
+                            </Link>
+
                         </div>
                     </div>
                 </div>
@@ -158,11 +162,11 @@ const perkData=[
                         ))}
                         
                     </div>
-
-
-                    <button className="bg-[#00D280] text-white px-4 py-4 mb-30 text-lg font-semibold rounded-sm transition-colors w-55">
+                    <Link href="/careers/jobs">
+                    <button className="bg-[#00D280] cursor-pointer text-white px-4 py-4 mb-30 text-lg font-semibold rounded-sm transition-colors w-55">
                         See Job Opportunities
                     </button>
+                    </Link>
                 </div>
             </div>
         </div>

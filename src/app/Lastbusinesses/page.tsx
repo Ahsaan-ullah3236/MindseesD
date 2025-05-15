@@ -3,12 +3,15 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import callToAction from "@/app/Lastbusinesses/image/calltoaction.svg"
+import background from "@/app/Lastbusinesses/image/background.svg"
 
 const LastBusinessesSection = () => {
   return (
     <section className="bg-no-repeat bg-center spacing-secton max-w-7xl mx-auto mt-14 md:mt-25">
       {/* Centered Container */}
-      <div className="w-full bg-[#002f46] rounded-tl-3xl rounded-tr-3xl p-8 md:pl-12 md:pr-12 flex flex-col md:flex-row items-center gap-8 md:gap-12 mt-16">
+      <div className="w-full rounded-tl-3xl rounded-tr-3xl p-8 md:pl-12 md:pr-12 flex flex-col md:flex-row items-center gap-8 md:gap-12 mt-16"  style={{
+        backgroundImage: `url(${background.src})`,
+      }}>
         
         {/* Right Content */}
         <div className="flex-1 space-y-6 text-center md:text-left">

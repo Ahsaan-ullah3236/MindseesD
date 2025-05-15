@@ -74,11 +74,11 @@ function Herosection() {
             Book Consultation
           </button>
           </Link>
-           {/* <Link href="/portfolio"> */}
-          <button className="text-[#00d280]  font-bold py-3 px-8 text-sm md:text-xl transition-colors duration-300 inline-flex items-center justify-center gap-1">
+           <Link href="/portfolio">
+          <button className="text-[#00d280] cursor-pointer font-bold py-3 px-8 text-sm md:text-xl transition-colors duration-300 inline-flex items-center justify-center gap-1">
             See Our Work <span className="text-md"><ChevronRight className='h-6 text-[#00d280]'/></span>
           </button>
-          {/* </Link> */}
+          </Link>
 
         </div>
           
