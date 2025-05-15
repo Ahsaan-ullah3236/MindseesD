@@ -6,39 +6,42 @@ import Lastbusinesses from "@/app/Lastbusinesses/page";
 import React from 'react'
 import Pagination from '../components/pagination';
 
+import StreamliningSoftwareSolutionsOpstionA from "@/app/portfolio/images/StreamliningSoftwareSolutionsOpstionA.svg"
+import StreamliningGlobalPaymen from "@/app/portfolio/images/StreamliningGlobalPaymen.svg"
+import StreamliningHealthcareOperations from "@/app/portfolio/images/StreamliningHealthcareOperations.svg"
+import SMPLCards from "@/app/portfolio/images/SMPLCards.svg"
+import CustomizationMemorableExperiences from "@/app/portfolio/images/CustomizationMemorableExperiences.svg"
 function page() {
-
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 4;
-
     const CaseStudyData = [
         {
-            image: "https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/8b2819ae-4071-46ae-fb62-ec094913f000/w=640,q=75",
+            image: StreamliningSoftwareSolutionsOpstionA,
             title: "Streamlining Software Solutions: Option A",
             description: "Option A empowers founders, employees, and entrepreneurs to boost monthly revenue. It helps businesses start, grow, and scale by focusing on revenue growth and operations.",
         },
         {
-            image: "https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/849b4d4d-3c52-42b1-ae33-b12149e71700/w=640,q=75",
+            image: StreamliningGlobalPaymen,
             title: "Streamlining Global Payments: Introducing PayMe",
             description: "PayMe is a user-friendly mobile app designed for global payments, facilitating seamless bill submission via mobile devices worldwide.",
         },
         {
-            image: "https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/bec28dd1-3315-42a3-d6c2-ff86cd945500/w=640,q=75",
+            image: StreamliningHealthcareOperations,
             title: "Streamlining Healthcare Operations with Wellness",
             description: "Provides seamless pharmacy and nursing services, enhancing hospital efficiency. Simplifies processes for both patients and doctors, improving overall healthcare experiences.",
         },
         {
-            image: "https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/15f2ed10-cb5d-4b31-74ab-25f304e2c200/w=640,q=75",
+            image: SMPLCards,
             title: "SMPLCards: Interactive Learning through Quizzes and Flashcards",
             description: "SMPLCards, is a platform designed for students to efficiently create quizzes, study using flashcards, and generate notes through a user-friendly dashboard and website.",
         },
         {
-            image: "https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/e2412777-4571-47c2-c489-9cbf1d48fc00/w=640,q=75",
+            image: StreamliningHealthcareOperations,
             title: "Streamlining Healthcare Operations with Wellness",
             description: "Provides seamless pharmacy and nursing services, enhancing hospital efficiency. Simplifies processes for both patients and doctors, improving overall healthcare experiences.",
         },
         {
-            image: "https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/9f19faec-46bf-488b-5d2f-83460157c900/w=640,q=75",
+            image: CustomizationMemorableExperiences,
             title: "Personalized Tourism Packages: Easy Customization, Memorable",
             description: "Life Up Top, is a user-friendly platform that provides customizable global tourism packages for unforgettable travel adventures.",
         },

@@ -1,49 +1,58 @@
 import React from "react";
 import Image from "next/image";
-import image from "./image.png"
 import LastBusinessesSection from "../Lastbusinesses/page";
-import Footer from "../Footer/page";
 import { ArrowUpRight } from 'lucide-react';
 import { ArrowRight } from 'lucide-react';
-
-
+import Link from "next/link";
+import development from "@/app/blog/images/davelopment.svg"
+import Design from "@/app/blog/images/Design.svg"
+import Marketing from "@/app/blog/images/Marketing.svg"
+import Finance from "@/app/blog/images/Finance.svg"
+import Industries from "@/app/blog/images/Industries.svg"
+import Business from "@/app/blog/images/Business.svg"
 function Page() {
   const workName = [
     {
       title: 'Development',
       description: 'Read Development Articles Design Design Discover sophisticated design subjects, including thorough tutorials and extensive coverage of innovative design methods and technologies.',
       hoverTitle: 'Read Development Articles',
-      image: '/blogsvg/svg1.svg',
+      image: development,
+      link: 'blog/Design',
     },
     {
       title: 'Design',
       description: 'Read Development Articles Design Design Discover sophisticated design subjects, including thorough tutorials and extensive coverage of innovative design methods and technologies.',
       hoverTitle: 'Read Design Articles ',
-      image: '/blogsvg/svg2.svg',
+      image: Design,
+      link: 'blog/Design',
     },
     {
       title: 'Markiting ',
       description: 'Read Development Articles Design Design Discover sophisticated design subjects, including thorough tutorials and extensive coverage of .',
       hoverTitle: 'Read Markiting Articles',
-      image: '/blogsvg/svg3.svg',
+      image: Marketing,
+      link: 'blog/Design',
     },
     {
       title: 'Finance ',
       description: 'Read Development Articles Design Design Discover sophisticated design subjects, including thorough tutorials and extensive coverage of innovative design methods and technologies.',
       hoverTitle: 'Read Finance Articles',
-      image: '/blogsvg/svg4.svg',
+      image: Finance,
+      link: 'blog/Design',
     },
     {
       title: 'Industries',
       description: 'Read Development Articles Design Design Discover sophisticated design subjects, including thorough tutorials and extensive coverage of innovative design methods and technologies.',
       hoverTitle: 'Read Industries Articles',
-      image: '/blogsvg/svg5.svg',
+      image: Industries,
+      link: 'blog/Design',
     },
     {
       title: 'Business',
       description: 'Read Development Articles Design Design Discover sophisticated design subjects, including thorough tutorials and extensive coverage of innovative design methods and technologies.',
       hoverTitle: 'Read Business Articles',
-      image: '/blogsvg/svg6.svg',
+      image: Business,
+      link: 'blog/Design',
     },
   ];
   const UploadArticles = [
@@ -102,27 +111,25 @@ function Page() {
           </div>
         </div>
       </div>
-
       <div className="spacing-secton grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16 py-18 gap-5 ">
 
-      {workName?.map((item, i)=>(
-        <div key={i}>
-           <div className="bg-[#d6f1ff] h-full px-9 pt-9 pb-9 group cursor-pointer">
-          <Image src="https://kavelogics.com/services/ai/media/ai-card-2.svg" width={50} height={50} alt="" className="mt-2" />
-          <h2 className="text-2xl text-[#023047] font-bold mt-5">{item?.title}</h2>
-          <p className="text-[#070707] mt-5 group-hover:hidden">
-          {item?.description}
-           </p>
-          <p className="text-[#00d280] text-[18px] font-bold mt-5 flex hidden group-hover:flex">
-          {item?.hoverTitle} <ArrowRight className="mt-[2px] ml-1"/>
-           </p>
-        </div>
+        {workName?.map((item, i) => (
+          <div key={i}>
+            <div className="bg-[#d6f1ff] h-full px-9 pt-9 pb-9 group cursor-pointer">
+              <Image src={item?.image} width={50} height={50} alt="" className="mt-2" />
+              <h2 className="text-2xl text-[#023047] font-bold mt-5">{item?.title}</h2>
+              <p className="text-[#070707] mt-5 group-hover:hidden">
+                {item?.description}
+              </p>
+              <Link href={item?.link} >
+              <p className="text-[#00d280] text-[18px] font-bold mt-5 flex hidden group-hover:flex">
+                {item?.hoverTitle} <ArrowRight className="mt-[2px] ml-1" />
+              </p>
+              </Link>
+            </div>
           </div>
         ))}
       </div>
-
-
-
       <div className="grid grid-cols-1 md:grid-cols-2 my-22 bg-[linear-gradient(90deg,#055c88_0%,#01131c_100%)] py-10">
         <div className="pl-3 pr-3 sm:pr-0 md:pl-8 lg:pl-27">
           <h1 className="text-xl sm:text-3xl lg:text-4xl font-bold text-white">
@@ -266,7 +273,7 @@ function Page() {
       </div>
 
       <LastBusinessesSection />
-<Footer/>
+
     </>
   );
 }
