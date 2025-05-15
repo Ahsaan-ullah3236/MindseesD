@@ -27,6 +27,19 @@ import improvedEfficiency from "@/app/industries/edtech/image/improvedEfficiency
 import ReliableSupport from "@/app/industries/edtech/image/ReliableSupport.svg"
 import modernizedElearning from "@/app/industries/edtech/image/modernizedElearning.svg"
 
+// white 
+import LMSdevelopmentWhite from "@/app/industries/edtech/image/LMSdevelopmentWhite.svg"
+import mobileLearningWite from "@/app/industries/edtech/image/mobileLearningWite.svg"
+import dataCenterNetWhite from "@/app/industries/edtech/image/dataCenterNetWhite.svg"
+import educationSoftwareWhite from "@/app/industries/edtech/image/educationSoftwareWhite.svg"
+import MVPWhite from "@/app/industries/edtech/image/MVPWhite.svg"
+import eLearningModerWhite from "@/app/industries/edtech/image/eLearningModerWhite.svg"
+import vledevelopmentWhite from "@/app/industries/edtech/image/vledevelopmentWhite.svg"
+import gamifiedEduSerWhite from "@/app/industries/edtech/image/gamifiedEduSerWhite.svg"
+import TroublrDhootingWhite from "@/app/industries/edtech/image/TroublrDhootingWhite.svg"
+import techingDevelopmentWhite from "@/app/industries/edtech/image/techingDevelopmentWhite.svg"
+
+
 const EdTech = () => {
   const valueItems = [
     {
@@ -51,59 +64,54 @@ const EdTech = () => {
   const scrollItems = [
     {
       imagelight: LMSdevelopment,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/medical.svg",
+      imageDark: LMSdevelopmentWhite,
       title: "LMS Development",
     },
     {
       imagelight: mobileLearning,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/management.svg",
+      imageDark: mobileLearningWite,
       title: "Mobile Learning Applications",
     },
     {
       imagelight: DataCenterM,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
+      imageDark: dataCenterNetWhite,
       title: "Data Center & Network Management",
     },
     {
       imagelight: EducationSoftwa,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
+      imageDark:  educationSoftwareWhite,
       title: "Education Software Integration",
     },
     {
       imagelight: mvp,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: MVPWhite,
       title: "MVP Development",
     },
     {
       imagelight: elearnModernization,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
+      imageDark: eLearningModerWhite ,
       title: "E-Learning Modernization",
     },
     {
       imagelight: vle,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
+      imageDark: vledevelopmentWhite,
       title: "VLE Development",
     },
     {
       imagelight: gamifiedEducation,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: gamifiedEduSerWhite,
       title: "Gamified Education Services",
     },
     {
       imagelight: TroubleShooting,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: TroublrDhootingWhite ,
       title: "Troubleshooting Support",
     },
     {
       imagelight: TeachingDevelopment,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: techingDevelopmentWhite ,
       title: "Teaching Development Applications",
     },
-    {
-      imagelight: elearnModernization,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
-      title: "E-Learning Modernization",
-    }
   ];
   const benefitsData = [
     {

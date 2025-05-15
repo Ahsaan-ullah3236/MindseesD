@@ -18,6 +18,7 @@ import  sameDayDelivery from "@/app/industries/ecommerce/image/sameDayDelivery.s
 import  automatedCustomerSupp from "@/app/industries/ecommerce/image/automatedCustomerSupp.svg"
 import  interectiveProductionVis from "@/app/industries/ecommerce/image/interectiveProductionVis.svg"
 import  blockChain from "@/app/industries/ecommerce/image/blockChain.svg"
+import  gamificationof from "@/app/industries/ecommerce/image/gamificationof.svg"
 
 import  aiRecommandation from "@/app/industries/ecommerce/image/aiRecommandation.svg"
 import  OmniChannelI from "@/app/industries/ecommerce/image/OmniChannelI.svg"
@@ -29,8 +30,19 @@ import  cardVoiceCommerce from "@/app/industries/ecommerce/image/cardVoiceCommer
 import  cardSubcriptionServ from "@/app/industries/ecommerce/image/cardSubcriptionServ.svg"
 import   cardSocailC from "@/app/industries/ecommerce/image/cardSocailC.svg"
 import  cardSameDayD from "@/app/industries/ecommerce/image/cardSameDayD.svg"
-const Ecommerce =()=>{
 
+// white  
+import  personalProductRecmWhite from "@/app/industries/ecommerce/image/personalProductRecmWhite.svg"
+import  virtualTryOnWhite from "@/app/industries/ecommerce/image/virtualTryOnWhite.svg"
+import  voiceCommerceWhite from "@/app/industries/ecommerce/image/voiceCommerceWhite.svg"
+import  subscriptionServicesWhite from "@/app/industries/ecommerce/image/subscriptionServicesWhite.svg"
+import  socialCommerceWhite from "@/app/industries/ecommerce/image/socialCommerceWhite.svg"
+import  sameDayDelivryWhite from "@/app/industries/ecommerce/image/sameDayDelivryWhite.svg"
+import  automatedCustomerSuppoWhite from "@/app/industries/ecommerce/image/automatedCustomerSuppoWhite.svg"
+import  InterectiveProductionVisulazitionWhite from "@/app/industries/ecommerce/image/InterectiveProductionVisulazitionWhite.svg"
+import  gsmificstionOfshopingWhite from "@/app/industries/ecommerce/image/gsmificstionOfshopingWhite.svg"
+import  blockChainSupplyWhite from "@/app/industries/ecommerce/image/blockChainSupplyWhite.svg"
+const Ecommerce  = () => {
     const valueItems=[ 
         {
           iconUrl: platformDevelopment,
@@ -54,52 +66,52 @@ const Ecommerce =()=>{
       const scrollItems = [
         {
           imagelight: personalizedProduct, 
-          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/medical.svg",
+          imageDark: personalProductRecmWhite ,
           title: "Personalized Product Recommendations",
         },
         {
           imagelight: virtualTryon,
-          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/management.svg",
+          imageDark:  virtualTryOnWhite ,
           title: "Virtual Try-On",
         },
         {
           imagelight:  voiceCommerce,
-          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
+          imageDark: voiceCommerceWhite,
           title: "Voice Commerce",
         },
         {
           imagelight: subsriptionServices,
-          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
+          imageDark: subscriptionServicesWhite ,
           title: "Subscription Services",
         },
         {
           imagelight: socialCommerce,
-          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+          imageDark: socialCommerceWhite ,
           title: "Social Commerce",
         },
         {
           imagelight:  sameDayDelivery,
-          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
+          imageDark:  sameDayDelivryWhite,
           title: "Same-Day Delivery",
         },
         {
           imagelight: automatedCustomerSupp,
-          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
+          imageDark: automatedCustomerSuppoWhite,
           title: "Automated Customer Support",
         },
         {
           imagelight: interectiveProductionVis ,
-          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+          imageDark: InterectiveProductionVisulazitionWhite,
           title: "Interactive Product Visualization",
         },
         {
-          imagelight: "https://kavelogics.com/actual-industries/health/scroll-cards/integration-hover.svg",
-          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
+          imagelight: gamificationof,
+          imageDark: gsmificstionOfshopingWhite ,
           title: "Gamification of Shopping",
         },
         {
           imagelight:  blockChain,
-          imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+          imageDark: blockChainSupplyWhite ,
           title: "Blockchain-Based Supply Chain Tracking",
         }
       ];

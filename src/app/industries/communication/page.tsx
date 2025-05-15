@@ -27,6 +27,18 @@ import VoiceAssitant from "@/app/industries/communication/image/VoiceAssitant.sv
 import Unified from "@/app/industries/communication/image/Unified.svg"
 import networkOptimi from "@/app/industries/communication/image/networkOptimi.svg"
 import MobileSolution from "@/app/industries/communication/image/MobileSolution.svg"
+
+// white  
+import virtualEventWhite from "@/app/industries/communication/image/virtualEventWhite.svg"
+import aicustomerServicesChatbotsWhite from "@/app/industries/communication/image/aicustomerServicesChatbotsWhite.svg"
+import secureBlockChainServiceWhite from "@/app/industries/communication/image/secureBlockChainServiceWhite.svg"
+import augmentedRealityMarketingWhite from "@/app/industries/communication/image/augmentedRealityMarketingWhite.svg"
+import remoteCollaborationWhite from "@/app/industries/communication/image/remoteCollaborationWhite.svg"
+import dataVisulazitionServicesWhite from "@/app/industries/communication/image/dataVisulazitionServicesWhite.svg"
+import socailMediaAnalyticsWhite from "@/app/industries/communication/image/socailMediaAnalyticsWhite.svg"
+import multiChannelIntgrationWhite from "@/app/industries/communication/image/multiChannelIntgrationWhite.svg"
+import voiceActivatedWhite from "@/app/industries/communication/image/voiceActivatedWhite.svg"
+import personalizedContentRecommendationWhite from "@/app/industries/communication/image/personalizedContentRecommendationWhite.svg"
 const Communication = () => {
   const valueItems = [
     {
@@ -51,52 +63,52 @@ const Communication = () => {
   const scrollItems = [
     {
       imagelight: VirtualEvent,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/medical.svg",
+      imageDark: virtualEventWhite,
       title: "Virtual Event Management",
     },
     {
       imagelight: AICustomerServis,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/management.svg",
+      imageDark: aicustomerServicesChatbotsWhite,
       title: "AI Customer Service Chatbots",
     },
     {
       imagelight: SecureBlockChain,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
+      imageDark: secureBlockChainServiceWhite,
       title: "Secure Blockchain Messaging",
     },
     {
       imagelight: AugmentedRealityMarketing,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
+      imageDark: augmentedRealityMarketingWhite,
       title: "Augmented Reality Marketing",
     },
     {
       imagelight: remotecolleboration,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: remoteCollaborationWhite,
       title: "Remote Collaboration Platforms ",
     },
     {
       imagelight: DataVisualization,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/telehealth.svg",
+      imageDark: dataVisulazitionServicesWhite,
       title: "Data Visualization Services",
     },
     {
       imagelight: SocialMediaAnalytics,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
+      imageDark: socailMediaAnalyticsWhite,
       title: "Social Media Analytics",
     },
     {
       imagelight: MulticahnnelComm,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: multiChannelIntgrationWhite,
       title: "Multi-channel Communication Integration",
     },
     {
       imagelight: voiceactivated,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/integration.svg",
+      imageDark: voiceActivatedWhite,
       title: "Voice-Activated Assistants",
     },
     {
       imagelight: PersonalizedContent,
-      imageDark: "https://kavelogics.com/actual-industries/health/scroll-cards/cloud.svg",
+      imageDark: personalizedContentRecommendationWhite,
       title: "Personalized Content Recommendations",
     }
   ];

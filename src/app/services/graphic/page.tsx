@@ -66,7 +66,7 @@ const Graphic = () => {
     { name: "CorelDraw", icon: corledraw },
     { name: "GIMP", icon: gimp },
     { name: "PIXLR", icon: pixl },
-    { name: "Adobe Spark", asSp },
+    { name: "Adobe Spark", icon: asSp},
     { name: "Vectr", icon: vectr },
   ];
   const features = [
