@@ -131,7 +131,7 @@ const AiRevolution =() =>{
               </h1>
               <div className="flex justify-center ">
                 <Link href="/contact-us">
-                <button className="bg-[#00D280] text-white py-3 text-lg font-semibold mt-9 rounded-lg hover:bg-[#00b96a] transition-colors w-26">
+                <button className="bg-[#00D280] cursor-pointer text-white py-3 text-lg font-semibold mt-9 rounded-lg hover:bg-[#00b96a] transition-colors w-26">
                   Hire me
                 </button>
                 </Link>
