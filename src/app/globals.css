@@ -58,6 +58,18 @@ body{
     padding-right: 40px !important;
   }
 }
+@media only screen and (min-width:1500px) and (max-width:1900px)  {
+  .spacing-secton{
+    padding-left: 140px !important;
+    padding-right: 140px !important;
+  }
+}
+@media only screen and (min-width:1901px)   {
+  .spacing-secton{
+    padding-left: 220px !important;
+    padding-right: 220px !important;
+  }
+}
 .shadow-custom{
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }

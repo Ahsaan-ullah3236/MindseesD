@@ -17,11 +17,11 @@ type SolutionSectionProps = {
 
 export default function CustomSolutionCard({ heading,subHeading, Solution }: SolutionSectionProps) {
   return (
-    <div className="spacing-secton max-w-6xl mx-auto py-16">
+    <div className="spacing-secton mx-auto py-16">
       <div className="text-[38px] text-[#013a54]  font-bold text-center"style={{lineHeight:"42px"}}>{heading}</div>
       <div className="text-[18px]  text-[#013a54] max-w-3xl mx-auto  mb-22 mt-8 text-center"style={{lineHeight:"22px"}}>{subHeading}</div>
      
-      <div className="three-divs grid grid-cols-1 md:grid-cols-3 gap-5 ">
+      <div className="three-divs grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-4 gap-5 ">
         {Solution.map((Solution, index) => (
           <div key={index} className="value-card mx-auto p-6 bg-[#d6f1ff] pb-8 pt-5 rounded-md hover:shadow-lg">
             <Image

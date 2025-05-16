@@ -19,7 +19,7 @@ const AwardsSection = () => {
   ];
 
   return (
-    <div className='max-w-7xl mx-auto spacing-secton'>
+    <div className=' mx-auto spacing-secton'>
 
     <div className="w-full bg-[#E6F4FF]  mt-5 md:mt-28 py-16">
       <div className="max-w-7xl mx-auto text-center px-4">
