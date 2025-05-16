@@ -20,7 +20,7 @@ const ServicesCustomBanner: React.FC<CustomBannerProps> = ({
 }) => {
   return (
     <div className="py-18 bg-[#012f47] bg-cover bg-right spacing-secton">
-      <div className="grid grid-cols-1  md:grid-cols-2 2xl:grid-cols-4 gap-8 text-sm">
+      <div className="grid grid-cols-1  md:grid-cols-2 gap-8 text-sm">
         <div className="">
           <div className="text-5xl font-bold mb-4">
             <span className="relative whitespace-pre-line text-white">{heading}</span>
