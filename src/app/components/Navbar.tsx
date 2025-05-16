@@ -84,10 +84,10 @@ const Navbar = () => {
 
   return (
     <header className="w-full shadow-sm border-b-red-300 sticky top-0 bg-white z-50">
-      <div className="flex items-center justify-between max-w-7xl mx-auto spacing-secton py-5">
+      <div className="flex items-center justify-between  mx-auto spacing-secton py-5">
         <div className="text-xl lg:text-2xl font-bold text-black">
           <Link href={"/"}>
-            <span className="font-mono" >MindSees</span>
+            <span className="font-mono" onClick={() => setMobileMenuOpen(false)} >MindSees</span>
           </Link>
         </div>
 
@@ -97,7 +97,6 @@ const Navbar = () => {
             onMouseEnter={() => setHoveredMenu('services')}
             onMouseLeave={() => setHoveredMenu(null)}
           >
-            {/* <button className="flex  items-center gap-1 hover:text-[#00d280] text-sm lg:text-lg"> */}
             <button className="flex cursor-pointer items-center gap-1 hover:text-[#00d280] text-sm lg:text-lg">
               Services{' '}
               <ChevronDown
@@ -218,7 +217,7 @@ const Navbar = () => {
             )}
           </div>
 
-          <Link href="" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
+          <Link href="/portfolio" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
             Portfolio
           </Link>
 
@@ -256,11 +255,11 @@ const Navbar = () => {
             )}
           </div>
 
-          <Link href="" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
+          <Link href="/careers" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
             Careers
           </Link>
 
-          <Link href="" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
+          <Link href="/blog" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
             Blogs
           </Link>
 

@@ -86,7 +86,7 @@ function Page() {
   }, []);
 
   return (
-    <div ref={sectionRef} className="spacing-secton max-w-7xl mx-auto">
+    <div ref={sectionRef} className="spacing-secton mx-auto">
     <div className="">
       <div className="lg:grid lg:grid-cols-2 lg:gap-12 mb-15">
         {/* Left Content */}
@@ -113,7 +113,7 @@ function Page() {
         <div className="relative">
           <div 
             ref={sectionRef}
-            className="h-[80vh] overflow-y-auto scroll-smooth left-scrollbar pl-4 space-y-8"
+            className="h-[80vh] 2xl:h-[50vh] overflow-y-auto scroll-smooth left-scrollbar pl-4 space-y-8"
           >
             {scrollItems.map((item, index) => (
               <div 

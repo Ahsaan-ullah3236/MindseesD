@@ -73,7 +73,7 @@ function Recruitment() {
 
   return (
     <div ref={sectionRef} className="spacing-secton">
-    <div className="max-w-5xl mx-auto">
+    <div className=" mx-auto">
       <div className="md:grid grid-cols-2 lg:gap-14 ">
         <div className="flex justify-center items-center">
 
@@ -100,7 +100,7 @@ function Recruitment() {
         <div className="relative">
           <div 
             ref={sectionRef}
-            className="h-[65vh] overflow-y-auto scroll-smooth left-scrollbar pl-4 space-y-2"
+            className="h-[65vh] 2xl:h-[40vh] overflow-y-auto scroll-smooth left-scrollbar pl-4 space-y-2"
           >
             {scrollItems.map((item, index) => (
               <div 

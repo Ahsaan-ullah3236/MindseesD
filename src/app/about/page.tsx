@@ -32,7 +32,7 @@ const AboutPage = () => {
     return (
         <div >
             <div className="bg-[#002f46] py-20">
-                <div className='max-w-7xl mx-auto'>
+                <div className=' mx-auto'>
                 <div className="spacing-secton  flex flex-col md:flex-row items-center justify-between gap-12 px-4">
                     <div className='grid grid-cols-1 md:grid-cols-2   '>
                         <div className=''>
@@ -72,7 +72,7 @@ const AboutPage = () => {
 
 
             
-            <div className="py-30 max-w-7xl mx-auto ">
+            <div className="py-30 mx-auto ">
                 <div className="spacing-secton flex flex-col md:flex-row items-center justify-between gap-20 px-4">
                     <div className="lg:w-1/2 w-full bg-[#d6f1ff] rounded-lg px-6 py-12 min-h-[290px] flex items-center">
                         <div className="flex flex-wrap justify-center items-center gap-6 w-full">
@@ -107,7 +107,7 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className="bg-[#023047] max-w-4xl mx-auto flex w-full rounded-2xl shadow-xl">
+            <div className="bg-[#023047] max-w-4xl 2xl:max-w-7xl mx-auto flex w-full rounded-2xl shadow-xl">
                 <div className=" flex flex-col md:flex-row items-center gap-12 ">
                     {/* Left Text Content */}
                     <div className="md:w-2/2 text-white text-center md:text-left px-16 ">
@@ -129,7 +129,7 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className="main-container max-w-5xl mx-auto flex justify-center items-center text-center py-12 px-4">
+            <div className="main-container spacing-secton mx-auto flex justify-center items-center text-center py-12 px-4">
                 <div className="inner-container">
                     <h1 className="text-2xl md:text-5xl text-[#023047] font-bold mt-14 mb-16">Our Values</h1>
                     <div className="three-divs grid grid-cols-1 md:grid-cols-3 gap-12">

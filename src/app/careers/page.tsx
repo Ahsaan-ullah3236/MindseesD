@@ -111,7 +111,7 @@ const perkData=[
               
             </div>
 
-            <div className="max-w-7xl mx-auto mt-12 spacing-secton">
+            <div className=" mx-auto mt-12 spacing-secton">
             <div className='grid grid-cols-1 md:grid-cols-2 gap-14  mt-40 mb-10'>
             <div className=''>
             <div className=" text-center md:text-left">
@@ -137,7 +137,7 @@ const perkData=[
 
             <div
                
-                className="relative max-w-7xl mx-auto bg-linear-to-r/srgb from-[#033f5d] to-[#056ea3] mt-22 py-24 "
+                className="relative mx-auto bg-linear-to-r/srgb from-[#033f5d] to-[#056ea3] mt-22 py-24 "
             >
                 <Recruitment/>
                 
@@ -145,11 +145,11 @@ const perkData=[
 
 
             <div className="main-container flex justify-center items-center text-center">
-                <div className="inner-container w-full max-w-6xl">
+                <div className="inner-container w-full spacing-secton">
                     <h1 className="text-5xl text-[#023047] font-bold mt-22 mb-6">Employee Benefits & Perks
                     </h1>
                     <p className='text-lg text-[#023047] mx-auto max-w-4xl mb-12'>Enhance your journey at MindSees with our comprehensive employee benefits and perks. From competitive salaries to flexible work arrangements, we prioritize your well-being and professional development, fostering an environment where you can truly thrive.</p>
-                    <div className="three-divs grid grid-cols-1 md:grid-cols-3 gap-8 m-12">
+                    <div className="three-divs grid grid-cols-1 md:grid-cols-3 gap-8 my-12">
 
                         {perkData?.map((item,i)=>(
 

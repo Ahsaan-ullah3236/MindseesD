@@ -7,7 +7,7 @@ import USAOffice from "@/app/globalPresance/image/USAOffice.svg"
 
 const GlobalPressance=()=>{
     return(
-        <div className="spacing-secton max-w-7xl mx-auto p-6 mt-16 pb-20">
+        <div className="spacing-secton  mx-auto p-6 mt-16 pb-20">
         <div className="pt-8 pb-16">
                 <h1 className="text-2xl md:text-5xl font-bold text-gray-800 text-center mb-3">Our Global Presence</h1>
                 <p className="text-black-200 text-[17px] text-center">

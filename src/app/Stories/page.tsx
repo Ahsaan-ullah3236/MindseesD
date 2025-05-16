@@ -67,12 +67,12 @@ export default function SuccessStoriesPage() {
   };
 
   return (
-    <div className='max-w-7xl mx-auto'>
+    <div className=' mx-auto'>
       <div className="text-[45px] text-black font-bold text-center"style={{lineHeight:"42px"}}> Our Success Stories</div>
       <div className="text-[18px] text-black max-w-3xl mx-auto mb-10  mt-8 text-center"style={{lineHeight:"22px"}}>Read testimonials from our satisfied clients who have experienced our outstanding services. See how we have helped businesses like yours succeed and enhance their online presence.</div>
      
 
-    <div className="relative  min-h-screen flex items-center justify-center spacing-secton px-2 md:px-4">
+    <div className="relative   flex items-center justify-center spacing-secton px-2 md:px-4">
       <div className="w-full mx-auto mb-20">
         <div className="bg-[#023047] rounded-2xl overflow-hidden">
           {/* Slider content */}
