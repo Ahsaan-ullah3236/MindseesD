@@ -2,7 +2,6 @@
 "use client"
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import bgbanner from "@/app/services/mobile/image/bgBanner.png"
 
 interface CustomBannerProps {
   heading: string;

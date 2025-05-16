@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ScrollItem {
   imagelight: string;
@@ -62,12 +63,15 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
             </p>
             
             <div className="mb-10 text-black">
+              <Link href="/contact-us">
               <button 
-                className={`py-2 font-bold text-xl transition duration-200`}
+                className={`py-2 font-bold cursor-pointer text-xl transition duration-200`}
                 style={{ color: buttonColor }}
               >
                 {buttonText}
               </button>
+              </Link>
+
             </div>
           </div>
 
@@ -80,7 +84,7 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
                   {leftItems.map((item, index) => (
                     <div 
                       key={`left-${index}`}
-                      className={`hover:${textHoverColor} p-5 rounded-xl my-4 border-2`}
+                      className={`hover:${textHoverColor} p-5 group  rounded-xl my-4 border-2`}
                       style={{
                         backgroundColor: cardBgColor,
                         borderColor: cardBorderColor,
@@ -101,7 +105,14 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
                         alt="logo" 
                         height={20} 
                         width={20} 
-                        className="w-13 h-13 mx-auto" 
+                        className="w-13 h-13 mx-auto hidden group-hover:block" 
+                      />
+                      <Image 
+                        src={item.imagelight} 
+                        alt="logo" 
+                        height={20} 
+                        width={20} 
+                        className="w-13 h-13 mx-auto block group-hover:hidden" 
                       />
                       <h3 
                         className="font-bold text-black-800 mb-4 text-center mt-4" 
@@ -118,7 +129,7 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
                   {rightItems.map((item, index) => (
                     <div 
                       key={`right-${index}`}
-                      className={`hover:${textHoverColor} p-5 rounded-xl my-4 border-2`}
+                      className={`hover:${textHoverColor} p-5 group rounded-xl my-4 border-2`}
                       style={{
                         backgroundColor: cardBgColor,
                         borderColor: cardBorderColor,
@@ -139,7 +150,14 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
                         alt="logo" 
                         height={20} 
                         width={20} 
-                        className="w-13 h-13 mx-auto" 
+                        className="w-13 h-13 mx-auto  hidden group-hover:block " 
+                      />
+                      <Image 
+                        src={item.imagelight} 
+                        alt="logo" 
+                        height={20} 
+                        width={20} 
+                        className="w-13 h-13 mx-auto block group-hover:hidden" 
                       />
                       <h3 
                         className="font-bold text-black-800 mb-4 text-center mt-4" 

@@ -9,15 +9,15 @@ function page() {
                 <section>
                     <h2 className="text-4xl font-semibold mt-18">Introduction</h2>
                     <p className="text-lg leading-relaxed mt-6">
-                        Welcome to Kavelogics! These terms and conditions outline the rules and regulations for the use of Kavelogics' website. By accessing this website, we assume you accept these terms and conditions. Do not continue to use Kavelogics if you do not agree to all of the terms and conditions stated on this page.
+                        Welcome to Kavelogics! These terms and conditions outline the rules and regulations for the use of Kavelogics website. By accessing this website, we assume you accept these terms and conditions. Do not continue to use Kavelogics if you do not agree to all of the terms and conditions stated on this page.
                     </p>
 
                     <h2 className="text-4xl font-semibold mt-14">Definitions</h2>
                     <p className="text-lg leading-relaxed mt-6">
                         <ul className="text-lg leading-relaxed list-disc ml-6 space-y-2 my-6">
-                            <li className='mt-6'>"Client," "You," and "Your" refer to you, the person accessing this website and accepting the Company’s terms and conditions.</li>
-                            <li className='mt-6'>"Company," "Ourselves," "We," "Our," and "Us" refer to Kavelogics.</li>
-                            <li className='mt-6'>"Parties," refers to both the Client and Ourselves.</li>
+                            <li className='mt-6'>Client, You, and Your refer to you, the person accessing this website and accepting the Company’s terms and conditions.</li>
+                            <li className='mt-6'>Company, Ourselves, We, Our, and Us refer to Kavelogics.</li>
+                            <li className='mt-6'>Parties, refers to both the Client and Ourselves.</li>
 
                         </ul>
                     </p>

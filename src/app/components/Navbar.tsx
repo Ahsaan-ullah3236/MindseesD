@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import Link from 'next/link';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import clsx from 'clsx';
-import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [mobileExpandedMenu, setMobileExpandedMenu] = useState<string | null>(null);

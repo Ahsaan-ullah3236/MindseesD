@@ -3,20 +3,18 @@ import Image from 'next/image';
 import image from './career1.gif';
 import React, { useRef, useEffect } from "react";
 import Recruitment from './recruitment';
+import Link from 'next/link';
 
 function Page() {
     const sectionRef = useRef<HTMLDivElement>(null);
     const scrollableRef = useRef<HTMLDivElement>(null);
-    // const [componentHeight, setComponentHeight] = useState(0);
 
     useEffect(() => {
         const scrollable = scrollableRef.current;
 
         const updateHeight = () => {
             if (scrollable) {
-                // const scrollHeight = scrollable.scrollHeight;
-                // const clientHeight = scrollable.clientHeight;
-                // setComponentHeight(scrollHeight - clientHeight + window.innerHeight);
+                
             }
         };
 
@@ -90,9 +88,12 @@ const perkData=[
                         Discover exciting career opportunities at MindSees, where innovation and passion come together. Join our team to work with experts, tackle challenging projects, and make a real impact in technology.
                         </p>
                         <div className="mt-13 flex justify-center md:justify-start">
-                            <button className="bg-[#00D280] text-white font-semibold px-5 py-4 text-lg rounded-sm hover:bg-[#00b96a] transition-colors">
+                            <Link href="/careers/jobs">
+                            <button className="bg-[#00D280] cursor-pointer text-white font-semibold px-5 py-4 text-lg rounded-sm hover:bg-[#00b96a] transition-colors">
                                 See job Opportunities
                             </button>
+                            </Link>
+
                         </div>
                     </div>
                 </div>
@@ -116,9 +117,9 @@ const perkData=[
             <div className=" text-center md:text-left">
                         <h1 className="text-5xl text-[#023047] font-bold mb-6">Looking for Visionary Talent.</h1>
                         <p className="text-lg text-[#023047] mt-12">
-                        At MindSees, we're committed to transforming lives through innovative solutions. We’re looking for individuals who align with and contribute to our vision. Our company promotes open communication, collaboration, and equal opportunities. We’re passionate about growth and always excited to discover dynamic talent.
+                        At MindSees, we are committed to transforming lives through innovative solutions. We are looking for individuals who align with and contribute to our vision. Our company promotes open communication, collaboration, and equal opportunities. We are passionate about growth and always excited to discover dynamic talent.
                         </p>
-                        <p className='text-lg text-[#023047] pt-6'>Join us to elevate both our company's standards and your own personal and professional growth.</p>
+                        <p className="text-lg text-[#023047] pt-6">Join us to elevate both our companys standards and your own personal and professional growth.</p>
                     </div>
                 </div>
                 <div className=" flex justify-center">
@@ -161,11 +162,11 @@ const perkData=[
                         ))}
                         
                     </div>
-
-
-                    <button className="bg-[#00D280] text-white px-4 py-4 mb-30 text-lg font-semibold rounded-sm transition-colors w-55">
+                    <Link href="/careers/jobs">
+                    <button className="bg-[#00D280] cursor-pointer text-white px-4 py-4 mb-30 text-lg font-semibold rounded-sm transition-colors w-55">
                         See Job Opportunities
                     </button>
+                    </Link>
                 </div>
             </div>
         </div>

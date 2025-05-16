@@ -1,19 +1,20 @@
 "use client"
-import React,{useState} from 'react'
+import React, {useState} from 'react'
 import Image from "next/image"
 import image from './image.png'
 import image2 from "./image2.png"
-import Lastbusinesses from '@/app/Lastbusinesses/page'
+// import Lastbusinesses from '@/app/Lastbusinesses/page'
+import LastBusinessesSection from '@/app/Lastbusinesses/page'
 import { ChevronRight } from 'lucide-react';
 import { ChevronDown } from 'lucide-react';
-import Footer from '@/app/Footer/page'
+import Link from 'next/link'
 
+const AiRevolution =() =>{
 
-function page() {
-  const categories = ['Development', 'Design', 'Marketing', 'Finance', 'Industries', 'Business'];
   const [selectedCategory, setSelectedCategory] = useState('Marketing');
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [search, setSearch] = useState('');
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); 
+  const categories = ['Development', 'Design', 'Marketing', 'Finance', 'Industries', 'Business'];
+
   return (
     <>
       {/* first section  */}
@@ -129,9 +130,11 @@ function page() {
                 Hire a MindSees Finance Specialist
               </h1>
               <div className="flex justify-center ">
-                <button className="bg-[#00D280] text-white py-3 text-lg font-semibold mt-9 rounded-lg hover:bg-[#00b96a] transition-colors w-26">
+                <Link href="/contact-us">
+                <button className="bg-[#00D280] cursor-pointer text-white py-3 text-lg font-semibold mt-9 rounded-lg hover:bg-[#00b96a] transition-colors w-26">
                   Hire me
                 </button>
+                </Link>
               </div>
             </div>
         </div>
@@ -186,10 +189,10 @@ function page() {
       </div>
       <div className="border-b-1 border-gray-300 mt-8 mb-34"></div>
       {/* third  */}
-      <Lastbusinesses />
-      <Footer/>
+      <LastBusinessesSection/>
+      {/* <Footer/> */}
     </>
   )
 }
 
-export default page
+export default AiRevolution;
