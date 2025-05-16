@@ -10,7 +10,7 @@ import Marketing from "@/app/blog/images/Marketing.svg"
 import Finance from "@/app/blog/images/Finance.svg"
 import Industries from "@/app/blog/images/Industries.svg"
 import Business from "@/app/blog/images/Business.svg"
-import { link } from "fs";
+
 
 function Page() {
   const workName = [
