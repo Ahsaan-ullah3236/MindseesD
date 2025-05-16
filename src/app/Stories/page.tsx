@@ -108,7 +108,7 @@ export default function SuccessStoriesPage() {
 
                         </div>
                       </div>
-                      <Link href="case-studies/opstionA">
+                      <Link href="/case-studies/opstionA">
                       <button  className="bg-[#00d280] text-white px-6 py-4 rounded-lg font-bold text-md cursor-pointer">
                         {testimonial.cta}
                       </button>

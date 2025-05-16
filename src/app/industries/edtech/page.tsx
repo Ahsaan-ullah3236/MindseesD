@@ -26,6 +26,7 @@ import samlessintegration from "@/app/industries/edtech/image/samlessintegration
 import improvedEfficiency from "@/app/industries/edtech/image/improvedEfficiency.svg"
 import ReliableSupport from "@/app/industries/edtech/image/ReliableSupport.svg"
 import modernizedElearning from "@/app/industries/edtech/image/modernizedElearning.svg"
+import  mobileLearningCard from "@/app/industries/edtech/image/mobileLearningCard.svg"
 
 // white 
 import LMSdevelopmentWhite from "@/app/industries/edtech/image/LMSdevelopmentWhite.svg"
@@ -127,7 +128,7 @@ const EdTech = () => {
         "Our software integration services ensure that all your educational tools work together seamlessly, enhancing efficiency and creating a more cohesive learning environment.",
     },
     {
-      icon: mobileLearning,
+      icon: mobileLearningCard,
       title: "Mobile Learning",
       description:
         "Our mobile learning applications provide on-the-go access, boosting flexibility, engagement, and participation while enhancing accessibility for students.",

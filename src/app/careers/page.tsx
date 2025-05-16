@@ -89,7 +89,7 @@ const perkData=[
                         </p>
                         <div className="mt-13 flex justify-center md:justify-start">
                             <Link href="/careers/jobs">
-                            <button className="bg-[#00D280] cursor-pointer text-white font-semibold px-5 py-4 text-lg rounded-sm hover:bg-[#00b96a] transition-colors">
+                            <button className="bg-[#00D280] cursor-pointer text-white font-semibold px-5 py-4 text-lg rounded-sm hover:bg-[#00b96a] transition-colors ">
                                 See job Opportunities
                             </button>
                             </Link>
