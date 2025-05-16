@@ -102,9 +102,9 @@ export default function Footer() {
       <div className="border-t border-white mt-12 pt-4  text-sm  ">
         <div className='flex flex-col md:flex-row justify-between items-center spacing-secton max-w-7xl mx-auto'>
         <div className="flex gap-4 mb-4 md:mb-0 ">
-         <Link href="/blog/privacypolicy" className="underline"> Privacy policies</Link>
-          <Link href="/blog/CookiePolicy" className="underline"> Cookie policies</Link>
-          <Link href="/blog/TermsCondition" className="underline"> Terms & Condition</Link>
+         <Link href="/blog/privacypolicy" className="hover:underline "> Privacy policies</Link>
+          <Link href="/blog/CookiePolicy" className="hover:underline"> Cookie policies</Link>
+          <Link href="/blog/TermsCondition" className="hover:underline"> Terms & Condition</Link>
         </div>
         <p>© 2025 MindSees. All rights reserved.</p>
         </div>
