@@ -132,8 +132,8 @@ function Page() {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 my-22 bg-[linear-gradient(90deg,#055c88_0%,#01131c_100%)] py-10">
-        <div className="pl-3 pr-3 sm:pr-0 md:pl-8 lg:pl-27">
+      <div className="grid grid-cols-1 md:grid-cols-2 my-22 spacing-secton bg-[linear-gradient(90deg,#055c88_0%,#01131c_100%)] py-10">
+        <div className="pr-3 sm:pr-0 ">
           <h1 className="text-xl sm:text-3xl lg:text-4xl font-bold text-white">
             High-quality articles, delivered every week.
           </h1>
@@ -157,7 +157,7 @@ function Page() {
           </p>
         </div>
 
-        <div className="flex justify-center md:justify-end pr-3 md:pr-8 lg:pr-28 mt-12 md:mt-0">
+        <div className="flex justify-center md:justify-end lg:pr-28 mt-12 md:mt-0">
           <Image src="https://kavelogics.com/blogs/newsletter-logo.svg" alt="img"
             width={230}
             height={200} />

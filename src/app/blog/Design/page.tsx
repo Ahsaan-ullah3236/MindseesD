@@ -68,7 +68,8 @@ const Design =()=> {
 
         </div>
       </div>
-      <div className="relative -mt-12 bg-white border border-gray-200 mx-4 sm:mx-20 sm:max-w-8xl">
+      <div className='spacing-secton'>
+      <div className="relative  -mt-12 bg-white border border-gray-200 ">
   <div className="sm:flex text-xs lg:text-xl space-x-2 relative">
     {/* Active tab */}
     <div className="bg-[#0D6E9C] w-full sm:w-auto text-center text-lg whitespace-nowrap text-white font-semibold px-2 py-8 ">
@@ -100,6 +101,7 @@ const Design =()=> {
       </div>
     </div>
   </div>
+</div>
 </div>
       <div className="spacing-secton mt-24">
         <div className="my-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -154,8 +156,8 @@ const Design =()=> {
 
         </div>
       </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 my-22 bg-[linear-gradient(90deg,#055c88_0%,#01131c_100%)] py-10">
-              <div className="pl-3 pr-3 sm:pr-0 md:pl-8 lg:pl-27">
+        <div className="grid grid-cols-1 md:grid-cols-2 my-22 spacing-secton bg-[linear-gradient(90deg,#055c88_0%,#01131c_100%)] py-10">
+              <div className="pr-3 sm:pr-0 ">
                 <h1 className="text-xl sm:text-3xl lg:text-4xl font-bold text-white">
                   High-quality articles, delivered every week.
                 </h1>
@@ -179,7 +181,7 @@ const Design =()=> {
                 </p>
               </div>
       
-              <div className="flex justify-center md:justify-end pr-3 md:pr-8 lg:pr-28 mt-12 md:mt-0">
+              <div className="flex justify-center md:justify-end  mt-12 md:mt-0">
                   <Image src="https://kavelogics.com/blogs/newsletter-logo.svg" alt="img"
                     width={230}
                     height={200} />
