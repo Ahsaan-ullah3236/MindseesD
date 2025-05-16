@@ -1,5 +1,6 @@
 "use client";
 import React, { useRef, useEffect } from "react";
+import Link from "next/link";
 
 function Recruitment() {
  
@@ -86,9 +87,11 @@ function Recruitment() {
           </p>
           
           <div className="mt-9 text-black">
-            <button className="text-[#00d280] py-2 mb-4 font-semibold text-lg transition duration-200">
+              <Link href="/careers/jobs">
+            <button className="text-[#00d280] py-2 mb-4 font-semibold text-lg transition duration-200 cursor-pointer">
               See Job Opportunities
             </button>
+            </Link>
           </div>
         </div>
         </div>

@@ -15,7 +15,7 @@ import medicalImageInter from "@/app/industries/health/image/medicalImageInter.s
 import mhospital from "@/app/industries/health/image/mhospital.svg"
 import integration from "@/app/industries/health/image/integration.svg"
 import telehealthMangment from "@/app/industries/health/image/telehealthMangment.svg"
-import cloudHealthServices from "@/app/industries/health/image/dataAnal.svg"
+import cloudHealthServices from "@/app/industries/health/image/cloudHealthServices.svg"
 import ehr from "@/app/industries/health/image/ehr.svg"
 import lims1 from "@/app/industries/health/image/lims1.svg"
 import remote from "@/app/industries/health/image/remote.svg"
@@ -27,6 +27,7 @@ import EnhancedEfficiency from "@/app/industries/health/image/EnhancedEfficiency
 import dataSecurity2 from "@/app/industries/health/image/dataSecurity2.svg"
 import scalabelSolution from "@/app/industries/health/image/scalabelSolution.svg"
 import SeamlessIntegration from "@/app/industries/health/image/SeamlessIntegration.svg"
+
 
 // white 
 import medicalImageInterptionWhite from "@/app/industries/health/image/medicalImageInterptionWhite.svg"

@@ -10,6 +10,7 @@ import Marketing from "@/app/blog/images/Marketing.svg"
 import Finance from "@/app/blog/images/Finance.svg"
 import Industries from "@/app/blog/images/Industries.svg"
 import Business from "@/app/blog/images/Business.svg"
+import { link } from "fs";
 
 function Page() {
   const workName = [
@@ -123,9 +124,9 @@ function Page() {
                 {item?.description}
               </p>
               <Link href={item?.link} >
-              <p className="text-[#00d280] text-[18px] font-bold mt-5 flex hidden group-hover:flex">
-                {item?.hoverTitle} <ArrowRight className="mt-[2px] ml-1" />
-              </p>
+                <p className="text-[#00d280] text-[18px] font-bold mt-5 flex hidden group-hover:flex">
+                  {item?.hoverTitle} <ArrowRight className="mt-[2px] ml-1" />
+                </p>
               </Link>
             </div>
           </div>
@@ -152,7 +153,7 @@ function Page() {
           </div>
           <p className="text-md mt-3 text-white sm:text-base">
             By entering your email, you are agreeing to our
-            <Link href="/blog/privacypolicy" className="underline"> privacy policies</Link>
+            <Link href="/privacy-policy" className="underline"> privacy policies</Link>
           </p>
         </div>
 
@@ -186,18 +187,24 @@ function Page() {
               </div>
               <div className="pl-5 pr-2">
                 <div className="flex items-center space-x-2 mt-4">
-                  <span className="text-[14px] font-bold  text-gray-800 cursor-pointer hover:underline">
-                    {item?.title}
-                  </span>
+                  <Link href="/blog/Design">
+                    <span className="text-[14px] font-bold text-gray-800 cursor-pointer hover:underline">
+                      {item?.title}
+                    </span>
+                  </Link>
                   <span className="text-[#4b5577] text-base">&gt;</span>
+                  <Link href="/blog/Design">
                   <span className="text-[14px] font-bold text-gray-400 cursor-pointer hover:underline">
                     {item?.designation}
                   </span>
+                  </Link>
                 </div>
                 <div className="content">
+                    <Link href="/blog/AiRevolution">
                   <h1 className="text-lg md:text-xl font-bold text-gray-900 cursor-pointer mt-2 transition-colors duration-300 group-hover:text-[#00d280]">
                     {item?.description}
                   </h1>
+                  </Link>
                   <p className="text-gray-600 text-sm line-clamp-3 md:text-[14px] mt-2 mb-4 leading-relaxed">
                     {item?.subDescription}
                   </p>
@@ -241,18 +248,24 @@ function Page() {
               </div>
               <div className="pl-5 pr-2">
                 <div className="flex items-center space-x-2 mt-4">
+                   <Link href="/blog/Design">
                   <span className="text-[14px] font-bold  text-gray-800 cursor-pointer hover:underline">
                     {item?.title}
                   </span>
+                  </Link>
                   <span className="text-[#4b5577] text-base">&gt;</span>
-                  <span className="text-[14px] font-bold text-gray-400 cursor-pointer hover:underline">
+                  <Link href="/blog/Design"><span className="text-[14px] font-bold text-gray-400 cursor-pointer hover:underline">
                     {item?.designation}
                   </span>
+                  </Link>
+
                 </div>
                 <div className="content">
+                    <Link href="/blog/AiRevolution">
                   <h1 className="text-lg md:text-xl font-bold text-gray-900 cursor-pointer mt-2 transition-colors duration-300 group-hover:text-[#00d280]">
                     {item?.description}
                   </h1>
+                  </Link>
                   <p className="text-gray-600 text-sm line-clamp-3 md:text-[14px] mt-2 mb-4 leading-relaxed">
                     {item?.subDescription}
                   </p>

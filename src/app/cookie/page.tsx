@@ -2,7 +2,7 @@ import React from 'react'
 
 function page() {
   return (
-     <section className="px-4 sm:px-24 sm:py-14 text-gray-800">
+     <section className="spacing-secton sm:py-14 text-gray-800">
             <h1 className="text-5xl font-semibold mb-4">Cookie Policy </h1>
             
 
