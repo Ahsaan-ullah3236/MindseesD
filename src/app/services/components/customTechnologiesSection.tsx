@@ -59,7 +59,7 @@ export const TechnologyGrid: React.FC<TechnologyGridProps> = ({
           
 
 
-          className="object-cover -mt-28 w-full h-[360] rounded-lg md:max-w-5xl mx-auto"
+          className="object-cover -mt-28 w-full h-[360] rounded-lg md:max-w-5xl 2xl:max-w-7xl mx-auto"
         />
 <div className="flex justify-center items-center itemButton ">
 <Link href="/contact-us">

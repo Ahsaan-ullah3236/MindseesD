@@ -54,7 +54,7 @@ console.log("activeIndex",activeIndex)
   };
 
   return (
-    <div className="OurProcess-main-container max-w-7xl mx-auto ">
+    <div className="OurProcess-main-container spacing-secton mx-auto ">
       <div className="OurProcess-second-container grid grid-cols-1 md:grid-cols-3">
         
        

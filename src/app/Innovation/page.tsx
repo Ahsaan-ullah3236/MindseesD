@@ -116,7 +116,7 @@ export default function Innovation() {
 
   return (
     <section className="min-h-screen flex justify-center items-center bg-white px-4 sm:px-6 py-6 md:py-12">
-      <div className="w-full  max-w-7xl">
+      <div className="w-full ">
         {/* Heading */}
         <div className='text-center text-4xl font-bold mt-10 md:mt-20'>
             Technologies We Use for Innovation

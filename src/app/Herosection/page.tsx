@@ -53,7 +53,7 @@ function Herosection() {
 
   return (
     <>
-    <div className="max-w-7xl mx-auto">
+    <div className=" mx-auto">
     <div className='spacing-secton pt-10 md:pt-18 pb-6'>
          <div className="grid grid-cols-1 md:grid-cols-3  gap-8 text-sm  ">
           <div className='col-span-2'>

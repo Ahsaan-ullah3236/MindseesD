@@ -42,11 +42,11 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
   const rightItems = scrollItems.slice(halfLength);
 
   return (
-    <div className="min-h-screen max-w-7xl mx-auto spacing-secton">
+    <div className=" mx-auto spacing-secton">
       <div className="text-5xl font-bold text-gray-900 text-center mt-30">{title}</div>
       <div className="text-lg text-center mt-5">{subtitle}</div>
       
-      <div className="max-w-7xl mx-auto py-18">
+      <div className=" mx-auto py-18">
         <div className="lg:grid lg:grid-cols-2 lg:gap-12">
           {/* Left Content */}
           <div className="mb-10 lg:mb-0">
@@ -77,7 +77,7 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
 
           {/* Right Content */}
           <div className="relative">
-            <div className="h-[90vh] overflow-y-auto scroll-smooth left-scrollbarGray pl-4 space-y-8">
+            <div className="h-[90vh] 2xl:h-[50vh] overflow-y-auto scroll-smooth left-scrollbarGray pl-4 space-y-8">
               <div className="grid sm:grid-cols-2 gap-6">
                 {/* Left Column */}
                 <div className="mt-14">

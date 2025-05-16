@@ -14,7 +14,7 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <footer className='bg-[#003345] text-white py-12'>
-    <div className="spacing-secton  max-w-7xl mx-auto ">
+    <div className="spacing-secton mx-auto ">
 
       <div className="grid xs:grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8 text-sm">
         <div className='col-span-2'>
@@ -100,7 +100,7 @@ export default function Footer() {
 
 
       <div className="border-t border-white mt-12 pt-4  text-sm  ">
-        <div className='flex flex-col md:flex-row justify-between items-center spacing-secton max-w-7xl mx-auto'>
+        <div className='flex flex-col md:flex-row justify-between items-center spacing-secton mx-auto'>
         <div className="flex gap-4 mb-4 md:mb-0 ">
          <Link href="/privacy-policy" className="cursor-pointer"> Privacy policies</Link>
           <Link href="/cookie" className="cursor-pointer"> Cookie policies</Link>

@@ -19,7 +19,7 @@ const CustomServiceDetail: React.FC<CustomBannerProps> = ({
   image,
 }) => {
   return (
-    <div className="py-20 spacing-secton max-w-7xl mx-auto">
+    <div className="py-20 spacing-secton mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
         <div>
           <div className="text-5xl font-bold mb-4">
@@ -28,7 +28,6 @@ const CustomServiceDetail: React.FC<CustomBannerProps> = ({
 
           <p className="text-[17px] mt-2 md:mt-9 text-[#013a54]">{description}</p>
 
-          
         </div>
 
         <div className="flex justify-center md:justify-end">
