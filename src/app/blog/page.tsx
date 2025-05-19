@@ -11,7 +11,6 @@ import Finance from "@/app/blog/images/Finance.svg"
 import Industries from "@/app/blog/images/Industries.svg"
 import Business from "@/app/blog/images/Business.svg"
 
-
 function Page() {
   const workName = [
     {
@@ -135,7 +134,7 @@ function Page() {
       <div className="grid grid-cols-1 md:grid-cols-2 my-22 spacing-secton bg-[linear-gradient(90deg,#055c88_0%,#01131c_100%)] py-10">
         <div className="pr-3 sm:pr-0 ">
           <h1 className="text-xl sm:text-3xl lg:text-4xl font-bold text-white">
-            High-quality articles, delivered every week.
+            High-quality articles, delivered every week
           </h1>
           <div className=" flex  max-w-md mt-8 sm:mt-12">
             <input

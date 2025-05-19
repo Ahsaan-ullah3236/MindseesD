@@ -140,7 +140,7 @@ export default function SuccessStoriesPage() {
       {/* Navigation arrows */}
       <button 
         onClick={prevSlide}
-        className="absolute left-[34%] md:left-[40%]  lg:left-[45%] -bottom-2 -translate-y-1/2 bg-[#00d280] cursor-pointer p-3 rounded-full shadow-md  z-10"
+        className="absolute left-[34%] md:left-[40%]  lg:left-[45%] 2xl:left-[46%] -bottom-2 -translate-y-1/2 bg-[#00d280] cursor-pointer p-3 rounded-full shadow-md  z-10"
         aria-label="Previous slide"
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -149,7 +149,7 @@ export default function SuccessStoriesPage() {
       </button>
       <button 
         onClick={nextSlide}
-        className="absolute right-[34%] md:right-[40%] lg:right-[45%] -bottom-2 -translate-y-1/2 bg-[#00d280] cursor-pointer p-3 rounded-full shadow-md  z-10"
+        className="absolute right-[34%] md:right-[40%] lg:right-[45%] 2xl:right-[46%] -bottom-2 -translate-y-1/2 bg-[#00d280] cursor-pointer p-3 rounded-full shadow-md  z-10"
         aria-label="Next slide"
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">

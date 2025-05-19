@@ -128,7 +128,7 @@ export default function Footer() {
 
 
       <div className="border-t border-white mt-12 pt-4  text-sm  ">
-        <div className='flex flex-col md:flex-row justify-between items-center spacing-secton max-w-7xl mx-auto'>
+        <div className='flex flex-col md:flex-row justify-between items-center spacing-secton mx-auto'>
         <div className="flex gap-4 mb-4 md:mb-0 ">
          <Link href="/privacy-policy" className="cursor-pointer"> Privacy policies</Link>
           <Link href="/cookie" className="cursor-pointer"> Cookie policies</Link>

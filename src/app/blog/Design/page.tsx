@@ -1,7 +1,7 @@
 "use client"
 import React,{useState} from 'react'
 import Image from "next/image"
-import Lastbusinesses from '@/app/Lastbusinesses/page'
+import Lastbusinesses from '@/app/Lastbusinesses/page';
 import { ChevronDown } from 'lucide-react';
 import { ArrowUpRight  } from 'lucide-react';
 const Design =()=> {
