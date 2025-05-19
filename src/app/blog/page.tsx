@@ -96,13 +96,13 @@ function Page() {
             The MindSees Blog is the go-to hub for developers, designers, executives, and entrepreneurs—featuring the latest tech updates, practical tutorials, freelancer tools, and valuable management insights.
           </p>
 
-          <div className="search-bar flex flex-col sm:flex-row w-full max-w-md mt-8 sm:mt-12 gap-2 sm:gap-0">
+         <div className="search-bar flex w-full max-w-xl mt-8 sm:mt-12 md:gap-0">
             <input
               type="text"
-              placeholder="What are you looking for?"
-              className="flex-grow px-4 sm:px-8 py-2 sm:py-1 bg-white text-gray-500 text-base sm:text-lg rounded-md sm:rounded-l-md sm:rounded-r-none border border-gray-300 focus:outline-none"
+              placeholder="Search by role or keyword?"
+              className="flex-grow px-4 py-2 sm:py-1 bg-white text-gray-500 text-base sm:text-lg rounded-l-md sm:rounded-l-md sm:rounded-r-none border border-gray-300 focus:outline-none"
             />
-            <button className="bg-[#00d280] text-white px-4 sm:px-4 py-3 sm:py-4 rounded-md sm:rounded-r-md sm:rounded-l-none cursor-pointer ">
+            <button className="bg-[#00d280] text-white px-4 sm:px-4 py-3 sm:py-4 rounded-r-md sm:rounded-r-md sm:rounded-l-none cursor-pointer ">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                 strokeWidth={3} stroke="currentColor" className="w-5 h-5 sm:w-6 sm:h-6">
                 <path strokeLinecap="round" strokeLinejoin="round"

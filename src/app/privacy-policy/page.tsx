@@ -4,7 +4,7 @@ import React from 'react';
 
 const PrivacyPolicy = () => {
     return (
-        <section className="spacing-secton sm:py-14 text-gray-800">
+        <section className="spacing-secton py-8 sm:py-14 text-gray-800">
             <h1 className="text-5xl font-semibold mb-4">Privacy Policy</h1>
             <p className="text-lg leading-relaxed sm:mt-10">
                 This Privacy Policy outlines our practices regarding the collection, use, and disclosure of your

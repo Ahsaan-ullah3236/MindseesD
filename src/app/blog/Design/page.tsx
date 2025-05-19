@@ -4,12 +4,13 @@ import Image from "next/image"
 import Lastbusinesses from '@/app/Lastbusinesses/page';
 import { ChevronDown } from 'lucide-react';
 import { ArrowUpRight  } from 'lucide-react';
+import Link from 'next/link';
 const Design =()=> {
   const categories = ['Development', 'Design', 'Marketing', 'Finance', 'Industries', 'Business'];
     const [selectedCategory, setSelectedCategory] = useState('Marketing');
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
      const UploadArticles=[
-        {date:"24 March 2025",title:"Ai Revolution ", designation:"Digital Markiting",image:"https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/b6bb844e-f843-4c32-b4c7-b663c5d23800/w=640,q=75",description:"ADigital Marketing Trends for Startups and SMBs", subDescription:"The finance sector is changing as a result of artificial intelligence, which is opening up new possibilities for speed, accuracy, and customization. AI is helping financial services...", btn:"Continue Reading",link:"/blog/AiRevolution"},
+        {date:"24 March 2025", title:"Ai Revolution ", designation:"Digital Markiting",image:"https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/b6bb844e-f843-4c32-b4c7-b663c5d23800/w=640,q=75",description:"ADigital Marketing Trends for Startups and SMBs", subDescription:"The finance sector is changing as a result of artificial intelligence, which is opening up new possibilities for speed, accuracy, and customization. AI is helping financial services...", btn:"Continue Reading", link:"/blog/AiRevolution"},
       ]
   return (
     <>
@@ -210,18 +211,24 @@ const Design =()=> {
                 </div>
                 <div className="pl-5 pr-2">
                   <div className="flex items-center space-x-2 mt-4">
+                     <Link href="/blog/Design">
                     <span className="text-[14px] font-bold  text-gray-800 cursor-pointer hover:underline">
                       {item?.title}
                     </span>
+                    </Link>
                     <span className="text-[#4b5577] text-base">&gt;</span>
+                    <Link href="/blog/Design">
                     <span className="text-[14px] font-bold text-gray-400 cursor-pointer hover:underline">
                       {item?.designation}
                     </span>
+                    </Link>
                   </div>
                   <div className="content">
+                     <Link href="/blog/AiRevolution">
                     <h1 className="text-lg md:text-xl font-bold text-gray-900 cursor-pointer mt-2 transition-colors duration-300 group-hover:text-[#00d280]">
                       {item?.description}
                     </h1>
+                    </Link>
                     <p className="text-gray-600 text-sm line-clamp-3 md:text-[14px] mt-2 mb-4 leading-relaxed">
                       {item?.subDescription}
                     </p>

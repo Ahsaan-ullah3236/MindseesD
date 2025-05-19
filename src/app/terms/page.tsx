@@ -3,7 +3,7 @@ import React from 'react'
 function page() {
     return (
         <>
-            <section className="spacing-secton sm:py-14 text-gray-800">
+            <section className="spacing-secton py-8 sm:py-14 text-gray-800">
                 <h1 className="text-5xl font-semibold mb-4">Terms and Conditions </h1>
 
                 <section>
