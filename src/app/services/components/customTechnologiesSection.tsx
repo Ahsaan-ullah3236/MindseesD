@@ -30,7 +30,7 @@ export const TechnologyGrid: React.FC<TechnologyGridProps> = ({
     <div className={`${bgColor} ${textColor} pt-16 pb-85`}>
       <div className="max-w-4xl mx-auto px-4 pt-4 text-center">
         <h2 className="text-4xl font-bold mb-18">{title}</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-items-center">
+        {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-items-center">
           {technologies.map((tech, index) => (
             <div
               key={index}
@@ -48,7 +48,26 @@ export const TechnologyGrid: React.FC<TechnologyGridProps> = ({
               <span className="text-sm">{tech.name}</span>
             </div>
           ))}
-        </div>
+        </div> */}
+        <div className="flex flex-wrap items-center justify-center">
+            {technologies.map((tech, index) => (
+              <div
+                key={index}
+                className="w-1/2 sm:w-1/3 md:w-1/5 mb-20 flex flex-col items-center"
+              >
+                <div className="w-16 h-16 relative flex justify-center mb-2">
+                  <Image
+                    src={tech.icon}
+                    alt={tech.name}
+                    height={50}
+                    width={50}
+                    className="object-contain"
+                  />
+                </div>
+                <span className="text-sm">{tech.name}</span>
+              </div>
+            ))}
+          </div>
       </div>
     </div>
     <div className="relative">
