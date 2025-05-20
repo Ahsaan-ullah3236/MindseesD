@@ -74,5 +74,5 @@ const GlobalPressance=()=>{
           </div>
         </div>
     )
-}
+} 
 export default GlobalPressance;

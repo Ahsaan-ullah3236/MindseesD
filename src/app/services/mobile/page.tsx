@@ -33,6 +33,7 @@ import AngularLogo from "@/app/services/mobile/image/AngularLogo.svg"
 import AppSheetLogo from "@/app/services/mobile/image/AppSheetLogo.svg"
 import jquery from "@/app/services/mobile/image/jquery.svg"
 import AndroidStudio from "@/app/services/mobile/image/AndroidStudio.svg"
+import Mobile from "@/app/services/mobile/image/Mobile.png"
 
 const MobileAppDevelopment = () => {
   const faqs = [
@@ -245,7 +246,7 @@ const MobileAppDevelopment = () => {
         }
         buttonText="Book Consultation"
         buttonLink="/contact-us"
-        image="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/f1984063-0f5e-42b5-7ed6-bf909e145300/w=1920,q=75"
+        image={Mobile}
 
       />
       <Clientsline />

@@ -34,6 +34,7 @@ import react from "@/app/services/website/image/React.svg"
 import RubyOnRails from "@/app/services/website/image/RubyOnRails.svg"
 import CSS from "@/app/services/website/image/CSS.svg"
 import NodeJS from "@/app/services/website/image/NodeJS.svg"
+import Web from "@/app/services/website/image/Web.png"
 
 
 
@@ -249,7 +250,7 @@ const WebsiteDevelopment = () => {
         }
         buttonText="Book Consultation"
         buttonLink="/contact-us"
-        image="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/9d9056b4-49fe-4086-1ae2-a3f0c1d75c00/w=1920,q=75"
+        image={Web}
 
       />
       <Clientsline />
