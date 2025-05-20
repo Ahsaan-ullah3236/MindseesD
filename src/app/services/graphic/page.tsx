@@ -170,7 +170,7 @@ const Graphic = () => {
 
       <section className="py-16 text-center bg-white">
         <h2 className="text-5xl font-bold text-[#013a54] mb-4">Our Graphic Design Process</h2>
-        <p className="text-center mb-16 max-w-3xl mx-auto text-lg leading-[1.3] text-[#013a54]">
+        <p className="text-center mb-16 max-w-3xl mx-auto text-lg leading-[1.3] text-[#013a54] px-2">
           MindSees positions your firm as a key partner in shaping your branding solutions. From start to finish, we ensure that you and your brand remain our top priority.
         </p>
 
