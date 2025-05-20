@@ -166,7 +166,7 @@ const SEO = () => {
 
       <section className="py-16 text-center bg-white">
         <h2 className="text-5xl font-bold text-[#013a54] mb-4">Our SEO & Marketing Process</h2>
-        <p className="text-center mb-16 max-w-3xl mx-auto text-lg leading-[1.3] text-[#013a54]">
+        <p className="text-center mb-16 max-w-3xl mx-auto text-lg leading-[1.3] text-[#013a54] px-2">
           Our proven process delivers customized SEO & marketing strategies designed to enhance your online presence. From in-depth analysis to precise execution, we guide you toward digital success.
         </p>
 
