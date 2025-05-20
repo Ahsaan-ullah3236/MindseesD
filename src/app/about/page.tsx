@@ -13,7 +13,7 @@ import brandIcon4 from "@/app/about/image/ brand img 6 (4).svg"
 import brandIcon5 from "@/app/about/image/ brand img 6 (5).svg"
 import brandIcon6 from "@/app/about/image/ brand img 6 (6).svg"
 import MissionImage from "@/app/about/image/MissionImage.png"
-import GrowthGraph from "@/app/about/image/Growth Graph.svg"
+import GrowthGraph from "@/app/about/image/Growth Graph.png"
 import clientIcon from "@/app/about/image/clientsvgfill.svg"
 import integrityIcon from "@/app/about/image/integritysvgfill.svg"
 import innovationIcon from "@/app/about/image/innovationsvgfill.svg"
@@ -70,8 +70,6 @@ const AboutPage = () => {
             </div>
 
 
-
-            
             <div className="py-30 mx-auto ">
                 <div className="spacing-secton flex flex-col md:flex-row items-center justify-between gap-20 px-4">
                     <div className="lg:w-1/2 w-full bg-[#d6f1ff] rounded-lg px-6 py-12 min-h-[290px] flex items-center">
@@ -107,6 +105,7 @@ const AboutPage = () => {
                 </div>
             </div>
 
+
             <div className="bg-[#023047] max-w-4xl 2xl:max-w-7xl mx-auto flex w-full rounded-2xl shadow-xl">
                 <div className=" flex flex-col md:flex-row items-center gap-12 ">
                     {/* Left Text Content */}
@@ -128,6 +127,7 @@ const AboutPage = () => {
                     </div>
                 </div>
             </div>
+
 
             <div className="main-container spacing-secton mx-auto flex justify-center items-center text-center py-12 px-4">
                 <div className="inner-container">
@@ -216,8 +216,8 @@ const AboutPage = () => {
             </div>
 
 
-
             {/* sixth page div */}
+
 
             <GlobalPressance/>
             <Lastbusinesses/>
