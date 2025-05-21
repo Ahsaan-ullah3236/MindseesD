@@ -35,6 +35,7 @@ import  Saa2Analytics from "@/app/services/seo/image/Saa2Analytics.svg"
 import Saas2Communication from "@/app/services/seo/image/Saas2Communication.svg"
 import Saas2Clinets  from "@/app/services/seo/image/Saas2Clinets.svg"
 import SaasUnique from "@/app/services/seo/image/SaasUnique.svg"
+import seo from "@/app/services/seo/image/seo.png"
 const SEO = () => {
   const faqs = [
     {
@@ -240,7 +241,7 @@ const SEO = () => {
         }
         buttonText="Book Consultation"
         buttonLink="/contact-us"
-        image="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/e1ee1f7d-7871-4d88-1e0b-34e1e287b300/w=1920,q=75"
+        image={seo}
 
       />
       <Clientsline />

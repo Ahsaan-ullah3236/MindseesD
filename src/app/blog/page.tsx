@@ -82,13 +82,7 @@ function Page() {
   return (
     <>
       <div className="relative w-full py-30 bg-[#003252]  overflow-hidden">
-        {/* <Image
-          src={image}
-          alt="Blog illustration"
-          fill
-          className="object-cover"
-        /> */}
-        <div className=" bg-blue/2000 flex flex-col justify-center items-center text-center px-4">
+        <div className=" bg-blue/2000 flex flex-col justify-center items-center text-center px-4">  
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             MindSees Blogs
           </h1>
@@ -96,11 +90,11 @@ function Page() {
             The MindSees Blog is the go-to hub for developers, designers, executives, and entrepreneurs—featuring the latest tech updates, practical tutorials, freelancer tools, and valuable management insights.
           </p>
 
-         <div className="search-bar flex w-full max-w-xl mt-8 sm:mt-12 md:gap-0">
+          <div className="search-bar flex  sm:flex-row w-full max-w-md mt-8 sm:mt-12 sm:gap-0">
             <input
               type="text"
-              placeholder="Search by role or keyword?"
-              className="flex-grow px-4 py-2 sm:py-1 bg-white text-gray-500 text-base sm:text-lg rounded-l-md sm:rounded-l-md sm:rounded-r-none border border-gray-300 focus:outline-none"
+              placeholder="What are you looking for?"
+              className="flex-grow px-4 sm:px-8 py-2 sm:py-1 bg-white text-gray-500 text-base sm:text-lg rounded-l-md sm:rounded-l-md sm:rounded-r-none border border-gray-300 focus:outline-none"
             />
             <button className="bg-[#00d280] text-white px-4 sm:px-4 py-3 sm:py-4 rounded-r-md sm:rounded-r-md sm:rounded-l-none cursor-pointer ">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -113,17 +107,16 @@ function Page() {
         </div>
       </div>
       <div className="spacing-secton grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16 py-18 gap-5 ">
-
         {workName?.map((item, i) => (
           <div key={i}>
-            <div className="bg-[#d6f1ff] h-full px-9 pt-9 pb-9 group cursor-pointer">
-              <Image src={item?.image} width={50} height={50} alt="" className="mt-2" />
-              <h2 className="text-2xl text-[#023047] font-bold mt-5">{item?.title}</h2>
+            <div className="bg-[#d6f1ff] min-h-[345px] md:min-h-[300px] px-9 pt-9 pb-9 group cursor-pointer ">
+              <Image src={item?.image} width={50} height={50} alt="" className="" />
+              <h2 className="text-2xl text-[#023047] font-bold">{item?.title}</h2>
               <p className="text-[#070707] mt-5 group-hover:hidden">
                 {item?.description}
               </p>
               <Link href={item?.link} >
-                <p className="text-[#00d280] text-[18px] font-bold mt-5 flex hidden group-hover:flex">
+                <p className="text-[#00d280] text-[18px] font-bold mt-5  hidden group-hover:flex">
                   {item?.hoverTitle} <ArrowRight className="mt-[2px] ml-1" />
                 </p>
               </Link>
