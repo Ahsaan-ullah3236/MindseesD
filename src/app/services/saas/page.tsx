@@ -159,7 +159,7 @@ const SaaS = () => {
       />
 
       <section className="py-16 text-center bg-white">
-        <h2 className="text-5xl font-bold text-[#013a54] mb-4">Our SaaS Based Website Development Process</h2>
+        <h2 className="text-3xl sm:text-5xl font-semibold sm:text-bold text-[#013a54] mb-4">Our SaaS Based Website Development Process</h2>
         <p className="text-center mb-16 max-w-3xl mx-auto text-lg leading-[1.3] text-[#013a54] px-2">
           Success in SaaS-based website development requires a structured, collaborative approach. We provide high-quality solutions that surpass client expectations, fueling business growth and success.
         </p>

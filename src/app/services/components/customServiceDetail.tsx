@@ -22,16 +22,15 @@ const CustomServiceDetail: React.FC<CustomBannerProps> = ({
     <div className="py-20 spacing-secton mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
         <div>
-          <div className="text-5xl font-bold mb-4">
+          <div className="text-3xl sm:text-5xl font-semibold sm:text-bold mb-4">
             <span className="relative whitespace-pre-line text-[#013a54]">{heading}</span>
           </div>
-
           <p className="text-[17px] mt-2 md:mt-9 text-[#013a54]">{description}</p>
 
         </div>
 
         <div className="flex justify-center md:justify-end">
-          <Image src={image} alt="Illustration" width={400} height={400} className="h-[300px] w-[80vw] md:w-[35vw] object-contain mt-5" />
+          <Image src={image} alt="Illustration" width={400} height={400} className="h-[300px] w-[80vw] md:w-[42vw]  object-contain md:mt-8" />
         </div>
       </div>
         <div className="flex justify-center w-full">

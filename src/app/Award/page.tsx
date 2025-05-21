@@ -24,7 +24,7 @@ const AwardsSection = () => {
     <div className="w-full bg-[#E6F4FF]  mt-5 md:mt-28 py-16">
       <div className="max-w-7xl mx-auto text-center px-4">
         {/* Heading */}
-        <h2 className="text-xl md:text-4xl font-bold text-[#002f46] mb-18">
+        <h2 className="text-3xl sm:text-5xl font-semibold sm:text-bold text-[#002f46] mb-18">
           Global Awards & Recognitions
         </h2>
 

@@ -50,13 +50,13 @@ import chefIcon from "@/app/Innovation/image/devops/chef.svg"
 const technologies = {
   Frontend: [
     { name: "React", icon: reactIcon },
-    { name: "JavaScript", icon:JavaScriptIcon  },
+    { name: "JavaScript", icon: JavaScriptIcon },
     { name: "TypeScript", icon: TypeScriptIcon },
-    { name: "Android", icon: AndroidIcon},
+    { name: "Android", icon: AndroidIcon },
     { name: "React-native", icon: ReactnativeIcon },
-    { name: "Flutter", icon:FlutterIcon },
+    { name: "Flutter", icon: FlutterIcon },
     { name: "IOs", icon: IOsIcon },
-    { name: "Electron", icon:ElectronIcon },
+    { name: "Electron", icon: ElectronIcon },
     { name: "Angular.js", icon: AngularIcon },
     { name: "Wordpress.js", icon: WordpressIcon },
     { name: "Next", icon: NextIcon },
@@ -66,16 +66,16 @@ const technologies = {
     { name: "Flask", icon: FlaskIcon },
   ],
   Backend: [
-    { name: "Laravel", icon:LaravelIcon },
+    { name: "Laravel", icon: LaravelIcon },
     { name: "Node", icon: NodeIcon },
     { name: "Express", icon: ExpressIcon },
     { name: "Python", icon: PythonIcon },
     { name: "Fastapi", icon: FastapiIcon },
-    { name: "Java", icon:  JavaIcon},
+    { name: "Java", icon: JavaIcon },
     { name: "Springboot", icon: SpringbootIcon },
-    { name: "Rails", icon:  RailsIcon},
-    { name: "Php", icon:  PhpIcon},
-    { name: "Go Lang", icon:  GoLangIcon},
+    { name: "Rails", icon: RailsIcon },
+    { name: "Php", icon: PhpIcon },
+    { name: "Go Lang", icon: GoLangIcon },
     { name: "FireBAse", icon: FireBAseIcon },
     { name: "Sails Js", icon: SailsIcon },
     { name: "Symfony", icon: SymfonyIcon },
@@ -83,18 +83,18 @@ const technologies = {
     { name: "Hapi.js", icon: HapiIcon },
   ],
   DevOps: [
-    { name: "Bitbucket", icon: BitbucketIcon},
-    { name: "AWS", icon :AWSIcon},
-    { name: "Jenkins", icon:JenkinsIcon },
-    { name: "Puppet", icon: PuppetIcon},
-    { name: "Docker", icon: DockerIcon},
+    { name: "Bitbucket", icon: BitbucketIcon },
+    { name: "AWS", icon: AWSIcon },
+    { name: "Jenkins", icon: JenkinsIcon },
+    { name: "Puppet", icon: PuppetIcon },
+    { name: "Docker", icon: DockerIcon },
     { name: "Github", icon: GithubIcon },
-    { name: "Kubernetes", icon:  KubernetesIcon},
-    { name: "GitLab", icon: GitLabIcon},
-    { name: "Bamboo", icon: BambooIcon},
-    { name: "NewRelic", icon:  NewRelicIcon},
+    { name: "Kubernetes", icon: KubernetesIcon },
+    { name: "GitLab", icon: GitLabIcon },
+    { name: "Bamboo", icon: BambooIcon },
+    { name: "NewRelic", icon: NewRelicIcon },
     { name: "ELK Stack", icon: ELKStackIcon },
-    { name: "Google ", icon:  GoogleIcon},
+    { name: "Google ", icon: GoogleIcon },
     { name: "Travis", icon: TravisIcon },
     { name: "CircleCI", icon: circleIcon },
     { name: "Chef ", icon: chefIcon },
@@ -118,13 +118,13 @@ export default function Innovation() {
     <section className="min-h-screen flex justify-center items-center bg-white px-4 sm:px-6 py-6 md:py-12">
       <div className="w-full ">
         {/* Heading */}
-        <div className='text-center text-4xl font-bold mt-10 md:mt-20'>
-            Technologies We Use for Innovation
-            </div>
-            <p className='text-center mt-7 mb-22 text-xl '>
-            Here are the latest tools we assess to craft the most effective IT solutions for you!
+        <div className='text-center text-3xl sm:text-4xl font-semibold sm:text-bold mt-10 md:mt-20'>
+          Technologies We Use for Innovation
+        </div>
+        <p className='text-center mt-7 mb-22 text-xl '>
+          Here are the latest tools we assess to craft the most effective IT solutions for you!
 
-            </p>
+        </p>
 
         {/* Tabs and Rows */}
         <div className="bg-[#d6f1ff] rounded-lg max-w-4xl mx-auto pt-12 pb-16 px-4 lg:px-20 mb-20">
@@ -135,11 +135,10 @@ export default function Innovation() {
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className={`px-4 lg:px-21 py-2 cursor-pointer rounded-full text-sm md:text-lg font-medium transition-all duration-300 ${
-                    activeTab === tab
+                  className={`px-4 lg:px-21 py-2 cursor-pointer rounded-full text-sm md:text-lg font-medium transition-all duration-300 ${activeTab === tab
                       ? "bg-[#00d280] text-white"
                       : "text-black"
-                  }`}
+                    }`}
                 >
                   {tab}
                 </button>

@@ -43,7 +43,7 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
 
   return (
     <div className=" mx-auto spacing-secton">
-      <div className="text-5xl font-bold text-gray-900 text-center mt-30">{title}</div>
+      <div className="text-3xl sm:text-5xl font-semibold sm:text-bold text-gray-900 text-center mt-30">{title}</div>
       <div className="text-lg text-center mt-5">{subtitle}</div>
       
       <div className=" mx-auto py-18">

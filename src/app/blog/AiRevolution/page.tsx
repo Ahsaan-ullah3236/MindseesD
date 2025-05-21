@@ -19,9 +19,9 @@ const AiRevolution =() =>{
     <>
       {/* first section  */}
       <div className="main-container">
-        <div className="inner-container spacing-secton bg-[#D3D3D3]/30  flex flex-col jsutif justify-center items-center py-12">
+        <div className="inner-container spacing-secton bg-[#D3D3D3]/30  flex flex-col  justify-center items-center py-12">
       
-          <div className="search-bar flex mt-12 sm:mt-12  items-center  md:max-w-4xl w-full rounded-md border border-gray-300 bg-white ">
+          <div className="search-bar flex mt-12 sm:mt-12  items-center md:max-w-4xl w-full rounded-md border border-gray-300 bg-white ">
           
             <div className="relative">
         <button
@@ -70,7 +70,7 @@ const AiRevolution =() =>{
                 <p className='italic'> <span className='font-bold text-[16px]'>Business </span> <span className='text-[14px]'>| Business Strategy</span></p>
                 <p className='text-[13px]'>2 Minutes Read</p>
               </div>
-              <h1 className="text-2xl md:text-3xl font-bold mb-3 pt-3">
+              <h1 className="text-2xl sm:text-4xl font-semibold sm:text-bold  mb-3 pt-3">
                 From Vision to Scalable Execution: How to Develop a Scalable Web App Strategy
               </h1>
               <p className="text-gray-600">

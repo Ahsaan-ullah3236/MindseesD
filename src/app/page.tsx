@@ -4,7 +4,7 @@ import ClientsLine from "./clientsline/page";
 import Topchoice from "./Topchoice/page";
 import Ourprocess from "./Ourprocess/page";
 import Innovation from "./Innovation/page";
-// import Success from "./Success/page";
+import Success from "./Success/page";
 import Question from "./Question/page"
 import Stories from "./Stories/page"
 import Award from "./Award/page";
@@ -19,7 +19,7 @@ export default function Home() {
     <Topchoice/>
     <Ourprocess/>
     <Innovation/>
-    {/* <Success/> */}
+    <Success/>
     <Question/>
     <Stories/>
     <Award/>

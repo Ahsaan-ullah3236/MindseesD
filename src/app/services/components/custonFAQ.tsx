@@ -30,7 +30,7 @@ export const FaqAccordion: React.FC<FaqAccordionProps> = ({
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-10 pb-30">
-      <div className="text-center text-3xl md:text-[44px] font-bold mt-12 md:mt-10 mb-17">
+      <div className="text-center text-3xl sm:text-5xl font-semibold sm:text-bold mt-12 md:mt-10 mb-17">
         {title}
       </div>
 
