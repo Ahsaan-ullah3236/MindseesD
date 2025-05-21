@@ -81,8 +81,8 @@ const Health = () => {
   ];
   const scrollItems = [
     {
-      imagelight : medicalImageInter ,
-      imageDark:  medicalImageInterptionWhite ,
+      imagelight: medicalImageInter,
+      imageDark: medicalImageInterptionWhite,
       title: "Medical Image Interpretation",
     },
     {
@@ -92,7 +92,7 @@ const Health = () => {
     },
     {
       imagelight: telehealthMangment,
-      imageDark: telehealthappWhite ,
+      imageDark: telehealthappWhite,
       title: "Telehealth App Development",
     },
     {
@@ -102,17 +102,17 @@ const Health = () => {
     },
     {
       imagelight: cloudHealthServices,
-      imageDark: cloudHealthSWhite ,
+      imageDark: cloudHealthSWhite,
       title: "Cloud Health Services",
     },
     {
       imagelight: ehr,
-      imageDark:  ehrCreationWhite , 
+      imageDark: ehrCreationWhite,
       title: "EHR Creation",
     },
     {
       imagelight: lims1,
-      imageDark: LIMSWhite ,
+      imageDark: LIMSWhite,
       title: "Development of LIMS",
     },
     {
@@ -122,12 +122,12 @@ const Health = () => {
     },
     {
       imagelight: CRM,
-      imageDark: crmforHealthWhite ,
+      imageDark: crmforHealthWhite,
       title: "CRM for Healthcare",
     },
     {
       imagelight: pharmacy,
-      imageDark: solutionforPharmacyMWhite ,
+      imageDark: solutionforPharmacyMWhite,
       title: "Solutions for Pharmacy Management",
     }
   ];
@@ -181,9 +181,7 @@ const Health = () => {
         cardBorderColor="#0575ad"
         textHoverColor="white"
       />
-
-
-
+      
       <Clientsline />
       <BenefitsCard
         heading="Advantages of Choosing MindSees Health Solutions"

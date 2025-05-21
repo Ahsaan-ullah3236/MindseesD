@@ -85,13 +85,13 @@ const Navbar = () => {
   return (
     <header className="w-full shadow-sm border-b-red-300 sticky top-0 bg-white z-50">
       <div className="flex items-center justify-between  mx-auto spacing-secton py-5">
-        <div className="text-xl lg:text-2xl font-bold text-black">
+        <div className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-black">
           <Link href={"/"}>
             <span className="font-mono" onClick={() => setMobileMenuOpen(false)} >MindSees</span>
           </Link>
         </div>
 
-        <nav className=" hidden md:flex gap-8 items-center text-black font-semibold relative">
+        <nav className=" hidden lg:flex gap-8 items-center text-black font-semibold relative">
           <div
             className="relative group"
             onMouseEnter={() => setHoveredMenu('services')}
@@ -163,28 +163,26 @@ const Navbar = () => {
           </Link>
 
           <Link href={"/blog"}>
-          <div className="hover:text-[#00d280] text-sm lg:text-[18px]">Blogs</div>
+            <div className="hover:text-[#00d280] text-sm lg:text-[18px]">Blogs</div>
           </Link>
         </nav>
 
         <Link
           href="/contact-us"
-          className="hidden md:inline-block bg-[#00d280] text-white px-3 py-2 lg:px-5 lg:py-4 rounded-md text-md font-bold "
+          className="hidden lg:inline-block bg-[#00d280] text-white px-3 py-2 lg:px-5 lg:py-4 rounded-md text-md font-bold "
         >
           Get Quote
         </Link>
 
         <button
-          className="md:hidden text-black"
+          className="lg:hidden text-black"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
-
-
       {mobileMenuOpen && (
-        <div className="h-[100vh] md:hidden px-4 pb-4 bg-white shadow-md overflow-y-auto">
+        <div className="h-[100vh] lg:hidden px-4 pb-4 bg-white shadow-md overflow-y-auto">
           {/* Services dropdown */}
           <div className="py-2">
             <button

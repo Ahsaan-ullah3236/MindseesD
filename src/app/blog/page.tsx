@@ -83,7 +83,7 @@ function Page() {
     <>
       <div className="relative w-full py-30 bg-[#003252]  overflow-hidden">
         <div className=" bg-blue/2000 flex flex-col justify-center items-center text-center px-4">  
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+          <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-white mb-4">
             MindSees Blogs
           </h1>
           <p className="text-gray-200 mb-6 text-base sm:text-lg md:text-xl max-w-3xl">
@@ -126,7 +126,7 @@ function Page() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 my-22 spacing-secton bg-[linear-gradient(90deg,#055c88_0%,#01131c_100%)] py-10">
         <div className="pr-3 sm:pr-0 ">
-          <h1 className="text-xl sm:text-3xl lg:text-4xl font-bold text-white">
+          <h1 className="text-3xl sm:text-4xl font-semibold sm:text-bold  text-white">
             High-quality articles, delivered every week
           </h1>
           <div className=" flex  max-w-md mt-8 sm:mt-12">
@@ -157,7 +157,7 @@ function Page() {
       </div>
 
       <div className="spacing-secton mt-34">
-        <h1 className=" font-bold text-black text-center text-[1.75rem] md:text-[2rem] lg:text-[2.75rem] leading-[136%]">Recently Uploaded Articles</h1>
+        <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-black text-center  leading-[100%]">Recently Uploaded Articles</h1>
         <div className="my-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
           {UploadArticles?.map((item, i) => (
@@ -204,7 +204,7 @@ function Page() {
               </div>
               <a
                 href={item?.link}
-                className="flex justify-end px-4 pt-6 hover:underline text-[#00d280] cursor-pointer mb-4 block"
+                className="flex justify-end px-4 pt-6 hover:underline text-[#00d280] cursor-pointer mb-4"
               >
                 {item?.btn}
                 <span>
@@ -218,7 +218,7 @@ function Page() {
       </div>
 
       <div className="spacing-secton mt-34">
-        <h1 className=" font-bold text-black text-center text-[1.75rem] md:text-[2rem] lg:text-[2.75rem] leading-[136%]">Most Read Articles</h1>
+        <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-black text-center  leading-[100%]">Most Read Articles</h1>
         <div className="mt-16 mb-34 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
           {MostReadArticles?.map((item, i) => (
@@ -265,7 +265,7 @@ function Page() {
               </div>
               <a
                 href={item?.link}
-                className="flex justify-end px-4 pt-6 hover:underline text-[#00d280] cursor-pointer mb-4 block"
+                className="flex justify-end px-4 pt-6 hover:underline text-[#00d280] cursor-pointer mb-4 "
               >
                 {item?.btn}
                 <span>

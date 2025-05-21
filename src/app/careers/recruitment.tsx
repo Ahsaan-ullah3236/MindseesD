@@ -78,7 +78,7 @@ function Recruitment() {
         <div className="flex justify-center items-center">
 
         <div className="">
-          <h1 className="text-xl md:text-3xl font-bold text-white mb-6">
+          <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-white mb-6">
           Our Recruitment Process
           </h1>
           
@@ -100,7 +100,7 @@ function Recruitment() {
         <div className="relative">
           <div 
             ref={sectionRef}
-            className="h-[65vh] 2xl:h-[40vh] overflow-y-auto scroll-smooth left-scrollbar pl-4 space-y-2"
+            className="h-[65vh] 2xl:h-[40vh] overflow-y-auto scroll-smooth left-scrollbar sm:pl-4 space-y-2"
           >
             {scrollItems.map((item, index) => (
               <div 
@@ -108,7 +108,7 @@ function Recruitment() {
                 className="bg-[#ffffff] p-8 rounded-xl ml-7 "
               >
                 <h3 className="text-[22px] font-semibold text-[#00d280] mb-3">{item.title}</h3>
-                <p className="text-black text-md text-[#023047]">{item.content}</p>
+                <p className=" text-md text-[#023047]">{item.content}</p>
               </div>
             ))}
           </div>

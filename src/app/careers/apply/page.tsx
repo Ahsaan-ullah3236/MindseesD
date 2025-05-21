@@ -42,7 +42,7 @@ const Apply =()=>{
   // };
     return(
         <div className="py-12 md:py-22 spacing-secton">
-            <div className="text-[#005078] text-[22px] md:text-[25px] font-semibold">Social Media Management Internship Leading to Job</div>
+            <div className="text-[#005078] text-2xl sm:text-4xl font-semibold sm:text-bold">Social Media Management Internship Leading to Job</div>
         <div className="max-w-3xl mx-auto">
       <StepperApply currentStep={currentStep} />
 

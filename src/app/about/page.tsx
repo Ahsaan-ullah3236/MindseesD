@@ -37,7 +37,7 @@ const AboutPage = () => {
                     <div className='grid grid-cols-1 md:grid-cols-2   '>
                         <div className=''>
                         <div className="text-white text-center md:text-left">
-                        <h1 className="text-2xl md:text-5xl  font-bold mb-9">About Us</h1>
+                        <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  mb-9">About Us</h1>
                         <p className="text-[18px]" style={{lineHeight:"24px"}}>
                             We transform your business ideas into tangible software solutions. We are top tech experts who help transform business concepts into real-world software solutions.
                         </p>
@@ -94,7 +94,7 @@ const AboutPage = () => {
 
                     {/* Left Content */}
                     <div className="text-center md:text-left md:w-1/2">
-                        <h2 className="text-2xl md:text-5xl  font-bold text-[#002f46] mb-5">Who We Are?</h2>
+                        <h2 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-[#002f46] mb-5">Who We Are?</h2>
                         <h3 className="text-xl font-bold text-[#00D280] mb-8" style={{lineHeight:'-2px'}}>
                         Transforming businesses through tailored software and expert-driven innovation.
                         </h3>
@@ -110,7 +110,7 @@ const AboutPage = () => {
                 <div className=" flex flex-col md:flex-row items-center gap-12 ">
                     {/* Left Text Content */}
                     <div className="md:w-2/2 text-white text-center md:text-left px-16 ">
-                        <h2 className="text-2xl md:text-5xl font-bold mb-5 mt-4">Our Mission</h2>
+                        <h2 className="text-3xl sm:text-5xl font-semibold sm:text-bold  mb-5 mt-4">Our Mission</h2>
                         <p className="text-[16px] md:text-[19px] pb-6" style={{lineHeight:"25px"}}>
                         We help companies and organizations accelerate growth through innovative technology by connecting them with passionate, experienced engineers and solution experts.
                         </p>
@@ -131,7 +131,7 @@ const AboutPage = () => {
 
             <div className="main-container spacing-secton mx-auto flex justify-center items-center text-center py-12 px-4">
                 <div className="inner-container">
-                    <h1 className="text-2xl md:text-5xl text-[#023047] font-bold mt-14 mb-16">Our Values</h1>
+                    <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-[#023047]  mt-14 mb-16">Our Values</h1>
                     <div className="three-divs grid grid-cols-1 md:grid-cols-3 gap-12">
                         <div className="value-card p-6 bg-[#d6f1ff] pb-15 pt-10 rounded-sm shadow-sm">
                             <Image
@@ -188,7 +188,7 @@ const AboutPage = () => {
                     <div className='col-span-2 flex items-center justify-center'>
                         <div>
                             
-                    <h1 className="text-2xl md:text-4xl text-white font-bold mb-6 capitalize" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                    <h1 className="text-2xl sm:text-5xl font-semibold sm:text-bold  text-white  mb-6 capitalize" style={{ fontFamily: 'Poppins, sans-serif' }}>
                     Growing Stronger Every Day
                         </h1>
 

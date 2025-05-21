@@ -18,7 +18,7 @@ type SolutionSectionProps = {
 export default function CustomSolutionCard({ heading, subHeading, Solution }: SolutionSectionProps) {
   return (
     <div className="spacing-secton mx-auto py-16 px-4">
-      <div className="text-[38px] text-[#013a54] font-bold text-center" style={{ lineHeight: "42px" }}>
+      <div className="text-3xl sm:text-5xl font-semibold sm:text-bold text-[#013a54]  text-center" style={{ lineHeight: "42px" }}>
         {heading}
       </div>
       <div className="text-[18px] text-[#013a54] max-w-3xl mx-auto mt-8 text-center" style={{ lineHeight: "22px" }}>

@@ -18,7 +18,7 @@ const CustomValue: React.FC<CustomValueProps> = ({ heading, subheading, values }
   return (
     <div className="bg-[#023047]">
       <div className="max-w-5xl 2xl:max-w-7xl mx-auto py-16">
-        <div className="text-center text-white text-[30px] lg:text-[42px] font-bold">{heading}</div>
+        <div className="text-center text-white text-3xl sm:text-5xl font-semibold sm:text-bold">{heading}</div>
         <div className="text-lg text-white text-center mt-4">{subheading}</div>
         <div className="three-divs grid grid-cols-1 md:grid-cols-3 gap-8 mt-18">
           {values.map((item, index) => (

@@ -18,7 +18,7 @@ export default function Footer() {
 
         <div className="grid xs:grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8 text-sm">
           <div className='col-span-2'>
-            <h2 className="text-3xl font-semibold mb-4">MindSees</h2>
+            <h2 className="text-3xl sm:text-4xl sm:font-bold mb-4">MindSees</h2>
             {/* <p className="flex items-start gap-2 mb-2 text-lg">
             <FaMapMarkerAlt className="mt-1 " /> */}
             <a href="https://www.google.com/maps/place/MindSees/@31.4642669,74.2988289,17z/data=!3m1!4b1!4m6!3m5!1s0x8562bef8b6b348af:0x2228a06e52354095!8m2!3d31.4642624!4d74.3014038!16s%2Fg%2F11mcwzy2ny?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D" target="_blank"
@@ -38,7 +38,7 @@ export default function Footer() {
             <p className="flex items-center gap-2 text-lg mt-4" >
               <FaEnvelope /> info@mindsees.com
             </p>
-            <div className="flex items-center gap-4 mt-4 text-xl mt-10">
+            <div className="flex items-center gap-4  text-xl mt-10">
               <FaFacebookF />
               <FaInstagram />
               <FaLinkedinIn />

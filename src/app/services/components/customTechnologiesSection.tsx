@@ -50,26 +50,26 @@ export const TechnologyGrid: React.FC<TechnologyGridProps> = ({
               </div>
             ))}
           </div>
+        </div>
       </div>
-    </div>
-    <div className="relative">
-    <Image
+      <div className="relative mx-8">
+        <Image
           src={bgoverlay}
           alt="Blog illustration"
-          
-          
+
+
 
 
           className="object-cover -mt-28 w-full h-[360] rounded-lg md:max-w-5xl 2xl:max-w-7xl mx-auto"
         />
-<div className="flex justify-center items-center itemButton ">
-<Link href="/contact-us">
-<button className="bg-[#00d280] cursor-pointer text-white font-medium text-sm md:text-lg py-4 px-4 rounded-md transition-colors duration-300">
-  Chat with Experts
-</button>
-</Link>
-</div>
-</div>
+        <div className="flex justify-center items-center itemButton ">
+          <Link href="/contact-us">
+            <button className="bg-[#00d280] cursor-pointer text-white font-medium text-sm md:text-lg py-4 px-4 rounded-md transition-colors duration-300 ">
+              Chat with Experts
+            </button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };

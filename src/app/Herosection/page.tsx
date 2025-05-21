@@ -57,11 +57,11 @@ function Herosection() {
     <div className='spacing-secton pt-10 md:pt-18 pb-6'>
          <div className="grid grid-cols-1 md:grid-cols-3  gap-8 text-sm  ">
           <div className='col-span-2'>
-            <div className="text-4xl font-bold mb-4 ">
-                <span className="w-[100px] h-0 border-b-[45px] absolute border-b-[#d6f1ff]  border-r-[13px] border-r-transparent">Build</span>  
+            <div className="text-3xl sm:text-4xl  font-bold mb-4 ">
+                <span className="w-[100px] h-0 border-b-[38px] absolute border-b-[#d6f1ff]  border-r-[13px] border-r-transparent">Build</span>  
                 <span className='relative ml-24'>Your Business through </span> 
             </div>
-            <div className="text-[#00D280] text-[28px] sm:text-[36px] md:text-[42px] lg:text-[50px] xl:text-[58px] font-bold font-aleo leading-tight h-[66px] text-left">
+            <div className="text-[#00D280] text-3xl sm:text-5xl font-semibold sm:text-bold  font-aleo leading-tight h-[66px] text-left">
               {displayText}
             </div>
             <p className="text-lg md:text-xl mt-2 md:mt-8 text-black">

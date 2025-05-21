@@ -166,7 +166,7 @@ const UiUx = () => {
       />
 
       <section className="py-16 text-center bg-white">
-        <h2 className="text-5xl font-bold text-[#013a54] mb-4 px-2">Our UI/UX Design Process</h2>
+        <h2 className="text-3xl sm:text-5xl font-semibold sm:text-bold text-[#013a54] mb-4 px-2">Our UI/UX Design Process</h2>
         <p className="text-center mb-16 max-w-3xl mx-auto text-lg leading-[1.3] text-[#013a54]">
           At MindSees, we work closely with your team to create the best branding solutions. From concept to launch, your vision and website are at the heart of our process, ensuring a seamless and impactful result.
         </p>

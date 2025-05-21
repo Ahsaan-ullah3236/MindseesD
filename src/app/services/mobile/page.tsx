@@ -171,7 +171,7 @@ const MobileAppDevelopment = () => {
       />
 
       <section className="py-16 text-center bg-white">
-        <h2 className="text-5xl font-bold text-[#013a54] mb-4">Our Mobile Development Process</h2>
+        <h2 className="text-3xl sm:text-5xl font-semibold sm:text-bold text-[#013a54] mb-4">Our Mobile Development Process</h2>
         <p className="text-center mb-16 max-w-3xl mx-auto text-lg leading-[1.3] text-[#013a54] px-2">
           Our team of experts will design, develop, test, and launch custom mobile applications tailored to your needs. This collaborative effort involves front-end, back-end, and full-stack developers, business analysts, and quality assurance testers to ensure a seamless and successful result.
         </p>
@@ -238,7 +238,6 @@ const MobileAppDevelopment = () => {
 
         </div>
       </section>
-
       <CustomServiceDetail
         heading={"Unlock Excellence With Our MAD Service"}
         description={

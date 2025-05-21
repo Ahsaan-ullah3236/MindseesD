@@ -1,19 +1,18 @@
 "use client"
 import React from "react"
 import Link from "next/link";
-import {Building2,MapPin } from 'lucide-react';
+import { Building2, MapPin } from 'lucide-react';
 
-const Jobs=()=>{
+const Jobs = () => {
 
-    return(
-        <div>
-<div className="relative w-full py-27 bg-[#023047]  overflow-hidden">
-       
+  return (
+    <div>
+      <div className="relative w-full py-27 bg-[#023047]  overflow-hidden">
         <div className=" bg-blue/2000 flex flex-col justify-center items-center text-center px-4">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4" style={{lineHeight:"55px"}}>
-            Search, Apply, and Get <br/>Your Dream Job
+          <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-white mb-4" style={{ lineHeight: "55px" }}>
+            Search, Apply, and Get <br />Your Dream Job
           </h1>
-         
+
 
           <div className="search-bar flex w-full max-w-xl mt-8 sm:mt-12 md:gap-0">
             <input
@@ -32,39 +31,39 @@ const Jobs=()=>{
         </div>
       </div>
       <div className="py-20 max-w-4xl mx-auto items-center">
-        <div className="text-center text-[30px]">Current Openings</div>
+        <div className="text-center text-[28px]">Current Openings</div>
         <div className="flex justify-center mt-2">
 
-           <a href="https://www.google.com/maps/place/MindSees/@31.4642669,74.2988289,17z/data=!3m1!4b1!4m6!3m5!1s0x8562bef8b6b348af:0x2228a06e52354095!8m2!3d31.4642624!4d74.3014038!16s%2Fg%2F11mcwzy2ny?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D" target="_blank"
+          <a href="https://www.google.com/maps/place/MindSees/@31.4642669,74.2988289,17z/data=!3m1!4b1!4m6!3m5!1s0x8562bef8b6b348af:0x2228a06e52354095!8m2!3d31.4642624!4d74.3014038!16s%2Fg%2F11mcwzy2ny?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D" target="_blank"
             rel="noopener noreferrer" className="mr-15">
-              <div  className="text-gray-400 mt-1 flex" style={{fontSize:"16px"}}>
-              <span className="mr-1"><Building2 className="h-4 mt-1 w-4 "/></span> MindSees
-              </div>
-                </a>
-           <a href="https://www.google.com/maps/place/MindSees/@31.4642669,74.2988289,17z/data=!3m1!4b1!4m6!3m5!1s0x8562bef8b6b348af:0x2228a06e52354095!8m2!3d31.4642624!4d74.3014038!16s%2Fg%2F11mcwzy2ny?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D" target="_blank"
+            <div className="text-gray-400 mt-1 flex" style={{ fontSize: "16px" }}>
+              <span className="mr-1"><Building2 className="h-4 mt-1 w-4 " /></span> MindSees
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/place/MindSees/@31.4642669,74.2988289,17z/data=!3m1!4b1!4m6!3m5!1s0x8562bef8b6b348af:0x2228a06e52354095!8m2!3d31.4642624!4d74.3014038!16s%2Fg%2F11mcwzy2ny?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D" target="_blank"
             rel="noopener noreferrer">
-              <div  className="text-gray-400 mt-1 flex" style={{fontSize:"16px"}}>
-              <span className="mr-1"><MapPin className="h-4 mt-1 w-4 "/></span> Lahore, Pakistan
-              </div>
-                </a>
+            <div className="text-gray-400 mt-1 flex" style={{ fontSize: "16px" }}>
+              <span className="mr-1"><MapPin className="h-4 mt-1 w-4 " /></span> Lahore, Pakistan
+            </div>
+          </a>
         </div>
         <div className="flex justify-center flex-wrap py-20">
-            <Link href="listings">
+          <Link href="listings">
             <div className="h-14 rounded-full mb-4 flex items-center text-white bg-[#00d280] px-4 mr-4 font-semibold cursor-pointer">Social Media Management</div>
-            </Link>
-            <Link href="listings">
+          </Link>
+          <Link href="listings">
             <div className="h-14 rounded-full mb-4 flex items-center text-white bg-[#00d280] px-4 mr-4 font-semibold cursor-pointer">Business Development</div>
-            </Link>
-            <Link href="listings">
+          </Link>
+          <Link href="listings">
             <div className="h-14 rounded-full flex mb-4 items-center text-white bg-[#00d280] px-4 mr-4 font-semibold cursor-pointer">Graphic Designing</div>
-            </Link>
-            <Link href="listings">
+          </Link>
+          <Link href="listings">
             <div className="h-14 rounded-full flex mb-4 items-center text-white bg-[#00d280] px-4 mr-4 font-semibold cursor-pointer">Front-end Web Development</div>
-        </Link>
+          </Link>
         </div>
 
       </div>
-        </div>
-    )
+    </div>
+  )
 }
 export default Jobs;
