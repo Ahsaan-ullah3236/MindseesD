@@ -37,6 +37,7 @@ import proven from "@/app/services/graphic/image/proven.svg"
 import creativity from "@/app/services/graphic/image/creativity.svg"
 import customized from "@/app/services/graphic/image/customized.svg"
 import client from "@/app/services/graphic/image/client.svg"
+import graphic from "@/app/services/graphic/image/graphic.png"
 
 const Graphic = () => {
   const faqs = [
@@ -244,7 +245,7 @@ const Graphic = () => {
         }
         buttonText="Book Consultation"
         buttonLink="/contact-us"
-        image="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/bd8f9a8f-98d5-4c6a-3ee5-1e88e3189800/w=1920,q=75"
+        image={graphic}
 
       />
       <Clientsline />

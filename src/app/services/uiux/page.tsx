@@ -33,6 +33,7 @@ import AdobeXDLogo from "@/app/services/uiux/image/AdobeXDLogo.svg"
 import BalsamiqLogo from "@/app/services/uiux/image/BalsamiqLogo.svg"
 import WebflowLogo from "@/app/services/uiux/image/WebflowLogo.svg"
 import sketchLogo from "@/app/services/uiux/image/sketchLogo.svg"
+import UXDesigners from "@/app/services/uiux/image/UXDesigners.png"
 const UiUx = () => {
   const faqs = [
     {
@@ -240,7 +241,7 @@ const UiUx = () => {
         }
         buttonText="Book Consultation"
         buttonLink="/contact-us"
-        image="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/df7dff71-63cb-4988-48d9-940a5adf9100/w=1920,q=75"
+        image={UXDesigners}
 
       />
       <Clientsline />
