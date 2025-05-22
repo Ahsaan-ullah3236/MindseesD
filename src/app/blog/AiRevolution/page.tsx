@@ -1,5 +1,5 @@
 "use client"
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Image from "next/image"
 import image from './image.png'
 import image2 from "./image2.png"
@@ -10,46 +10,45 @@ import { ChevronDown } from 'lucide-react';
 import Link from 'next/link'
 import blogheroimage from "@/app/blog/AiRevolution/blogheroimage.svg"
 
-const AiRevolution =() =>{
 
+const AiRevolution = () => {
   const [selectedCategory, setSelectedCategory] = useState('Marketing');
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false); 
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const categories = ['Development', 'Design', 'Marketing', 'Finance', 'Industries', 'Business'];
 
   return (
     <>
       {/* first section  */}
       <div className="main-container">
-        <div className="inner-container spacing-secton bg-[#D3D3D3]/30  flex flex-col  justify-center items-center py-12">
-      
-          <div className="search-bar flex mt-12 sm:mt-12  items-center md:max-w-4xl w-full rounded-md border border-gray-300 bg-white ">
-          
-            <div className="relative">
-        <button
-          onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-          className="flex cursor-pointer items-center justify-between w-24 sm:w-30 md:w-40 lg:w-56 bg-[#055C88] text-white text-xs sm:text-base px-1 sm:px-5 py-3.5 sm:py-3  rounded-l-md "
-        >
-          {selectedCategory}
-          <ChevronDown className={`ml-2 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`} size={20} />
-        </button>
+        <div className="inner-container spacing-secton bg-[#D3D3D3]/30  flex flex-col  justify-center items-center py-12  ">
 
-        {isDropdownOpen && (
-          <ul className="absolute z-10 w-56 mt-1 bg-white py-2 border border-gray-200 rounded shadow-md">
-            {categories.map((category) => (
-              <li
-                key={category}
-                onClick={() => {
-                  setSelectedCategory(category);
-                  setIsDropdownOpen(false);
-                }}
-                className="px-4 py-2 text-[15px] cursor-pointer hover:bg-gray-100"
+          <div className="search-bar flex mt-4 sm:mt-12  items-center md:max-w-5xl w-full rounded-md border border-gray-300 bg-white ">
+            <div className="relative">
+              <button
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                className="flex cursor-pointer items-center justify-between w-24 sm:w-30 md:w-40 lg:w-56 bg-[#055C88] text-white text-xs sm:text-base px-1 sm:px-5 py-3.5 sm:py-3  rounded-l-md "
               >
-                {category}
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
+                {selectedCategory}
+                <ChevronDown className={`ml-2 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`} size={20} />
+              </button>
+
+              {isDropdownOpen && (
+                <ul className="absolute z-10 w-56 mt-1 bg-white py-2 border border-gray-200 rounded shadow-md">
+                  {categories.map((category) => (
+                    <li
+                      key={category}
+                      onClick={() => {
+                        setSelectedCategory(category);
+                        setIsDropdownOpen(false);
+                      }}
+                      className="px-4 py-2 text-[15px] cursor-pointer hover:bg-gray-100"
+                    >
+                      {category}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
             <input
               type="text"
               placeholder="What are you looking for?"
@@ -65,13 +64,13 @@ const AiRevolution =() =>{
             </button>
 
           </div>
-          <div className="content-image grid grid-cols-1 md:grid-cols-2 gap-12 py-12 max-w-5xl px-10 mt-8">
+          <div className="content-image grid grid-cols-1 md:grid-cols-2 gap-12  py-4 max-w-6xl  sm:px-10 mt-8">
             <div className="right">
-              <div className="green-line text-[#00d280] mb-2 flex justify-between rounded-l-md  ">
+              <div className="green-line text-[#00d280]  flex justify-between rounded-l-md  ">
                 <p className='italic'> <span className='font-bold text-[16px]'>Business </span> <span className='text-[14px]'>| Business Strategy</span></p>
-                <p className='text-[13px]'>2 Minutes Read</p>
+                <p className='text-[13px] mt-1'>2 Minutes Read</p>
               </div>
-              <h1 className="text-2xl sm:text-4xl font-semibold sm:text-bold  mb-3 pt-3">
+              <h1 className="text-2xl sm:text-4xl font-semibold sm:text-bold  mb-3 sm:pt-3">
                 From Vision to Scalable Execution: How to Develop a Scalable Web App Strategy
               </h1>
               <p className="text-gray-600">
@@ -97,50 +96,110 @@ const AiRevolution =() =>{
       {/* second section  */}
       <div className='flex flex-col-reverse md:grid grid-cols-1 md:grid-cols-4 spacing-secton bg-[#fff] pt-20'>
         <div className='md:h-fit md:sticky md:top-[100px] lg:top-[140px] md:order-first flex-[1]'>
-        <h1 className=" font-bold text-[#070707] leading-relaxed text-2xl mb-6 md:mb-2">
-                Trending Articles
-              </h1>
-            <div className="first pr-2 pt-4">
-              <div className="flex flex-wrap items-center justify-start space-x-2 mt-4 text-center md:text-left">
-                <span className="text-sm font-semibold text-[#055C88] cursor-pointer">
+          <h1 className=" font-bold text-[#070707] leading-relaxed text-2xl mb-6 md:mb-2">
+            Trending Articles
+          </h1>
+          <div className="first pr-2 pt-4">
+            <div className="flex flex-wrap items-center justify-start space-x-2 mt-4 text-center md:text-left">
+              <Link href="/blog/Design">
+                <span className="text-sm font-semibold text-[#055C88] cursor-pointer hover:underline">
                   Finance
                 </span>
-                <span className="text-gray-600 text-base hidden md:inline"><ChevronRight  className='h-5 w-5 text-[#055C88]'/></span>
-                <span className="text-[11px] font-semibold text-[#055C88] cursor-pointer">
+              </Link>
+              <span className="text-gray-600 text-base hidden md:inline"><ChevronRight className='h-5 w-5 text-[#055C88]' /></span>
+              <Link href="/blog/Design">
+                <span className="text-[11px] font-semibold text-[#055C88] cursor-pointer  hover:underline">
                   Financial Processes
                 </span>
-              </div>
-              <div className="image-content flex flex-col lg:flex-row items-start mt-6">
-                <Image
-                  src={blogheroimage}
-                  alt="AI Revolution in Finance"
-                  width={140}
-                  height={140}
-                  className="h-19 w-19 object-cover mb-4 lg:mb-0"
-                />
-                <h1 className="lg:pl-5 lg:m-auto font-bold text-[#070707] leading-[125%] text-base text-center md:text-left">
-                  AI Revolution in Finance: Prospects and Difficulties
-                </h1>
-              </div>
-              <div className="border-b-1 border-gray-300 mt-6"></div>
+              </Link>
             </div>
-           
-           
-            <div className="last bg-[#022739] px-5 py-10 mt-[65px]">
-              <h1 className="text-white text-2xl font-semibold mb-4 text-center md:text-left">
-                Hire a MindSees Finance Specialist
+            {/* one  */}
+            <div className="image-content flex flex-row justify-center items-center   mt-6">
+              <Image
+                src={blogheroimage}
+                alt="AI Revolution in Finance"
+                width={140}
+                height={140}
+                className="h-19 w-19 object-cover mb-4 lg:mb-0"
+              />
+              <h1 className=" font-bold text-[#070707] leading-[125%] text-base  md:text-left cursior-pointer hover:text-[#00d280] ml-4">
+                AI Revolution in Finance: Prospects and Difficulties
               </h1>
-              <div className="flex justify-center ">
-                <Link href="/contact-us">
+            </div>
+            <div className="border-b-1 border-gray-300 mt-6"></div>
+            {/* two  */}
+            <div className="flex flex-wrap items-center justify-start space-x-2 mt-4 text-center md:text-left">
+              <Link href="/blog/Design">
+                <span className="text-sm font-semibold text-[#055C88] cursor-pointer hover:underline">
+                  Finance
+                </span>
+              </Link>
+              <span className="text-gray-600 text-base hidden md:inline"><ChevronRight className='h-5 w-5 text-[#055C88]' /></span>
+              <Link href="/blog/Design">
+                <span className="text-[11px] font-semibold text-[#055C88] cursor-pointer  hover:underline">
+                  Financial Processes
+                </span>
+              </Link>
+            </div>
+            <div className="image-content flex flex-row justify-center items-center   mt-6">
+              <Image
+                src={blogheroimage}
+                alt="AI Revolution in Finance"
+                width={140}
+                height={140}
+                className="h-19 w-19 object-cover mb-4 lg:mb-0"
+              />
+              <h1 className=" font-bold text-[#070707] leading-[125%] text-base  md:text-left cursior-pointer hover:text-[#00d280] ml-4">
+                AI Revolution in Finance: Prospects and Difficulties
+              </h1>
+            </div>
+            <div className="border-b-1 border-gray-300 mt-6"></div>
+            {/* three  */}
+            <div className="flex flex-wrap items-center justify-start space-x-2 mt-4 text-center md:text-left">
+              <Link href="/blog/Design">
+                <span className="text-sm font-semibold text-[#055C88] cursor-pointer hover:underline">
+                  Finance
+                </span>
+              </Link>
+              <span className="text-gray-600 text-base hidden md:inline"><ChevronRight className='h-5 w-5 text-[#055C88]' /></span>
+
+              <Link href="/blog/Design">
+                <span className="text-[11px] font-semibold text-[#055C88] cursor-pointer  hover:underline">
+                  Financial Processes
+                </span>
+              </Link>
+            </div>
+            <div className="image-content flex flex-row justify-center items-center   mt-6">
+              <Image
+                src={blogheroimage}
+                alt="AI Revolution in Finance"
+                width={140}
+                height={140}
+                className="h-19 w-19 object-cover mb-4 lg:mb-0"
+              />
+              <h1 className=" font-bold text-[#070707] leading-[125%] text-base  md:text-left cursior-pointer hover:text-[#00d280] ml-4">
+                AI Revolution in Finance: Prospects and Difficulties
+              </h1>
+            </div>
+            <div className="border-b-1 border-gray-300 mt-6"></div>
+          </div>
+
+
+          <div className="last bg-[#022739] px-5 py-10 mt-[65px]">
+            <h1 className="text-white text-2xl font-semibold mb-4 text-center md:text-left">
+              Hire a MindSees Finance Specialist
+            </h1>
+            <div className="flex justify-center ">
+              <Link href="/contact-us">
                 <button className="bg-[#00D280] cursor-pointer text-white py-3 text-lg font-semibold mt-9 rounded-lg hover:bg-[#00b96a] transition-colors w-26">
                   Hire me
                 </button>
-                </Link>
-              </div>
+              </Link>
             </div>
+          </div>
         </div>
         <div className='col-span-3 flex-[3] mb-[100px] md:mb-0'>
-        <div className="left   p-4 md:p-8 text-md md:text-lg">
+          <div className="left   p-4 md:p-8 text-md md:text-lg">
             <p> A startups vision is more than a high ambition; its your guiding star. It specifies the problem yore solving, who youre doing it for, and where you hope to be in the following three to five years. To guide execution, this vision must be actionable. We want to empower local retailers with AI-driven inventory management is considerably more successful than a generic goal like We aim to disrupt retail. Once the vision is established, focus on strategic objectives rather than surface-level goals. Prioritize market positioning, main product milestones, revenue targets, and customer satisfaction metrics. Strategic planning establishes the foundation for startup success, from the development of MVPs to AI automation for small businesses. Using a framework like OKRs (Objectives and Key Results) allows you to stay focused and outcome-driven across the board. Scalable infrastructure planning is an essential component of your roadmap if your goal involves providing AI-powered web Development for Small Businesses. </p>
             <br />
             <p>Startups also need to understand how to set priorities. Due to resource constraints, it is imperative to concentrate just on projects that provide the greatest return on investment. Determine which two or three things must be done in the next ninety days, and try not to get sidetracked by things that dont seem important. Priority noise is reduced with the use of tools such as the Eisenhower Matrix. However, many founders fall into the trap of striving for perfection; momentum is more important. Put your attention on developing MVPs (Minimum Viable Products), getting early market input, and refining through agile sprints. Iterate rapidly and change course when necessary; speed and flexibility are your greatest advantages. Speed and flexibility are crucial while developing your MVP, particularly in No-Code SaaS Platform Development for SMBs.</p>
@@ -162,7 +221,7 @@ const AiRevolution =() =>{
         </div>
 
       </div>
-    
+
       {/* fourth */}
       <div className="border-b-1 border-gray-300 mt-40"></div>
       <div className="tags block md:flex mx-auto lg:w-5xl mt-13 px-4">
@@ -190,7 +249,7 @@ const AiRevolution =() =>{
       </div>
       <div className="border-b-1 border-gray-300 mt-8 mb-34"></div>
       {/* third  */}
-      <LastBusinessesSection/>
+      <LastBusinessesSection />
       {/* <Footer/> */}
     </>
   )

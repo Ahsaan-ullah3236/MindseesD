@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
             </p>
 
             <section>
-                <h2 className="text-3xl sm:text-4xl font-semibold sm:text-bold mt-16">Interpretation and Definitions</h2>
+                <h2 className="text-2xl sm:text-4xl font-semibold sm:text-bold mt-16">Interpretation and Definitions</h2>
                 <p className="text-lg leading-relaxed mt-6">
                     Terms beginning with the capital letters hold specific meanings as defined under the following
                     conditions. The ensuing definitions maintain their significance whether in singular or plural.

@@ -20,52 +20,52 @@ import innovationIcon from "@/app/about/image/innovationsvgfill.svg"
 
 const AboutPage = () => {
     const awardImages = [
-     {image:brandIcon1},
-     {image:brandIcon2},
-     {image:brandIcon3},
-     {image:brandIcon4},
-     {image:brandIcon5},
-     {image:brandIcon6},
+        { image: brandIcon1 },
+        { image: brandIcon2 },
+        { image: brandIcon3 },
+        { image: brandIcon4 },
+        { image: brandIcon5 },
+        { image: brandIcon6 },
     ];
-  
+
 
     return (
         <div >
-            <div className="bg-[#002f46] py-20">
+            <div className="bg-[#002f46] py-10 sm:py-20">
                 <div className=' mx-auto'>
-                <div className="spacing-secton  flex flex-col md:flex-row items-center justify-between gap-12 px-4">
-                    <div className='grid grid-cols-1 md:grid-cols-2   '>
-                        <div className=''>
-                        <div className="text-white text-center md:text-left">
-                        <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  mb-9">About Us</h1>
-                        <p className="text-[18px]" style={{lineHeight:"24px"}}>
-                            We transform your business ideas into tangible software solutions. We are top tech experts who help transform business concepts into real-world software solutions.
-                        </p>
-                        <div className="mt-18 flex justify-center md:justify-start">
-                            <Link href={"/contact-us"}>
-                            <button className="bg-[#00D280] cursor-pointer text-white px-4 py-4 text-lg font-semibold rounded-sm hover:bg-[#00b96a] transition-colors">
-                                Book Consultant
+                    <div className="spacing-secton  flex flex-col md:flex-row items-center justify-between gap-12 px-4">
+                        <div className='grid grid-cols-1 md:grid-cols-2   '>
+                            <div className=''>
+                                <div className="text-white  md:text-left">
+                                    <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  mb-9">About Us</h1>
+                                    <p className="text-[18px]" style={{ lineHeight: "24px" }}>
+                                        We transform your business ideas into tangible software solutions. We are top tech experts who help transform business concepts into real-world software solutions.
+                                    </p>
+                                    <div className="mt-18 flex  md:justify-start">
+                                        <Link href={"/contact-us"}>
+                                            <button className="bg-[#00D280] cursor-pointer text-white px-4 py-4 text-lg font-semibold rounded-sm hover:bg-[#00b96a] transition-colors">
+                                                Book Consultant
 
-                            </button>
-                            </Link>
+                                            </button>
+                                        </Link>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex justify-center sm:justify-end h-[300px] w-full">
+                                <Image
+                                    src={AboutUsGif}
+                                    alt="About Section"
+                                    width={400}
+                                    height={300}
+                                    className="object-cover md:-mt-8"
+                                />
+                            </div>
 
                         </div>
-                    </div>
-                        </div>
-                        <div className="flex justify-end">
-                        <Image
-                            src={AboutUsGif}
-                            alt="About Section"
-                            width={400}
-                            height={300}
-                            className=" object-cover md:-mt-8"
-                        />
-                    </div>
+
 
                     </div>
-                    
-
-                </div>
                 </div>
             </div>
 
@@ -85,7 +85,7 @@ const AboutPage = () => {
                                         width={100}
                                         height={100}
                                         className="h-30 object-fit w-30 px-4"
-                                      
+
                                     />
                                 </div>
                             ))}
@@ -95,11 +95,11 @@ const AboutPage = () => {
                     {/* Left Content */}
                     <div className="text-center md:text-left md:w-1/2">
                         <h2 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-[#002f46] mb-5">Who We Are?</h2>
-                        <h3 className="text-xl font-bold text-[#00D280] mb-8" style={{lineHeight:'-2px'}}>
-                        Transforming businesses through tailored software and expert-driven innovation.
+                        <h3 className="text-xl font-bold text-[#00D280] mb-8" style={{ lineHeight: '-2px' }}>
+                            Transforming businesses through tailored software and expert-driven innovation.
                         </h3>
                         <p className="text-gray-900 text-[17px] font-medium leading-relaxed">
-                        At MindSees, we are your trusted partners in digital growth. Specializing in mobile app and website development, UI/UX and graphic design, SaaS solutions, and SEO services, we deliver end-to-end digital strategies. Our creative and tech-savvy team combines innovation with technical expertise to elevate your brand and exceed expectations.
+                            At MindSees, we are your trusted partners in digital growth. Specializing in mobile app and website development, UI/UX and graphic design, SaaS solutions, and SEO services, we deliver end-to-end digital strategies. Our creative and tech-savvy team combines innovation with technical expertise to elevate your brand and exceed expectations.
                         </p>
                     </div>
                 </div>
@@ -111,8 +111,8 @@ const AboutPage = () => {
                     {/* Left Text Content */}
                     <div className="md:w-2/2 text-white text-center md:text-left px-16 ">
                         <h2 className="text-3xl sm:text-5xl font-semibold sm:text-bold  mb-5 mt-4">Our Mission</h2>
-                        <p className="text-[16px] md:text-[19px] pb-6" style={{lineHeight:"25px"}}>
-                        We help companies and organizations accelerate growth through innovative technology by connecting them with passionate, experienced engineers and solution experts.
+                        <p className="text-[16px] md:text-[19px] pb-6" style={{ lineHeight: "25px" }}>
+                            We help companies and organizations accelerate growth through innovative technology by connecting them with passionate, experienced engineers and solution experts.
                         </p>
                     </div>
                     {/* Right Image Content */}
@@ -142,8 +142,8 @@ const AboutPage = () => {
                                 className="mx-auto"
                             />
                             <h2 className="text-xl text-[#023047] font-bold mt-6">Innovation</h2>
-                            <p className="text-[14px] font-medium text-[#023047] mt-6" style={{lineHeight:"21px"}}>
-                            We innovate with new ideas and technologies to create solutions that accelerate your business growth.
+                            <p className="text-[14px] font-medium text-[#023047] mt-6" style={{ lineHeight: "21px" }}>
+                                We innovate with new ideas and technologies to create solutions that accelerate your business growth.
                             </p>
                         </div>
 
@@ -156,8 +156,8 @@ const AboutPage = () => {
                                 className="mx-auto"
                             />
                             <h2 className="text-xl text-[#023047] font-bold mt-6">Customer-Centricity</h2>
-                            <p className="text-[14px] font-medium text-[#023047] mt-6" style={{lineHeight:"21px"}}>
-                            We prioritize your needs and objectives, delivering solutions designed to meet them exactly.
+                            <p className="text-[14px] font-medium text-[#023047] mt-6" style={{ lineHeight: "21px" }}>
+                                We prioritize your needs and objectives, delivering solutions designed to meet them exactly.
                             </p>
                         </div>
 
@@ -170,8 +170,8 @@ const AboutPage = () => {
                                 className="mx-auto"
                             />
                             <h2 className="text-xl text-[#023047] font-bold mt-6">Integrity</h2>
-                            <p className="text-[14px] font-medium text-[#023047] mt-6" style={{lineHeight:"21px"}}>
-                            At MindSees, we believe in building trust and maintaining transparency in all our interactions—internally and externally.
+                            <p className="text-[14px] font-medium text-[#023047] mt-6" style={{ lineHeight: "21px" }}>
+                                At MindSees, we believe in building trust and maintaining transparency in all our interactions—internally and externally.
                             </p>
                         </div>
                     </div>
@@ -182,46 +182,46 @@ const AboutPage = () => {
             {/* fifth page div / */}
             <div className=''>
 
-            <div className="bg-[#002f46]  py-28 mt-16 spacing-secton">
-                
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm ">
-                    <div className='col-span-2 flex items-center justify-center'>
-                        <div>
-                            
-                    <h1 className="text-2xl sm:text-5xl font-semibold sm:text-bold  text-white  mb-6 capitalize" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                    Growing Stronger Every Day
-                        </h1>
+                <div className="bg-[#002f46]  py-28 mt-16 spacing-secton">
 
-                        <h2 className="text-lg font-semibold mb-2 text-[#00d280] italic">We Don’t Just Aim for Growth — We Achieve It</h2>
-                        <p className=" text-[16px] text-gray-200">
-                        Each day, we enhance our expertise and streamline our processes to provide exceptional digital solutions. With a dedicated team at the forefront of innovation, we are constantly evolving to surpass expectations and shape the future of technology. Join us on this exciting journey as we empower businesses globally with cutting-edge solutions and an unwavering commitment to excellence.
-                        </p>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm ">
+                        <div className='col-span-2 flex items-center justify-center'>
+                            <div>
+
+                                <h1 className="text-2xl sm:text-5xl font-semibold sm:text-bold  text-white  mb-6 capitalize" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                                    Growing Stronger Every Day
+                                </h1>
+
+                                <h2 className="text-lg font-semibold mb-2 text-[#00d280] italic">We Don’t Just Aim for Growth — We Achieve It</h2>
+                                <p className=" text-[16px] text-gray-200">
+                                    Each day, we enhance our expertise and streamline our processes to provide exceptional digital solutions. With a dedicated team at the forefront of innovation, we are constantly evolving to surpass expectations and shape the future of technology. Join us on this exciting journey as we empower businesses globally with cutting-edge solutions and an unwavering commitment to excellence.
+                                </p>
+                            </div>
                         </div>
-                    </div>
 
                         <div className="flex justify-center">
-                        <Image
-                            src={GrowthGraph}
-                            alt="Growth Illustration"
-                            width={500}
-                            height={300}
-                            className="rounded-2xl shadow-xl"
-                        />
-                    </div>
+                            <Image
+                                src={GrowthGraph}
+                                alt="Growth Illustration"
+                                width={500}
+                                height={300}
+                                className="rounded-2xl shadow-xl"
+                            />
+                        </div>
 
                     </div>
-                   
-                
-            </div>
+
+
+                </div>
             </div>
 
 
             {/* sixth page div */}
 
 
-            <GlobalPressance/>
-            <Lastbusinesses/>
-            
+            <GlobalPressance />
+            <Lastbusinesses />
+
         </div>
     );
 };
