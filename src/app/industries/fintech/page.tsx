@@ -27,6 +27,7 @@ import UserFriendly from "@/app/industries/fintech/image/UserFriendly.svg"
 import ScalableSolution  from "@/app/industries/fintech/image/ScalableSolution.svg"
 import RegulatoryCompliance from "@/app/industries/fintech/image/RegulatoryCompliance.svg"
 import AdvancedAnalytics from "@/app/industries/fintech/image/AdvancedAnalytics.svg"
+import Image from "@/app/industries/fintech/image/Image.svg"
 
 // white 
 import mobileBankingWhite from "@/app/industries/fintech/image/mobileBankingWhite.svg"
@@ -170,7 +171,7 @@ const FinTech = () => {
       <ServicePlatform
         title="Our Fintech Platform Services"
         subtitle="Explore how MindSees can transform your financial education and optimize operations with our all-encompassing suite of customized FinTech solutions."
-        imageUrl="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/5cea0081-83f7-4c19-9470-e6cb15b12500/w=3840,q=75"
+        imageUrl={Image}
         description="Integrating FinTech services into your business can transform financial processes, improve efficiency, and elevate customer satisfaction. Adopting these innovative solutions requires thoughtful planning and adherence to regulatory standards, providing your business with a competitive edge in the digital age."
         scrollItems={scrollItems}
         buttonText="Let's discuss"

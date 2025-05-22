@@ -5,7 +5,8 @@ import Image from 'next/image';
 import { StaticImageData } from 'next/image';
 import projectimage from "@/app/Stories/image/image.svg"
 // import personImage from "@/app/Stories/image/person.jpeg"
-import casestudy from "@/app/Stories/image/CaseStudyImage.svg"
+import casestudy from "@/app/Stories/image/image.svg"
+import person from "@/app/Stories/image/person.jpeg"
 import Link from 'next/link';
 
 type Testimonial = {
@@ -55,13 +56,9 @@ export default function SuccessStoriesPage() {
     },
 
   ];
-
-
-
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
   };
-
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
   };
@@ -98,7 +95,7 @@ export default function SuccessStoriesPage() {
                         <div className="p-6 rounded-lg mb-8 ">
                           <p className="text-white italic mb-4">{testimonial.testimonial}</p>
                           <div className="flex mt-6">
-                            <Image src="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/dfff5a3f-e899-438f-a825-4ae7f519c000/w=96,q=75" alt='avatar' width={65} height={65} className=' object-cover rounded-full mr-3' />
+                            <Image src={person} alt='avatar' width={65} height={65} className=' object-cover rounded-full mr-3' />
                             <div>
                               <p className="font-medium text-white text-xl mt-2">{testimonial.author}</p>
                               <p className="text-white font-small">{testimonial.role}</p>

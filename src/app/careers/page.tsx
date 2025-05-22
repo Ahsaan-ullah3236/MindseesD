@@ -4,6 +4,7 @@ import image from './career1.gif';
 import React, { useRef, useEffect } from "react";
 import Recruitment from './recruitment';
 import Link from 'next/link';
+import imagesss from "@/app/careers/imagesss.svg"
 
 function Page() {
     const sectionRef = useRef<HTMLDivElement>(null);
@@ -122,7 +123,7 @@ function Page() {
                     </div>
                     <div className=" flex justify-center">
                         <Image
-                            src="https://kavelogics.com/careers/image-1-desktop.svg"
+                            src= {imagesss}
                             alt="About Section"
                             width={800}
                             height={550}

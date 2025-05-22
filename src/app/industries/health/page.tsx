@@ -27,6 +27,7 @@ import EnhancedEfficiency from "@/app/industries/health/image/EnhancedEfficiency
 import dataSecurity2 from "@/app/industries/health/image/dataSecurity2.svg"
 import scalabelSolution from "@/app/industries/health/image/scalabelSolution.svg"
 import SeamlessIntegration from "@/app/industries/health/image/SeamlessIntegration.svg"
+import Image from "@/app/industries/health/image/Image.svg"
 
 
 // white 
@@ -171,7 +172,7 @@ const Health = () => {
       <ServicePlatform
         title="Our Health Platform Services"
         subtitle="Explore how MindSees can elevate patient care and optimize operations with our comprehensive range of customized digital health solutions."
-        imageUrl="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/5cea0081-83f7-4c19-9470-e6cb15b12500/w=3840,q=75"
+        imageUrl={Image}
         description="Our custom telehealth software empowers physicians with virtual consultations, mobile healthcare services, video conferencing, real-time data management, intuitive screen sharing, and advanced annotation tools, delivering a transformative healthcare experience for both hospitals and startups."
         scrollItems={scrollItems}
         buttonText="Let's discuss"

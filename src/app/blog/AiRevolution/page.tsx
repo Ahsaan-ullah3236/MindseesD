@@ -8,6 +8,7 @@ import LastBusinessesSection from '@/app/Lastbusinesses/page'
 import { ChevronRight } from 'lucide-react';
 import { ChevronDown } from 'lucide-react';
 import Link from 'next/link'
+import blogheroimage from "@/app/blog/AiRevolution/blogheroimage.svg"
 
 const AiRevolution =() =>{
 
@@ -111,7 +112,7 @@ const AiRevolution =() =>{
               </div>
               <div className="image-content flex flex-col lg:flex-row items-start mt-6">
                 <Image
-                  src="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/c0e1f099-e531-4cd7-78ec-d6c9c8833e00/w=96,q=75"
+                  src={blogheroimage}
                   alt="AI Revolution in Finance"
                   width={140}
                   height={140}

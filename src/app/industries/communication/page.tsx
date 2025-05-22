@@ -27,6 +27,7 @@ import VoiceAssitant from "@/app/industries/communication/image/VoiceAssitant.sv
 import Unified from "@/app/industries/communication/image/Unified.svg"
 import networkOptimi from "@/app/industries/communication/image/networkOptimi.svg"
 import MobileSolution from "@/app/industries/communication/image/MobileSolution.svg"
+import Image from "@/app/industries/communication/image/Image.svg"
 
 // white  
 import virtualEventWhite from "@/app/industries/communication/image/virtualEventWhite.svg"
@@ -169,7 +170,7 @@ const Communication = () => {
       <ServicePlatform
         title="Our Communication Platform Services"
         subtitle="Explore how MindSees can improve communication and optimize operations with our complete range of customized digital solutions."
-        imageUrl="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/011fc175-cd40-47a3-733c-84c3031c0700/w=3840,q=75"
+        imageUrl={Image}
         description="Discover the future of communication with MindSees. As industry leaders, we are committed to pushing boundaries and redefining standards. Our innovative approach combines cutting-edge technology with unparalleled expertise to deliver solutions that revolutionize the way businesses communicate. From streamlined operations to enhanced customer experiences, MindSees is dedicated to driving success in the communication industry."
         scrollItems={scrollItems}
         buttonText="Let's discuss"

@@ -262,7 +262,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            href="/contact us"
+            href="/contact-us"
             className="mt-4 inline-block bg-[#00d280] text-white w-full text-center py-2 rounded-md font-bold hover:bg-green-600"
             onClick={() => setMobileMenuOpen(false)}
           >
