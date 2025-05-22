@@ -5,7 +5,7 @@ import React from 'react';
 const PrivacyPolicy = () => {
     return (
         <section className="spacing-secton py-8 sm:py-14 text-gray-800">
-            <h1 className="text-5xl font-semibold mb-4">Privacy Policy</h1>
+            <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold mb-4">Privacy Policy</h1>
             <p className="text-lg leading-relaxed sm:mt-10">
                 This Privacy Policy outlines our practices regarding the collection, use, and disclosure of your
                 information when you engage with our Service. It also explains your privacy rights and the legal
@@ -13,13 +13,13 @@ const PrivacyPolicy = () => {
             </p>
 
             <section>
-                <h2 className="text-4xl font-semibold mt-16">Interpretation and Definitions</h2>
+                <h2 className="text-3xl sm:text-4xl font-semibold sm:text-bold mt-16">Interpretation and Definitions</h2>
                 <p className="text-lg leading-relaxed mt-6">
                     Terms beginning with the capital letters hold specific meanings as defined under the following
                     conditions. The ensuing definitions maintain their significance whether in singular or plural.
                 </p>
 
-                <h2 className="text-3xl font-semibold mt-10">For the purposes of the privacy policy</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold sm:text-bold mt-10">For the purposes of the privacy policy</h2>
                 <p className="text-lg leading-relaxed mt-6">
                     “Account” means a unique account created for You to access our Service or parts of our Service.
                     <br /><br />
@@ -49,17 +49,17 @@ const PrivacyPolicy = () => {
             </section>
 
             <section className="mt-10">
-                <h1 className="text-4xl font-semibold mt-10">Utilization of Your Personal Data</h1>
+                <h1 className="text-3xl sm:text-4xl font-semibold sm:text-bold mt-10">Utilization of Your Personal Data</h1>
                 <p className="mt-8 text-lg">Kavelogics may use your personal data for the following purposes:</p>
 
-                <h2 className="text-3xl font-semibold mt-10">1. Contractual Obligations</h2>
+                <h2 className="text-2xl sm:text-4xl font-semibold sm:text-bold mt-10">1. Contractual Obligations</h2>
                 <p className="mt-8 text-lg">
                     To facilitate the development, fulfillment, and management of purchase contracts for products,
                     services, or items you have acquired through our platform, or any other contractual agreements you have
                     entered into with us.
                 </p>
 
-                <h2 className="text-3xl font-semibold mt-10">2. Communication</h2>
+                <h2 className="text-2xl sm:text-4xl font-semibold sm:text-bold mt-10">2. Communication</h2>
                 <p className="mt-8 text-lg">
                     We may reach out to you via email, phone calls, SMS, or other electronic means such as push
                     notifications on our mobile application, to provide updates, essential information regarding our
@@ -68,12 +68,12 @@ const PrivacyPolicy = () => {
                     out.
                 </p>
 
-                <h2 className="text-3xl font-semibold mt-10">3. Request Management</h2>
+                <h2 className="text-2xl sm:text-4xl font-semibold sm:text-bold mt-10">3. Request Management</h2>
                 <p className="mt-8 text-lg">
                     Handling and addressing any inquiries or requests you submit to us.
                 </p>
 
-                <h2 className="text-3xl font-semibold mt-10">4. Miscellaneous Purposes</h2>
+                <h2 className="text-2xl sm:text-4xl font-semibold sm:text-bold mt-10">4. Miscellaneous Purposes</h2>
                 <p className="mt-8 text-lg">
                     Your information may also be utilized for activities like data analysis, identifying usage patterns,
                     evaluating the effectiveness of marketing campaigns, and enhancing our services, products, marketing
@@ -82,28 +82,28 @@ const PrivacyPolicy = () => {
             </section>
 
             <section className="mt-10">
-                <h1 className="text-3xl font-semibold mt-10">We may share your personal information under the following circumstances:
+                <h1 className="text-3xl sm:text-4xl font-semibold sm:text-bold mt-10">We may share your personal information under the following circumstances:
                 </h1>
-                <h1 className="text-4xl font-semibold mt-10">1. Business transitions:
+                <h1 className="text-2xl sm:text-4xl font-semibold sm:text-bold mt-10">1. Business transitions:
                 </h1>
                 <p className="mt-8 text-lg">During negotiations or in connection with any merger, sale of assets, financing, or acquisition involving Kavelogics.</p>
 
-                <h2 className="text-3xl font-semibold mt-10">1. Contractual Obligations</h2>
+                <h2 className="text-2xl sm:text-4xl font-semibold sm:text-bold mt-10">1. Contractual Obligations</h2>
                 <p className="mt-8 text-lg">
                     Sharing information with our business partners to provide you with specific products, services, or promotions.
                 </p>
 
-                <h2 className="text-3xl font-semibold mt-10">2. UserInterction </h2>
+                <h2 className="text-2xl sm:text-4xl font-semibold sm:text-bold mt-10">2. UserInterction </h2>
                 <p className="mt-8 text-lg">
                     Information shared in public areas or interactions with other users may be visible to all users and possibly distributed publicly. Similarly, interactions through third-party social media services may result in your information being visible to contacts on those platforms.
                 </p>
 
-                <h2 className="text-3xl font-semibold mt-10">3. Request Management</h2>
+                <h2 className="text-2xl sm:text-4xl font-semibold sm:text-bold mt-10">3. Request Management</h2>
                 <p className="mt-8 text-lg">
                     Handling and addressing any inquiries or requests you submit to us.
                 </p>
 
-                <h2 className="text-3xl font-semibold mt-10">4. Miscellaneous Purposes</h2>
+                <h2 className="text-2xl sm:text-4xl font-semibold sm:text-bold mt-10">4. Miscellaneous Purposes</h2>
                 <p className="mt-8 text-lg">
                     Your information may also be utilized for activities like data analysis, identifying usage patterns,
                     evaluating the effectiveness of marketing campaigns, and enhancing our services, products, marketing
@@ -113,14 +113,14 @@ const PrivacyPolicy = () => {
 
 
             <section>
-                <h1 className="text-4xl font-semibold mt-10">Retention of Your Personal Data</h1>
+                <h1 className="text-2xl sm:text-4xl font-semibold sm:text-bold mt-10">Retention of Your Personal Data</h1>
                 <p className="mt-6 text-lg leading-relaxed">
                     Kavelogics will retain your personal data only for as long as necessary for the purposes outlined in this Privacy Policy. We will keep and utilize your personal data to the extent required to meet our legal obligations, such as complying with applicable laws, resolving disputes, and enforcing our legal agreements and policies.
                     <br /><br />
                     Additionally, Kavelogics will retain usage data for internal analysis purposes. Usage data is typically kept for a shorter duration, except when its utilized to enhance security, improve service functionality, or when legally required to retain it for longer periods.
                 </p>
 
-                <h1 className="text-4xl font-semibold mt-14">Transfer of Your Personal Data</h1>
+                <h1 className="text-2xl sm:text-4xl font-semibold sm:text-bold mt-14">Transfer of Your Personal Data</h1>
                 <p className="mt-6 text-lg leading-relaxed">
                     Kavelogics will retain your personal data only for as long as necessary for the purposes outlined in this Privacy Policy. We will keep and utilize your personal data to the extent required to meet our legal obligations, such as complying with applicable laws, resolving disputes, and enforcing our legal agreements and policies.
                     <br /><br />
@@ -129,7 +129,7 @@ const PrivacyPolicy = () => {
             </section>
 
             <section className="mt-10">
-                <h1 className="text-2xl font-bold mt-6">Retention of Your Personal Data</h1>
+                <h1 className="text-2xl sm:text-4xl font-semibold sm:text-bold mt-6">Retention of Your Personal Data</h1>
                 <p className="text-lg leading-relaxed mt-6">
                     We retain your data only as long as necessary for legal, operational, and analytical purposes.
                     Usage data may be stored for a shorter duration unless required for improvements or security.
@@ -137,7 +137,7 @@ const PrivacyPolicy = () => {
             </section>
 
             <section className="mb-10">
-                <h1 className="text-2xl font-bold my-6">Transfer of Your Personal Data</h1>
+                <h1 className="text-2xl sm:text-4xl font-semibold sm:text-bold my-6">Transfer of Your Personal Data</h1>
                 <p className="text-lg leading-relaxed">
                     Your data may be processed outside of your jurisdiction. By using our service, you consent to such
                     transfers. We take necessary steps to ensure your data is treated securely and per this Privacy Policy.
@@ -145,7 +145,7 @@ const PrivacyPolicy = () => {
             </section>
 
             <section className="mb-10">
-                <h1 className="text-4xl font-bold mb-6">Disclosure of Your Personal Data</h1>
+                <h1 className="text-2xl sm:text-4xl font-semibold sm:text-bold mb-6">Disclosure of Your Personal Data</h1>
 
                 <h2 className="text-2xl font-semibold mb-6">Business Transactions</h2>
                 <p className="mb-4 text-lg leading-relaxed">
@@ -173,7 +173,7 @@ const PrivacyPolicy = () => {
             </section>
 
             <section>
-                <h1 className="text-4xl font-semibold mt-10">Childrens Privacy</h1>
+                <h1 className="text-3xl sm:text-4xl font-semibold sm:text-bold mt-10">Childrens Privacy</h1>
                 <p className="mt-6 text-lg leading-relaxed">
                     Our Service does not cater to individuals under the age of 13. We do not knowingly gather personally
                     identifiable information from anyone under the age of 13. If you are a parent or guardian and you are
@@ -186,7 +186,7 @@ const PrivacyPolicy = () => {
                     information.
                 </p>
 
-                <h1 className="text-4xl font-semibold mt-14">Changes to this Privacy Policy</h1>
+                <h1 className="text-3xl sm:text-4xl font-semibold sm:text-bold mt-14">Changes to this Privacy Policy</h1>
                 <p className="mt-6 text-lg leading-relaxed">
                     Periodically, we may update our Privacy Policy. We advise you to regularly review this Privacy Policy
                     for any changes. Changes to this Privacy Policy are effective when they are published on this page.
@@ -194,7 +194,7 @@ const PrivacyPolicy = () => {
             </section>
 
             <section>
-                <h1 className="text-4xl font-bold mt-10">Contact Us</h1>
+                <h1 className="text-3xl sm:text-4xl font-semibold sm:text-bold mt-10">Contact Us</h1>
                 <p className="mt-4 text-lg leading-relaxed">
                     If you have questions about this Privacy Policy, you may contact us:
                 </p>

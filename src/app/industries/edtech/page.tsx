@@ -27,6 +27,7 @@ import improvedEfficiency from "@/app/industries/edtech/image/improvedEfficiency
 import ReliableSupport from "@/app/industries/edtech/image/ReliableSupport.svg"
 import modernizedElearning from "@/app/industries/edtech/image/modernizedElearning.svg"
 import  mobileLearningCard from "@/app/industries/edtech/image/mobileLearningCard.svg"
+import  Image from "@/app/industries/edtech/image/Image.svg"
 
 // white 
 import LMSdevelopmentWhite from "@/app/industries/edtech/image/LMSdevelopmentWhite.svg"
@@ -171,7 +172,7 @@ const EdTech = () => {
       <ServicePlatform
         title="Our EdTech Platform Services"
         subtitle="Learn how MindSees can improve learning outcomes and optimize operations with our all-encompassing suite of customized digital education solutions."
-        imageUrl="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/6cc9e570-ba59-43f8-5d0b-d358875aea00/w=3840,q=75"
+        imageUrl={Image}
         description="We specialize in modernizing e-learning software by incorporating the latest technologies, integrating third-party solutions, and migrating to robust infrastructures with enhanced architectural improvements. Our team delivers software modernization services that integrate cutting-edge advancements and feature upgrades to strengthen the digital capabilities of EdTech solutions."
         scrollItems={scrollItems}
         buttonText="Let's discuss"

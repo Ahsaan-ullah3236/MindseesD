@@ -27,6 +27,8 @@ import blockchainDist from "@/app/industries/entertainment/image/blockchainDist.
 import ContentDistribution from "@/app/industries/entertainment/image/ContentDistribution.svg"
 import AugumentedReality from "@/app/industries/entertainment/image/AugumentedReality.svg"
 import Analytics from "@/app/industries/entertainment/image/Analytics.svg"
+import Image from "@/app/industries/entertainment/image/Image.svg"
+
 
 // white  
 import vrExperienceWhite from "@/app/industries/entertainment/image/vrExperienceWhite.svg"
@@ -170,7 +172,7 @@ const Entertainment = () => {
       <ServicePlatform
         title="Our Entertainment Platform Services"
         subtitle="Explore how MindSees can elevate entertainment and optimize operations with our complete range of customized digital solutions."
-        imageUrl="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/3ad4bad1-7ec2-48fb-f3ec-d399fff1d900/w=3840,q=75"
+        imageUrl={Image}
         description="The entertainment landscape today thrives on innovation, with immersive virtual reality, personalized AI recommendations, streaming platforms, interactive broadcasting, and blockchain distribution, all making entertainment more engaging and accessible than ever."
         scrollItems={scrollItems}
         buttonText="Let's discuss"

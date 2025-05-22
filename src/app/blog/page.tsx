@@ -10,6 +10,7 @@ import Marketing from "@/app/blog/images/Marketing.svg"
 import Finance from "@/app/blog/images/Finance.svg"
 import Industries from "@/app/blog/images/Industries.svg"
 import Business from "@/app/blog/images/Business.svg"
+import newsletter from "@/app/blog/newsletter.svg"
 
 function Page() {
   const workName = [
@@ -138,7 +139,7 @@ function Page() {
             <button className="bg-[#00d280] text-white px-4 sm:px-6 py-3 sm:py-4 rounded-r-md sm:rounded-l-none cursor-pointer hover:bg-green-700">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                 strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 sm:w-6 sm:h-6">
-                <path strokeLinecap="round" strokeLinejoin="round"
+                 <path strokeLinecap="round" strokeLinejoin="round"
                   d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z" />
               </svg>
             </button>
@@ -150,7 +151,7 @@ function Page() {
         </div>
 
         <div className="flex justify-center md:justify-end lg:pr-28 mt-12 md:mt-0">
-          <Image src="https://kavelogics.com/blogs/newsletter-logo.svg" alt="img"
+          <Image src={newsletter} alt="img"
             width={230}
             height={200} />
         </div>

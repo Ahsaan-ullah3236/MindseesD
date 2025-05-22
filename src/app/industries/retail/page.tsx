@@ -27,6 +27,7 @@ import securityCompilence from "@/app/industries/retail/image/securityCompilence
 import inventoryManagment  from "@/app/industries/retail/image/inventoryManagment.svg"
 import customerExperience  from "@/app/industries/retail/image/customerExperience.svg"
 import ominChannelIntegration from "@/app/industries/retail/image/ominChannelIntegration.svg"
+import Image from "@/app/industries/retail/image/Image.svg"
 
 // white 
 import ecommerceDevelopmentWhite from "@/app/industries/retail/image/ecommerceDevelopmentWhite.svg"
@@ -169,7 +170,7 @@ const Retail = () => {
       <ServicePlatform
         title="Our Retail Platform Services"
         subtitle="Explore how MindSees can transform your retail operations with our tailored enterprise solutions, streamlining processes and driving growth."
-        imageUrl="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/2743efc8-f659-4d64-41b9-42cd51abca00/w=3840,q=75"
+        imageUrl={Image}
         description="Revolutionize your retail business with Kavelogics' cutting-edge tech solutions. Our expert team enhances efficiency, drives growth, and creates new opportunities. Partner with us to innovate and elevate your success, delivering unmatched value to your customers at every interaction."
         scrollItems={scrollItems}
         buttonText="Let's discuss"
