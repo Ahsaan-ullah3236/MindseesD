@@ -80,15 +80,15 @@ function Page() {
 
     return (
         <div className=''>
-            <div className="bg-[#002f46] py-20 spacing-secton">
+            <div className="bg-[#002f46] py-10 sm:py-20 spacing-secton">
                 <div className='grid grid-cols-1 md:grid-cols-2  '>
                     <div className=''>
-                        <div className="text-white  text-center md:text-left">
+                        <div className="text-white  md:text-left">
                             <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  mb-7">Let’s propel technology forward.</h1>
                             <p className="text-[19px] ">
                                 Discover exciting career opportunities at MindSees, where innovation and passion come together. Join our team to work with experts, tackle challenging projects, and make a real impact in technology.
                             </p>
-                            <div className="mt-13 flex justify-center md:justify-start">
+                            <div className="mt-13 flex  md:justify-start">
                                 <Link href="/careers/jobs">
                                     <button className="bg-[#00D280] cursor-pointer text-white font-semibold px-5 py-4 text-lg rounded-sm hover:bg-[#00b96a] transition-colors ">
                                         See job Opportunities
@@ -98,7 +98,7 @@ function Page() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex justify-center">
+                    <div className="flex justify-center mt-12">
                         <Image
                             src={image}
                             alt="About Section"
