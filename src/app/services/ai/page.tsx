@@ -169,7 +169,7 @@ const Ai = () => {
         Solution={SolutionData}
       />
 
-      <section className="py-16 text-center bg-white">
+      <section className=" py-8 sm:py-16 text-center bg-white">
         <h2 className="text-3xl sm:text-5xl font-semibold sm:text-bold text-[#013a54] mb-4 px-2">Our AI Development Process</h2>
         <p className="text-center mb-16 max-w-3xl mx-auto text-lg leading-[1.3] text-[#013a54] px-2">
           Our all-encompassing AI Development services are tailored to your specific needs, offering everything from bespoke AI solutions to seamless integration and continuous optimization. Partner with us to unlock AI’s full potential and maintain a competitive edge in today’s fast-paced landscape.

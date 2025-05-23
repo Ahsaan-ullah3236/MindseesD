@@ -70,9 +70,9 @@ const AboutPage = () => {
             </div>
 
 
-            <div className="py-30 mx-auto ">
+            <div className="py-16 sm:py-30 mx-auto ">
                 <div className="spacing-secton flex flex-col md:flex-row items-center justify-between gap-20 px-4">
-                    <div className="lg:w-1/2 w-full bg-[#d6f1ff] rounded-lg px-6 py-12 min-h-[290px] flex items-center">
+                    <div className="lg:w-1/2 w-full bg-[#d6f1ff] rounded-lg px-6 py-1 min-h-[290px] flex items-center">
                         <div className="flex flex-wrap justify-center items-center gap-6 w-full">
                             {awardImages.map((item, idx) => (
                                 <div
@@ -94,7 +94,7 @@ const AboutPage = () => {
 
                     {/* Left Content */}
                     <div className="text-center md:text-left md:w-1/2">
-                        <h2 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-[#002f46] mb-5">Who We Are?</h2>
+                        <h2 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-[#002f46] mb-5 -mt-8 sm:mt-0">Who We Are?</h2>
                         <h3 className="text-xl font-bold text-[#00D280] mb-8" style={{ lineHeight: '-2px' }}>
                             Transforming businesses through tailored software and expert-driven innovation.
                         </h3>
@@ -106,7 +106,7 @@ const AboutPage = () => {
             </div>
 
 
-            <div className="bg-[#023047] max-w-4xl 2xl:max-w-7xl mx-auto flex w-full rounded-2xl shadow-xl">
+            <div className="bg-[#023047] max-w-4xl 2xl:max-w-7xl mx-auto flex w-full rounded-2xl shadow-xl  -mt-8 sm:-mt-12">
                 <div className=" flex flex-col md:flex-row items-center gap-12 ">
                     {/* Left Text Content */}
                     <div className="md:w-2/2 text-white text-center md:text-left px-16 ">
@@ -129,10 +129,10 @@ const AboutPage = () => {
             </div>
 
 
-            <div className="main-container spacing-secton mx-auto flex justify-center items-center text-center py-12 px-4">
+            <div className="main-container spacing-secton mx-auto flex justify-center items-center text-center py-2 sm:py-12 px-4">
                 <div className="inner-container">
-                    <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-[#023047]  mt-14 mb-16">Our Values</h1>
-                    <div className="three-divs grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-[#023047] mt-8 sm:mt-14 mb-16">Our Values</h1>
+                    <div className="three-divs grid grid-cols-1 md:grid-cols-3 gap-12 -mt-6 sm:mt-0">
                         <div className="value-card p-6 bg-[#d6f1ff] pb-15 pt-10 rounded-sm shadow-sm">
                             <Image
                                 src={innovationIcon}
@@ -181,14 +181,11 @@ const AboutPage = () => {
 
             {/* fifth page div / */}
             <div className=''>
-
                 <div className="bg-[#002f46]  py-28 mt-16 spacing-secton">
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm ">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm  ">
                         <div className='col-span-2 flex items-center justify-center'>
                             <div>
-
-                                <h1 className="text-2xl sm:text-5xl font-semibold sm:text-bold  text-white  mb-6 capitalize" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                                <h1 className="text-2xl sm:text-5xl font-semibold sm:text-bold  text-white  mb-6 capitalize -mt-14 sm:-mt-0" style={{ fontFamily: 'Poppins, sans-serif' }}>
                                     Growing Stronger Every Day
                                 </h1>
 
@@ -198,8 +195,7 @@ const AboutPage = () => {
                                 </p>
                             </div>
                         </div>
-
-                        <div className="flex justify-center">
+                        <div className="w-full flex justify-center ml-6">
                             <Image
                                 src={GrowthGraph}
                                 alt="Growth Illustration"
@@ -210,8 +206,6 @@ const AboutPage = () => {
                         </div>
 
                     </div>
-
-
                 </div>
             </div>
 

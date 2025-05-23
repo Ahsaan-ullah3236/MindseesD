@@ -75,7 +75,7 @@ const Portfolio =()=> {
                         Explore the comprehensive and insightful case studies of our remarkably successful projects.
                     </p>
 
-                    <div className="inner-mian-container-6 grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
+                    <div className="inner-mian-container-6 grid grid-cols-1 md:grid-cols-2 gap-8  mt-8 sm:mt-20">
                         {paginatedData?.map((item, i) => (
                             <div className="first-container rounded-lg overflow-hidden group " key={i}>
                                 <Link href="/case-studies/opstionA" passHref>

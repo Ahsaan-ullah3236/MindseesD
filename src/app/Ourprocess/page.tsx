@@ -68,9 +68,9 @@ export default function Ourprocess() {
           />
         </div>
 
-        <div className="w-full col-span-2 bg-[#002f46] text-white p-6 sm:p-10 lg:p-12 flex flex-col justify-between">
+        <div className="w-full col-span-2 bg-[#002f46] text-white p-3 sm:p-10 lg:p-12 flex flex-col justify-between">
           <div>
-            <div className='text-3xl sm:text-4xl font-semibold sm:text-bold text-white mt-10 md:mt-20'>Our Process</div>
+            <div className='text-3xl sm:text-4xl font-semibold sm:text-bold text-white mt-4 md:mt-16'>Our Process</div>
             <h2 className="text-md sm:text-lg mt-4 text-white mb-12">
               See how we build innovative software solutions and high quality products.
             </h2>

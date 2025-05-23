@@ -118,7 +118,7 @@ export default function Innovation() {
     <section className="min-h-screen flex justify-center items-center bg-white px-4 sm:px-6 py-6 md:py-12">
       <div className="w-full ">
         {/* Heading */}
-        <div className='text-center text-3xl sm:text-4xl font-semibold sm:text-bold mt-10 md:mt-20'>
+        <div className='text-center text-3xl sm:text-4xl font-semibold sm:text-bold mt-6 md:mt-20'>
           Technologies We Use for Innovation
         </div>
         <p className='text-center mt-7 mb-22 text-xl '>
@@ -127,7 +127,7 @@ export default function Innovation() {
         </p>
 
         {/* Tabs and Rows */}
-        <div className="bg-[#d6f1ff] rounded-lg max-w-4xl mx-auto pt-12 pb-16 px-4 lg:px-20 mb-20">
+        <div className="bg-[#d6f1ff] rounded-lg max-w-4xl mx-auto pt-8 pb-16 px-4 lg:px-20 mb-20 -mt-12 sm:mt-0">
           {/* Tab Buttons */}
           <div className="flex justify-center mb-8">
             <div className="bg-[#c0edf2] p-1 rounded-full border-2 border-[#00d280] inline-flex w-full justify-around">

@@ -88,9 +88,9 @@ function Page() {
   return (
     <div ref={sectionRef} className="spacing-secton mx-auto">
     <div className="">
-      <div className="lg:grid lg:grid-cols-2 lg:gap-12 mb-15">
+      <div className="lg:grid lg:grid-cols-2  lg:gap-12">
         {/* Left Content */}
-        <div className="mb-10 lg:mb-10">
+        <div className="sm:mb-8 -mt-18 sm:mt-0 lg:mb-10">
           <h1 className="text-xl md:text-3xl font-extrabold text-gray-900 mb-6">
             Why MindSees is your top choice?
           </h1>
@@ -99,7 +99,7 @@ function Page() {
           At MindSees, we blend innovation, expertise, and a customer-first approach to deliver tailored software solutions that drive success. Focused on quality and results, our team is dedicated to helping your business grow through cutting-edge technology, strategic SEO, and impactful digital marketing. At MindSees, your vision becomes our mission, and we’re committed to turning your ideas into powerful digital experiences.
           </p>
           
-          <div className="mt-20 text-black">
+          <div className="mt-8 sm:mt-20 text-black">
             <h2 className="text-lg font-bold mb-4 italic">Ready to Transform Your Business? Contact Us Today for a Free Consultation</h2>
             <Link href="/contact-us">
             <button className="cursor-pointer text-[#00d280] py-2 font-bold text-lg transition duration-200">
