@@ -22,7 +22,7 @@ import cloudIntergration from "@/app/industries/business/image/cloudIntergration
 import streamline from "@/app/industries/business/image/streamline.svg"
 import HolisticTransformation from "@/app/industries/business/image/HolisticTransformation.svg"
 import ActionableSight from "@/app/industries/business/image/ActionableSight.svg"
-import efficientDelivery from "@/app/industries/business/image/efficientDelivery.svg"
+import efficientDelivery from "@/app/industries/business/image/EfficientDelivery.svg"
 import StrategicProtection from "@/app/industries/business/image/StrategicProtection.svg"
 import competativeEdge from "@/app/industries/business/image/competativeEdge.svg"
 import Image from "@/app/industries/business/image/Image.svg"
