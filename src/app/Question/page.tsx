@@ -49,8 +49,8 @@ const Page = () => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-10 -mt-5">
-      <div className='text-center text-3xl sm:text-4xl font-semibold sm:text-bold  mb-15'>
+    <div className="max-w-3xl mx-auto px-4 py:6 sm:py-10 -mt-16">
+      <div className='text-center text-3xl sm:text-4xl font-semibold sm:text-bold mb-8  sm:mb-15'>
         Frequently Asked Questions
       </div>
       {faqs.map((faq, index) => {
@@ -62,14 +62,14 @@ const Page = () => {
             className="bg-white border border-gray-100 rounded-lg shadow-sm mb-4 transition-all duration-300"
           >
             <button
-              className="flex justify-between cursor-pointer items-center w-full p-4 py-8 focus:outline-none"
+              className="flex justify-between cursor-pointer items-center w-full p-6 py-8 focus:outline-none"
               onClick={() => toggleFAQ(index)}
             >
-              <span className="text-lg font-bold text-black text-left">
+              <span className="text-lg font-bold text-black text-left max-[640px]:text-md max-w-[90%] break-words">
                 {faq.question}
               </span>
               <ChevronDown
-                className={`w-6 h-6 text-white bg-[#00d280] rounded-xl transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
+                className={`w-5 h-5 text-white bg-[#00d280] rounded-xl transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
               />
             </button>
 

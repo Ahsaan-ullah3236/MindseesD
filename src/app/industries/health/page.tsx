@@ -192,7 +192,9 @@ const Health = () => {
         <Stories />
 
       </div>
-      <LastBusinessesSection />
+     <div className="-mt-12 sm:-mt-12">
+       <LastBusinessesSection />
+     </div>
 
 
 

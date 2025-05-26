@@ -7,7 +7,7 @@ import USAOffice from "@/app/globalPresance/image/USAOffice.svg"
 
 const GlobalPressance = () => {
   return (
-    <div className="spacing-secton  mx-auto p-6 mt-16 pb-20">
+    <div className="spacing-secton  mx-auto p-6 mt-0 sm:mt-16 pb-20">
       <div className="pt-8 pb-16">
         <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-gray-800 text-center mb-3">Our Global Presence</h1>
         <p className="text-black-200 text-[17px] text-center">
@@ -15,9 +15,9 @@ const GlobalPressance = () => {
         </p>
       </div>
       <div className="grid md:grid-cols-3 gap-8">
-        <div className="space-y-8 ">
-          <div className="pt-6">
-            <h2 className="font-semibold text-black-700 mb-2" style={{ fontSize: "18px" }}>We Are Just An Email Away!</h2>
+        <div className="space-y-0 sm:space-y-8 ">
+          <div className="pt-0 sm:pt-6">
+            <h2 className="font-semibold text-black-700 mb-0 sm:mb-2" style={{ fontSize: "18px" }}>We Are Just An Email Away!</h2>
             <a href="mailto:info@kavelogies.com" className=" text-blue-400 hover:text-blue-500" style={{ fontSize: "15px" }}>
               info@mindsees.com
             </a>

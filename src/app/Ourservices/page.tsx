@@ -71,8 +71,8 @@ export default function Ourservices() {
 
   return (
     <div className=" mx-auto">
-      <div className='spacing-secton pt-16 py-18 w-full'>
-        <h2 className='text-center text-3xl sm:text-4xl font-bold mb-10'>Our Services</h2>
+      <div className='spacing-secton pt-14 sm:pt-16 py-12 sm:py-18 w-full'>
+        <h2 className='text-center text-3xl sm:text-4xl font-bold mb-8 sm:mb-10'>Our Services</h2>
         <p className='flex text-center max-w-5xl mx-auto justify-center text-xl'>Start your digital transformation with our all-in-one solutions. From cutting-edge development and user-centric design to results-driven marketing, we empower businesses with innovation, enhancing your digital presence and performance.</p>
       </div>
       <div className="flex flex-col md:flex-row w-full  rounded-md overflow-hidden  spacing-secton mt-6 mb-15 md:mb-30">

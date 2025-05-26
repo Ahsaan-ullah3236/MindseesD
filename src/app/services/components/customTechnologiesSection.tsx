@@ -27,7 +27,7 @@ export const TechnologyGrid: React.FC<TechnologyGridProps> = ({
     <div>
 
 
-      <div className={`${bgColor} ${textColor} pt-16 pb-85`}>
+      <div className={`${bgColor} ${textColor} pt-16 pb-40 sm:pb-85 -mt-12 sm:-mt-0` }>
         <div className="max-w-4xl mx-auto px-4 pt-4 text-center">
           <h2 className="text-3xl sm:text-5xl font-semibold sm:text-bold mb-18">{title}</h2>
           

@@ -15,8 +15,8 @@ type BenefitsSectionProps = {
 
 export default function BenefitsCard({ heading, benefits }: BenefitsSectionProps) {
   return (
-    <div className="spacing-secton bg-[#d6f1ff]  -mt-[120px] py-16">
-      <div className="text-3xl sm:text-5xl font-semibold sm:text-bold mb-16  text-center"style={{lineHeight:"42px"}}>{heading}</div>
+    <div className="spacing-secton bg-[#d6f1ff]  -mt-[120px] py-10 sm:py-16">
+      <div className="text-3xl sm:text-5xl font-semibold sm:text-bold mb-8 sm:mb-16  text-center"style={{lineHeight:"42px"}}>{heading}</div>
       <div className="three-divs  grid grid-cols-1 md:grid-cols-3 gap-5">
         {benefits.map((benefit, index) => (
           <div key={index} className="value-card p-6 bg-[#ffffff] pb-18 pt-5 hover:shadow-lg">

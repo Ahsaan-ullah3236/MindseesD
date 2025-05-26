@@ -58,17 +58,17 @@ function Herosection() {
          <div className="grid grid-cols-1 md:grid-cols-3  gap-8 text-sm  ">
           <div className='col-span-2'>
             <div className="text-3xl sm:text-4xl  font-bold mb-4 ">
-                <span className="w-[100px] h-0 border-b-[38px] absolute border-b-[#d6f1ff]  border-r-[13px] border-r-transparent">Build</span>  
+                <span className="w-[90px] sm:w-[100px] h-0  border-b-[36px] sm:border-b-[38px] absolute border-b-[#d6f1ff]  border-r-[13px] border-r-transparent">Build</span>  
                 <span className='relative ml-24'>Your Business through </span> 
             </div>
             <div className="text-[#00D280] text-3xl sm:text-5xl font-semibold sm:text-bold  font-aleo leading-tight h-[66px] text-left">
               {displayText}
             </div>
-            <p className="text-lg md:text-xl mt-2 md:mt-8 text-black">
+            <p className="text-lg md:text-xl  sm:mt-8 text-black -mt-2">
             Empower your digital journey with our custom-built software solutions. <br/>See how we can transform your online presence and fuel long-term growth for your business.
         </p>
         
-        <div className="flex  gap-1 pt-23">
+        <div className="flex  gap-1 pt-20">
           <Link href={"/contact-us"}>
           <button className="bg-[#00d280] cursor-pointer  text-white  font-medium text-sm md:text-lg py-4 px-4 rounded-md transition-colors duration-300">
             Book Consultation

@@ -36,7 +36,7 @@ const CustomBanner: React.FC<CustomBannerProps> = ({
         </div>
 
         <div className="flex justify-center">
-          <Image src={image} alt="Illustration" width={400} height={400} className="h-[300px] mt-5" />
+          <Image src={image} alt="Illustration" width={400} height={400} className="h-[300px] w-[300] mt-5" />
         </div>
       </div>
     </div>

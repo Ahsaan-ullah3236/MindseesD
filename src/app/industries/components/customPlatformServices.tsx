@@ -43,10 +43,10 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
 
   return (
     <div className=" mx-auto spacing-secton">
-      <div className="text-3xl sm:text-5xl font-semibold sm:text-bold text-gray-900 text-center mt-30">{title}</div>
+      <div className="text-3xl sm:text-5xl font-semibold sm:text-bold text-gray-900 text-center mt-12 sm:mt-30">{title}</div>
       <div className="text-lg text-center mt-5">{subtitle}</div>
       
-      <div className=" mx-auto py-18">
+      <div className=" mx-auto py-6 sm:py-18">
         <div className="lg:grid lg:grid-cols-2 lg:gap-12">
           {/* Left Content */}
           <div className="mb-10 lg:mb-0">
@@ -80,7 +80,7 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
             <div className="h-[90vh] 2xl:h-[50vh] overflow-y-auto scroll-smooth left-scrollbarGray pl-4 space-y-8">
               <div className="grid sm:grid-cols-2 gap-6">
                 {/* Left Column */}
-                <div className="mt-14">
+                <div className="mt-0 sm:mt-14 ">
                   {leftItems.map((item, index) => (
                     <div 
                       key={`left-${index}`}
@@ -92,6 +92,10 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
                         cursor: 'pointer',
                       }}
                       onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = cardHoverBgColor;
+                        e.currentTarget.style.color = textHoverColor;
+                      }}
+                      onClick={(e) => {
                         e.currentTarget.style.backgroundColor = cardHoverBgColor;
                         e.currentTarget.style.color = textHoverColor;
                       }}
@@ -160,7 +164,7 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
                         className="w-13 h-13 mx-auto block group-hover:hidden" 
                       />
                       <h3 
-                        className="font-bold text-black-800 mb-4 text-center mt-4" 
+                        className="font-bold text-black-800 mb-4 text-center " 
                         style={{lineHeight:'24px', fontSize:'19px'}}
                       >
                         {item.title}
