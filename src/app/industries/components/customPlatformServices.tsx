@@ -32,10 +32,6 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
   scrollItems,
   buttonText = "Let's discuss",
   buttonColor = "#00d280",
-  cardBgColor = "#d6f1ff",
-  cardHoverBgColor = "#0575ad",
-  cardBorderColor = "#0575ad",
-  textHoverColor = "white"
 }) => {
   // Split scroll items into two columns
   const halfLength = Math.ceil(scrollItems.length / 2);
@@ -84,6 +80,7 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
                 <div className="mt-0 sm:mt-14 ">
                   {leftItems.map((item, index) => (
                     <div 
+                    key={index}
                       
                       className={`bg-[#d6f1ff]  p-5 group  rounded-xl my-4 border-2  border-[#0575ad]`}
                       // style={{
@@ -133,6 +130,7 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
                 <div className="">
                   {rightItems.map((item, index) => (
                     <div 
+                    key={index}
                       
                       className={` p-5 bg-[#d6f1ff] group rounded-xl my-4 border-2 border-[#0575ad]`}
                       // style={{
