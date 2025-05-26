@@ -18,9 +18,9 @@ const stats: Stat[] = [
 
 export default function Clientsline() {
   return (
-    <div className="mx-auto ">
+    <div className="mx-auto -mt-6 sm:-mt-0  ">
     <div className="bg-gradient-to-r from-[#002D47] via-[#0072B5] to-[#002D47] text-white py-10 mb-30 md:mb-30 ">
-      <div className="spacing-secton px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div className="spacing-secton px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center ">
         {stats.map((stat, index) => (
           <div key={index}>
             <h2 className="text-lg md:text-3xl font-bold text-green-400">

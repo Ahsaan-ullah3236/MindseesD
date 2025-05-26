@@ -19,7 +19,7 @@ const CustomServiceDetail: React.FC<CustomBannerProps> = ({
   image,
 }) => {
   return (
-    <div className="py-20 spacing-secton mx-auto">
+    <div className=" py-8 sm:py-20 spacing-secton mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
         <div>
           <div className="text-3xl sm:text-5xl font-semibold sm:text-bold mb-4">
@@ -30,12 +30,12 @@ const CustomServiceDetail: React.FC<CustomBannerProps> = ({
         </div>
 
         <div className="flex justify-center md:justify-end">
-          <Image src={image} alt="Illustration" width={400} height={400} className="h-[300px] w-[80vw] md:w-[42vw]  object-contain md:mt-8" />
+          <Image src={image} alt="Illustration" width={400} height={400} className="h-[300px] w-[80vw] md:w-[42vw]  object-contain md:mt-8 -mt-6 sm:-mt-0" />
         </div>
       </div>
         <div className="flex justify-center w-full">
       <Link href={buttonLink}>
-            <button className="bg-[#00d280] mt-22 mb-14 cursor-pointer text-white font-medium text-sm md:text-lg py-4 px-4 rounded-md transition-colors duration-300">
+            <button className="bg-[#00d280] mt-2 sm:mt-22 mb-14 cursor-pointer text-white font-medium text-sm md:text-lg py-4 px-4 rounded-md transition-colors duration-300">
               {buttonText}
             </button>
           </Link>

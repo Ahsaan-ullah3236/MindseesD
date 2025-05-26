@@ -65,8 +65,8 @@ export default function SuccessStoriesPage() {
 
   return (
     <div className=' mx-auto'>
-      <div className="text-3xl sm:text-4xl font-semibold sm:text-bold text-black  text-center" style={{ lineHeight: "42px" }}> Our Success Stories</div>
-      <div className="text-[18px] text-black max-w-3xl mx-auto mb-10  mt-8 text-center px-1" style={{ lineHeight: "22px" }}>Read testimonials from our satisfied clients who have experienced our outstanding services. See how we have helped businesses like yours succeed and enhance their online presence.</div>
+      <div className="text-3xl sm:text-4xl font-semibold sm:text-bold text-black  text-center  -mt-6 sm:-mt-0" style={{ lineHeight: "42px" }}> Our Success Stories</div>
+      <div className="text-[18px] text-black max-w-3xl mx-auto mb-10  mt-6 text-center px-1" style={{ lineHeight: "22px" }}>Read testimonials from our satisfied clients who have experienced our outstanding services. See how we have helped businesses like yours succeed and enhance their online presence.</div>
       <div className="relative   flex items-center justify-center spacing-secton px-2 md:px-4">
         <div className="w-full mx-auto mb-20">
           <div className="bg-[#023047] rounded-2xl overflow-hidden">
@@ -75,7 +75,7 @@ export default function SuccessStoriesPage() {
               {/* Slides */}
               <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
                 {testimonials.map((testimonial) => (
-                  <div key={testimonial.id} className="w-full flex-shrink-0 p-10">
+                  <div key={testimonial.id} className="w-full flex-shrink-0 mt-2 p-4 sm:p-10">
                     <div className="grid md:grid-cols-2 gap-10">
                       {/* Left column */}
                       <div>

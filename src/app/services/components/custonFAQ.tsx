@@ -29,8 +29,8 @@ export const FaqAccordion: React.FC<FaqAccordionProps> = ({
   };
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-10 pb-30">
-      <div className="text-center text-3xl sm:text-5xl font-semibold sm:text-bold mt-12 md:mt-10 mb-17">
+    <div className="max-w-3xl mx-auto px-4 py-2 sm:py-10 pb-12 sm:pb-30">
+      <div className="text-center text-3xl sm:text-5xl font-semibold sm:text-bold mt-12 md:mt-10 mb-10">
         {title}
       </div>
 
@@ -38,15 +38,15 @@ export const FaqAccordion: React.FC<FaqAccordionProps> = ({
         const isOpen = openIndex === index;
 
         return (
-          <div
+          <div 
             key={index}
-            className="bg-white border border-gray-100 rounded-lg shadow-sm mb-4 transition-all duration-300"
+            className="bg-white border border-gray-100 rounded-lg shadow-sm mb-4 transition-all duration-300 "
           >
             <button
               className="flex justify-between cursor-pointer items-center w-full p-4 py-8 focus:outline-none"
               onClick={() => toggleFAQ(index)}
             >
-              <span className="text-lg font-bold text-black text-left">
+              <span className="text-lg font-bold text-black text-left max-[640px]:text-md max-w-[90%] break-words ">
                 {faq.question}
               </span>
               <ChevronDown
