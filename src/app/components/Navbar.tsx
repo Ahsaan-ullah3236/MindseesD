@@ -9,6 +9,9 @@ const Navbar = () => {
   const [mobileExpandedMenu, setMobileExpandedMenu] = useState<string | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
+
+  console.log("hoveredMenu",hoveredMenu)
+
   const menuItem = [{
     item: "AI Development",
     link: "/services/ai"
@@ -113,7 +116,7 @@ const Navbar = () => {
                 <div className="absolute top-5 left-0 bg-[#ffffff] shadow-custom p-2 rounded-lg mt-2 pt-3 w-67 z-10">
                   {menuItem.map((item, i) => (
 
-                    <Link key={i} href={item?.link} className="block hover:bg-[#d6f1ff] pl-3 pr-3 pt-2 pb-2 rounded-lg text-sm ">{item?.item}</Link>
+                    <Link key={i} href={item?.link} onClick={() => setHoveredMenu(null)} className="block hover:bg-[#d6f1ff] pl-3 pr-3 pt-2 pb-2 rounded-lg text-sm ">{item?.item}</Link>
                   ))}
                 </div>
               </>
