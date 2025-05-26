@@ -88,7 +88,7 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
                       style={{
                         backgroundColor: cardBgColor,
                         borderColor: cardBorderColor,
-                        transition: 'background-color',
+                        // transition: 'background-color',
                         cursor: 'pointer',
                       }}
                       onMouseEnter={(e) => {
@@ -137,10 +137,14 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
                       style={{
                         backgroundColor: cardBgColor,
                         borderColor: cardBorderColor,
-                        transition: 'background-color',
+                        // transition: 'background-color',
                         cursor: 'pointer',
                       }}
-                      onMouseEnter={(e) => {
+                       onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = cardHoverBgColor;
+                        e.currentTarget.style.color = textHoverColor;
+                      }}
+                      onClick={(e) => {
                         e.currentTarget.style.backgroundColor = cardHoverBgColor;
                         e.currentTarget.style.color = textHoverColor;
                       }}
@@ -148,6 +152,14 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
                         e.currentTarget.style.backgroundColor = cardBgColor;
                         e.currentTarget.style.color = 'inherit';
                       }}
+                      // onMouseEnter={(e) => {
+                      //   e.currentTarget.style.backgroundColor = cardHoverBgColor;
+                      //   e.currentTarget.style.color = textHoverColor;
+                      // }}
+                      // onMouseLeave={(e) => {
+                      //   e.currentTarget.style.backgroundColor = cardBgColor;
+                      //   e.currentTarget.style.color = 'inherit';
+                      // }}
                     >
                       <Image 
                         src={item.imageDark} 
