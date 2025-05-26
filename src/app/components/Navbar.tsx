@@ -207,7 +207,8 @@ const Navbar = () => {
                     key={i}
                     href={item?.link}
                     className="block py-1 hover:text-[#00d280]"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={() => {setMobileMenuOpen(false),setMobileExpandedMenu(null)}}
+                    
                   >
                     <div className="text-sm">
                       {item?.item}
@@ -247,7 +248,7 @@ const Navbar = () => {
                     key={i}
                     href={item?.link}
                     className="block py-1 hover:text-[#00d280]"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={() =>  {setMobileMenuOpen(false),setMobileExpandedMenu(null)}}
                   >
                     <div className="text-sm"> {item?.item}</div>
                   </Link>
