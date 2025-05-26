@@ -111,6 +111,7 @@ export default function Footer() {
               <li><Link href="/industries/business"  className='cursior pointer hover:underline'>Business </Link></li>
               <li><Link href="/industries/communication"  className='cursior pointer hover:underline'>Communication </Link></li>
               <li><Link href="/industries/entertainment"  className='cursior pointer hover:underline'>Entertainment </Link></li>
+              <li><Link href="/industries/retail"  className='cursior pointer hover:underline'>Retail </Link></li>
             </ul>
           </div>
 
