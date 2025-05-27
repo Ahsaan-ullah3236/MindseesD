@@ -15,8 +15,8 @@ type SolutionSectionProps = {
 
 export default function CustomWhyChoose({ heading, CustomWhyChoose }: SolutionSectionProps) {
   return (
-    <div className="spacing-secton pb-20 mx-auto ">
-      <div className="text-3xl sm:text-5xl font-semibold sm:text-bold text-[#013a54] max-w-2xl mx-auto  text-center mb-20"style={{lineHeight:"50px"}}>{heading}<span className="ml-2 text-[#00d280]" >?</span></div>
+    <div className="spacing-secton pb-20 mx-auto -mt-16 sm:-mt-0 ">
+      <div className="text-3xl sm:text-5xl font-semibold sm:text-bold text-[#013a54] max-w-2xl mx-auto  text-center mb-12 sm:mb-20"style={{lineHeight:"50px"}}>{heading}<span className="ml-2 text-[#00d280]" >?</span></div>
      
       <div 
             className="flex flex-wrap justify-center ">

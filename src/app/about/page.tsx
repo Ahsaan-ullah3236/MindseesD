@@ -110,7 +110,7 @@ const AboutPage = () => {
                 <div className=" flex flex-col md:flex-row items-center gap-12 ">
                     {/* Left Text Content */}
                     <div className="md:w-2/2 text-white text-center md:text-left px-16 ">
-                        <h2 className="text-3xl sm:text-5xl font-semibold sm:text-bold  mb-5 mt-4">Our Mission</h2>
+                        <h2 className="text-3xl sm:text-5xl font-semibold sm:text-bold  mb-5 mt-8">Our Mission</h2>
                         <p className="text-[16px] md:text-[19px] pb-6" style={{ lineHeight: "25px" }}>
                             We help companies and organizations accelerate growth through innovative technology by connecting them with passionate, experienced engineers and solution experts.
                         </p>

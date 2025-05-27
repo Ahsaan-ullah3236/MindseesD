@@ -92,7 +92,7 @@ const CaseStudy = () => {
         </div>
       </div>
       <div className="spacing-secton -mt-20 flex flex-col md:flex-row rounded-lg overflow-hidden w-full">
-        <div className="flex bg-[#d4f0ff] md:rounded-l-xl w-full pr-5 pt-7 pb-5 pt-5 gap-8">
+        <div className="flex bg-[#d4f0ff] md:rounded-l-xl w-full pr-5  pb-5 pt-5 gap-8">
 
           <div className="flex justify-around w-[40%]">
             <div className="sm:pl-8">
@@ -119,7 +119,7 @@ const CaseStudy = () => {
         <div className="bg-[#00d084] md:rounded-r-xl text-white flex flex-col justify-center items-start md:items-center px-6 py-8 md:w-1/3">
           <h2 className="text-xl font-bold mb-2">Have an Idea?</h2>
           <Link href="/contact-us">
-          <button className="flex items-center cursor-pointer gap-2 font-medium hover:underline">
+          <button className="flex items-center cursor-pointer gap-2 font-medium hover:underline focus:underline">
             Talk to our experts <ArrowRight className="w-5 h-5" />
           </button>
           </Link>
