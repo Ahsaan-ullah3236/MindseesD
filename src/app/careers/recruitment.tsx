@@ -73,12 +73,12 @@ function Recruitment() {
 
   return (
     <div ref={sectionRef} className="spacing-secton">
-    <div className=" mx-auto">
+    <div className=" mx-auto -mb-12 sm:-mb-0">
       <div className="md:grid grid-cols-2 lg:gap-14 ">
         <div className="flex justify-center items-center">
 
         <div className="">
-          <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-white mb-6">
+          <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-white mb-6 -mt-12 sm:-mt-0">
           Our Recruitment Process
           </h1>
           

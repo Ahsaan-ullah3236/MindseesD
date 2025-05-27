@@ -14,7 +14,7 @@ const Design = () => {
   ]
   return (
     <>
-      <div className="relative w-full pt-30 pb-40 bg-[#003252] overflow-hidden spacing-secton">
+      <div className="relative w-full pt-20 sm:pt-30  pb-30 sm:pb-40 bg-[#003252] overflow-hidden spacing-secton">
         <div className=" bg-blue/2000 flex flex-col justify-center items-center text-center px-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             MindSees Industries Blogs
@@ -25,7 +25,7 @@ const Design = () => {
 
 
         </div>
-        <div className="search-bar flex mt-12 sm:mt-12  items-center mx-auto md:max-w-xl w-full ">
+        <div className="search-bar flex mt-6 sm:mt-12  items-center mx-auto md:max-w-xl w-full ">
           <div className="relative">
             <button
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -55,17 +55,16 @@ const Design = () => {
           <input
             type="text"
             placeholder="What are you looking for?"
-            className="flex-grow px-2 sm:px-6 md:px-8 py-[15] sm:py-2.5 text-gray-700 text-[12px] sm:text-lg bg-white focus:outline-none"
+            className="flex-grow px-4 sm:px-6 md:px-8 py-[15] sm:py-2.5 text-gray-700 text-[12px] sm:text-lg bg-white focus:outline-none"
           />
 
-          <button className="bg-[#00d280] text-white flex items-center justify-center px-1 md:px-4 py-3 sm:py-3 md:py-3 flex-shrink-0 rounded-r-md">
+          <button className="bg-[#00d280] text-white flex items-center justify-center px-3 md:px-4 py-3 sm:py-3 md:py-3 flex-shrink-0 rounded-r-md">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
               strokeWidth={3} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round"
                 d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z" />
             </svg>
           </button>
-
         </div>
       </div>
       <div className='spacing-secton'>
@@ -103,7 +102,7 @@ const Design = () => {
           </div>
         </div>
       </div>
-      <div className="spacing-secton mt-24">
+      <div className="spacing-secton mt-10 sm:mt-24">
         <div className="my-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
           {UploadArticles?.map((item, i) => (
@@ -156,7 +155,7 @@ const Design = () => {
 
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 my-22 spacing-secton bg-[linear-gradient(90deg,#055c88_0%,#01131c_100%)] py-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 my-10 sm:my-22 spacing-secton bg-[linear-gradient(90deg,#055c88_0%,#01131c_100%)] py-10">
         <div className="pr-3 sm:pr-0 ">
           <h1 className="text-3xl sm:text-4xl font-semibold sm:text-bold text-white">
             High-quality articles, delivered every week.
@@ -187,9 +186,9 @@ const Design = () => {
             height={200} />
         </div>
       </div>
-      <div className="spacing-secton mt-34">
+      <div className="spacing-secton mt-12 sm:mt-34">
         <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-black text-center  leading-[100%]">Most Read Articles</h1>
-        <div className="my-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="my-10 sm:my-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
           {UploadArticles?.map((item, i) => (
             <div

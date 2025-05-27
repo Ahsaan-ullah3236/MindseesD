@@ -107,7 +107,7 @@ function Page() {
           </div>
         </div>
       </div>
-      <div className="spacing-secton grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16 py-18 gap-5 ">
+      <div className="spacing-secton grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 sm:mt-16 py-2 sm:py-18 gap-5 ">
         {workName?.map((item, i) => (
           <div key={i}>
             <div className="bg-[#d6f1ff] min-h-[345px] md:min-h-[300px] px-9 pt-9 pb-9 group cursor-pointer ">
@@ -125,7 +125,7 @@ function Page() {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 my-22 spacing-secton bg-[linear-gradient(90deg,#055c88_0%,#01131c_100%)] py-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 my-10 sm:my-22 spacing-secton bg-[linear-gradient(90deg,#055c88_0%,#01131c_100%)] py-10">
         <div className="pr-3 sm:pr-0 ">
           <h1 className="text-3xl sm:text-4xl font-semibold sm:text-bold  text-white">
             High-quality articles, delivered every week
@@ -157,9 +157,9 @@ function Page() {
         </div>
       </div>
 
-      <div className="spacing-secton mt-34">
+      <div className="spacing-secton mt-10 sm:mt-34">
         <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-black text-center  leading-[100%]">Recently Uploaded Articles</h1>
-        <div className="my-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="my-8 sm:my-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-8">
 
           {UploadArticles?.map((item, i) => (
             <div
@@ -218,9 +218,9 @@ function Page() {
         </div>
       </div>
 
-      <div className="spacing-secton mt-34">
+      <div className="spacing-secton mt-12 sm:mt-34">
         <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-black text-center  leading-[100%]">Most Read Articles</h1>
-        <div className="mt-16 mb-34 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="mt-8 sm:mt-16 mb-34 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
           {MostReadArticles?.map((item, i) => (
             <div
@@ -279,7 +279,9 @@ function Page() {
         </div>
       </div>
 
-      <LastBusinessesSection />
+     <div className="-mt-24 sm:-mt-0">
+       <LastBusinessesSection />
+     </div>
 
     </>
   );
