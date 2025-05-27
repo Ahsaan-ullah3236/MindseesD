@@ -87,7 +87,7 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
                       //   backgroundColor: cardBgColor,
                       // //  borderColor: cardBorderColor,
                       //   transition: 'background-color',
-                      //   cursor: 'pointer',
+                      // //  cursor: 'pointer',
                       // }}
                       // onMouseEnter={(e) => {
                       //   e.currentTarget.style.backgroundColor = cardHoverBgColor;
