@@ -85,9 +85,9 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
                       className={`bg-[#d6f1ff]  p-5 group  rounded-xl my-4 border-2  border-[#0575ad]`}
                       // style={{
                       //   backgroundColor: cardBgColor,
-                      //   borderColor: cardBorderColor,
+                      // //  borderColor: cardBorderColor,
                       //   transition: 'background-color',
-                      //   cursor: 'pointer',
+                      // //  cursor: 'pointer',
                       // }}
                       // onMouseEnter={(e) => {
                       //   e.currentTarget.style.backgroundColor = cardHoverBgColor;
