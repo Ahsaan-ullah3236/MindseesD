@@ -68,7 +68,7 @@ export default function Ourprocess() {
           />
         </div>
 
-        <div className="w-full col-span-2 bg-[#002f46] text-white p-3 sm:p-10 lg:p-12 flex flex-col justify-between">
+        <div className="w-full col-span-2 bg-[#002f46] text-white p-3 sm:p-10 lg:p-12 flex flex-col justify-between ">
           <div>
             <div className='text-3xl sm:text-4xl font-semibold sm:text-bold text-white mt-4 md:mt-16'>Our Process</div>
             <h2 className="text-md sm:text-lg mt-4 text-white mb-12">
@@ -150,7 +150,7 @@ export default function Ourprocess() {
             </div>
           </div>
           <Link href={"/contact-us"}>
-            <button className="px-4 py-5 cursor-pointer w-30 bg-[#00d280] mt-20 mb-16 text-white rounded-lg font-bold transition-colors duration-300 shadow-md">
+            <button className="px-4 py-5 cursor-pointer w-30 bg-[#00d280] mt-12 sm:mt-20 mb-10 sm:mb-16 text-white rounded-lg font-bold transition-colors duration-300 shadow-md">
               Lets Chat
             </button>
           </Link>

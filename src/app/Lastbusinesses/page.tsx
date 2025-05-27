@@ -7,7 +7,7 @@ import background from "@/app/Lastbusinesses/image/background.svg"
 
 const LastBusinessesSection = () => {
   return (
-    <section className="bg-no-repeat bg-center spacing-secton mx-auto mt-2 md:mt-25">
+    <section className="bg-no-repeat bg-center spacing-secton mx-auto mt-10 sm:mt-25">
       {/* Centered Container */}
       <div className="w-full rounded-tl-3xl rounded-tr-3xl p-8 md:pl-12 md:pr-12 flex flex-col md:flex-row items-center gap-8 md:gap-12  bg-calltoaction_mobile md:bg-calltoaction_tablet lg:bg-calltoaction_desktop bg-no-repeat bg-cover"  style={{
         backgroundImage: `url(${background.src})`,
@@ -15,7 +15,7 @@ const LastBusinessesSection = () => {
         
         {/* Right Content */}
         <div className="flex-1 space-y-6 text-center md:text-left">
-          <h2 className="text-xl md:text-4xl font-bold text-white">
+          <h2 className="text-2xl md:text-4xl font-bold text-white">
           Ready to take your business to the next level<span className='text-[#00b96a] ml-1 '>?</span>
           </h2>
           <p className="text-lg text-white">
