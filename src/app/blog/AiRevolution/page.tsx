@@ -102,13 +102,13 @@ const AiRevolution = () => {
           <div className="first pr-2 pt-4 -mt-12 sm:-mt-0">
             <div className="flex flex-wrap items-center justify-start space-x-2 mt-4 text-center md:text-left">
               <Link href="/blog/Design">
-                <span className="text-sm font-semibold text-[#055C88] cursor-pointer hover:underline">
+                <span className="text-sm font-semibold text-[#055C88] cursor-pointer hover:underline focus:underline">
                   Finance
                 </span>
               </Link>
               <span className="text-gray-600 text-base hidden md:inline"><ChevronRight className='h-5 w-5 text-[#055C88]' /></span>
               <Link href="/blog/Design">
-                <span className="text-[11px] font-semibold text-[#055C88] cursor-pointer  hover:underline">
+                <span className="text-[11px] font-semibold text-[#055C88] cursor-pointer  hover:underline focus:underline">
                   Financial Processes
                 </span>
               </Link>
@@ -130,13 +130,13 @@ const AiRevolution = () => {
             {/* two  */}
             <div className="flex flex-wrap items-center justify-start space-x-2 mt-4 text-center md:text-left">
               <Link href="/blog/Design">
-                <span className="text-sm font-semibold text-[#055C88] cursor-pointer hover:underline">
+                <span className="text-sm font-semibold text-[#055C88] cursor-pointer hover:underline focus:underline">
                   Finance
                 </span>
               </Link>
               <span className="text-gray-600 text-base hidden md:inline"><ChevronRight className='h-5 w-5 text-[#055C88]' /></span>
               <Link href="/blog/Design">
-                <span className="text-[11px] font-semibold text-[#055C88] cursor-pointer  hover:underline">
+                <span className="text-[11px] font-semibold text-[#055C88] cursor-pointer  hover:underline focus:underline">
                   Financial Processes
                 </span>
               </Link>
@@ -157,14 +157,14 @@ const AiRevolution = () => {
             {/* three  */}
             <div className="flex flex-wrap items-center justify-start space-x-2 mt-4 text-center md:text-left">
               <Link href="/blog/Design">
-                <span className="text-sm font-semibold text-[#055C88] cursor-pointer hover:underline">
+                <span className="text-sm font-semibold text-[#055C88] cursor-pointer hover:underline focus:underline">
                   Finance
                 </span>
               </Link>
               <span className="text-gray-600 text-base hidden md:inline"><ChevronRight className='h-5 w-5 text-[#055C88]' /></span>
 
               <Link href="/blog/Design">
-                <span className="text-[11px] font-semibold text-[#055C88] cursor-pointer  hover:underline">
+                <span className="text-[11px] font-semibold text-[#055C88] cursor-pointer  hover:underline focus:underline">
                   Financial Processes
                 </span>
               </Link>
@@ -249,7 +249,7 @@ const AiRevolution = () => {
       </div>
       <div className="border-b-1 border-gray-300 mt-10 sm:mt-14 "></div>
       {/* third  */}
-        <div className="mt-10 ">
+        <div className="mt-10 sm:mt-0">
            <LastBusinessesSection />
         </div>
       {/* <Footer/> */}

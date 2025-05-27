@@ -1,4 +1,6 @@
+"use client"
 import React from "react";
+import { useState } from "react";
 import Image from "next/image";
 import LastBusinessesSection from "../Lastbusinesses/page";
 import { ArrowUpRight } from 'lucide-react';
@@ -13,6 +15,9 @@ import Business from "@/app/blog/images/Business.svg"
 import newsletter from "@/app/blog/newsletter.svg"
 
 function Page() {
+
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
   const workName = [
     {
       title: 'Development',
@@ -83,7 +88,7 @@ function Page() {
   return (
     <>
       <div className="relative w-full py-30 bg-[#003252]  overflow-hidden">
-        <div className=" bg-blue/2000 flex flex-col justify-center items-center text-center px-4">  
+        <div className=" bg-blue/2000 flex flex-col justify-center items-center text-center px-4">
           <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-white mb-4">
             MindSees Blogs
           </h1>
@@ -110,14 +115,29 @@ function Page() {
       <div className="spacing-secton grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 sm:mt-16 py-2 sm:py-18 gap-5 ">
         {workName?.map((item, i) => (
           <div key={i}>
-            <div className="bg-[#d6f1ff] min-h-[345px] md:min-h-[300px] px-9 pt-9 pb-9 group cursor-pointer ">
+            <div
+              className="bg-[#d6f1ff] min-h-[345px] md:min-h-[300px] px-9 pt-9 pb-9 group cursor-pointer"
+              onClick={() => setActiveIndex(activeIndex === i ? null : i)}
+            >
               <Image src={item?.image} width={50} height={50} alt="" className="" />
               <h2 className="text-2xl text-[#023047] font-bold">{item?.title}</h2>
-              <p className="text-[#070707] mt-5 group-hover:hidden">
+
+
+              <p
+                className={`text-[#070707] mt-5 
+                ${activeIndex === i ? "hidden" : "block"} 
+                group-hover:hidden`}
+              >
                 {item?.description}
               </p>
-              <Link href={item?.link} >
-                <p className="text-[#00d280] text-[18px] font-bold mt-5  hidden group-hover:flex">
+
+
+              <Link href={item?.link}>
+                <p
+                  className={`text-[#00d280] text-[18px] font-bold mt-5 
+                  ${activeIndex === i ? "flex" : "hidden"} 
+                  group-hover:flex`}
+                >
                   {item?.hoverTitle} <ArrowRight className="mt-[2px] ml-1" />
                 </p>
               </Link>
@@ -139,7 +159,7 @@ function Page() {
             <button className="bg-[#00d280] text-white px-4 sm:px-6 py-3 sm:py-4 rounded-r-md sm:rounded-l-none cursor-pointer hover:bg-green-700">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                 strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 sm:w-6 sm:h-6">
-                 <path strokeLinecap="round" strokeLinejoin="round"
+                <path strokeLinecap="round" strokeLinejoin="round"
                   d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z" />
               </svg>
             </button>
@@ -181,22 +201,22 @@ function Page() {
               <div className="pl-5 pr-2">
                 <div className="flex items-center space-x-2 mt-4">
                   <Link href="/blog/Design">
-                    <span className="text-[14px] font-bold text-gray-800 cursor-pointer hover:underline">
+                    <span className="text-[14px] font-bold text-gray-800 cursor-pointer hover:underline focus:underline">
                       {item?.title}
                     </span>
                   </Link>
                   <span className="text-[#4b5577] text-base">&gt;</span>
                   <Link href="/blog/Design">
-                  <span className="text-[14px] font-bold text-gray-400 cursor-pointer hover:underline">
-                    {item?.designation}
-                  </span>
+                    <span className="text-[14px] font-bold text-gray-400 cursor-pointer hover:underline focus:underline">
+                      {item?.designation}
+                    </span>
                   </Link>
                 </div>
                 <div className="content">
-                    <Link href="/blog/AiRevolution">
-                  <h1 className="text-lg md:text-xl font-bold text-gray-900 cursor-pointer mt-2 transition-colors duration-300 group-hover:text-[#00d280]">
-                    {item?.description}
-                  </h1>
+                  <Link href="/blog/AiRevolution">
+                    <h1 className="text-lg md:text-xl font-bold text-gray-900 cursor-pointer mt-2 transition-colors duration-300 group-hover:text-[#00d280]">
+                      {item?.description}
+                    </h1>
                   </Link>
                   <p className="text-gray-600 text-sm line-clamp-3 md:text-[14px] mt-2 mb-4 leading-relaxed">
                     {item?.subDescription}
@@ -205,7 +225,7 @@ function Page() {
               </div>
               <a
                 href={item?.link}
-                className="flex justify-end px-4 pt-6 hover:underline text-[#00d280] cursor-pointer mb-4"
+                className="flex justify-end px-4 pt-6 hover:underline focus:underline text-[#00d280] cursor-pointer mb-4"
               >
                 {item?.btn}
                 <span>
@@ -241,23 +261,23 @@ function Page() {
               </div>
               <div className="pl-5 pr-2">
                 <div className="flex items-center space-x-2 mt-4">
-                   <Link href="/blog/Design">
-                  <span className="text-[14px] font-bold  text-gray-800 cursor-pointer hover:underline">
-                    {item?.title}
-                  </span>
+                  <Link href="/blog/Design">
+                    <span className="text-[14px] font-bold  text-gray-800 cursor-pointer hover:underline focus:underline">
+                      {item?.title}
+                    </span>
                   </Link>
                   <span className="text-[#4b5577] text-base">&gt;</span>
-                  <Link href="/blog/Design"><span className="text-[14px] font-bold text-gray-400 cursor-pointer hover:underline">
+                  <Link href="/blog/Design"><span className="text-[14px] font-bold text-gray-400 cursor-pointer hover:underline focus:underline">
                     {item?.designation}
                   </span>
                   </Link>
 
                 </div>
                 <div className="content">
-                    <Link href="/blog/AiRevolution">
-                  <h1 className="text-lg md:text-xl font-bold text-gray-900 cursor-pointer mt-2 transition-colors duration-300 group-hover:text-[#00d280]">
-                    {item?.description}
-                  </h1>
+                  <Link href="/blog/AiRevolution">
+                    <h1 className="text-lg md:text-xl font-bold text-gray-900 cursor-pointer mt-2 transition-colors duration-300 group-hover:text-[#00d280]">
+                      {item?.description}
+                    </h1>
                   </Link>
                   <p className="text-gray-600 text-sm line-clamp-3 md:text-[14px] mt-2 mb-4 leading-relaxed">
                     {item?.subDescription}
@@ -266,7 +286,7 @@ function Page() {
               </div>
               <a
                 href={item?.link}
-                className="flex justify-end px-4 pt-6 hover:underline text-[#00d280] cursor-pointer mb-4 "
+                className="flex justify-end px-4 pt-6 hover:underline focus:underline text-[#00d280] cursor-pointer mb-4 "
               >
                 {item?.btn}
                 <span>
@@ -279,9 +299,9 @@ function Page() {
         </div>
       </div>
 
-     <div className="-mt-24 sm:-mt-0">
-       <LastBusinessesSection />
-     </div>
+      <div className="-mt-24 sm:-mt-0">
+        <LastBusinessesSection />
+      </div>
 
     </>
   );

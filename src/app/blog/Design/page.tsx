@@ -124,11 +124,11 @@ const Design = () => {
               </div>
               <div className="pl-5 pr-2">
                 <div className="flex items-center space-x-2 mt-4">
-                  <span className="text-[14px] font-bold  text-gray-800 cursor-pointer hover:underline">
+                  <span className="text-[14px] font-bold  text-gray-800 cursor-pointer hover:underline focus:underline">
                     {item?.title}
                   </span>
                   <span className="text-[#4b5577] text-base">&gt;</span>
-                  <span className="text-[14px] font-bold text-gray-400 cursor-pointer hover:underline">
+                  <span className="text-[14px] font-bold text-gray-400 cursor-pointer hover:underline focus:underline">
                     {item?.designation}
                   </span>
                 </div>
@@ -143,7 +143,7 @@ const Design = () => {
               </div>
               <a
                 href={item?.link}
-                className="flex justify-end px-4 pt-6 hover:underline text-[#00d280] cursor-pointer mb-4 "
+                className="flex justify-end px-4 pt-6 hover:underline focus:underline text-[#00d280] cursor-pointer mb-4 "
               >
                 {item?.btn}
                 <span>
@@ -210,13 +210,13 @@ const Design = () => {
               <div className="pl-5 pr-2">
                 <div className="flex items-center space-x-2 mt-4">
                   <Link href="/blog/Design">
-                    <span className="text-[14px] font-bold  text-gray-800 cursor-pointer hover:underline">
+                    <span className="text-[14px] font-bold  text-gray-800 cursor-pointer hover:underline focus:underline">
                       {item?.title}
                     </span>
                   </Link>
                   <span className="text-[#4b5577] text-base">&gt;</span>
                   <Link href="/blog/Design">
-                    <span className="text-[14px] font-bold text-gray-400 cursor-pointer hover:underline">
+                    <span className="text-[14px] font-bold text-gray-400 cursor-pointer hover:underline focus:underline">
                       {item?.designation}
                     </span>
                   </Link>
@@ -234,7 +234,7 @@ const Design = () => {
               </div>
               <a
                 href={item?.link}
-                className="flex justify-end px-4 pt-6 hover:underline text-[#00d280] cursor-pointer mb-4 "
+                className="flex justify-end px-4 pt-6 hover:underline focus:underline text-[#00d280] cursor-pointer mb-4 "
               >
                 {item?.btn}
                 <span>
