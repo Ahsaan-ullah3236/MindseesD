@@ -114,14 +114,14 @@ function Page() {
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-14  mt-40 mb-10'>
                     <div className=''>
                         <div className=" text-center md:text-left">
-                            <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-[#023047]  mb-6">Looking for Visionary Talent.</h1>
-                            <p className="text-lg text-[#023047] mt-12">
+                            <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-[#023047]  mb-6 -mt-30 sm:-mt-0">Looking for Visionary Talent.</h1>
+                            <p className="text-lg text-[#023047] mt-4 sm:mt-12 ">
                                 At MindSees, we are committed to transforming lives through innovative solutions. We are looking for individuals who align with and contribute to our vision. Our company promotes open communication, collaboration, and equal opportunities. We are passionate about growth and always excited to discover dynamic talent.
                             </p>
                             <p className="text-lg text-[#023047] pt-6">Join us to elevate both our companys standards and your own personal and professional growth.</p>
                         </div>
                     </div>
-                    <div className=" flex justify-center">
+                    <div className=" flex justify-center -mt-4 sm:-mt-0">
                         <Image
                             src= {imagesss}
                             alt="About Section"
@@ -134,21 +134,21 @@ function Page() {
 
             </div>
             <div
-                className="relative mx-auto bg-linear-to-r/srgb from-[#033f5d] to-[#056ea3] mt-22 py-24 ">
+                className="relative mx-auto bg-linear-to-r/srgb from-[#033f5d] to-[#056ea3] mt-12 sm:mt-22 py-24 ">
                 <Recruitment />
             </div>
 
 
             <div className="main-container flex justify-center items-center text-center">
                 <div className="inner-container w-full spacing-secton">
-                    <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold text-[#023047] mt-22 mb-6">Employee Benefits & Perks
+                    <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold text-[#023047] mt-10 sm:mt-22 mb-6 ">Employee Benefits & Perks
                     </h1>
                     <p className='text-lg text-[#023047] mx-auto max-w-4xl mb-12'>Enhance your journey at MindSees with our comprehensive employee benefits and perks. From competitive salaries to flexible work arrangements, we prioritize your well-being and professional development, fostering an environment where you can truly thrive.</p>
-                    <div className="three-divs grid grid-cols-1 md:grid-cols-3 gap-8 my-12">
+                    <div className="three-divs grid grid-cols-1 md:grid-cols-3 gap-8 my-8 sm:my-12">
 
                         {perkData?.map((item, i) => (
 
-                            <div className="value-card p-8 bg-[#d6f1ff] rounded-sm " key={i}>
+                            <div className="value-card p-4 sm:p-8 bg-[#d6f1ff] rounded-sm " key={i}>
                                 <h2 className=" font-semibold mt-4 text-[#00d280] " style={{ fontSize: '22px', lineHeight: '25px' }}>{item?.title}</h2>
                                 <p className="text-[#023047]  mt-6 mb-4" style={{ fontSize: "16px", lineHeight: '20px' }}>
                                     {item?.decription}
@@ -158,7 +158,7 @@ function Page() {
 
                     </div>
                     <Link href="/careers/jobs">
-                        <button className="bg-[#00D280] cursor-pointer text-white px-4 py-4 mb-30 text-lg font-semibold rounded-sm transition-colors w-55">
+                        <button className="bg-[#00D280] cursor-pointer text-white px-4 py-4 mb-12 sm:mb-30 text-lg font-semibold rounded-sm transition-colors w-55">
                             See Job Opportunities
                         </button>
                     </Link>
