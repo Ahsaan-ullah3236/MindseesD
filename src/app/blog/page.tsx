@@ -279,7 +279,9 @@ function Page() {
         </div>
       </div>
 
-      <LastBusinessesSection />
+     <div className="-mt-24 sm:-mt-0">
+       <LastBusinessesSection />
+     </div>
 
     </>
   );

@@ -52,10 +52,10 @@ const AiRevolution = () => {
             <input
               type="text"
               placeholder="What are you looking for?"
-              className="flex-grow px-2 sm:px-6 md:px-8 py-2 sm:py-2 text-gray-700 text-[12px] sm:text-lg bg-white focus:outline-none"
+              className="flex-grow px-3 sm:px-6 md:px-8 py-2 sm:py-2 text-gray-700 text-[12px] sm:text-lg bg-white focus:outline-none"
             />
 
-            <button className="bg-[#00d280] text-white flex items-center justify-center px-1 md:px-4 py-3 sm:py-3 md:py-3 flex-shrink-0 rounded-r-md">
+            <button className="bg-[#00d280] text-white flex items-center justify-center px-2 md:px-4 py-3 sm:py-3 md:py-3 flex-shrink-0 rounded-r-md">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                 strokeWidth={3} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round"
@@ -94,12 +94,12 @@ const AiRevolution = () => {
       </div>
 
       {/* second section  */}
-      <div className='flex flex-col-reverse md:grid grid-cols-1 md:grid-cols-4 spacing-secton bg-[#fff] pt-20'>
+      <div className='flex flex-col-reverse md:grid grid-cols-1 md:grid-cols-4 spacing-secton bg-[#fff] pt-20 '>
         <div className='md:h-fit md:sticky md:top-[100px] lg:top-[140px] md:order-first flex-[1]'>
-          <h1 className=" font-bold text-[#070707] leading-relaxed text-2xl mb-6 md:mb-2">
+          <h1 className=" font-bold text-[#070707] leading-relaxed text-2xl mb-6 md:mb-2 -mt-20 sm:-mt-0">
             Trending Articles
           </h1>
-          <div className="first pr-2 pt-4">
+          <div className="first pr-2 pt-4 -mt-12 sm:-mt-0">
             <div className="flex flex-wrap items-center justify-start space-x-2 mt-4 text-center md:text-left">
               <Link href="/blog/Design">
                 <span className="text-sm font-semibold text-[#055C88] cursor-pointer hover:underline">
@@ -114,7 +114,7 @@ const AiRevolution = () => {
               </Link>
             </div>
             {/* one  */}
-            <div className="image-content flex flex-row justify-center items-center   mt-6">
+            <div className="image-content flex flex-row justify-center items-center  mt-2 sm:mt-6">
               <Image
                 src={blogheroimage}
                 alt="AI Revolution in Finance"
@@ -126,7 +126,7 @@ const AiRevolution = () => {
                 AI Revolution in Finance: Prospects and Difficulties
               </h1>
             </div>
-            <div className="border-b-1 border-gray-300 mt-6"></div>
+            <div className="border-b-1 border-gray-300 mt-2 sm:mt-6"></div>
             {/* two  */}
             <div className="flex flex-wrap items-center justify-start space-x-2 mt-4 text-center md:text-left">
               <Link href="/blog/Design">
@@ -141,7 +141,7 @@ const AiRevolution = () => {
                 </span>
               </Link>
             </div>
-            <div className="image-content flex flex-row justify-center items-center   mt-6">
+            <div className="image-content flex flex-row justify-center items-center   mt-2 sm:mt-6">
               <Image
                 src={blogheroimage}
                 alt="AI Revolution in Finance"
@@ -153,7 +153,7 @@ const AiRevolution = () => {
                 AI Revolution in Finance: Prospects and Difficulties
               </h1>
             </div>
-            <div className="border-b-1 border-gray-300 mt-6"></div>
+            <div className="border-b-1 border-gray-300 mt-2 sm:mt-6"></div>
             {/* three  */}
             <div className="flex flex-wrap items-center justify-start space-x-2 mt-4 text-center md:text-left">
               <Link href="/blog/Design">
@@ -169,7 +169,7 @@ const AiRevolution = () => {
                 </span>
               </Link>
             </div>
-            <div className="image-content flex flex-row justify-center items-center   mt-6">
+            <div className="image-content flex flex-row justify-center items-center   mt-2 sm:mt-6">
               <Image
                 src={blogheroimage}
                 alt="AI Revolution in Finance"
@@ -181,11 +181,11 @@ const AiRevolution = () => {
                 AI Revolution in Finance: Prospects and Difficulties
               </h1>
             </div>
-            <div className="border-b-1 border-gray-300 mt-6"></div>
+            <div className="border-b-1 border-gray-300 mt-2 sm:mt-6"></div>
           </div>
 
 
-          <div className="last bg-[#022739] px-5 py-10 mt-[65px]">
+          <div className="last bg-[#022739] px-5 py-6 sm:py-10  sm:mt-[65px]">
             <h1 className="text-white text-2xl font-semibold mb-4 text-center md:text-left">
               Hire a MindSees Finance Specialist
             </h1>
@@ -199,13 +199,13 @@ const AiRevolution = () => {
           </div>
         </div>
         <div className='col-span-3 flex-[3] mb-[100px] md:mb-0'>
-          <div className="left   p-4 md:p-8 text-md md:text-lg">
+          <div className="left p-2 md:p-8 text-md md:text-lg -mt-12 sm:-mt-0" >
             <p> A startups vision is more than a high ambition; its your guiding star. It specifies the problem yore solving, who youre doing it for, and where you hope to be in the following three to five years. To guide execution, this vision must be actionable. We want to empower local retailers with AI-driven inventory management is considerably more successful than a generic goal like We aim to disrupt retail. Once the vision is established, focus on strategic objectives rather than surface-level goals. Prioritize market positioning, main product milestones, revenue targets, and customer satisfaction metrics. Strategic planning establishes the foundation for startup success, from the development of MVPs to AI automation for small businesses. Using a framework like OKRs (Objectives and Key Results) allows you to stay focused and outcome-driven across the board. Scalable infrastructure planning is an essential component of your roadmap if your goal involves providing AI-powered web Development for Small Businesses. </p>
             <br />
             <p>Startups also need to understand how to set priorities. Due to resource constraints, it is imperative to concentrate just on projects that provide the greatest return on investment. Determine which two or three things must be done in the next ninety days, and try not to get sidetracked by things that dont seem important. Priority noise is reduced with the use of tools such as the Eisenhower Matrix. However, many founders fall into the trap of striving for perfection; momentum is more important. Put your attention on developing MVPs (Minimum Viable Products), getting early market input, and refining through agile sprints. Iterate rapidly and change course when necessary; speed and flexibility are your greatest advantages. Speed and flexibility are crucial while developing your MVP, particularly in No-Code SaaS Platform Development for SMBs.</p>
             <br />
 
-            <Image src={image} alt="" className="w-full h-[50vh] md:h-[60vh] object-cover mt-6" />
+            <Image src={image} alt="" className="w-full h-[50vh] md:h-[60vh] object-cover mt:4 sm:mt-6" />
 
             <p className="mt-6"> Startups also need to understand how to set priorities. Due to resource constraints, it is imperative to concentrate just on projects that provide the greatest return on investment. Determine which two or three things must be done in the next ninety days, and try not to get sidetracked by things that dont seem important. Priority noise is reduced with the use of tools such as the Eisenhower Matrix. However, many founders fall into the trap of striving for perfection; momentum is more important. Put your attention on developing MVPs (Minimum Viable Products), getting early market input, and refining through agile sprints. Iterate rapidly and change course when necessary; speed and flexibility are your greatest advantages. Speed and flexibility are crucial while developing your MVP, particularly in No-Code SaaS Platform Development for SMBs.</p>
 
@@ -223,8 +223,8 @@ const AiRevolution = () => {
       </div>
 
       {/* fourth */}
-      <div className="border-b-1 border-gray-300 mt-40"></div>
-      <div className="tags block md:flex mx-auto lg:w-5xl mt-13 px-4">
+      <div className="border-b-1 border-gray-300 mt-12 sm:mt-40"></div>
+      <div className="tags block md:flex mx-auto lg:w-5xl mt-10 sm:mt-14 px-4">
         <h1 className="font-bold text-center text-[#070707] text-xl md:text-2xl lg:text-3xl mb-6 mr-6">
           Tags:
         </h1>
@@ -247,9 +247,11 @@ const AiRevolution = () => {
           </span>
         </div>
       </div>
-      <div className="border-b-1 border-gray-300 mt-8 mb-34"></div>
+      <div className="border-b-1 border-gray-300 mt-10 sm:mt-14 "></div>
       {/* third  */}
-      <LastBusinessesSection />
+        <div className="mt-10 ">
+           <LastBusinessesSection />
+        </div>
       {/* <Footer/> */}
     </>
   )

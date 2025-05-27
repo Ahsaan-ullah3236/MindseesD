@@ -41,7 +41,7 @@ const Apply =()=>{
   //   // Add validation or API call here
   // };
     return(
-        <div className="py-12 md:py-22 spacing-secton">
+        <div className="py-10 sm:py-12 md:py-22 spacing-secton">
             <div className="text-[#005078] text-2xl sm:text-4xl font-semibold sm:text-bold">Social Media Management Internship Leading to Job</div>
         <div className="max-w-3xl mx-auto">
       <StepperApply currentStep={currentStep} />
@@ -50,7 +50,7 @@ const Apply =()=>{
     </div>
         <form
       // onSubmit={handleSubmit}
-      className="px-6 md:px-20 py-14 bg-[#d6f1ff] rounded-md mt-10"
+      className="px-6 md:px-20 py-6 sm:py-14 bg-[#d6f1ff] rounded-md sm:mt-10 -mt-6"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20">
         {/* First Name */}
@@ -60,7 +60,7 @@ const Apply =()=>{
             type="text"
             name="firstName"
             // onChange={handleChange}
-            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
+            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-4 sm:mb-9"
           />
         </div>
 
@@ -71,7 +71,7 @@ const Apply =()=>{
             type="text"
             name="lastName"
             // onChange={handleChange}
-            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
+            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-4 sm:mb-9"
           />
         </div>
 
@@ -82,7 +82,7 @@ const Apply =()=>{
             type="email"
             name="email"
             // onChange={handleChange}
-            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
+            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-4 sm:mb-9"
           />
         </div>
 
@@ -93,7 +93,7 @@ const Apply =()=>{
             type="text"
             name="cnic"
             // onChange={handleChange}
-            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
+            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-4 sm:mb-9"
           />
         </div>
 
@@ -104,7 +104,7 @@ const Apply =()=>{
             type="text"
             name="country"
             // onChange={handleChange}
-            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
+            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-4 sm:mb-9"
           />
         </div>
 
@@ -115,7 +115,7 @@ const Apply =()=>{
             type="text"
             name="city"
             // onChange={handleChange}
-            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
+            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-4 sm:mb-9"
           />
         </div>
 
@@ -126,7 +126,7 @@ const Apply =()=>{
             type="text"
             name="zip"
             // onChange={handleChange}
-            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
+            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-4 sm:mb-9"
           />
         </div>
 
@@ -137,7 +137,7 @@ const Apply =()=>{
             type="tel"
             name="phone"
             // onChange={handleChange}
-            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
+            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-4 sm:mb-9"
           />
         </div>
 
@@ -149,7 +149,7 @@ const Apply =()=>{
             // onChange={handleChange}
             rows={8}
             placeholder="eg. House number 55 Street Number 04, Lahore"
-            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
+            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-4 sm:mb-9"
           ></textarea>
         </div>
 
@@ -159,7 +159,7 @@ const Apply =()=>{
           <select
             name="gender"
             // onChange={handleChange}
-            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
+            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-4 sm:mb-9"
           >
             <option value="">Not Specified</option>
             <option value="Male">Male</option>
@@ -174,7 +174,7 @@ const Apply =()=>{
             type="date"
             name="dob"
             // onChange={handleChange}
-            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
+            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-4 sm:mb-9"
           />
         </div>
 
@@ -185,7 +185,7 @@ const Apply =()=>{
             type="url"
             name="github"
             // onChange={handleChange}
-            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
+            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-4 sm:mb-9"
           />
         </div>
 
@@ -196,7 +196,7 @@ const Apply =()=>{
             type="url"
             name="linkedin"
             // onChange={handleChange}
-            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-9"
+            className="w-full border-1 border-black bg-white rounded-lg px-3 py-3 mb-4 sm:mb-9"
           />
         </div>
       </div>
@@ -230,7 +230,7 @@ const Apply =()=>{
       {/* Submit Button */}
     
     </form>
-      <div className="mt-24 flex items-center text-center justify-center">
+      <div className="mt-10 sm:mt-24 flex items-center text-center justify-center">
         <button
           type="submit"
           className="h-14 flex items-center text-center justify-center rounded-md text-[18px] text-white bg-[#00d280] w-26 font-semibold "

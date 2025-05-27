@@ -9,7 +9,7 @@ const Jobs = () => {
     <div>
       <div className="relative w-full py-27 bg-[#023047]  overflow-hidden">
         <div className=" bg-blue/2000 flex flex-col justify-center items-center text-center px-4">
-          <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-white mb-4" style={{ lineHeight: "55px" }}>
+          <h1 className="text-3xl sm:text-5xl font-semibold sm:text-bold  text-white mb-4 leading-[40px] sm:leading-[55px]" >
             Search, Apply, and Get <br />Your Dream Job
           </h1>
 
@@ -30,7 +30,7 @@ const Jobs = () => {
           </div>
         </div>
       </div>
-      <div className="py-20 max-w-4xl mx-auto items-center">
+      <div className="py-10 sm:py-20 max-w-4xl mx-auto items-center">
         <div className="text-center text-[28px]">Current Openings</div>
         <div className="flex justify-center mt-2">
 
@@ -47,7 +47,7 @@ const Jobs = () => {
             </div>
           </a>
         </div>
-        <div className="flex justify-center flex-wrap py-20">
+        <div className="flex justify-center flex-wrap py-10 sm:py-20 -mb-8 sm:-mb-0">
           <Link href="listings">
             <div className="h-14 rounded-full mb-4 flex items-center text-white bg-[#00d280] px-4 mr-4 font-semibold cursor-pointer">Social Media Management</div>
           </Link>

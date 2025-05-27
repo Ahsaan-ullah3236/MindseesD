@@ -85,11 +85,11 @@ const Listings = () => {
 
                 </div>
             </div>
-            <div className="py-13 spacing-secton">
+            <div className= "py-8 sm:py-14 spacing-secton">
                 <div className="text-[25px] font-semibold">Job Description</div>
                 <div className="h-[0.8px] bg-gray-200 w-full mt-2 "></div>
                 <div className="text-[15px] text-gray-600 mt-6  ">We are seeking a motivated social media management intern to assist in developing and executing engaging content strategies across our platforms. This role offers hands-on experience in growing our online presence and interacting with our audience.</div>
-                <div className="text-[25px] font-semibold mt-13">Responsibilities</div>
+                <div className="text-[25px] font-semibold mt-8 sm:mt-14">Responsibilities</div>
                 <div className="h-[0.8px] bg-gray-200 w-full mt-2 mb-6 "></div>
                 {Responsibilities?.map((item, i) => (
                     <div className="flex mt-3" key={i}>
@@ -97,7 +97,7 @@ const Listings = () => {
                         <div className="text-[15px] text-gray-600">{item}</div>
                     </div>
                 ))}
-                <div className="text-[25px] font-semibold mt-13">Requirements</div>
+                <div className="text-[25px] font-semibold mt-8 sm:mt-14">Requirements</div>
                 <div className="h-[0.8px] bg-gray-200 w-full mt-2 mb-6 "></div>
                 {Requirements?.map((item, i) => (
                     <div className="flex mt-3" key={i}>
@@ -105,7 +105,7 @@ const Listings = () => {
                         <div className="text-[15px] text-gray-600">{item}</div>
                     </div>
                 ))}
-                <div className="text-[25px] font-semibold mt-13">Preferred Qualifications</div>
+                <div className="text-[25px] font-semibold mt-8 sm:mt-14">Preferred Qualifications</div>
                 <div className="h-[0.8px] bg-gray-200 w-full mt-2 mb-6 "></div>
                 {PreferredQualifications?.map((item, i) => (
                     <div className="flex mt-3" key={i}>
@@ -113,7 +113,7 @@ const Listings = () => {
                         <div className="text-[15px] text-gray-600">{item}</div>
                     </div>
                 ))}
-                <div className="text-[25px] font-semibold mt-13">What We Offer</div>
+                <div className="text-[25px] font-semibold mt-8 sm:mt-14">What We Offer</div>
                 <div className="h-[0.8px] bg-gray-200 w-full mt-2 mb-6 "></div>
                 {Offer?.map((item, i) => (
                     <div className="flex mt-3" key={i}>
