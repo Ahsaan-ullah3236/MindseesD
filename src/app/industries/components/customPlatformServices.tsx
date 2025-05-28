@@ -46,7 +46,7 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
       <div className=" mx-auto py-6 sm:py-18">
         <div className="lg:grid lg:grid-cols-2 lg:gap-12">
           {/* Left Content */}
-          <div className="mb-10 lg:mb-0">
+          <div className="mb-10 lg:mb-0 ">
             <Image 
               src={imageUrl} 
               alt="service platform image"
@@ -54,11 +54,9 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
               width={300}
               className="w-full"
             />
-            
             <p className="text-lg text-black mb-8 mt-9">
               {description}
             </p>
-            
             <div className="mb-10 text-black">
               <Link href="/contact-us">
               <button 
@@ -73,16 +71,16 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
           </div>
 
           {/* Right Content */}
-          <div className="relative">
-            <div className="h-[90vh] 2xl:h-[50vh] overflow-y-auto scroll-smooth left-scrollbarGray pl-4 space-y-8">
-              <div className="grid sm:grid-cols-2 gap-6">
+          <div className="relative ">
+            <div className="h-[90vh] 2xl:h-[70vh] overflow-y-auto scroll-smooth left-scrollbarGray pl-4 space-y-8 -mt-8  sm:mt-6">
+              <div className="grid sm:grid-cols-2 gap-6  ">
                 {/* Left Column */}
-                <div className="mt-0 sm:mt-14 ">
+                <div className="mt-0 sm:mt-14  ">
                   {leftItems.map((item, index) => (
                     <div 
                     key={index}
                       
-                      className={`bg-[#d6f1ff]  p-5 group  rounded-xl my-4 border-2  border-[#0575ad]`}
+                      className={`bg-[#d6f1ff]  p-5 group  rounded-xl my-4 mb-4 sm:mb-0 border-2  border-[#0575ad]`}
                       // style={{
                       //   backgroundColor: cardBgColor,
                       // //  borderColor: cardBorderColor,
@@ -127,7 +125,7 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
                 </div>
                 
                 {/* Right Column */}
-                <div className="">
+                <div className="-mt-10 sm:-mt-4">
                   {rightItems.map((item, index) => (
                     <div 
                     key={index}
