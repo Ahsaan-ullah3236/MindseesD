@@ -15,7 +15,14 @@ import Business from "@/app/blog/images/Business.svg"
 import newsletter from "@/app/blog/newsletter.svg"
 
 function Page() {
+const [clicked, setClicked] = useState(false);
 
+  const handleClick = () => {
+    // Toggle underline on small screens
+    if (window.innerWidth < 640) {
+      setClicked((prev) => !prev);
+    }
+  };
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const workName = [
@@ -201,7 +208,9 @@ function Page() {
               <div className="pl-5 pr-2">
                 <div className="flex items-center space-x-2 mt-4">
                   <Link href="/blog/Design">
-                    <span className="text-[14px] font-bold text-gray-800 cursor-pointer hover:underline focus:underline">
+                    <span className={`text-[14px] font-bold text-gray-800 cursor-pointer hover:underline focus:underline 
+        ${clicked ? 'underline sm:no-underline' : ''}`}
+      onClick={handleClick} >
                       {item?.title}
                     </span>
                   </Link>
@@ -262,7 +271,9 @@ function Page() {
               <div className="pl-5 pr-2">
                 <div className="flex items-center space-x-2 mt-4">
                   <Link href="/blog/Design">
-                    <span className="text-[14px] font-bold  text-gray-800 cursor-pointer hover:underline focus:underline">
+                    <span className={`text-[14px] font-bold  text-gray-800 cursor-pointer hover:underline focus:underline 
+        ${clicked ? 'underline sm:no-underline' : ''}`}
+      onClick={handleClick}>
                       {item?.title}
                     </span>
                   </Link>
