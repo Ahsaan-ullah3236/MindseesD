@@ -66,7 +66,6 @@ const Portfolio =()=> {
         currentPage * itemsPerPage
     );
     return (
-
         <>
             <div className="pherosection-main-container spacing-secton">
                 <div className="pherosection-second-container ">

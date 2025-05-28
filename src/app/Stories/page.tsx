@@ -65,7 +65,7 @@ export default function SuccessStoriesPage() {
 
   return (
     <div className=' mx-auto mt-2 '>
-      <div className="text-3xl sm:text-4xl font-semibold sm:text-bold text-black  text-center   sm:-mt-0" style={{ lineHeight: "42px" }}> Our Success Stories</div>
+      <div className="text-3xl sm:text-4xl font-semibold sm:text-bold text-black  text-center  mt-12 sm:-mt-0" style={{ lineHeight: "42px" }}> Our Success Stories</div>
       <div className="text-[18px] text-black max-w-3xl mx-auto mb-10  mt-6 text-center px-2" style={{ lineHeight: "22px" }}>Read testimonials from our satisfied clients who have experienced our outstanding services. See how we have helped businesses like yours succeed and enhance their online presence.</div>
       <div className="relative   flex items-center justify-center spacing-secton px-2 md:px-4">
         <div className="w-full mx-auto mb-20">

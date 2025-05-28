@@ -22,8 +22,6 @@ const CaseStudy = () => {
       description: "PayMe is a user-friendly mobile app designed for global payments, facilitating seamless bill submission via mobile devices worldwide.",
     },
   ]
-
-
   const features = [
     {
       id: "01",
@@ -56,18 +54,18 @@ const CaseStudy = () => {
   ];
   return (
     <div>
-      <div className="bg-[#0f3b50] pt-26 pb-40">
+      <div className="bg-[#0f3b50] pt-16 sm:pt-26 pb-40">
         <div className='max-w-7xl mx-auto'>
           <div className="spacing-secton flex flex-col md:flex-row items-center justify-between gap-12 px-4">
             <div className='grid grid-cols-1 md:grid-cols-2'>
-              <div className='flex items-center'>
-                <div className="text-white text-center md:text-left">
+              <div className='flex items-center '>
+                <div className="text-white text-center md:text-left ">
                   <Image
                     src="https://imagedelivery.net/_hnTXc_Obz89JUELDTH5fg/46c0a9de-fca2-40a2-3a55-1b0299daa000/w=1080,q=75"
                     alt="casestudy Section"
                     width={180}
                     height={150}
-                    className="object-contain h-[80px] "
+                    className="object-contain h-[80px]  "
                   />
                   <p className="text-[18px] mt-6 " style={{ lineHeight: "28px" }}>
                     We transform your business ideas into tangible software solutions. We are top tech experts who help transform business concepts into real-world software solutions.
@@ -75,7 +73,7 @@ const CaseStudy = () => {
 
                 </div>
               </div>
-              <div className="flex justify-end">
+              <div className="flex justify-end mt-4">
                 <Image
                   src={caseStudy}
                   alt="About Section"
@@ -129,10 +127,10 @@ const CaseStudy = () => {
       </div>
 
       <div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 spacing-secton pt-30'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 spacing-secton pt-12 sm:pt-30'>
           <div className="lg:col-span-2">
-            <div className="text-4xl text-black font-bold">Project Scope &<br /> Requirements</div>
-            <div className="text-[20px] max-w-2xl mt-5">Opstion A empowers founders, employees, and entrepreneurs to boost monthly revenue. Leveraging our expertise with Fortune 500 processes and hypergrowth startups, we focus on revenue generation and efficient money management. At Kavelogics, we partner closely with Opstion A to tailor strategies, streamline operations, and offer expert guidance for sustainable growth and scalability.</div>
+            <div className="text-3xl sm:text-5xl font-semibold sm:font-bold text-black ">Project Scope &<br /> Requirements</div>
+            <div className="text-[16px] sm:text-[20px] max-w-2xl mt-5">Opstion A empowers founders, employees, and entrepreneurs to boost monthly revenue. Leveraging our expertise with Fortune 500 processes and hypergrowth startups, we focus on revenue generation and efficient money management. At kavelogics, we partner closely with Opstion A to tailor strategies, streamline operations, and offer expert guidance for sustainable growth and scalability.</div>
             <div className="mt-5 text-[19px]">Requirements of the project were:</div>
             <div className="flex pt-4 pb-2">
               <Image src="https://kavelogics.com/case-studies/list-icon.svg" alt="" height={35} width={35} className="pr-2" />
@@ -154,13 +152,13 @@ const CaseStudy = () => {
 
       </div>
       <div>
-        <div className='flex flex-col-reverse sm:flex-row spacing-secton pt-30 gap-8'>
+        <div className='flex flex-col-reverse sm:flex-row spacing-secton  gap-8 pt-12 sm:pt-30'>
           <div className="flex justify-center items-center sm:w-[70%] md:w-[80%] lg:w-[45%]" >
             <Image src={caseStudy2} alt="" height={35} width={35} className="pr-2 h-full w-full object-cover" />
           </div>
           <div className="">
-            <div className="text-4xl text-black font-bold">Design & Implementation</div>
-            <div className="text-[20px] max-w-2xl mt-5">Opstion A empowers founders, employees, and entrepreneurs to boost monthly revenue. Leveraging our expertise with Fortune 500 processes and hypergrowth startups, we focus on revenue generation and efficient money management. At Kavelogics, we partner closely with Opstion A to tailor strategies, streamline operations, and offer expert guidance for sustainable growth and scalability.</div>
+            <div className="text-3xl sm:text-5xl font-semibold sm:font-bold text-black ">Design & Implementation</div>
+            <div className="text-[16px] sm:text-[20px] max-w-2xl mt-5">Opstion A empowers founders, employees, and entrepreneurs to boost monthly revenue. Leveraging our expertise with Fortune 500 processes and hypergrowth startups, we focus on revenue generation and efficient money management. At kavelogics, we partner closely with Opstion A to tailor strategies, streamline operations, and offer expert guidance for sustainable growth and scalability.</div>
             <div className="mt-5 text-[19px]">Requirements of the project were:</div>
             <div className="flex pt-4 pb-2">
               <Image src="https://kavelogics.com/case-studies/list-icon.svg" alt="" height={35} width={35} className="pr-2" />
@@ -180,10 +178,10 @@ const CaseStudy = () => {
 
       </div>
       <div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 spacing-secton pt-30 pb-24'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 spacing-secton pb-24 pt-12 sm:pt-30'>
           <div className="lg:col-span-2">
-            <div className="text-4xl text-black font-bold">Challenges Faced</div>
-            <div className="text-[20px] max-w-2xl mt-5">During the development and implementation of Opstion As website, Kavelogics faced numerous challenges that demanded innovative solutions and collaborative efforts. Overcoming these obstacles was essential to delivering a final product that met Opstion As high standards, ensuring a seamless, secure, and user-friendly experience.</div>
+            <div className="text-3xl sm:text-5xl font-semibold sm:font-bold text-black ">Challenges Faced</div>
+            <div className= "text-[16px] sm:text-[20px] max-w-2xl mt-5">During the development and implementation of Opstion As website, kavelogics faced numerous challenges that demanded innovative solutions and collaborative efforts. Overcoming these obstacles was essential to delivering a final product that met Opstion As high standards, ensuring a seamless, secure, and user-friendly experience.</div>
             <div className="mt-5 text-[19px]">During this project, we faced following challenges:</div>
             <div className="flex pt-4 pb-2 max-w-2xl">
               <Image src="https://kavelogics.com/case-studies/list-challenges.svg" alt="" height={35} width={35} className="pr-2" />
@@ -208,7 +206,7 @@ const CaseStudy = () => {
         </div>
 
       </div>
-      <div className="relative max-w-5xl mx-auto md:h-[800px] flex flex-col-reverse md:flex-row items-center justify-center px-4">
+      <div className="relative max-w-5xl mx-auto md:h-[800px] flex flex-col-reverse md:flex-row items-center justify-center px-4 ">
         {features.map((feature, index) => {
           const positionClass =
             index === 0
@@ -243,8 +241,9 @@ const CaseStudy = () => {
           );
         })}
 
+
         {/* Central Image */}
-        <div className="md:w-[500px]  object-cover overflow-hidden">
+        <div className="md:w-[500px]  object-cover overflow-hidden -mt-10 sm:-mt-0">
           <Image
             src={caseStudy} 
             alt="Mockup"
@@ -255,7 +254,7 @@ const CaseStudy = () => {
       <div className="relative bg-[#d6f1ff] mb-20 mx-auto my-6 rounded-[20px] md:rounded-r-full md:rounded-l-full py-10 px-3 w-[320px] md:self-center md:w-[620px] lg:w-[650px]  lg:px-12 lg:py-16">
         <Image src="https://kavelogics.com/case-studies/quotation.svg" alt="" height={85} width={85} className="absolute -top-2 left-1 w-[45px] h-[45px] lg:w-[85px] lg:h-[85px] lg:-top-8" />
         <div className="flex flex-col justify-center items-center gap-[30px]">
-          <p className="text-center xl:text-xl leading-tight">We are thrilled with Kavelogics results. Their expertise in website development has enhanced our operational efficiency and user experience. Highly recommend.</p>
+          <p className="text-center xl:text-xl leading-tight">We are thrilled with kavelogics results. Their expertise in website development has enhanced our operational efficiency and user experience. Highly recommend.</p>
           <p className="text-kavelogics-primary xl:text-xl font-bold text-center">Jonathan Roberts, Co-Founder</p>
         </div>
         <Image src="https://kavelogics.com/case-studies/quotation.svg" alt="" height={85} width={85} className="absolute -bottom-4 right-1 scale-x-[-1] w-[45px] h-[45px] lg:w-[85px] lg:h-[85px]" />
@@ -263,12 +262,12 @@ const CaseStudy = () => {
       </div>
       <div className="pherosection-main-container spacing-secton">
         <div className="pherosection-second-container ">
-          <h1 className="text-2xl md:text-4xl text-center font-bold text-gray-900 mb-6 mt-26">Discover some of our recent projects</h1>
-          <p className="text-[18px] text-center mx-auto text-gray-900 mb-10 max-w-3xl">
-            MindSees empowers a diverse range of global clients to adopt advanced technology and elevate their customer experiences significantly.
+          <h1 className="text-3xl sm:text-5xl font-semibold sm:font-bold text-center  text-gray-900 mb-6 mt-12 sm:mt-26">Discover some of our recent projects</h1>
+          <p className="text-[16px] sm:text-[18px] text-center mx-auto text-gray-900 mb-10 max-w-3xl">
+            kavelogics empowers a diverse range of global clients to adopt advanced technology and elevate their customer experiences significantly.
           </p>
 
-          <div className="inner-mian-container-6 grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
+          <div className="inner-mian-container-6 grid grid-cols-1 md:grid-cols-2 gap-8 12 mt-12 sm:mt-20">
             {CaseStudyData?.map((item, i) => (
               <div className="first-container rounded-lg overflow-hidden group " key={i}>
                 <div className="overflow-hidden rounded-lg">

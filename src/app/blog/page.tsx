@@ -173,7 +173,8 @@ const [clicked, setClicked] = useState(false);
           </div>
           <p className="text-md mt-3 text-white sm:text-base">
             By entering your email, you are agreeing to our
-            <Link href="/privacy-policy" className="underline"> privacy policies</Link>
+            <Link href="/privacy-policy" className="underline cursor-pointer "> privacy policies</Link>
+            {/* <Link href="/privacy-policy" className="cursor-pointer hover:underline focus:underline "> Privacy policies</Link> */}
           </p>
         </div>
 
