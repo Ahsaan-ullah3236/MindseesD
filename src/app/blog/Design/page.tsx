@@ -132,9 +132,9 @@ const Design = () => {
               </div>
               <div className="pl-5 pr-2">
                 <div className="flex items-center space-x-2 mt-4">
-                  <span  className={`text-[14px] font-bold text-gray-800 cursor-pointer hover:underline focus:underline 
+                  <span className={`text-[14px] font-bold text-gray-800 cursor-pointer hover:underline focus:underline 
         ${clicked ? 'underline sm:no-underline' : ''}`}
-      onClick={handleClick}>
+                    onClick={handleClick}>
                     {item?.title}
                   </span>
                   <span className="text-[#4b5577] text-base">&gt;</span>
