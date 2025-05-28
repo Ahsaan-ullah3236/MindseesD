@@ -7,7 +7,7 @@ function page() {
             <section>
                 <h2 className="text-2xl sm:text-4xl font-semibold sm:text-bold mt-16">Introduction</h2>
                 <p className="text-lg leading-relaxed mt-6">
-                    This Cookie Policy page explains how Kavelogics (we, us, or our) uses cookies and similar technologies on our website. By using our Website, you give consent to the use of cookies in accordance with this Cookie Policy.
+                    This Cookie Policy page explains how mindsees (we, us, or our) uses cookies and similar technologies on our website. By using our Website, you give consent to the use of cookies in accordance with this Cookie Policy.
                 </p>
 
                 <h2 className="text-3xl sm:text-5xl font-semibold sm:text-bold mt-10">What Are Cookies?</h2>
@@ -80,11 +80,11 @@ function page() {
                 <ul className="leading-relaxed text-lg space-y-1 mt-4 list-none">
                     <li className="mt-6">
                         By email
-                        <a href="mailto:info@kavelogics.com" className="text-[#00D280] ml-2" >info@kavelogics.com</a>
+                        <a href="mailto:info@mindsees.com" className="text-[#00D280] ml-2" >info@mindsees.com</a>
                     </li>
                     <li className="mt-6">
                         By visiting
-                        <a href="https://www.kavelogics.com" className="text-[#00D280] underline ml-2">this</a> on our website.
+                        <a href="https://www.mindsees.com" className="text-[#00D280] underline ml-2">this</a> on our website.
                     </li>
                 </ul>
             </section>

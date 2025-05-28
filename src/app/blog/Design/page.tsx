@@ -14,7 +14,7 @@ const Design = () => {
   ]
   return (
     <>
-      <div className="relative w-full pt-20 sm:pt-30  pb-30 sm:pb-40 bg-[#003252] overflow-hidden spacing-secton">
+      <div className="relative w-full pt-20 sm:pt-30  pb-30 sm:pb-40 bg-[#003252]  spacing-secton">
         <div className=" bg-blue/2000 flex flex-col justify-center items-center text-center px-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             MindSees Industries Blogs
@@ -36,7 +36,7 @@ const Design = () => {
             </button>
 
             {isDropdownOpen && (
-              <ul className="absolute z-10 w-56 mt-1 h-[300px] overflow-y-auto bg-white py-2 border border-gray-200 rounded shadow-md">
+              <ul className="absolute z-10 w-56 mt-1 h-[250px] overflow-y-auto bg-white py-2 border border-gray-200 rounded shadow-md">
                 {categories.map((category) => (
                   <li
                     key={category}
@@ -176,7 +176,7 @@ const Design = () => {
           </div>
           <p className="text-md mt-3 text-white sm:text-base">
             By entering your email, you are agreeing to our
-            <span className="underline"> privacy policies</span>
+            <Link href="/privacy-policy" className="underline cursor-pointer "> privacy policies</Link>
           </p>
         </div>
 
