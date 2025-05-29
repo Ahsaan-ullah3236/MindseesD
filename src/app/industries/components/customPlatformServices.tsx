@@ -125,12 +125,12 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
                 </div>
                 
                 {/* Right Column */}
-                <div className="-mt-10 sm:-mt-4 border-4 ">
+                <div className="-mt-10 sm:-mt-4">
                   {rightItems.map((item, index) => (
                     <div 
                     key={index}
                       
-                      className={` p-5 bg-[#d6f1ff] group rounded-xl my-4 border-2 border-[#0575ad] `}
+                      className={` p-5 bg-[#d6f1ff] group rounded-xl my-4 border-2 border-[#0575ad]`}
                       // style={{
                       //   backgroundColor: cardBgColor,
                       //   borderColor: cardBorderColor,
