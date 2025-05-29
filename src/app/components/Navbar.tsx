@@ -195,7 +195,7 @@ const Navbar = () => {
             }}
           >
           </div>
-          <div className="h-[100vh] w-[80vw] lg:hidden px-4 pb-4 bg-white shadow-md overflow-y-auto mt-18">
+          <div className="h-[100vh] w-[80vw] lg:hidden px-4 pb-4 bg-white shadow-md overflow-y-auto mt-18 sm:mt-20">
             {/* Services dropdown */}
             <div className="py-2">
               <button
