@@ -75,7 +75,7 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
             <div className="h-[90vh] 2xl:h-[70vh] overflow-y-auto scroll-smooth left-scrollbarGray pl-4 space-y-8 -mt-8  sm:mt-6">
               <div className="grid sm:grid-cols-2 gap-6  ">
                 {/* Left Column */}
-                <div className="-mt-4 sm:mt-14  ">
+                <div className="mt-0 sm:mt-14  ">
                   {leftItems.map((item, index) => (
                     <div 
                     key={index}
@@ -129,7 +129,6 @@ const ServicePlatform: React.FC<ServicePlatformProps> = ({
                   {rightItems.map((item, index) => (
                     <div 
                     key={index}
-                      
                       className={` p-5 bg-[#d6f1ff] group rounded-xl my-4 border-2 border-[#0575ad]`}
                       // style={{
                       //   backgroundColor: cardBgColor,
