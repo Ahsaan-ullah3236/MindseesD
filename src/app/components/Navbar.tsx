@@ -10,7 +10,7 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
 
-  console.log("hoveredMenu",hoveredMenu)
+  console.log("hoveredMenu", hoveredMenu)
 
   const menuItem = [{
     item: "AI Development",
@@ -178,109 +178,118 @@ const Navbar = () => {
         </Link>
 
         <button
-          className="lg:hidden text-black"
+          className="lg:hidden text-black sm:mt-12"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
       {mobileMenuOpen && (
-        <div className="h-[100vh] lg:hidden px-4 pb-4 bg-white shadow-md overflow-y-auto">
-          {/* Services dropdown */}
-          <div className="py-2">
-            <button
-              className="flex items-center justify-between w-full font-semibold hover:text-[#00d280]"
-              onClick={() => toggleMobileMenu('services')}
-            >
-              Services
-              <ChevronDown
-                size={16}
-                className={clsx('transition-transform', {
-                  'rotate-180': mobileExpandedMenu === 'services',
-                })}
-              />
-            </button>
-            {mobileExpandedMenu === 'services' && (
-              <div className="pl-4 mt-2 space-y-2">
-                {menuItem.map((item, i) => (
-                  <Link
-                    key={i}
-                    href={item?.link}
-                    className="block py-1 hover:text-[#00d280]"
-                   onClick={() => {
-  setMobileMenuOpen(false);
-  setMobileExpandedMenu(null);
-}}
-                  >
-                    <div className="text-sm">
-                      {item?.item}
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
-
-          <Link href="/portfolio" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
-            Portfolio
-          </Link>
-
-          <Link href="/about" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
-            About Us
-          </Link>
-
-          {/* Industries dropdown */}
-          <div className="py-2">
-            <button
-              className="flex items-center justify-between w-full font-semibold hover:text-[#00d280]"
-              onClick={() => toggleMobileMenu('industries')}
-            >
-              Industries
-              <ChevronDown
-                size={16}
-                className={clsx('transition-transform', {
-                  'rotate-180': mobileExpandedMenu === 'industries',
-                })}
-              />
-            </button>
-            {mobileExpandedMenu === 'industries' && (
-              <div className="pl-4 mt-2 space-y-2">
-                {industriesItems.map((item, i) => (
-                  <Link
-                    key={i}
-                    href={item?.link}
-                    className="block py-1 hover:text-[#00d280]"
-                    onClick={() => {
-  setMobileMenuOpen(false);
-  setMobileExpandedMenu(null);
-}}
-                  >
-                    <div className="text-sm"> {item?.item}</div>
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
-
-          <Link href="/careers" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
-            Careers
-          </Link>
-
-          <Link href="/blog" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
-            Blogs
-          </Link>
-
-          <Link
-            href="/contact-us"
-            className="mt-4 inline-block bg-[#00d280] text-white w-full text-center py-2 rounded-md font-bold hover:bg-green-600"
-            onClick={() => setMobileMenuOpen(false)}
+        <div className="fixed inset-0 z-40 lg:hidden  flex flex-row-reverse ">
+          {/* overl  */}
+          <div
+            className=" w-[20vw] h-full bg-black/40 relative"
+            onClick={() => {
+              setMobileMenuOpen(false);
+              setMobileExpandedMenu(null);
+            }}
           >
-            Get Quote
-          </Link>
+          </div>
+          <div className="h-[100vh] w-[80vw] lg:hidden px-4 pb-4 bg-white shadow-md overflow-y-auto mt-18">
+            {/* Services dropdown */}
+            <div className="py-2">
+              <button
+                className="flex items-center justify-between w-full font-semibold hover:text-[#00d280]"
+                onClick={() => toggleMobileMenu('services')}
+              >
+                Services
+                <ChevronDown
+                  size={16}
+                  className={clsx('transition-transform', {
+                    'rotate-180': mobileExpandedMenu === 'services',
+                  })}
+                />
+              </button>
+              {mobileExpandedMenu === 'services' && (
+                <div className="pl-4 mt-2 space-y-2">
+                  {menuItem.map((item, i) => (
+                    <Link
+                      key={i}
+                      href={item?.link}
+                      className="block py-1 hover:text-[#00d280]"
+                      onClick={() => {
+                        setMobileMenuOpen(false);
+                        setMobileExpandedMenu(null);
+                      }}
+                    >
+                      <div className="text-sm">
+                        {item?.item}
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <Link href="/portfolio" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
+              Portfolio
+            </Link>
+
+            <Link href="/about" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
+              About Us
+            </Link>
+
+            {/* Industries dropdown */}
+            <div className="py-2">
+              <button
+                className="flex items-center justify-between w-full font-semibold hover:text-[#00d280]"
+                onClick={() => toggleMobileMenu('industries')}
+              >
+                Industries
+                <ChevronDown
+                  size={16}
+                  className={clsx('transition-transform', {
+                    'rotate-180': mobileExpandedMenu === 'industries',
+                  })}
+                />
+              </button>
+              {mobileExpandedMenu === 'industries' && (
+                <div className="pl-4 mt-2 space-y-2">
+                  {industriesItems.map((item, i) => (
+                    <Link
+                      key={i}
+                      href={item?.link}
+                      className="block py-1 hover:text-[#00d280]"
+                      onClick={() => {
+                        setMobileMenuOpen(false);
+                        setMobileExpandedMenu(null);
+                      }}
+                    >
+                      <div className="text-sm"> {item?.item}</div>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <Link href="/careers" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
+              Careers
+            </Link>
+
+            <Link href="/blog" className="block py-2 font-semibold hover:text-[#00d280]" onClick={() => setMobileMenuOpen(false)}>
+              Blogs
+            </Link>
+
+            <Link
+              href="/contact-us"
+              className="mt-4 inline-block bg-[#00d280] text-white w-full text-center py-2 rounded-md font-bold hover:bg-green-600"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Get Quote
+            </Link>
+          </div>
         </div>
       )}
-
-
     </header>
   );
 };
