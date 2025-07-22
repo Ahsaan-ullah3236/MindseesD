@@ -92,7 +92,6 @@ const AiRevolution = () => {
 
         </div>
       </div>
-
       {/* second section  */}
       <div className='flex flex-col-reverse md:grid grid-cols-1 md:grid-cols-4 spacing-secton bg-[#fff] pt-20 '>
         <div className='md:h-fit md:sticky md:top-[100px] lg:top-[140px] md:order-first flex-[1]'>
@@ -219,9 +218,7 @@ const AiRevolution = () => {
             <p className="mt-4"> In conclusion, building a startup requires more than passion—it demands precise, adaptable, and visionary planning. Define your vision clearly, turn it into strategic objectives, prioritize what truly moves the needle, stay agile with execution, keep your team aligned, trust the right metrics, and make room for bold, calculated risks. When strategy becomes a habit, not just a document, execution becomes inevitable—and growth becomes unstoppable. </p>
           </div>
         </div>
-
       </div>
-
       {/* fourth */}
       <div className="border-b-1 border-gray-300 mt-12 sm:mt-40"></div>
       <div className="tags block md:flex mx-auto lg:w-5xl mt-10 sm:mt-14 px-4">

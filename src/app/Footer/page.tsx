@@ -118,7 +118,7 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-4">Company</h3>
             <ul className="space-y-2">
               <li><Link href="/about"  className='cursior pointer hover:underline focus:underline '> About  </Link></li>
-              <li><Link href="/creers"  className='cursior pointer hover:underline focus:underline '> Careers  </Link></li>
+              <li><Link href="/careers"  className='cursior pointer hover:underline focus:underline '> Careers  </Link></li>
               <li><Link href="/portfolio"  className='cursior pointer hover:underline focus:underline '> Our Work  </Link></li>
               <li><Link href="/contact-us"  className='cursior pointer hover:underline focus:underline'> Contact Us  </Link></li>
             </ul>
