@@ -1,12 +1,12 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import brandimage1 from "@/app/Award/image/ brand img 6 (1).svg"
-import brandimage2 from "@/app/Award/image/ brand img 6 (2).svg"
-import brandimage3 from "@/app/Award/image/ brand img 6 (3).svg"
-import brandimage4 from "@/app/Award/image/ brand img 6 (4).svg"
-import brandimage5 from "@/app/Award/image/ brand img 6 (5).svg"
-import brandimage6 from "@/app/Award/image/ brand img 6 (6).svg"
+import brandimage1 from "../Award/image/brand img 6 (1).svg"
+import brandimage2 from "../Award/image/brand img 6 (2).svg"
+import brandimage3 from "../Award/image/brand img 6 (3).svg"
+import brandimage4 from "../Award/image/brand img 6 (4).svg"
+import brandimage5 from "../Award/image/brand img 6 (5).svg"
+import brandimage6 from "../Award/image/brand img 6 (6).svg"
 
 const AwardsSection = () => {
   const images = [
